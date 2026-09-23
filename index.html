@@ -5,11 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>La Mercè 2026 — Barcelona</title>
 <meta name="description" content="Guia hora a hora de la Mercè 2026, 23–27 de setembre. Català · Castellà · English.">
+<meta property="og:title" content="La Mercè 2026 — Barcelona">
+<meta property="og:description" content="Hour-by-hour guide to Barcelona's Festa Major, 23–27 September. Català · Castellà · English.">
+<meta property="og:type" content="website">
 <style>
   :root{
     --ink:#121212;--paper:#f7f6f2;--sub:#78756d;
     --hair:rgba(18,18,18,.16);--accent:#d8341c;
-    --dark:#121212;--dark-ink:#f4f2ec;
+    --dark:#121212;--dark-ink:#f4f2ec;--sheet:#fff;
     box-sizing:border-box;
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
@@ -18,14 +21,10 @@
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
       --ink:#f0ede5;--paper:#101010;--sub:#96938a;
-      --hair:rgba(240,237,229,.2);--accent:#ff6a4d;--dark:#000;--dark-ink:#f0ede5;
+      --hair:rgba(240,237,229,.2);--accent:#ff6a4d;--dark:#000;--dark-ink:#f0ede5;--sheet:#1b1a17;
     }
   }
-  :root[data-theme="dark"]{
-    --ink:#f0ede5;--paper:#101010;--sub:#96938a;
-    --hair:rgba(240,237,229,.2);--accent:#ff6a4d;--dark:#000;--dark-ink:#f0ede5;
-  }
-  html{scroll-padding-top:88px;-webkit-text-size-adjust:100%;}
+  html{scroll-padding-top:92px;-webkit-text-size-adjust:100%;}
   body{margin:0;background:var(--paper);color:var(--ink);
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
@@ -33,17 +32,14 @@
   h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.03em;line-height:.95;}
   .wrap{max-width:640px;margin:0 auto;padding:0 22px;}
 
-  /* ── HERO ── */
+  /* HERO */
   .hero{background:var(--dark);color:var(--dark-ink);padding:38px 22px 40px;}
   .hero-in{max-width:640px;margin:0 auto;}
   .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:34px;}
   .eyebrow{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--accent);padding-top:6px;}
   .langs{display:flex;gap:2px;flex:0 0 auto;}
-  .langs button{
-    background:none;border:0;color:#78756d;cursor:pointer;
-    font-family:inherit;font-size:.64rem;font-weight:700;letter-spacing:.12em;
-    text-transform:uppercase;padding:6px 8px;
-  }
+  .langs button{background:none;border:0;color:#78756d;cursor:pointer;font-family:inherit;
+    font-size:.64rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 8px;}
   .langs button.on{color:var(--accent);}
   .hero h1{font-size:clamp(3.4rem,19vw,5.6rem);letter-spacing:-.05em;}
   .hero .yr{display:block;color:var(--accent);font-size:clamp(3.4rem,19vw,5.6rem);letter-spacing:-.05em;}
@@ -52,29 +48,32 @@
   .hm .k{font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:#78756d;margin-bottom:6px;}
   .hm .v{font-size:1rem;font-weight:700;letter-spacing:-.02em;}
 
-  /* ── NAV ── */
-  nav.days{position:sticky;top:0;z-index:30;background:var(--paper);}
-  .days-in{display:flex;overflow-x:auto;max-width:640px;margin:0 auto;padding:0 8px;scrollbar-width:none;}
+  /* NAV */
+  nav.days{position:sticky;top:0;z-index:600;background:var(--paper);}
+  nav.days::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--hair);}
+  .days-in{display:flex;overflow-x:auto;max-width:640px;margin:0 auto;padding:0 8px;scrollbar-width:none;
+    scroll-behavior:smooth;}
   .days-in::-webkit-scrollbar{display:none;}
   .days-in a{flex:0 0 auto;padding:14px 12px;text-decoration:none;font-size:.66rem;font-weight:700;
-    letter-spacing:.12em;text-transform:uppercase;color:var(--sub);white-space:nowrap;}
+    letter-spacing:.12em;text-transform:uppercase;color:var(--sub);white-space:nowrap;
+    position:relative;transition:color .18s;}
   .days-in a.on{color:var(--accent);}
+  .days-in a.on::after{content:"";position:absolute;left:12px;right:12px;bottom:0;height:2px;background:var(--accent);z-index:1;}
 
-  /* ── SECTION HEADS ── */
   .lbl{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px;}
   .sec{padding:64px 0 0;}
   .sec > h2{font-size:clamp(1.9rem,8vw,2.4rem);letter-spacing:-.035em;margin-bottom:34px;}
 
-  /* ── ESSENTIALS ── */
-  .ess li{list-style:none;position:relative;padding:0 0 30px 44px;counter-increment:e;}
+  /* ESSENTIALS */
   .ess ol{margin:0;padding:0;counter-reset:e;}
+  .ess li{list-style:none;position:relative;padding:0 0 30px 44px;counter-increment:e;}
   .ess li::before{content:counter(e,decimal-leading-zero);position:absolute;left:0;top:2px;
     font-size:.74rem;font-weight:700;color:var(--accent);letter-spacing:.05em;}
   .ess .t{font-size:1.1rem;font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-bottom:5px;}
   .ess .w{font-size:.84rem;color:var(--accent);font-weight:700;margin-bottom:7px;}
   .ess .d{font-size:.89rem;color:var(--sub);max-width:52ch;}
 
-  /* ── DAY ── */
+  /* DAY */
   .day{padding:72px 0 0;}
   .day-head{display:flex;align-items:flex-end;gap:16px;margin-bottom:34px;}
   .day-num{font-size:clamp(3.4rem,17vw,5rem);font-weight:700;letter-spacing:-.07em;line-height:.76;color:var(--accent);}
@@ -83,11 +82,10 @@
   .day-txt h2{font-size:1.24rem;letter-spacing:-.025em;line-height:1.1;}
   .day-txt .note{font-size:.78rem;color:var(--sub);margin-top:6px;font-weight:400;letter-spacing:0;}
 
-  /* ── TIMELINE (the one place with a rule) ── */
+  /* TIMELINE */
   .timeline{border-left:1px solid var(--hair);margin-left:4px;}
   .ev{position:relative;padding:0 0 34px 26px;}
-  .ev::before{content:"";position:absolute;left:-4.5px;top:7px;width:8px;height:8px;
-    border-radius:50%;background:var(--accent);}
+  .ev::before{content:"";position:absolute;left:-4.5px;top:7px;width:8px;height:8px;border-radius:50%;background:var(--accent);}
   .ev:last-child{padding-bottom:6px;}
   .ev-top{display:flex;align-items:baseline;gap:11px;margin-bottom:7px;flex-wrap:wrap;}
   .ev-time{font-size:.95rem;font-weight:700;letter-spacing:-.015em;font-variant-numeric:tabular-nums;white-space:nowrap;}
@@ -97,27 +95,31 @@
   .tg.fr{color:var(--sub);}
   .ev h3{font-size:1.08rem;letter-spacing:-.022em;line-height:1.25;margin-bottom:6px;}
   .ev .loc{font-size:.82rem;color:var(--sub);margin-bottom:9px;display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;}
-  .ev .loc a{color:var(--accent);font-weight:700;text-decoration:none;white-space:nowrap;}
   .ev p{margin:0;font-size:.89rem;color:var(--ink);opacity:.8;max-width:56ch;}
   .tip{margin-top:11px;font-size:.83rem;color:var(--sub);max-width:54ch;}
   .tip b{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.58rem;}
 
-  /* ── MAP ── */
-  .mf{position:relative;width:100%;padding-bottom:76%;background:rgba(18,18,18,.05);}
-  .mf iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
-  .mcap{display:flex;justify-content:space-between;gap:12px;align-items:baseline;
-    margin-top:12px;font-size:.76rem;color:var(--sub);}
-  .mcap a{color:var(--accent);font-weight:700;text-decoration:none;white-space:nowrap;}
+  .golink{background:none;border:0;padding:0;font:inherit;cursor:pointer;color:var(--accent);
+    font-weight:700;font-size:.78rem;white-space:nowrap;}
+  .golink:hover{text-decoration:underline;}
 
-  /* ── LISTS WITHOUT RULES ── */
+  /* MAP */
+  #map{width:100%;height:420px;background:var(--paper-2,#e8e6df);}
+  @media(max-width:480px){#map{height:340px;}}
+  .maphint{margin-top:11px;font-size:.76rem;color:var(--sub);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .mk{display:flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;
+    font-weight:700;font-size:.66rem;box-shadow:0 0 0 2px rgba(255,255,255,.9);}
+  .mk.sm{width:20px;height:20px;font-size:.58rem;background:#5d5a52;}
+
+  /* LISTS */
   .grid{display:grid;grid-template-columns:1fr;gap:26px;margin-top:38px;}
   @media (min-width:560px){.grid{grid-template-columns:1fr 1fr;gap:30px 34px;}}
   .gi h4{font-size:.96rem;font-weight:700;letter-spacing:-.018em;margin:0 0 5px;}
   .gi p{margin:0;font-size:.85rem;color:var(--sub);}
-  .gi a{display:inline-block;margin-top:7px;font-size:.74rem;font-weight:700;color:var(--accent);text-decoration:none;}
+  .gi .golink{margin-top:7px;display:inline-block;font-size:.74rem;}
 
-  .callout{margin-top:44px;padding-left:16px;border-left:2px solid var(--accent);
-    font-size:.85rem;color:var(--sub);max-width:58ch;}
+  .callout{margin-top:44px;padding-left:16px;border-left:2px solid var(--accent);font-size:.85rem;color:var(--sub);max-width:58ch;}
   .callout b{color:var(--ink);}
 
   footer{background:var(--dark);color:var(--dark-ink);margin-top:80px;padding:54px 22px 48px;}
@@ -126,6 +128,68 @@
   footer .fs{font-size:.84rem;color:#a6a39b;line-height:1.7;max-width:52ch;margin:0 0 16px;}
   footer .fs a{color:var(--accent);font-weight:700;text-decoration:none;}
   footer .fmini{font-size:.76rem;color:#6e6b64;line-height:1.7;max-width:52ch;margin:0;}
+  footer .ver{margin-top:20px;font-size:.68rem;color:#5c5952;letter-spacing:.1em;text-transform:uppercase;}
+
+  /* DIRECTIONS SHEET */
+  .ovl{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:2000;display:none;
+    align-items:flex-end;justify-content:center;}
+  .ovl.open{display:flex;}
+  .sheet{background:var(--sheet);width:100%;max-width:440px;border-radius:14px 14px 0 0;
+    padding:22px 22px calc(22px + env(safe-area-inset-bottom,0px));}
+  @media(min-width:560px){.ovl{align-items:center;}.sheet{border-radius:14px;}}
+  .sheet h3{font-size:1.1rem;margin-bottom:3px;letter-spacing:-.02em;}
+  .sheet .sub{font-size:.78rem;color:var(--sub);margin-bottom:18px;}
+  .sheet a,.sheet button.copy{display:flex;align-items:center;justify-content:space-between;
+    padding:13px 0;text-decoration:none;color:var(--ink);font-size:.92rem;font-weight:600;
+    border-top:1px solid var(--hair);width:100%;background:none;border-left:0;border-right:0;border-bottom:0;
+    font-family:inherit;cursor:pointer;text-align:left;}
+  .sheet a span.ar,.sheet button.copy span.ar{color:var(--accent);font-weight:700;font-size:.8rem;}
+  .sheet .close{margin-top:16px;width:100%;padding:12px;background:none;border:1px solid var(--hair);
+    font-family:inherit;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--sub);cursor:pointer;}
+
+  /* Leaflet (inlined subset — no external stylesheet needed) */
+  .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,
+  .leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
+  .leaflet-container{overflow:hidden;font-family:inherit;-webkit-tap-highlight-color:transparent;background:#e8e6df;}
+  .leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow{-webkit-user-select:none;user-select:none;-webkit-user-drag:none}
+  .leaflet-tile{filter:inherit;visibility:hidden}
+  .leaflet-tile-loaded{visibility:inherit}
+  .leaflet-zoom-box{width:0;height:0;box-sizing:border-box;z-index:800}
+  .leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}
+  .leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}
+  .leaflet-popup-pane{z-index:700}
+  .leaflet-control{position:relative;z-index:800;pointer-events:auto;float:left;clear:both}
+  .leaflet-top,.leaflet-bottom{position:absolute;z-index:800;pointer-events:none}
+  .leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}
+  .leaflet-right .leaflet-control{float:right}
+  .leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}
+  .leaflet-left .leaflet-control{margin-left:10px}.leaflet-right .leaflet-control{margin-right:10px}
+  .leaflet-zoom-animated{transform-origin:0 0}
+  .leaflet-zoom-anim .leaflet-zoom-animated{will-change:transform;transition:transform .25s cubic-bezier(0,0,.25,1)}
+  .leaflet-zoom-anim .leaflet-tile,.leaflet-pan-anim .leaflet-tile{transition:none}
+  .leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}
+  .leaflet-interactive{cursor:pointer}
+  .leaflet-grab{cursor:grab}.leaflet-dragging .leaflet-grab{cursor:grabbing}
+  .leaflet-bar{box-shadow:0 1px 4px rgba(0,0,0,.3)}
+  .leaflet-bar a{background:#fff;border-bottom:1px solid #ccc;width:28px;height:28px;line-height:28px;
+    display:block;text-align:center;text-decoration:none;color:#222;font:700 17px/28px Helvetica,Arial,sans-serif}
+  .leaflet-bar a:last-child{border-bottom:none}
+  .leaflet-popup{position:absolute;text-align:center;margin-bottom:22px}
+  .leaflet-popup-content-wrapper{padding:1px;text-align:left;border-radius:4px;background:var(--sheet);
+    color:var(--ink);box-shadow:0 3px 16px rgba(0,0,0,.3)}
+  .leaflet-popup-content{margin:14px 16px;line-height:1.45;font-size:.86rem}
+  .leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-left:-20px;overflow:hidden;pointer-events:none}
+  .leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;transform:rotate(45deg);
+    background:var(--sheet);box-shadow:0 3px 16px rgba(0,0,0,.3)}
+  .leaflet-container a.leaflet-popup-close-button{position:absolute;top:0;right:0;width:26px;height:26px;
+    font:16px/26px Tahoma,Verdana,sans-serif;color:var(--sub);text-decoration:none;text-align:center;background:transparent}
+  .leaflet-control-attribution{background:rgba(255,255,255,.82);margin:0;padding:0 6px;font-size:10px;color:#333}
+  .leaflet-control-attribution a{color:#0a6ebd;text-decoration:none}
+  .pop-t{font-weight:700;font-size:.95rem;letter-spacing:-.02em;margin-bottom:3px;}
+  .pop-d{color:var(--sub);font-size:.8rem;margin-bottom:9px;}
+  .pop-b{background:var(--accent);color:#fff;border:0;font-family:inherit;font-weight:700;
+    font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;cursor:pointer;width:100%;}
 </style>
 </head>
 <body>
@@ -154,11 +218,35 @@
   <div class="fm">La Mercè 2026</div>
   <div class="fs" id="k-foot1"></div>
   <div class="fmini" id="k-foot2"></div>
+  <div class="ver" id="k-ver"></div>
 </div></footer>
 
-<script>
-const M = q => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
+<div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+const VERSION = "1.1.0";
+
+/* ─── VENUES (verified coordinates) ─── */
+const V = {
+  santjaume : {n:"Plaça de Sant Jaume",       lat:41.382798, lng:2.177246, big:1},
+  virreina  : {n:"Palau de la Virreina",      lat:41.382488, lng:2.171726, big:1},
+  catalunya : {n:"Plaça de Catalunya",        lat:41.386630, lng:2.169399, big:1},
+  gracia    : {n:"Pg. de Gràcia / Provença",  lat:41.394834, lng:2.161608, big:1},
+  gas       : {n:"Espigó del Gas",            lat:41.381131, lng:2.197018, big:1},
+  bogatell  : {n:"Platja del Bogatell",       lat:41.394374, lng:2.207011, big:1},
+  icaria    : {n:"Platja de la Nova Icària",  lat:41.390367, lng:2.202304, big:1},
+  guell     : {n:"Park Güell",                lat:41.414495, lng:2.152695},
+  fusta     : {n:"Moll de la Fusta",          lat:41.379603, lng:2.182014},
+  merce     : {n:"Plaça de la Mercè",         lat:41.379379, lng:2.179510},
+  catedral  : {n:"Avinguda de la Catedral",   lat:41.384876, lng:2.176066},
+  comas     : {n:"Plaça de Comas",            lat:41.385161, lng:2.130073},
+  sarria    : {n:"Plaça de Sarrià",           lat:41.399885, lng:2.122165},
+  armengol  : {n:"Jardins del Dr. Pla i Armengol", lat:41.415354, lng:2.170715},
+  somorrostro:{n:"Platja del Somorrostro",    lat:41.383721, lng:2.195757}
+};
+
+/* ─── UI STRINGS ─── */
 const T = {
   ca:{
     eyebrow:"Festa Major de Barcelona",
@@ -167,13 +255,14 @@ const T = {
     nav:["Essencials","Dc 23","Dj 24","Dv 25","Ds 26","Dg 27","Mapa","Abans d'anar-hi"],
     essLbl:"Si només feu cinc coses",essTitle:"Els essencials",
     mapLbl:"Orienteu-vos",mapTitle:"On passa tot",
-    mapCap:"Marcador: plaça de Sant Jaume, el centre de la festa",mapLink:"Google Maps ↗",
-    dirs:"Com arribar-hi ↗", tipLbl:"Consell",
+    mapHint:"Toqueu una xinxeta per veure què hi passa i obrir-hi les indicacions.",
+    dirs:"Com arribar-hi", tipLbl:"Consell", openIn:"Obre amb", copy:"Copia les coordenades",
+    copied:"Copiat", close:"Tanca", onMap:"Veure-ho al mapa",
     knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
     calloutB:"Sobre la ubicació del Piromusical.",
     callout:" Els materials de l'Ajuntament han fet servir tant «Bogatell» com «Nova Icària». Els focs es disparen des de l'espigó del Bogatell; la zona de públic és la platja de la Nova Icària, al costat, que és el punt recomanat oficialment.",
     foot1:'Tota la informació d\'aquesta pàgina prové del programa oficial de l\'Ajuntament de Barcelona. Per al programa complet i per a qualsevol canvi d\'última hora, visiteu <a href="https://www.barcelona.cat/lamerce/ca" target="_blank" rel="noopener">barcelona.cat/lamerce</a>.',
-    foot2:"Aquesta pàgina s'ha fet només per ajudar a trobar i endreçar la informació, perquè tothom pugui gaudir al màxim de la Mercè. No és una publicació oficial.",
+    foot2:"Aquesta pàgina s'ha fet només per ajudar a trobar i endreçar la informació, perquè tothom pugui gaudir al màxim de la Mercè. No és una publicació oficial. Sense galetes, sense analítica, sense seguiment.",
     ess:[
       {t:"Toc d'Inici",w:"Avui · surt a les 19 h, balls a la plaça cap a les 20 h",d:"Del Palau de la Virreina a la plaça de Sant Jaume. Gegants, dracs i bèsties surten a obrir la festa."},
       {t:"Diada castellera",w:"Dijous 24 · 13 h",d:"Plaça de Sant Jaume. Vuit colles hi aixequen castells. Arribeu-hi cap a les 12 h: la plaça es tanca quan s'omple."},
@@ -197,13 +286,14 @@ const T = {
     nav:["Esenciales","Mié 23","Jue 24","Vie 25","Sáb 26","Dom 27","Mapa","Antes de ir"],
     essLbl:"Si solo hacéis cinco cosas",essTitle:"Lo esencial",
     mapLbl:"Orientaos",mapTitle:"Dónde pasa todo",
-    mapCap:"Marcador: plaza de Sant Jaume, el centro de la fiesta",mapLink:"Google Maps ↗",
-    dirs:"Cómo llegar ↗", tipLbl:"Consejo",
+    mapHint:"Tocad una chincheta para ver qué pasa allí y abrir las indicaciones.",
+    dirs:"Cómo llegar", tipLbl:"Consejo", openIn:"Abrir con", copy:"Copiar las coordenadas",
+    copied:"Copiado", close:"Cerrar", onMap:"Verlo en el mapa",
     knowLbl:"Práctico",knowTitle:"Antes de ir",
     calloutB:"Sobre la ubicación del Piromusical.",
     callout:" Los materiales del Ayuntamiento han usado tanto «Bogatell» como «Nova Icària». Los fuegos se lanzan desde el espigón del Bogatell; la zona de público es la playa de la Nova Icària, al lado, que es el punto recomendado oficialmente.",
     foot1:'Toda la información de esta página procede del programa oficial del Ayuntamiento de Barcelona. Para el programa completo y para cualquier cambio de última hora, visitad <a href="https://www.barcelona.cat/lamerce/es" target="_blank" rel="noopener">barcelona.cat/lamerce</a>.',
-    foot2:"Esta página se ha hecho solo para ayudar a encontrar y ordenar la información, para que todo el mundo pueda disfrutar al máximo de la Mercè. No es una publicación oficial.",
+    foot2:"Esta página se ha hecho solo para ayudar a encontrar y ordenar la información, para que todo el mundo pueda disfrutar al máximo de la Mercè. No es una publicación oficial. Sin cookies, sin analítica, sin seguimiento.",
     ess:[
       {t:"Toc d'Inici",w:"Hoy · sale a las 19 h, bailes en la plaza sobre las 20 h",d:"Del Palau de la Virreina a la plaza de Sant Jaume. Gigantes, dragones y bestias salen a abrir la fiesta."},
       {t:"Diada castellera",w:"Jueves 24 · 13 h",d:"Plaza de Sant Jaume. Ocho colles levantan castells. Llegad sobre las 12 h: la plaza se cierra cuando se llena."},
@@ -227,13 +317,14 @@ const T = {
     nav:["Essentials","Wed 23","Thu 24","Fri 25","Sat 26","Sun 27","Map","Know before"],
     essLbl:"If you only do five things",essTitle:"The essentials",
     mapLbl:"Orient yourself",mapTitle:"Where it all happens",
-    mapCap:"Marker: Plaça de Sant Jaume, the festival hub",mapLink:"Google Maps ↗",
-    dirs:"Directions ↗", tipLbl:"Tip",
+    mapHint:"Tap a pin to see what happens there and open directions.",
+    dirs:"Directions", tipLbl:"Tip", openIn:"Open in", copy:"Copy coordinates",
+    copied:"Copied", close:"Close", onMap:"Show on map",
     knowLbl:"Practical",knowTitle:"Know before you go",
     calloutB:"On the Piromusical location.",
     callout:" The city council's own materials have used both \u201CBogatell\u201D and \u201CNova Icària.\u201D The fireworks are fired from the Espigó del Bogatell breakwater; the public viewing area is Platja de la Nova Icària next door, which is the officially recommended spot.",
     foot1:'All information on this page comes from the official programme of Barcelona City Council. For the full programme and any last-minute changes, please visit <a href="https://www.barcelona.cat/lamerce/en" target="_blank" rel="noopener">barcelona.cat/lamerce</a>.',
-    foot2:"This page was made only to help find and organise that information, so that more people can enjoy La Mercè to the fullest. It is not an official publication.",
+    foot2:"This page was made only to help find and organise that information, so that more people can enjoy La Mercè to the fullest. It is not an official publication. No cookies, no analytics, no tracking.",
     ess:[
       {t:"Toc d'Inici",w:"Tonight · departs 7:00 PM, dancing in the square ~8:00 PM",d:"Palau de la Virreina to Plaça de Sant Jaume. Giants, dragons and beasts parade out to open the festival."},
       {t:"Diada castellera",w:"Thursday 24 · 1:00 PM",d:"Plaça de Sant Jaume. Eight colles build human towers. Arrive by noon — the square closes once full."},
@@ -268,52 +359,51 @@ const DAYS = [
     title:{ca:"Nit inaugural",es:"Noche inaugural",en:"Opening night"},
     note:{ca:"Des de les 17 h",es:"Desde las 17 h",en:"From 5:00 PM"},
     events:[
-      { time:{ca:"17 h",es:"17 h",en:"5:00 PM"}, tags:["free"],
+      { time:{ca:"17 h",es:"17 h",en:"5:00 PM"}, tags:["free"], v:"santjaume",
         title:{ca:"Repic de campanes",es:"Repique de campanas",en:"Repic de campanes — the bells"},
-        loc:{ca:"Barri Gòtic",es:"Barrio Gótico",en:"Barri Gòtic"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"Barri Gòtic",es:"Barrio Gótico",en:"Barri Gòtic"},
         desc:{ca:"Les campanes del Barri Gòtic anuncien l'inici oficial de la festa major.",
               es:"Las campanas del Barrio Gótico anuncian el inicio oficial de la fiesta mayor.",
               en:"Church bells across the Gothic Quarter ring out to mark the official start of the festival."} },
-      { time:{ca:"19 h",es:"19 h",en:"7:00 PM"}, tags:["open","free"],
+      { time:{ca:"19 h",es:"19 h",en:"7:00 PM"}, tags:["open","free"], v:"santjaume",
         title:{ca:"Pregó de la Mercè",es:"Pregón de la Mercè",en:"Pregó de La Mercè — opening speech"},
-        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"}, map:"Plaça de Sant Jaume, Barcelona",
-        desc:{ca:"El mestre elaborador de vins Antoni Falgueras i la seva filla Meritxell fan el pregó que obre oficialment la Mercè 2026. En directe a betevé.",
-              es:"El maestro elaborador de vinos Antoni Falgueras y su hija Meritxell dan el pregón que abre oficialmente la Mercè 2026. En directo en betevé.",
-              en:"Master winemaker Antoni Falgueras and his daughter Meritxell deliver the speech that formally opens La Mercè 2026. Broadcast live on betevé."} },
-      { time:{ca:"19 h",es:"19 h",en:"7:00 PM"}, tags:["dep","free"],
+        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"},
+        desc:{ca:"El mestre cellerer Antoni Falgueras i la seva filla, la sommelier Meritxell Falgueras, fan el pregó que obre oficialment la Mercè 2026. En directe a betevé.",
+              es:"El maestro bodeguero Antoni Falgueras y su hija, la sumiller Meritxell Falgueras, dan el pregón que abre oficialmente la Mercè 2026. En directo en betevé.",
+              en:"Master winemaker Antoni Falgueras and his daughter, sommelier Meritxell Falgueras, deliver the speech that formally opens La Mercè 2026. Broadcast live on betevé."} },
+      { time:{ca:"19 h",es:"19 h",en:"7:00 PM"}, tags:["dep","free"], v:"virreina",
         title:{ca:"Seguici inaugural",es:"Séquito inaugural",en:"Seguici Inaugural — the procession"},
         loc:{ca:"Palau de la Virreina, la Rambla, 99",es:"Palau de la Virreina, la Rambla, 99",en:"Palau de la Virreina, La Rambla 99"},
-        map:"Palau de la Virreina, La Rambla 99, Barcelona",
         desc:{ca:"L'Àliga, el Lleó, la Mulassa, el Bou, la Víbria, el Drac, la Tarasca, els gegants, els capgrossos, els Falcons i el Ball de Bastons surten de la Virreina cap a Sant Jaume, acompanyats enguany per una actuació de llanternes de Xangai.",
               es:"L'Àliga, el Lleó, la Mulassa, el Bou, la Víbria, el Drac, la Tarasca, los gigantes, los cabezudos, los Falcons y el Ball de Bastons salen de la Virreina hacia Sant Jaume, acompañados este año por una actuación de linternas de Shanghái.",
               en:"L'Àliga, the Lleó, Mulassa, Bou, Víbria, Drac, Tarasca, giants, big-heads, Falcons and Ball de Bastons leave the Virreina toward Sant Jaume — joined this year by a Shanghai Rolling Lantern performance."},
         tip:{ca:"Sigueu a la Rambla, a prop de la Virreina, cap a les 18.45 h per veure com es forma i arrenca.",
              es:"Estad en la Rambla, cerca de la Virreina, sobre las 18.45 h para ver cómo se forma y arranca.",
              en:"Be on La Rambla near the Virreina by 6:45 PM to watch it form up and set off."} },
-      { time:{ca:"~20 h",es:"~20 h",en:"~8:00 PM"}, tags:["sig","free"],
+      { time:{ca:"~20 h",es:"~20 h",en:"~8:00 PM"}, tags:["sig","free"], v:"santjaume",
         title:{ca:"Toc d'Inici",es:"Toc d'Inici",en:"Toc d'Inici"},
-        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"},
         desc:{ca:"El toc simbòlic que obre la festa des del 1993. Quan la cercavila arriba a la plaça, totes les figures ballen al so dels Ministrils del Camí Ral, quaranta músics que només es reuneixen per a aquesta nit.",
               es:"El toque simbólico que abre la fiesta desde 1993. Cuando el pasacalle llega a la plaza, todas las figuras bailan al son de los Ministrils del Camí Ral, cuarenta músicos que solo se reúnen para esta noche.",
               en:"The symbolic starting bell, running since 1993. Once the procession reaches the square, every figure dances to the Ministrils del Camí Ral — forty musicians assembled only for this night."},
         tip:{ca:"La plaça s'omple del tot. Val més entrar-hi amb la cercavila que esperar-s'hi.",
              es:"La plaza se llena del todo. Mejor entrar con el pasacalle que esperar allí.",
              en:"The square fills completely. Walk in with the procession rather than waiting there."} },
-      { time:{ca:"21 h",es:"21 h",en:"9:00 PM"}, tags:["free"],
+      { time:{ca:"21 h",es:"21 h",en:"9:00 PM"}, tags:["free"], v:"armengol",
         title:{ca:"Conservatori de Música de Xangai — jazz",es:"Conservatorio de Música de Shanghái — jazz",en:"Shanghai Conservatory of Music — jazz ensemble"},
         loc:{ca:"Jardins del Dr. Pla i Armengol",es:"Jardines del Dr. Pla i Armengol",en:"Jardins del Dr. Pla i Armengol"},
         desc:{ca:"Dins del programa de la ciutat convidada d'enguany.",
               es:"Dentro del programa de la ciudad invitada de este año.",
               en:"Part of this year's guest-city programme."} },
-      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"],
+      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"], v:"catedral",
         title:{ca:"Sabor de Gràcia — rumba catalana",es:"Sabor de Gràcia — rumba catalana",en:"Sabor de Gràcia — Catalan rumba"},
-        loc:{ca:"Avinguda de la Catedral",es:"Avenida de la Catedral",en:"Avinguda de la Catedral"}, map:"Avinguda de la Catedral, Barcelona",
+        loc:{ca:"Avinguda de la Catedral",es:"Avenida de la Catedral",en:"Avinguda de la Catedral"},
         desc:{ca:"Rumba catalana en directe just sota la façana de la catedral.",
               es:"Rumba catalana en directo justo bajo la fachada de la catedral.",
               en:"Live rumba catalana directly below the cathedral façade."} },
-      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"],
+      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"], v:"santjaume",
         title:{ca:"Xambanga de gegants",es:"Xambanga de gigantes",en:"Xambanga de Gegants"},
-        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"},
         desc:{ca:"Els gegants de la ciutat ballen junts per tancar la nit inaugural.",
               es:"Los gigantes de la ciudad bailan juntos para cerrar la noche inaugural.",
               en:"The city's giants dance together to close opening night."} }
@@ -324,51 +414,51 @@ const DAYS = [
     title:{ca:"La diada de la Mercè",es:"El día de la Mercè",en:"La Mercè itself"},
     note:{ca:"Festiu a Barcelona · des de les 8 h",es:"Festivo en Barcelona · desde las 8 h",en:"Public holiday in Barcelona · from 8:00 AM"},
     events:[
-      { time:{ca:"8 h",es:"8 h",en:"8:00 AM"}, tags:["free"],
+      { time:{ca:"8 h",es:"8 h",en:"8:00 AM"}, tags:["free"], v:"merce",
         title:{ca:"Matinades de grallers",es:"Matinades de grallers",en:"Matinades de Grallers"},
-        loc:{ca:"Plaça de la Mercè",es:"Plaza de la Mercè",en:"Plaça de la Mercè"}, map:"Plaça de la Mercè, Barcelona",
+        loc:{ca:"Plaça de la Mercè",es:"Plaza de la Mercè",en:"Plaça de la Mercè"},
         desc:{ca:"Els grallers desperten el barri amb una matinada de música tradicional.",
               es:"Los grallers despiertan el barrio con una diana de música tradicional.",
               en:"Gralla players wake the neighbourhood with an early-morning serenade."} },
-      { time:{ca:"10.30 h",es:"10.30 h",en:"10:30 AM"}, tags:["free"],
+      { time:{ca:"10.30 h",es:"10.30 h",en:"10:30 AM"}, tags:["free"], v:"santjaume",
         title:{ca:"Plantada i balls de gegants",es:"Plantada y bailes de gigantes",en:"Plantada i balls de Gegants"},
-        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"},
         desc:{ca:"Els gegants s'exposen a la plaça i hi ballen abans que hi entrin els castellers.",
               es:"Los gigantes se exponen en la plaza y bailan antes de que entren los castellers.",
               en:"The giants are set up on display with dance performances before the castellers take the square."} },
-      { time:{ca:"13 h",es:"13 h",en:"1:00 PM"}, tags:["miss","free"],
+      { time:{ca:"13 h",es:"13 h",en:"1:00 PM"}, tags:["miss","free"], v:"santjaume",
         title:{ca:"Diada castellera de la Mercè",es:"Diada castellera de la Mercè",en:"Diada Castellera de La Mercè"},
-        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"},
         desc:{ca:"De 13 a 15 h. Vuit colles de la ciutat — Castellers de Barcelona, de Sants, de la Vila de Gràcia, del Poble-sec, de la Sagrada Família, la Jove de Barcelona, els de Sarrià i la Colla Castellera de l'Esquerra de l'Eixample — hi aixequen castells. En directe a betevé.",
               es:"De 13 a 15 h. Ocho colles de la ciudad — Castellers de Barcelona, de Sants, de la Vila de Gràcia, del Poble-sec, de la Sagrada Família, la Jove de Barcelona, los de Sarrià y la Colla Castellera de l'Esquerra de l'Eixample — levantan castells. En directo en betevé.",
               en:"Runs 1:00–3:00 PM. Eight local colles — Castellers de Barcelona, Sants, Vila de Gràcia, Poble-sec, Sagrada Família, Jove de Barcelona, Sarrià and the Colla Castellera de l'Esquerra de l'Eixample — build human towers. Live on betevé."},
         tip:{ca:"Arribeu-hi cap a les 12 h; es talla l'accés quan la plaça s'omple. Silenci quan la gralla anuncia que puja un castell.",
              es:"Llegad sobre las 12 h; se corta el acceso cuando la plaza se llena. Silencio cuando la gralla anuncia que sube un castell.",
              en:"Arrive by noon; access is cut once the square is full. Stay quiet when the gralla signals a tower going up."} },
-      { time:{ca:"18 h",es:"18 h",en:"6:00 PM"}, tags:["free"],
+      { time:{ca:"18 h",es:"18 h",en:"6:00 PM"}, tags:["free"], v:"catalunya",
         title:{ca:"Cavalcada de la Mercè",es:"Cabalgata de la Mercè",en:"Cavalcada de La Mercè"},
-        loc:{ca:"Surt de la plaça de Catalunya",es:"Sale de la plaza de Catalunya",en:"Departs Plaça de Catalunya"}, map:"Plaça de Catalunya, Barcelona",
+        loc:{ca:"Surt de la plaça de Catalunya",es:"Sale de la plaza de Catalunya",en:"Departs Plaça de Catalunya"},
         desc:{ca:"La gran cercavila de la tarda surt amb les llanternes de Xangai i arriba a la plaça de Sant Jaume cap a les 19 h.",
               es:"El gran pasacalle de la tarde sale con las linternas de Shanghái y llega a la plaza de Sant Jaume sobre las 19 h.",
               en:"The main afternoon procession sets off with the Shanghai lantern performers, reaching Plaça de Sant Jaume around 7:00 PM."} },
-      { time:{ca:"19.30 i 21 h",es:"19.30 y 21 h",en:"7:30 & 9:00 PM"}, tags:["free"],
+      { time:{ca:"19.30 i 21 h",es:"19.30 y 21 h",en:"7:30 & 9:00 PM"}, tags:["free"], v:"guell",
         title:{ca:"Decostumari",es:"Decostumari",en:"Decostumari"},
-        loc:{ca:"Park Güell",es:"Park Güell",en:"Park Güell"}, map:"Park Güell, Barcelona",
+        loc:{ca:"Park Güell",es:"Park Güell",en:"Park Güell"},
         desc:{ca:"L'Esbord i l'Orquestra de Músiques d'Arrel de Catalunya presenten dansa tradicional catalana i d'inspiració gaudiniana amb set esbarts de la ciutat. Dues funcions.",
               es:"L'Esbord y la Orquestra de Músiques d'Arrel de Catalunya presentan danza tradicional catalana y de inspiración gaudiniana con siete esbarts de la ciudad. Dos funciones.",
               en:"L'Esbord and the Orquestra de Músiques d'Arrel de Catalunya stage traditional Catalan and Gaudí-inspired dance with seven of the city's esbarts. Two performances."} },
-      { time:{ca:"21 h i 22 h",es:"21 h y 22 h",en:"9:00 & 10:00 PM"}, tags:["miss","free"],
+      { time:{ca:"21 h i 22 h",es:"21 h y 22 h",en:"9:00 & 10:00 PM"}, tags:["miss","free"], v:"gas",
         title:{ca:"El fil vermell — 750 drons",es:"El hilo rojo — 750 drones",en:"El fil vermell — 750 drones"},
-        loc:{ca:"Espigó del Gas, la Barceloneta",es:"Espigón del Gas, la Barceloneta",en:"Espigó del Gas, Barceloneta"}, map:"Espigó del Gas, Barcelona",
+        loc:{ca:"Espigó del Gas, la Barceloneta",es:"Espigón del Gas, la Barceloneta",en:"Espigó del Gas, Barceloneta"},
         desc:{ca:"Flock Drone Art Studio fa volar 750 drons amb «El fil vermell. De Barcelona a Xangai»: símbols de les dues ciutats que apareixen, es transformen i s'entrellacen. Dues sessions de vint minuts, separades per una hora.",
               es:"Flock Drone Art Studio hace volar 750 drones con «El hilo rojo. De Barcelona a Shanghái»: símbolos de las dos ciudades que aparecen, se transforman y se entrelazan. Dos sesiones de veinte minutos, separadas por una hora.",
               en:"Flock Drone Art Studio flies 750 drones in \u201CThe Red Thread: From Barcelona to Shanghai\u201D — symbols of both cities appearing, transforming and intertwining. Two twenty-minute sessions, an hour apart."},
         tip:{ca:"El punt recomanat és la platja del Somorrostro, al costat de l'Hospital del Mar. La Barceloneta i Sant Miquel també van bé. Metro: Barceloneta (L4).",
              es:"El punto recomendado es la playa del Somorrostro, junto al Hospital del Mar. La Barceloneta y Sant Miquel también van bien. Metro: Barceloneta (L4).",
              en:"Official best view is Platja del Somorrostro by Hospital del Mar. Barceloneta and Sant Miquel also work. Metro: Barceloneta (L4)."} },
-      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"],
+      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"], v:"fusta",
         title:{ca:"Emergency Exit — La Fura dels Baus i Satori",es:"Emergency Exit — La Fura dels Baus y Satori",en:"Emergency Exit — La Fura dels Baus & Satori"},
-        loc:{ca:"Moll de la Fusta",es:"Moll de la Fusta",en:"Moll de la Fusta"}, map:"Moll de la Fusta, Barcelona",
+        loc:{ca:"Moll de la Fusta",es:"Moll de la Fusta",en:"Moll de la Fusta"},
         desc:{ca:"Un espectacle de gran format que fon so, moviment i imatge en un viatge per un món que s'ensorra. Visuals d'Eyesberg i música de Satori.",
               es:"Un espectáculo de gran formato que funde sonido, movimiento e imagen en un viaje por un mundo que se derrumba. Visuales de Eyesberg y música de Satori.",
               en:"A large-format show fusing sound, movement and image into a journey through a collapsing world. Visuals by Eyesberg, music by Satori."} }
@@ -381,13 +471,13 @@ const DAYS = [
     events:[
       { time:{ca:"Vespre",es:"Noche",en:"Evening"}, tags:["free"],
         title:{ca:"Música Mercè i BAM — per tota la ciutat",es:"Música Mercè y BAM — por toda la ciudad",en:"Música Mercè & BAM — citywide"},
-        loc:{ca:"Setze escenaris repartits per la ciutat",es:"Dieciséis escenarios repartidos por la ciudad",en:"16 stages across the city"},
+        loc:{ca:"Catorze espais, setze escenaris",es:"Catorce espacios, dieciséis escenarios",en:"Fourteen venues, sixteen stages"},
         desc:{ca:"Dins del programa de 109 concerts. Nacho Vegas, Els Amics de les Arts, Els Catarres, Svetlana, Maria Jaume, Sexenni, Buhos i La Pegatina, entre d'altres, al llarg del cap de setmana.",
               es:"Dentro del programa de 109 conciertos. Nacho Vegas, Els Amics de les Arts, Els Catarres, Svetlana, Maria Jaume, Sexenni, Buhos y La Pegatina, entre otros, a lo largo del fin de semana.",
               en:"Part of the 109-concert programme. Nacho Vegas, Els Amics de les Arts, Els Catarres, Svetlana, Maria Jaume, Sexenni, Buhos and La Pegatina are among the acts across the weekend."} },
-      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"],
+      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"], v:"gas",
         title:{ca:"Festival Pirotècnic Internacional — França",es:"Festival Pirotécnico Internacional — Francia",en:"Festival Pirotècnic Internacional — France"},
-        loc:{ca:"Espigó del Gas",es:"Espigón del Gas",en:"Espigó del Gas"}, map:"Espigó del Gas, Barcelona",
+        loc:{ca:"Espigó del Gas",es:"Espigón del Gas",en:"Espigó del Gas"},
         desc:{ca:"Primera de les dues nits del concurs: vint minuts a càrrec de Pirotècnia FWF Concept, un equip francès amb quaranta anys d'ofici.",
               es:"Primera de las dos noches del concurso: veinte minutos a cargo de Pirotècnia FWF Concept, un equipo francés con cuarenta años de oficio.",
               en:"First of two competition nights — a twenty-minute display by Pirotècnia FWF Concept, a French team with forty years behind them."},
@@ -401,63 +491,63 @@ const DAYS = [
     title:{ca:"Correfoc",es:"Correfoc",en:"Correfoc"},
     note:{ca:"Des de les 11 h",es:"Desde las 11 h",en:"From 11:00 AM"},
     events:[
-      { time:{ca:"11 h",es:"11 h",en:"11:00 AM"}, tags:["free"],
+      { time:{ca:"11 h",es:"11 h",en:"11:00 AM"}, tags:["free"], v:"santjaume",
         title:{ca:"Matí bastoner i Mercè Dansa",es:"Mañana bastonera y Mercè Dansa",en:"Matí bastoner & Mercè Dansa"},
-        loc:{ca:"Plaça de Sant Jaume · avinguda de la Catedral",es:"Plaza de Sant Jaume · avenida de la Catedral",en:"Plaça de Sant Jaume · Av. de la Catedral"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"Plaça de Sant Jaume · avinguda de la Catedral",es:"Plaza de Sant Jaume · avenida de la Catedral",en:"Plaça de Sant Jaume · Av. de la Catedral"},
         desc:{ca:"Ball de bastons al matí, juntament amb el programa de Mercè Dansa a l'avinguda de la Catedral.",
               es:"Ball de bastons por la mañana, junto con el programa de Mercè Dansa en la avenida de la Catedral.",
               en:"Morning stick-dance (Ball de Bastons), alongside the Mercè Dansa programme on Avinguda de la Catedral."} },
-      { time:{ca:"11 – 12 h",es:"11 – 12 h",en:"11 AM – 12 PM"}, tags:["free"],
+      { time:{ca:"11 – 12 h",es:"11 – 12 h",en:"11 AM – 12 PM"}, tags:["free"], v:"comas",
         title:{ca:"Girafes en ruta",es:"Girafes en ruta",en:"Girafes en Ruta"},
-        loc:{ca:"Plaça Comas, les Corts",es:"Plaza Comas, les Corts",en:"Plaça Comas, Les Corts"}, map:"Plaça Comas, Barcelona",
+        loc:{ca:"Plaça de Comas, les Corts",es:"Plaza de Comas, les Corts",en:"Plaça de Comas, Les Corts"},
         desc:{ca:"Un espectacle itinerant i musical per a tota la família, dins la nova programació del districte de les Corts.",
               es:"Un espectáculo itinerante y musical para toda la familia, dentro de la nueva programación del distrito de les Corts.",
               en:"A touring musical street show for families, part of the new Les Corts district programming."} },
-      { time:{ca:"16.45 h",es:"16.45 h",en:"4:45 PM"}, tags:["free"],
+      { time:{ca:"16.45 h",es:"16.45 h",en:"4:45 PM"}, tags:["free"], v:"gracia",
         title:{ca:"La Tabalada",es:"La Tabalada",en:"La Tabalada"},
-        loc:{ca:"Passeig de Gràcia",es:"Paseo de Gracia",en:"Passeig de Gràcia"}, map:"Passeig de Gràcia, Barcelona",
+        loc:{ca:"Passeig de Gràcia",es:"Paseo de Gracia",en:"Passeig de Gràcia"},
         desc:{ca:"Una cercavila de percussió que marca el ritme de tota la nit de correfoc.",
               es:"Un pasacalle de percusión que marca el ritmo de toda la noche de correfoc.",
               en:"A percussion parade that sets the rhythm running through the whole correfoc evening."} },
-      { time:{ca:"17.30 h",es:"17.30 h",en:"5:30 PM"}, tags:["free"],
+      { time:{ca:"17.30 h",es:"17.30 h",en:"5:30 PM"}, tags:["free"], v:"santjaume",
         title:{ca:"Cloenda del Mercè Dansa",es:"Clausura del Mercè Dansa",en:"Cloenda del Mercè Dansa"},
-        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"},
         desc:{ca:"Acte de cloenda del programa de Mercè Dansa.",
               es:"Acto de clausura del programa de Mercè Dansa.",
               en:"Closing of the Mercè Dansa programme."} },
-      { time:{ca:"18 h",es:"18 h",en:"6:00 PM"}, tags:["free"],
+      { time:{ca:"18 h",es:"18 h",en:"6:00 PM"}, tags:["free"], v:"gracia",
         title:{ca:"Correfoc dels petits",es:"Correfoc de los pequeños",en:"Correfoc dels Petits — kids' fire run"},
-        loc:{ca:"Pg. de Gràcia · de Consell de Cent a Provença",es:"P.º de Gracia · de Consell de Cent a Provença",en:"Pg. de Gràcia · Consell de Cent to Provença"}, map:"Passeig de Gràcia, Barcelona",
+        loc:{ca:"Pg. de Gràcia · de Consell de Cent a Provença",es:"P.º de Gracia · de Consell de Cent a Provença",en:"Pg. de Gràcia · Consell de Cent to Provença"},
         desc:{ca:"Un correfoc més curt i suau per a famílies, que acaba a l'altura del carrer de Provença: un bon lloc per veure després la Porta de l'Infern de prop.",
               es:"Un correfoc más corto y suave para familias, que termina a la altura de la calle de Provença: un buen sitio para ver después la Porta de l'Infern de cerca.",
               en:"A gentler, shorter fire run for families, finishing near Carrer de Provença — a good place to then see the Porta de l'Infern up close."} },
-      { time:{ca:"19 h",es:"19 h",en:"7:00 PM"}, tags:["free"],
+      { time:{ca:"19 h",es:"19 h",en:"7:00 PM"}, tags:["free"], v:"santjaume",
         title:{ca:"El Galop de la Mercè",es:"El Galop de la Mercè",en:"El Galop de La Mercè"},
-        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"},
         desc:{ca:"Una ballada oberta i participativa a la plaça.",
               es:"Un baile abierto y participativo en la plaza.",
               en:"An open, participatory dance in the square."} },
-      { time:{ca:"20 h",es:"20 h",en:"8:00 PM"}, tags:["head","free"],
+      { time:{ca:"20 h",es:"20 h",en:"8:00 PM"}, tags:["head","free"], v:"bogatell",
         title:{ca:"Escenari Mediterràniament",es:"Escenario Mediterràniament",en:"Escenari Mediterràniament"},
-        loc:{ca:"Platja del Bogatell",es:"Playa del Bogatell",en:"Platja del Bogatell"}, map:"Platja del Bogatell, Barcelona",
+        loc:{ca:"Platja del Bogatell",es:"Playa del Bogatell",en:"Platja del Bogatell"},
         desc:{ca:"La Pegatina i Love of Lesbian encapçalen l'escenari de la platja.",
               es:"La Pegatina y Love of Lesbian encabezan el escenario de la playa.",
               en:"La Pegatina and Love of Lesbian headline the beach stage."},
         tip:{ca:"Coincideix amb el correfoc: hi ha entre 25 i 30 minuts de metro (L4 cap a L2/L1). Trieu-ne un.",
              es:"Coincide con el correfoc: hay entre 25 y 30 minutos de metro (L4 hacia L2/L1). Elegid uno.",
              en:"Clashes with the correfoc, 25–30 min apart by metro (L4 to L2/L1). Pick one."} },
-      { time:{ca:"20.30 h",es:"20.30 h",en:"8:30 PM"}, tags:["miss","free"],
+      { time:{ca:"20.30 h",es:"20.30 h",en:"8:30 PM"}, tags:["miss","free"], v:"gracia",
         title:{ca:"Ceptrotada i correfoc de la Mercè",es:"Ceptrotada y correfoc de la Mercè",en:"Ceptrotada & Correfoc de La Mercè"},
-        loc:{ca:"Pg. de Gràcia amb Provença",es:"P.º de Gracia con Provença",en:"Pg. de Gràcia at Carrer de Provença"}, map:"Passeig de Gràcia i Carrer de Provença, Barcelona",
+        loc:{ca:"Pg. de Gràcia amb Provença",es:"P.º de Gracia con Provença",en:"Pg. de Gràcia at Carrer de Provença"},
         desc:{ca:"Comença amb la Ceptrotada: totes les colles encenen alhora ceptrots, forques i estendards, amb en Llucifer i la Diablessa al capdavant. Després s'encén la nova Porta de l'Infern, un arc de catorze metres d'amplada i set d'alçada fet amb prop de mil cossos fragmentats, obra de l'artista Daniel Esteban, d'on surten els diables, els dracs i les bèsties de foc.",
               es:"Empieza con la Ceptrotada: todas las colles encienden a la vez ceptrots, horcas y estandartes, con Llucifer y la Diablessa al frente. Después se enciende la nueva Porta de l'Infern, un arco de catorce metros de ancho y siete de alto hecho con cerca de mil cuerpos fragmentados, obra del artista Daniel Esteban, de donde salen los diables, los dragones y las bestias de fuego.",
               en:"Opens with the Ceptrotada — every colla lighting its ceptrots, forks and banners at once, led by Llucifer and the Diablessa. Then the new Porta de l'Infern ignites: a fourteen-metre-wide, seven-metre-tall arc of roughly a thousand fragmented bodies by artist Daniel Esteban, from which the devils, dragons and fire-beasts emerge."},
         tip:{ca:"Si us hi voleu ficar: roba de cotó, calçat tancat i ulls protegits. Si ho mireu una passa enrere, no cal res.",
              es:"Si queréis meteros: ropa de algodón, calzado cerrado y ojos protegidos. Si lo miráis un paso atrás, no hace falta nada.",
              en:"Going in close: cotton clothing, closed shoes, eye protection. Watching from a step back needs none of it."} },
-      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"],
+      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"], v:"gas",
         title:{ca:"Festival Pirotècnic Internacional — la Xina",es:"Festival Pirotécnico Internacional — China",en:"Festival Pirotècnic Internacional — China"},
-        loc:{ca:"Espigó del Gas",es:"Espigón del Gas",en:"Espigó del Gas"}, map:"Espigó del Gas, Barcelona",
+        loc:{ca:"Espigó del Gas",es:"Espigón del Gas",en:"Espigó del Gas"},
         desc:{ca:"Segona nit del concurs, a càrrec d'un equip pirotècnic xinès.",
               es:"Segunda noche del concurso, a cargo de un equipo pirotécnico chino.",
               en:"The competition's second night, from a Chinese pyrotechnics team."} }
@@ -468,37 +558,36 @@ const DAYS = [
     title:{ca:"Piromusical",es:"Piromusical",en:"Piromusical"},
     note:{ca:"Des de les 11 h",es:"Desde las 11 h",en:"From 11:00 AM"},
     events:[
-      { time:{ca:"11 h",es:"11 h",en:"11:00 AM"}, tags:["free"],
+      { time:{ca:"11 h",es:"11 h",en:"11:00 AM"}, tags:["free"], v:"catedral",
         title:{ca:"76è Concurs de Colles Sardanistes",es:"76.º Concurso de Colles Sardanistas",en:"76th Concurs de Colles de Sardana"},
-        loc:{ca:"Avinguda de la Catedral",es:"Avenida de la Catedral",en:"Avinguda de la Catedral"}, map:"Avinguda de la Catedral, Barcelona",
+        loc:{ca:"Avinguda de la Catedral",es:"Avenida de la Catedral",en:"Avinguda de la Catedral"},
         desc:{ca:"Concurs tradicional de sardana davant de la catedral.",
               es:"Concurso tradicional de sardana delante de la catedral.",
               en:"Traditional sardana dance competition in front of the cathedral."} },
-      { time:{ca:"12 h",es:"12 h",en:"12:00 PM"}, tags:["free"],
+      { time:{ca:"12 h",es:"12 h",en:"12:00 PM"}, tags:["free"], v:"santjaume",
         title:{ca:"Diada castellera històrica",es:"Diada castellera histórica",en:"Diada Castellera Històrica"},
-        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"Plaça de Sant Jaume",es:"Plaza de Sant Jaume",en:"Plaça de Sant Jaume"},
         desc:{ca:"Una segona diada de castells, amb les colles convidades Minyons de Terrassa i Colla Jove Xiquets de Valls al costat de les colles de Barcelona.",
               es:"Una segunda diada de castells, con las colles invitadas Minyons de Terrassa y Colla Jove Xiquets de Valls junto a las colles de Barcelona.",
               en:"A second human-tower exhibition, with elite visiting colles Minyons de Terrassa and Colla Jove Xiquets de Valls joining the Barcelona hosts."},
         tip:{ca:"Si us vau perdre la de dijous, en aquesta sovint s'hi veuen castells més alts i tècnics.",
              es:"Si os perdisteis la del jueves, en esta a menudo se ven castells más altos y técnicos.",
              en:"If you missed Thursday, this one often brings taller, more technical towers."} },
-      { time:{ca:"18 h",es:"18 h",en:"6:00 PM"}, tags:["free"],
+      { time:{ca:"18 h",es:"18 h",en:"6:00 PM"}, tags:["free"], v:"sarria",
         title:{ca:"Girafes en ruta",es:"Girafes en ruta",en:"Girafes en Ruta"},
-        loc:{ca:"Plaça de Sarrià",es:"Plaza de Sarrià",en:"Plaça de Sarrià"}, map:"Plaça de Sarrià, Barcelona",
+        loc:{ca:"Plaça de Sarrià",es:"Plaza de Sarrià",en:"Plaça de Sarrià"},
         desc:{ca:"Segona i última parada de l'espectacle familiar itinerant, dins la nova programació del districte de Sarrià.",
               es:"Segunda y última parada del espectáculo familiar itinerante, dentro de la nueva programación del distrito de Sarrià.",
               en:"The touring family show's second and final stop, in the new Sarrià district programming."} },
-      { time:{ca:"20.30 h",es:"20.30 h",en:"8:30 PM"}, tags:["free"],
+      { time:{ca:"20.30 h",es:"20.30 h",en:"8:30 PM"}, tags:["free"], v:"santjaume",
         title:{ca:"Toc a Plegar",es:"Toc a Plegar",en:"Toc a Plegar"},
-        loc:{ca:"De Sant Jaume al Palau de la Virreina",es:"De Sant Jaume al Palau de la Virreina",en:"Sant Jaume to Palau de la Virreina"}, map:"Plaça de Sant Jaume, Barcelona",
+        loc:{ca:"De Sant Jaume al Palau de la Virreina",es:"De Sant Jaume al Palau de la Virreina",en:"Sant Jaume to Palau de la Virreina"},
         desc:{ca:"La cercavila de comiat surt de Sant Jaume i arriba a la Virreina cap a les 22 h, on la contradansa dels Gegants de Barcelona tanca formalment la festa.",
               es:"El pasacalle de despedida sale de Sant Jaume y llega a la Virreina sobre las 22 h, donde la contradansa de los Gegants de Barcelona cierra formalmente la fiesta.",
               en:"The closing march sets off from Sant Jaume, reaching the Virreina around 10:00 PM, where the contradansa of the Gegants de Barcelona formally ends the festival."} },
-      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["fin","free"],
+      { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["fin","free"], v:"icaria",
         title:{ca:"Piromusical de la Mercè",es:"Piromusical de la Mercè",en:"Piromusical de La Mercè"},
         loc:{ca:"Es dispara des de l'espigó del Bogatell · es mira des de la Nova Icària",es:"Se lanza desde el espigón del Bogatell · se mira desde la Nova Icària",en:"Fired from Espigó del Bogatell · watched from Nova Icària"},
-        map:"Platja de la Nova Icària, Barcelona",
         desc:{ca:"Focs artificials a càrrec de Pirotècnia Igual, coreografiats sobre una tria musical de Josep Montero, d'Oques Grasses. Enguany es trasllada des de l'emplaçament tradicional de Montjuïc, en obres per la Fira. En directe a betevé des de les 21.30 h.",
               es:"Fuegos artificiales a cargo de Pirotècnia Igual, coreografiados sobre una selección musical de Josep Montero, de Oques Grasses. Este año se traslada desde el emplazamiento tradicional de Montjuïc, en obras por la Fira. En directo en betevé desde las 21.30 h.",
               en:"Fireworks by Pirotècnia Igual choreographed to a selection curated by Josep Montero of Oques Grasses. Moved this year from the traditional Montjuïc site, under construction for the Fira. Live on betevé from 9:30 PM."},
@@ -508,46 +597,154 @@ const DAYS = [
     ]}
 ];
 
-const VENUES = [
-  { n:"Plaça de Sant Jaume", map:"Plaça de Sant Jaume, Barcelona",
-    d:{ca:"Toc d'Inici · les dues diades castelleres · El Galop · Toc a Plegar",
-       es:"Toc d'Inici · las dos diadas castelleras · El Galop · Toc a Plegar",
-       en:"Toc d'Inici · both diades castelleres · El Galop · Toc a Plegar"} },
-  { n:"Passeig de Gràcia", map:"Passeig de Gràcia, Barcelona",
-    d:{ca:"Correfoc, dissabte 26 des de les 16.45 h · porta a Provença",
-       es:"Correfoc, sábado 26 desde las 16.45 h · puerta en Provença",
-       en:"Correfoc, Sat 26 from 4:45 PM · gate at Carrer de Provença"} },
-  { n:"Espigó del Gas", map:"Espigó del Gas, Barcelona",
-    d:{ca:"Drons (dijous) · focs internacionals (divendres i dissabte) · metro Barceloneta L4",
-       es:"Drones (jueves) · fuegos internacionales (viernes y sábado) · metro Barceloneta L4",
-       en:"Drones (Thu) · international fireworks (Fri & Sat) · Metro Barceloneta L4"} },
-  { n:"Platja del Bogatell", map:"Platja del Bogatell, Barcelona",
-    d:{ca:"Concerts de dissabte · Love of Lesbian a les 20 h · metro Llacuna o Poblenou L4",
-       es:"Conciertos del sábado · Love of Lesbian a las 20 h · metro Llacuna o Poblenou L4",
-       en:"Saturday concerts · Love of Lesbian 8:00 PM · Metro Llacuna or Poblenou L4"} },
-  { n:"Platja de la Nova Icària", map:"Platja de la Nova Icària, Barcelona",
-    d:{ca:"Zona de públic del Piromusical, diumenge 27 a les 22 h · metro Ciutadella Vila Olímpica L4",
-       es:"Zona de público del Piromusical, domingo 27 a las 22 h · metro Ciutadella Vila Olímpica L4",
-       en:"Piromusical viewing area, Sun 27, 10:00 PM · Metro Ciutadella Vila Olímpica L4"} },
-  { n:"Park Güell", map:"Park Güell, Barcelona",
-    d:{ca:"Decostumari, dijous 24, a les 19.30 i 21 h",
-       es:"Decostumari, jueves 24, a las 19.30 y 21 h",
-       en:"Decostumari, Thu 24, 7:30 & 9:00 PM"} },
-  { n:"Moll de la Fusta", map:"Moll de la Fusta, Barcelona",
-    d:{ca:"Emergency Exit, dijous 24, a les 22 h",
-       es:"Emergency Exit, jueves 24, a las 22 h",
-       en:"Emergency Exit, Thu 24, 10:00 PM"} },
-  { n:"Palau de la Virreina", map:"Palau de la Virreina, La Rambla 99, Barcelona",
-    d:{ca:"Punt d'informació oficial · la Rambla, 99 · +34 933 16 10 00",
-       es:"Punto de información oficial · la Rambla, 99 · +34 933 16 10 00",
-       en:"Official info point · La Rambla 99 · +34 933 16 10 00"} }
+const VENUE_LIST = [
+  { k:"santjaume", d:{ca:"Toc d'Inici · les dues diades castelleres · El Galop · Toc a Plegar",
+      es:"Toc d'Inici · las dos diadas castelleras · El Galop · Toc a Plegar",
+      en:"Toc d'Inici · both diades castelleres · El Galop · Toc a Plegar"} },
+  { k:"gracia", d:{ca:"Correfoc, dissabte 26 des de les 16.45 h · porta a Provença",
+      es:"Correfoc, sábado 26 desde las 16.45 h · puerta en Provença",
+      en:"Correfoc, Sat 26 from 4:45 PM · gate at Carrer de Provença"} },
+  { k:"gas", d:{ca:"Drons (dijous) · focs internacionals (divendres i dissabte) · metro Barceloneta L4",
+      es:"Drones (jueves) · fuegos internacionales (viernes y sábado) · metro Barceloneta L4",
+      en:"Drones (Thu) · international fireworks (Fri & Sat) · Metro Barceloneta L4"} },
+  { k:"bogatell", d:{ca:"Concerts de dissabte · Love of Lesbian a les 20 h · metro Llacuna o Poblenou L4",
+      es:"Conciertos del sábado · Love of Lesbian a las 20 h · metro Llacuna o Poblenou L4",
+      en:"Saturday concerts · Love of Lesbian 8:00 PM · Metro Llacuna or Poblenou L4"} },
+  { k:"icaria", d:{ca:"Zona de públic del Piromusical, diumenge 27 a les 22 h · metro Ciutadella Vila Olímpica L4",
+      es:"Zona de público del Piromusical, domingo 27 a las 22 h · metro Ciutadella Vila Olímpica L4",
+      en:"Piromusical viewing area, Sun 27, 10:00 PM · Metro Ciutadella Vila Olímpica L4"} },
+  { k:"somorrostro", d:{ca:"El millor punt per veure els drons i els focs de l'espigó del Gas",
+      es:"El mejor punto para ver los drones y los fuegos del espigón del Gas",
+      en:"Best vantage point for the drones and the Espigó del Gas fireworks"} },
+  { k:"guell", d:{ca:"Decostumari, dijous 24, a les 19.30 i 21 h",
+      es:"Decostumari, jueves 24, a las 19.30 y 21 h",
+      en:"Decostumari, Thu 24, 7:30 & 9:00 PM"} },
+  { k:"fusta", d:{ca:"Emergency Exit, dijous 24, a les 22 h",
+      es:"Emergency Exit, jueves 24, a las 22 h",
+      en:"Emergency Exit, Thu 24, 10:00 PM"} },
+  { k:"catalunya", d:{ca:"Surt la Cavalcada, dijous 24 a les 18 h",
+      es:"Sale la Cabalgata, jueves 24 a las 18 h",
+      en:"Cavalcada departs, Thu 24 at 6:00 PM"} },
+  { k:"merce", d:{ca:"Matinades de grallers, dijous 24 a les 8 h",
+      es:"Matinades de grallers, jueves 24 a las 8 h",
+      en:"Matinades de Grallers, Thu 24 at 8:00 AM"} },
+  { k:"catedral", d:{ca:"Sabor de Gràcia · Mercè Dansa · concurs de sardanes",
+      es:"Sabor de Gràcia · Mercè Dansa · concurso de sardanas",
+      en:"Sabor de Gràcia · Mercè Dansa · sardana competition"} },
+  { k:"virreina", d:{ca:"Punt d'informació oficial · surt el seguici · la Rambla, 99",
+      es:"Punto de información oficial · sale el séquito · la Rambla, 99",
+      en:"Official info point · the procession departs · La Rambla 99"} },
+  { k:"comas", d:{ca:"Girafes en ruta, dissabte 26 al matí",
+      es:"Girafes en ruta, sábado 26 por la mañana",
+      en:"Girafes en Ruta, Sat 26 morning"} },
+  { k:"sarria", d:{ca:"Girafes en ruta, diumenge 27 a les 18 h",
+      es:"Girafes en ruta, domingo 27 a las 18 h",
+      en:"Girafes en Ruta, Sun 27 at 6:00 PM"} },
+  { k:"armengol", d:{ca:"Conservatori de Música de Xangai, dimecres 23 a les 21 h",
+      es:"Conservatorio de Música de Shanghái, miércoles 23 a las 21 h",
+      en:"Shanghai Conservatory of Music, Wed 23 at 9:00 PM"} }
 ];
 
-const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+/* ─── HELPERS ─── */
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+let L_CUR = "en", map = null, markers = {}, tileLayer = null;
 
-function render(L){
-  const t = T[L];
-  document.documentElement.lang = L;
+function links(v){
+  const ll = v.lat+","+v.lng, n = encodeURIComponent(v.n);
+  return [
+    ["Google Maps", `https://www.google.com/maps/search/?api=1&query=${ll}`],
+    ["Apple Maps",  `https://maps.apple.com/?q=${n}&ll=${ll}`],
+    ["Citymapper",  `https://citymapper.com/directions?endcoord=${ll}&endname=${n}`],
+    ["OpenStreetMap", `https://www.openstreetmap.org/?mlat=${v.lat}&mlon=${v.lng}#map=17/${v.lat}/${v.lng}`]
+  ];
+}
+
+function openSheet(key){
+  const v = V[key], t = T[L_CUR];
+  let h = `<h3>${esc(v.n)}</h3><div class="sub">${t.openIn}</div>`;
+  links(v).forEach(([label,url]) => {
+    h += `<a href="${url}" target="_blank" rel="noopener">${label}<span class="ar">↗</span></a>`;
+  });
+  h += `<button class="copy" data-ll="${v.lat},${v.lng}">${t.copy}<span class="ar">⧉</span></button>`;
+  h += `<button class="close">${t.close}</button>`;
+  const sheet = document.getElementById("sheet");
+  sheet.innerHTML = h;
+  document.getElementById("ovl").classList.add("open");
+  sheet.querySelector(".close").onclick = closeSheet;
+  const cp = sheet.querySelector(".copy");
+  cp.onclick = () => {
+    const txt = cp.dataset.ll;
+    const done = () => { cp.firstChild.nodeValue = T[L_CUR].copied; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, done);
+    else done();
+  };
+}
+function closeSheet(){ document.getElementById("ovl").classList.remove("open"); }
+document.getElementById("ovl").addEventListener("click", e => { if (e.target.id === "ovl") closeSheet(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeSheet(); });
+
+function focusVenue(key){
+  if (!map) return;
+  const v = V[key];
+  document.getElementById("map").scrollIntoView({behavior:"smooth", block:"center"});
+  setTimeout(() => { map.setView([v.lat, v.lng], 16, {animate:true}); if (markers[key]) markers[key].openPopup(); }, 450);
+}
+
+/* ─── MAP ─── */
+function isDark(){
+  return document.documentElement.dataset.theme === "dark" ||
+    (document.documentElement.dataset.theme !== "light" &&
+     window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+}
+function tileUrl(){
+  return isDark()
+    ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+    : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
+}
+function buildMap(){
+  if (typeof L === "undefined") return;
+  const el = document.getElementById("map");
+  if (!el) return;
+  if (map) { map.remove(); map = null; markers = {}; }
+  map = L.map(el, {scrollWheelZoom:false, attributionControl:true});
+  tileLayer = L.tileLayer(tileUrl(), {
+    maxZoom: 19, subdomains:"abcd",
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'
+  }).addTo(map);
+
+  const pts = [];
+  VENUE_LIST.forEach((row, i) => {
+    const v = V[row.k];
+    pts.push([v.lat, v.lng]);
+    const icon = L.divIcon({
+      className:"", iconSize:[26,26], iconAnchor:[13,13], popupAnchor:[0,-14],
+      html:`<div class="mk${v.big?"":" sm"}">${i+1}</div>`
+    });
+    const m = L.marker([v.lat, v.lng], {icon, title:v.n}).addTo(map);
+    m.bindPopup(
+      `<div class="pop-t">${esc(v.n)}</div>
+       <div class="pop-d">${esc(row.d[L_CUR])}</div>
+       <button class="pop-b" data-go="${row.k}">${esc(T[L_CUR].dirs)} ↗</button>`
+    );
+    markers[row.k] = m;
+  });
+  map.fitBounds(L.latLngBounds(pts), {padding:[38,38]});
+  map.on("popupopen", e => {
+    const b = e.popup.getElement().querySelector("[data-go]");
+    if (b) b.onclick = () => openSheet(b.dataset.go);
+  });
+}
+if (window.matchMedia) {
+  const mq = window.matchMedia("(prefers-color-scheme: dark)");
+  const h = () => { if (tileLayer) tileLayer.setUrl(tileUrl()); };
+  mq.addEventListener ? mq.addEventListener("change", h) : mq.addListener(h);
+}
+
+/* ─── RENDER ─── */
+function render(L_){
+  L_CUR = L_;
+  const t = T[L_];
+  document.documentElement.lang = L_;
   document.getElementById("k-eyebrow").textContent = t.eyebrow;
   document.getElementById("k-meta").innerHTML = t.meta.map(
     m => `<div class="hm"><div class="k">${esc(m[0])}</div><div class="v">${esc(m[1])}</div></div>`).join("");
@@ -555,41 +752,37 @@ function render(L){
 
   const ids = ["ess","d23","d24","d25","d26","d27","map","know"];
   document.getElementById("k-nav").innerHTML = ids.map((id,i) =>
-    `<a href="#${id}"${id==="d23"?' class="on"':""}>${esc(t.nav[i])}</a>`).join("");
+    `<a href="#${id}" data-t="${id}">${esc(t.nav[i])}</a>`).join("");
 
   let h = "";
-
   h += `<section class="sec ess" id="ess"><div class="lbl">${esc(t.essLbl)}</div><h2>${esc(t.essTitle)}</h2><ol>`;
-  t.ess.forEach(e => {
-    h += `<li><div class="t">${esc(e.t)}</div><div class="w">${esc(e.w)}</div><div class="d">${esc(e.d)}</div></li>`;
-  });
+  t.ess.forEach(e => { h += `<li><div class="t">${esc(e.t)}</div><div class="w">${esc(e.w)}</div><div class="d">${esc(e.d)}</div></li>`; });
   h += `</ol></section>`;
 
   DAYS.forEach(d => {
     h += `<section class="day" id="${d.id}"><div class="day-head"><div class="day-num">${d.num}</div>`;
-    h += `<div class="day-txt"><div class="dow">${esc(d.dow[L])}</div><h2>${esc(d.title[L])}</h2><div class="note">${esc(d.note[L])}</div></div></div>`;
+    h += `<div class="day-txt"><div class="dow">${esc(d.dow[L_])}</div><h2>${esc(d.title[L_])}</h2><div class="note">${esc(d.note[L_])}</div></div></div>`;
     h += `<div class="timeline">`;
     d.events.forEach(e => {
-      h += `<div class="ev"><div class="ev-top"><span class="ev-time">${esc(e.time[L])}</span><span class="ev-tags">`;
-      e.tags.forEach(tag => {
-        const cls = tag === "free" ? "fr" : "hi";
-        h += `<span class="tg ${cls}">${esc(TAG[tag][L])}</span>`;
-      });
-      h += `</span></div><h3>${esc(e.title[L])}</h3><div class="loc">${esc(e.loc[L])}`;
-      if (e.map) h += ` <a href="${M(e.map)}" target="_blank" rel="noopener">${esc(t.dirs)}</a>`;
-      h += `</div><p>${esc(e.desc[L])}</p>`;
-      if (e.tip) h += `<div class="tip"><b>${esc(t.tipLbl)}</b> — ${esc(e.tip[L])}</div>`;
+      h += `<div class="ev"><div class="ev-top"><span class="ev-time">${esc(e.time[L_])}</span><span class="ev-tags">`;
+      e.tags.forEach(tag => { h += `<span class="tg ${tag==="free"?"fr":"hi"}">${esc(TAG[tag][L_])}</span>`; });
+      h += `</span></div><h3>${esc(e.title[L_])}</h3><div class="loc">${esc(e.loc[L_])}`;
+      if (e.v) h += ` <button class="golink" data-go="${e.v}">${esc(t.dirs)} ↗</button>`;
+      h += `</div><p>${esc(e.desc[L_])}</p>`;
+      if (e.tip) h += `<div class="tip"><b>${esc(t.tipLbl)}</b> — ${esc(e.tip[L_])}</div>`;
       h += `</div>`;
     });
     h += `</div></section>`;
   });
 
-  h += `<section class="sec" id="map"><div class="lbl">${esc(t.mapLbl)}</div><h2>${esc(t.mapTitle)}</h2>`;
-  h += `<div class="mf"><iframe loading="lazy" title="${esc(t.mapTitle)}" src="https://www.openstreetmap.org/export/embed.html?bbox=2.1400%2C41.3700%2C2.2150%2C41.4000&amp;layer=mapnik&amp;marker=41.3828%2C2.1772"></iframe></div>`;
-  h += `<div class="mcap"><span>${esc(t.mapCap)}</span><a href="${M("Plaça de Sant Jaume, Barcelona")}" target="_blank" rel="noopener">${esc(t.mapLink)}</a></div>`;
+  h += `<section class="sec" id="map-sec"><div class="lbl">${esc(t.mapLbl)}</div><h2>${esc(t.mapTitle)}</h2>`;
+  h += `<div id="map"></div><div class="maphint"><span>${esc(t.mapHint)}</span></div>`;
   h += `<div class="grid">`;
-  VENUES.forEach(v => {
-    h += `<div class="gi"><h4>${esc(v.n)}</h4><p>${esc(v.d[L])}</p><a href="${M(v.map)}" target="_blank" rel="noopener">${esc(t.dirs)}</a></div>`;
+  VENUE_LIST.forEach((row,i) => {
+    const v = V[row.k];
+    h += `<div class="gi"><h4>${i+1}. ${esc(v.n)}</h4><p>${esc(row.d[L_])}</p>
+      <button class="golink" data-map="${row.k}">${esc(t.onMap)} ↗</button>
+      <button class="golink" data-go="${row.k}" style="margin-left:14px">${esc(t.dirs)} ↗</button></div>`;
   });
   h += `</div><div class="callout"><b>${esc(t.calloutB)}</b>${esc(t.callout)}</div></section>`;
 
@@ -600,26 +793,64 @@ function render(L){
   document.getElementById("k-body").innerHTML = h;
   document.getElementById("k-foot1").innerHTML = t.foot1;
   document.getElementById("k-foot2").textContent = t.foot2;
+  document.getElementById("k-ver").textContent = "v" + VERSION;
+
+  document.getElementById("k-body").querySelectorAll("[data-go]").forEach(b => {
+    b.addEventListener("click", () => openSheet(b.dataset.go));
+  });
+  document.getElementById("k-body").querySelectorAll("[data-map]").forEach(b => {
+    b.addEventListener("click", () => focusVenue(b.dataset.map));
+  });
+
+  buildMap();
+  initSpy();
 }
 
+/* ─── SCROLLSPY ─── */
+let spyObs = null;
+function initSpy(){
+  if (spyObs) spyObs.disconnect();
+  const nav = document.getElementById("k-nav");
+  const linksA = [...nav.querySelectorAll("a")];
+  const targets = ["ess","d23","d24","d25","d26","d27","map-sec","know"]
+    .map(id => document.getElementById(id)).filter(Boolean);
+  const navKey = id => id === "map-sec" ? "map" : id;
+  let active = null;
+  const setActive = id => {
+    if (id === active) return;
+    active = id;
+    linksA.forEach(a => a.classList.toggle("on", a.dataset.t === navKey(id)));
+    const cur = linksA.find(a => a.dataset.t === navKey(id));
+    if (cur) {
+      const want = cur.offsetLeft - nav.clientWidth/2 + cur.offsetWidth/2;
+      nav.scrollTo({left: Math.max(0, want), behavior:"smooth"});
+    }
+  };
+  spyObs = new IntersectionObserver(entries => {
+    const vis = entries.filter(e => e.isIntersecting)
+      .sort((a,b) => a.boundingClientRect.top - b.boundingClientRect.top);
+    if (vis.length) setActive(vis[0].target.id);
+  }, {rootMargin:"-92px 0px -55% 0px", threshold:0});
+  targets.forEach(s => spyObs.observe(s));
+}
+
+/* ─── LANG ─── */
 document.querySelectorAll(".langs button").forEach(b => {
   b.addEventListener("click", () => {
     document.querySelectorAll(".langs button").forEach(x => x.classList.remove("on"));
     b.classList.add("on");
-    const L = b.dataset.lang;
-    render(L);
-    try { localStorage.setItem("merce-lang", L); } catch(e) {}
+    render(b.dataset.lang);
+    try { localStorage.setItem("merce-lang", b.dataset.lang); } catch(e) {}
   });
 });
-
 let start = "en";
 try {
   const saved = localStorage.getItem("merce-lang");
   if (saved && T[saved]) start = saved;
   else {
-    const nav = (navigator.language || "en").toLowerCase();
-    if (nav.startsWith("ca")) start = "ca";
-    else if (nav.startsWith("es")) start = "es";
+    const nl = (navigator.language || "en").toLowerCase();
+    if (nl.startsWith("ca")) start = "ca";
+    else if (nl.startsWith("es")) start = "es";
   }
 } catch(e) {}
 document.querySelectorAll(".langs button").forEach(x => x.classList.toggle("on", x.dataset.lang === start));
