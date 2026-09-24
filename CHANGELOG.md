@@ -13,6 +13,21 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.3.0] — 2026-09-24
+
+### Added
+- A download panel for the official Mercè app, opening from the practical
+  section. It links to the App Store and Google Play listings published by
+  Barcelona City Council, and uses the same panel as the directions links.
+
+### Changed
+- The date in each day header is now vertically centred against the heading
+  beside it and sized to match that block's height, rather than sitting at the
+  top and running short.
+- Times and labels in the timeline are aligned on their centres instead of
+  their baselines, and the labels are slightly larger, so rows such as
+  "Evening" or "Worth planning around" no longer sit low against the time.
+
 ## [1.2.0] — 2026-09-23
 
 ### Removed
@@ -82,7 +97,8 @@ For a content site rather than a library, the versions are read as:
 - All times cross-checked against the official programme from Barcelona City
   Council and betevé.
 
-[Unreleased]: https://github.com/Lexatarg/la-merce-2026/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/la-merce-2026/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/Lexatarg/la-merce-2026/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Lexatarg/la-merce-2026/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Lexatarg/la-merce-2026/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Lexatarg/la-merce-2026/releases/tag/v1.0.0
