@@ -23,6 +23,8 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Colours taken from the official programme: cream paper, royal blue type and a
   mint accent.
 - "Toc d'inici" is explained in Castilian and English as the opening call.
+- The date number sits in a fixed column, so every day's heading starts on the
+  same line at any screen size, with one-digit and two-digit dates alike.
 
 ### Notes
 - Where the official programme gives two different times or places for the

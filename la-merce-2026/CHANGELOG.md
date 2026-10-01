@@ -17,7 +17,8 @@ For a content site rather than a library, the versions are read as:
 
 ### Changed
 - Headings and titles use more open letter spacing, so they are easier to read.
-- The day header sits closer to its date number.
+- The date number sits in a fixed column, so every day's heading starts on the
+  same line at any screen size, with one-digit and two-digit dates alike.
 - The footer now says plainly that the page does not use cookies or collect
   any personal data.
 
