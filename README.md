@@ -12,17 +12,17 @@ Live at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcel
 | Festa Major de la Barceloneta 2026 | 1–4 October 2026 | [`festa-major-barceloneta-2026`](festa-major-barceloneta-2026/) |
 | La Mercè 2026 | 23–27 September 2026 | [`la-merce-2026`](la-merce-2026/) |
 
-## How it is organised
+## What each guide includes
 
-Each guide is a single self-contained HTML page in its own folder, with its own
-README and changelog. No build step, no dependencies, no tracking. The page at the
-root lists every guide.
+Every guide is a single page in its own folder and covers the festival day by day.
+It includes:
 
-To add a guide, create a folder named after the festival and the year, put the
-page in it as `index.html`, and add an entry to the list in the root `index.html`.
+- a timeline for each day with times, places and short descriptions
+- directions to every venue in the reader's usual maps app
+- practical information from the official programme, such as safety advice and
+  support points
 
-Version tags are prefixed with the folder name, for example
-`la-merce-2026-v1.3.0`.
+Each folder also has its own README and changelog.
 
 ## Sources
 
