@@ -13,6 +13,13 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.4.0] — 2026-10-01
+
+### Added
+- A light and dark mode button next to the language picker. The page still
+  follows the device setting until the reader chooses, and the choice is
+  remembered across every guide in the collection.
+
 ### Changed
 - Moved into the barcelona-fiestas collection. The page now lives at
   lexatarg.github.io/barcelona-fiestas/la-merce-2026/ and its version tags are
@@ -102,7 +109,8 @@ For a content site rather than a library, the versions are read as:
 - All times cross-checked against the official programme from Barcelona City
   Council and betevé.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.3.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.0...HEAD
+[1.4.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.3.0...la-merce-2026-v1.4.0
 [1.3.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.2.0...la-merce-2026-v1.3.0
 [1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.1.0...la-merce-2026-v1.2.0
 [1.1.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.0.0...la-merce-2026-v1.1.0

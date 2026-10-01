@@ -23,6 +23,10 @@
       --dark:#000;--dark-ink:#efece4;--dark-sub:#8f8b83;--accent:#f0714c;
     }
   }
+  :root[data-theme="dark"]{
+      --ink:#efece4;--paper:#111111;--sub:#98948b;--hair:rgba(239,236,228,.2);
+      --dark:#000;--dark-ink:#efece4;--dark-sub:#8f8b83;--accent:#f0714c;
+  }
   html{-webkit-text-size-adjust:100%;}
   body{margin:0;background:var(--paper);color:var(--ink);
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;
@@ -51,7 +55,15 @@
   footer{background:var(--dark);color:var(--dark-ink);margin-top:74px;padding:46px 22px 44px;}
   footer p{margin:0 0 14px;font-size:.84rem;color:var(--dark-sub);line-height:1.7;max-width:52ch;}
   @media (max-width:400px){ header{padding:32px 18px 38px;} main{padding:20px 18px 0;} footer{padding:40px 18px;} }
+  .langs{align-items:center;}
+  .theme{background:none;border:0;cursor:pointer;padding:6px 4px 6px 10px;margin:0;
+    color:inherit;display:inline-flex;align-items:center;line-height:0;}
+  .theme svg{width:15px;height:15px;display:block;}
+  .theme .sun{display:none;}
+  .theme.is-dark .sun{display:block;}
+  .theme.is-dark .moon{display:none;}
 </style>
+<script>try{var t=localStorage.getItem("bcnf-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 </head>
 <body>
 <header><div class="in">
@@ -61,6 +73,7 @@
       <button data-lang="ca">CAT</button>
       <button data-lang="es">CAST</button>
       <button data-lang="en" class="on">ENG</button>
+        <button class="theme" type="button" id="themeBtn"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg></button>
     </div>
   </div>
   <h1>Barcelona<br>fiestas</h1>
@@ -128,9 +141,9 @@ function render(lang){
   document.getElementById("k-list").innerHTML = h;
 }
 
-document.querySelectorAll(".langs button").forEach(function(b){
+document.querySelectorAll(".langs button[data-lang]").forEach(function(b){
   b.addEventListener("click", function(){
-    document.querySelectorAll(".langs button").forEach(function(x){ x.classList.remove("on"); });
+    document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.remove("on"); });
     b.classList.add("on");
     render(b.dataset.lang);
     try { localStorage.setItem("bcnf-lang", b.dataset.lang); } catch(e) {}
@@ -147,8 +160,31 @@ try {
     else if (nl.indexOf("es") === 0) start = "es";
   }
 } catch(e) {}
-document.querySelectorAll(".langs button").forEach(function(x){ x.classList.toggle("on", x.dataset.lang === start); });
+document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.toggle("on", x.dataset.lang === start); });
 render(start);
+/* Light and dark mode: follows the device until the reader picks one. */
+(function(){
+  var root = document.documentElement, btn = document.getElementById("themeBtn");
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var LBL = {ca:["Canvia al mode fosc","Canvia al mode clar"], es:["Cambiar al modo oscuro","Cambiar al modo claro"], en:["Switch to dark mode","Switch to light mode"]};
+  function current(){ var t = root.getAttribute("data-theme"); return t ? t : (mq && mq.matches ? "dark" : "light"); }
+  function sync(){
+    var dark = current() === "dark", l = LBL[root.lang] || LBL.en;
+    btn.classList.toggle("is-dark", dark);
+    btn.setAttribute("aria-label", dark ? l[1] : l[0]);
+    btn.title = dark ? l[1] : l[0];
+  }
+  btn.addEventListener("click", function(){
+    var next = current() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("bcnf-theme", next); } catch(e) {}
+    sync();
+  });
+  if (mq) { if (mq.addEventListener) mq.addEventListener("change", sync); else if (mq.addListener) mq.addListener(sync); }
+  new MutationObserver(sync).observe(root, {attributes:true, attributeFilter:["lang"]});
+  sync();
+})();
+
 </script>
 </body>
 </html>

@@ -8,6 +8,16 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-10-01
+
+### Added
+- A light and dark mode button on the index page, shared with the guides.
+
+### Changed
+- The README describes what each guide contains, and its table links each
+  guide's folder and live page.
+
+
 ## [1.0.0] — 2026-10-01
 
 ### Added
@@ -17,5 +27,6 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - The Festa Major de la Barceloneta 2026 guide, moved from its own repository
   with its full history.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/v1.0.0
