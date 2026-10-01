@@ -7,10 +7,10 @@ Live at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcel
 
 ## Guides
 
-| Guide | Dates | Folder |
-| --- | --- | --- |
-| Festa Major de la Barceloneta 2026 | 1–4 October 2026 | [`festa-major-barceloneta-2026`](festa-major-barceloneta-2026/) |
-| La Mercè 2026 | 23–27 September 2026 | [`la-merce-2026`](la-merce-2026/) |
+| Guide | Dates | Page | Folder |
+| --- | --- | --- | --- |
+| Festa Major de la Barceloneta 2026 | 1–4 October 2026 | [Open](https://lexatarg.github.io/barcelona-fiestas/festa-major-barceloneta-2026/) | [`festa-major-barceloneta-2026`](festa-major-barceloneta-2026/) |
+| La Mercè 2026 | 23–27 September 2026 | [Open](https://lexatarg.github.io/barcelona-fiestas/la-merce-2026/) | [`la-merce-2026`](la-merce-2026/) |
 
 ## What each guide includes
 
