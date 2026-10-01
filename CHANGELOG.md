@@ -8,7 +8,11 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.5.0] — 2026-10-01
+
 ### Changed
+- A new introduction on the index page, in all three languages, describing
+  what the guides offer.
 - English dates now use the month-day order, as in "Friday, October 2" and
   "October 2–12, 2026". Catalan and Castilian keep day-month order, and the
   Castilian abbreviation for September follows the RAE ("sept.").
@@ -64,7 +68,8 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - The Festa Major de la Barceloneta 2026 guide, moved from its own repository
   with its full history.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.1.0...v1.2.0

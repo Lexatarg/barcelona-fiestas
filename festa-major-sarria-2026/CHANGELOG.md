@@ -7,6 +7,8 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.0.2] — 2026-10-01
+
 ### Changed
 - English dates now use the month-day order, as in "Friday, October 2" and
   "October 2–12, 2026". Catalan and Castilian keep day-month order, and the
@@ -43,6 +45,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Where the official programme gives two different times or places for the
   same event, the guide follows the detailed listing and notes the other.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.1...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.2...HEAD
+[1.0.2]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.1...festa-major-sarria-2026-v1.0.2
 [1.0.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.0...festa-major-sarria-2026-v1.0.1
 [1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/festa-major-sarria-2026-v1.0.0

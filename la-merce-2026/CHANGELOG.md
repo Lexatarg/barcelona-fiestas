@@ -13,6 +13,8 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.4.3] — 2026-10-01
+
 ### Changed
 - English dates now use the month-day order, as in "Friday, October 2" and
   "October 2–12, 2026". Catalan and Castilian keep day-month order, and the
@@ -131,7 +133,8 @@ For a content site rather than a library, the versions are read as:
 - All times cross-checked against the official programme from Barcelona City
   Council and betevé.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.2...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.3...HEAD
+[1.4.3]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.2...la-merce-2026-v1.4.3
 [1.4.2]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.1...la-merce-2026-v1.4.2
 [1.4.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.0...la-merce-2026-v1.4.1
 [1.4.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.3.0...la-merce-2026-v1.4.0
