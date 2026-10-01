@@ -5,7 +5,7 @@ and English. This is a personal project, made so that everyone can enjoy the fes
 easily. It is not an official publication and the festival information, names and programmes belong to their organisers and
 official sources.
 
-Visit the guides at: [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcelona-fiestas/).
+Visit the guides at: [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcelona-fiestas/)
 
 ## Guides
 
