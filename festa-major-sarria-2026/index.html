@@ -37,8 +37,8 @@
     overflow-x:hidden;}
   a{color:inherit;}
   h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.015em;line-height:1;}
-  .wrap{max-width:640px;margin:0 auto;padding:0 22px;}
-  @media (max-width:400px){ .wrap{padding:0 18px;} }
+  .wrap{max-width:684px;margin:0 auto;padding:0 22px;}
+  @media (max-width:400px){ .wrap{padding:0 18px;} nav.days .days-in{padding:0 6px;} }
 
   /* HERO */
   .hero{background:var(--dark);color:var(--dark-ink);padding:38px 22px 44px;
@@ -63,7 +63,7 @@
   /* NAV */
   nav.days{position:sticky;top:0;z-index:600;background:var(--paper);}
   nav.days::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--hair);}
-  .days-in{display:flex;overflow-x:auto;max-width:640px;margin:0 auto;padding:0 8px;
+  .days-in{display:flex;overflow-x:auto;max-width:684px;margin:0 auto;padding:0 10px;
     scrollbar-width:none;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;}
   .days-in::-webkit-scrollbar{display:none;}
   .days-in a{flex:0 0 auto;padding:14px 12px;text-decoration:none;font-size:.66rem;font-weight:700;
@@ -87,12 +87,13 @@
 
   /* DAY HEADER */
   .day{padding:68px 0 0;}
-  /* Fixed number column, two tabular digits wide. The number starts on the
-     timeline's left edge and every day's text starts on the same line. */
-  .day-head{display:grid;grid-template-columns:1.12em minmax(0,1fr);align-items:center;
-    column-gap:.2em;margin-bottom:32px;font-size:clamp(4rem,19vw,5.4rem);}
-  .day-num{font-size:1em;font-weight:700;font-variant-numeric:tabular-nums;
-    letter-spacing:-.03em;line-height:.8;color:var(--sea);text-align:left;}
+  /* The number sits on the timeline's left edge; the gap after it is a fixed
+     share of the number's size, so one- and two-digit dates sit equally close
+     to their text at every screen size. */
+  .day-head{display:flex;align-items:center;gap:.17em;margin-bottom:32px;
+    font-size:clamp(4rem,19vw,5.4rem);}
+  .day-num{flex:0 0 auto;font-size:1em;font-weight:700;font-variant-numeric:tabular-nums;
+    letter-spacing:-.03em;line-height:.8;color:var(--sea);}
   .day-txt{min-width:0;font-size:15px;}
   .day-txt .dow{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sub);
     font-weight:700;margin-bottom:9px;line-height:1.3;}
@@ -212,7 +213,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.0.0";
+const VERSION = "1.0.1";
 
 /* Venues. q is the search text for the maps apps; lat/lng (from Barcelona's open data) enable Citymapper. */
 const V = {

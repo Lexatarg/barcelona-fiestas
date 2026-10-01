@@ -13,6 +13,13 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.2.3] — 2026-10-01
+
+### Changed
+- The date number keeps the same gap to its heading whether it has one digit or
+  two, at every screen size.
+- The header, day navigation, page content and footer now share one left edge.
+
 ## [1.2.2] — 2026-10-01
 
 ### Changed
@@ -82,7 +89,8 @@ For a content site rather than a library, the versions are read as:
 - Venues are searched by address rather than by coordinates, so the maps app
   resolves the exact spot.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.2...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.3...HEAD
+[1.2.3]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.2...festa-major-barceloneta-2026-v1.2.3
 [1.2.2]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.1...festa-major-barceloneta-2026-v1.2.2
 [1.2.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.0...festa-major-barceloneta-2026-v1.2.1
 [1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.1.0...festa-major-barceloneta-2026-v1.2.0

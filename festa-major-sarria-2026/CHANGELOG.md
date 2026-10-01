@@ -7,6 +7,13 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.0.1] — 2026-10-01
+
+### Changed
+- The date number keeps the same gap to its heading whether it has one digit or
+  two, at every screen size.
+- The header, day navigation, page content and footer now share one left edge.
+
 ## [1.0.0] — 2026-10-01
 
 ### Added
@@ -31,5 +38,6 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Where the official programme gives two different times or places for the
   same event, the guide follows the detailed listing and notes the other.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.1...HEAD
+[1.0.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.0...festa-major-sarria-2026-v1.0.1
 [1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/festa-major-sarria-2026-v1.0.0

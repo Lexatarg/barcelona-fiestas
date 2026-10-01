@@ -13,6 +13,13 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.4.2] — 2026-10-01
+
+### Changed
+- The date number keeps the same gap to its heading whether it has one digit or
+  two, at every screen size.
+- The header, day navigation, page content and footer now share one left edge.
+
 ## [1.4.1] — 2026-10-01
 
 ### Changed
@@ -119,7 +126,8 @@ For a content site rather than a library, the versions are read as:
 - All times cross-checked against the official programme from Barcelona City
   Council and betevé.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.1...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.2...HEAD
+[1.4.2]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.1...la-merce-2026-v1.4.2
 [1.4.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.0...la-merce-2026-v1.4.1
 [1.4.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.3.0...la-merce-2026-v1.4.0
 [1.3.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.2.0...la-merce-2026-v1.3.0
