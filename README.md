@@ -24,14 +24,10 @@ publish, such as safety advice and where to find support during the festival.
 The pages work in Catalan, Castilian and English, and in light or dark mode.
 Each guide's folder also has its own README and changelog.
 
-## Sources
-
-The information in each guide was gathered from that festival's official programme
-or official website, which each guide links in its footer.
-
 ## How the content is made
 
-These guides are put together with the help of AI tools, which make it easier
+The source and information in each guide comes only from that festival's official
+programme or official website, which each guide links in its footer. These guides are put together with the help of AI tools, which make it easier
 to keep up with long festival programmes in three languages. Every page is read
 and checked before it is published, and the information comes only
 from each festival's official programme or website. If anything on a page
