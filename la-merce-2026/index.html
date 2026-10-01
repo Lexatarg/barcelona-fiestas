@@ -209,7 +209,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.4.3";
+const VERSION = "1.4.4";
 
 const V = {
   santjaume : {n:"Plaça de Sant Jaume",            lat:41.382798, lng:2.177246},
@@ -792,13 +792,14 @@ document.querySelectorAll(".langs button[data-lang]").forEach(function(b){
     document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.remove("on"); });
     b.classList.add("on");
     render(b.dataset.lang);
-    try { localStorage.setItem("merce-lang", b.dataset.lang); } catch(e) {}
+    try { localStorage.setItem("bcnf-lang", b.dataset.lang); } catch(e) {}
   });
 });
 
 let start = "en";
 try {
-  const saved = localStorage.getItem("merce-lang");
+  /* "bcnf-lang" is shared by every page; "merce-lang" is this guide's older key. */
+  const saved = localStorage.getItem("bcnf-lang") || localStorage.getItem("merce-lang");
   if (saved && T[saved]) start = saved;
   else {
     const nl = (navigator.language || "en").toLowerCase();

@@ -7,6 +7,13 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.0.3] — 2026-10-01
+
+### Changed
+- The chosen language is now stored under "bcnf-lang", the same key as the
+  index and the other guides, so it carries over between pages. A choice saved
+  earlier under "fmb-lang" is still read.
+
 ## [1.0.2] — 2026-10-01
 
 ### Changed
@@ -45,7 +52,8 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Where the official programme gives two different times or places for the
   same event, the guide follows the detailed listing and notes the other.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.2...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.3...HEAD
+[1.0.3]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.2...festa-major-sarria-2026-v1.0.3
 [1.0.2]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.1...festa-major-sarria-2026-v1.0.2
 [1.0.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-sarria-2026-v1.0.0...festa-major-sarria-2026-v1.0.1
 [1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/festa-major-sarria-2026-v1.0.0

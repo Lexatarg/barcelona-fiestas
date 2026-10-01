@@ -13,6 +13,13 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.4.4] — 2026-10-01
+
+### Changed
+- The chosen language is now stored under "bcnf-lang", the same key as the
+  index and the other guides, so it carries over between pages. A choice saved
+  earlier under "merce-lang" is still read.
+
 ## [1.4.3] — 2026-10-01
 
 ### Changed
@@ -133,7 +140,8 @@ For a content site rather than a library, the versions are read as:
 - All times cross-checked against the official programme from Barcelona City
   Council and betevé.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.3...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.4...HEAD
+[1.4.4]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.3...la-merce-2026-v1.4.4
 [1.4.3]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.2...la-merce-2026-v1.4.3
 [1.4.2]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.1...la-merce-2026-v1.4.2
 [1.4.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.0...la-merce-2026-v1.4.1

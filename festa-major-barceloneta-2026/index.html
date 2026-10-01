@@ -213,7 +213,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.2.4";
+const VERSION = "1.2.5";
 
 /* Venues. q is the search text handed to the maps app. */
 const V = {
@@ -1050,13 +1050,14 @@ document.querySelectorAll(".langs button[data-lang]").forEach(function(b){
     document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.remove("on"); });
     b.classList.add("on");
     render(b.dataset.lang);
-    try { localStorage.setItem("fmb-lang", b.dataset.lang); } catch(e) {}
+    try { localStorage.setItem("bcnf-lang", b.dataset.lang); } catch(e) {}
   });
 });
 
 let start = "en";
 try {
-  const saved = localStorage.getItem("fmb-lang");
+  /* "bcnf-lang" is shared by every page; "fmb-lang" is this guide's older key. */
+  const saved = localStorage.getItem("bcnf-lang") || localStorage.getItem("fmb-lang");
   if (saved && T[saved]) start = saved;
   else {
     const nl = (navigator.language || "en").toLowerCase();

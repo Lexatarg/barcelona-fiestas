@@ -8,6 +8,12 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.5.1] — 2026-10-01
+
+### Changed
+- The index and every guide now store the chosen language under the same key,
+  "bcnf-lang", so a language picked on one page is used on the others.
+
 ## [1.5.0] — 2026-10-01
 
 ### Changed
@@ -68,7 +74,8 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - The Festa Major de la Barceloneta 2026 guide, moved from its own repository
   with its full history.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.5.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.5.1...HEAD
+[1.5.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.2.0...v1.3.0

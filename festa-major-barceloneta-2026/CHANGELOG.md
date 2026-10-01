@@ -13,6 +13,13 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.2.5] — 2026-10-01
+
+### Changed
+- The chosen language is now stored under "bcnf-lang", the same key as the
+  index and the other guides, so it carries over between pages. A choice saved
+  earlier under "fmb-lang" is still read.
+
 ## [1.2.4] — 2026-10-01
 
 ### Changed
@@ -96,7 +103,8 @@ For a content site rather than a library, the versions are read as:
 - Venues are searched by address rather than by coordinates, so the maps app
   resolves the exact spot.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.4...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.5...HEAD
+[1.2.5]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.4...festa-major-barceloneta-2026-v1.2.5
 [1.2.4]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.3...festa-major-barceloneta-2026-v1.2.4
 [1.2.3]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.2...festa-major-barceloneta-2026-v1.2.3
 [1.2.2]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.1...festa-major-barceloneta-2026-v1.2.2
