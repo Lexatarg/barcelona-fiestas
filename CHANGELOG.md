@@ -8,6 +8,13 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.6.0] — 2026-10-02
+
+### Added
+- Every guide now has "Add to calendar" on each event, with the same code in
+  each page: the .ics file is built in the browser, in the reader's language,
+  and nothing is sent anywhere.
+
 ## [1.5.1] — 2026-10-01
 
 ### Changed

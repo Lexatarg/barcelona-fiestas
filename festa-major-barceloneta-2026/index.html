@@ -128,6 +128,7 @@
 
   .golink{background:none;border:0;padding:0;font:inherit;cursor:pointer;color:var(--accent);
     font-weight:700;font-size:.78rem;white-space:nowrap;text-align:left;}
+  a.golink{text-decoration:none;}
   .golink:hover{text-decoration:underline;}
 
   /* PLACES */
@@ -213,7 +214,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.2.5";
+const VERSION = "1.3.0";
 
 /* Venues. q is the search text handed to the maps app. */
 const V = {
@@ -261,7 +262,7 @@ function tm(a,b){
   return {ca:loc, es:loc, en: b ? toEn(a) + "–" + toEn(b) : toEn(a)};
 }
 function E(a,b,tags,v,title,desc,extra){
-  const e = {time:tm(a,b), tags:tags, v:v, title:title, desc:desc};
+  const e = {a:a, b:b, time:tm(a,b), tags:tags, v:v, title:title, desc:desc};
   if (extra) for (const k in extra) e[k] = extra[k];
   if (!e.loc) { const n = v ? V[v].n : ""; e.loc = {ca:n, es:n, en:n}; }
   return e;
@@ -302,7 +303,9 @@ const T = {
     essLbl:"Si només feu cinc coses",essTitle:"Els essencials",
     placesLbl:"Els llocs",placesTitle:"On passa tot",
     placesNote:"Toqueu «Com arribar-hi» i trieu l'aplicació de mapes que useu habitualment.",
-    dirs:"Com arribar-hi", tipLbl:"Consell", openIn:"Trieu una aplicació de mapes",
+    dirs:"Com arribar-hi", cal:"Afegeix al calendari",
+    calFest:"Festa Major de la Barceloneta 2026", calGuide:"Guia", calProg:"Programa oficial",
+    calSrc:"https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_FM_Barceloneta.a7bf2a66.pdf", calTime:"Hora", tipLbl:"Consell", openIn:"Trieu una aplicació de mapes",
     copy:"Copia l'adreça", copied:"Copiat", close:"Tanca", go:"Obre",
     knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
     calloutB:"Abans de la festa.",
@@ -333,7 +336,9 @@ const T = {
     essLbl:"Si solo hacéis cinco cosas",essTitle:"Lo esencial",
     placesLbl:"Los lugares",placesTitle:"Dónde pasa todo",
     placesNote:"Tocad «Cómo llegar» y elegid la aplicación de mapas que uséis habitualmente.",
-    dirs:"Cómo llegar", tipLbl:"Consejo", openIn:"Elegid una aplicación de mapas",
+    dirs:"Cómo llegar", cal:"Añadir al calendario",
+    calFest:"Fiesta Mayor de la Barceloneta 2026", calGuide:"Guía", calProg:"Programa oficial",
+    calSrc:"https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_FM_Barceloneta.a7bf2a66.pdf", calTime:"Hora", tipLbl:"Consejo", openIn:"Elegid una aplicación de mapas",
     copy:"Copiar la dirección", copied:"Copiado", close:"Cerrar", go:"Abrir",
     knowLbl:"Práctico",knowTitle:"Antes de ir",
     calloutB:"Antes de la fiesta.",
@@ -364,7 +369,9 @@ const T = {
     essLbl:"If you only do five things",essTitle:"The essentials",
     placesLbl:"The places",placesTitle:"Where it all happens",
     placesNote:"Tap Directions and pick whichever maps app you normally use.",
-    dirs:"Directions", tipLbl:"Tip", openIn:"Choose a maps app",
+    dirs:"Directions", cal:"Add to calendar",
+    calFest:"Festa Major de la Barceloneta 2026", calGuide:"Guide", calProg:"Official programme",
+    calSrc:"https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_FM_Barceloneta.a7bf2a66.pdf", calTime:"Time", tipLbl:"Tip", openIn:"Choose a maps app",
     copy:"Copy address", copied:"Copied", close:"Close", go:"Open",
     knowLbl:"Practical",knowTitle:"Before you go",
     calloutB:"Before the festival.",
@@ -955,6 +962,131 @@ function closeSheet(){ document.getElementById("ovl").classList.remove("open"); 
 document.getElementById("ovl").addEventListener("click", function(e){ if (e.target.id === "ovl") closeSheet(); });
 document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeSheet(); });
 
+/* Add to calendar. The .ics file is built here in the browser; nothing is sent anywhere.
+   first is the festival's first day: lower day numbers fall in the following month. */
+const CAL = {id:"festa-major-barceloneta-2026", year:2026, month:9, first:25, tz:"Europe/Madrid",
+  url:"https://lexatarg.github.io/barcelona-fiestas/festa-major-barceloneta-2026/"};
+
+/* Barcelona's clock rules: summer time (UTC+2) from the last Sunday of March,
+   winter time (UTC+1) from the last Sunday of October. */
+const VTZ = [
+  "BEGIN:VTIMEZONE", "TZID:Europe/Madrid",
+  "BEGIN:DAYLIGHT", "TZOFFSETFROM:+0100", "TZOFFSETTO:+0200", "TZNAME:CEST",
+  "DTSTART:19700329T020000", "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU", "END:DAYLIGHT",
+  "BEGIN:STANDARD", "TZOFFSETFROM:+0200", "TZOFFSETTO:+0100", "TZNAME:CET",
+  "DTSTART:19701025T030000", "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU", "END:STANDARD",
+  "END:VTIMEZONE"
+];
+
+const pad = n => String(n).padStart(2, "0");
+
+/* The date of day number num, moved forward by extra days. */
+function calDate(num, extra){
+  const day = parseInt(num, 10);
+  return new Date(Date.UTC(CAL.year, CAL.month - 1 + (day < CAL.first ? 1 : 0), day + extra));
+}
+function ymd(dt){ return dt.getUTCFullYear() + pad(dt.getUTCMonth() + 1) + pad(dt.getUTCDate()); }
+
+/* "21.30" on day 2 becomes "20261002T213000". Times before 6 h belong to the
+   night that started the evening before, so they move to the next date. */
+function icsTime(num, s){
+  const p = String(s).split(".");
+  const h = parseInt(p[0], 10), m = parseInt(p[1] || "0", 10);
+  return ymd(calDate(num, h < 6 ? 1 : 0)) + "T" + pad(h) + pad(m) + "00";
+}
+
+/* Start and end of each session. Events with raw times (e.a, e.b) use them;
+   otherwise the times are read from the Catalan label: "11 – 12 h" is one
+   session with an end, "19.30 i 21 h" is two sessions, and a label with no
+   hours ("Vespre") gives none, so the event is added for the whole day. */
+function calSlots(e){
+  if (e.a) return [[e.a, e.b]];
+  const label = e.time.ca, n = label.match(/\d+(\.\d+)?/g) || [];
+  if (label.indexOf("–") > -1 && n.length === 2) return [[n[0], n[1]]];
+  return n.map(function(x){ return [x, null]; });
+}
+
+/* In .ics text, backslashes, semicolons, commas and line breaks need a backslash in front. */
+function icsText(s){
+  return String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+}
+
+/* Each line may be at most 75 bytes; a longer one continues on the next line,
+   which starts with a space. Accented letters take 2 bytes, so count bytes. */
+function icsFold(line){
+  const enc = new TextEncoder();
+  let out = "", cur = "", bytes = 0;
+  for (const ch of line) {
+    const n = enc.encode(ch).length;
+    if (bytes + n > 75) { out += cur + "\r\n "; cur = ""; bytes = 1; }
+    cur += ch; bytes += n;
+  }
+  return out + cur;
+}
+
+/* The place as text, followed by the street address when the place name alone is not one. */
+function icsPlace(e, lang){
+  const loc = e.loc ? e.loc[lang] : "", v = e.v ? V[e.v] : null;
+  if (v && v.q) return v.q.indexOf(loc) === 0 ? v.q : loc + ", " + v.q;
+  if (!loc) return v ? v.n + ", Barcelona" : "";
+  return loc.indexOf("Barcelona") > -1 ? loc : loc + ", Barcelona";
+}
+
+/* Everything is written in the language the reader has chosen (lang). */
+function buildIcs(d, e, i, lang){
+  const t = T[lang], v = e.v ? V[e.v] : null, slots = calSlots(e);
+  const link = CAL.url + "#" + d.id;
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const place = icsPlace(e, lang);
+  const notes = [t.calFest];
+  /* An approximate time ("~20 h") or one without hours is spelt out in the notes. */
+  if (!e.a && (e.time.ca.indexOf("~") > -1 || !slots.length)) notes.push(t.calTime + ": " + e.time[lang]);
+  notes.push("", e.desc[lang]);
+  if (e.tags.length) notes.push("", e.tags.map(function(tag){ return TAG[tag][lang]; }).join(" · "));
+  if (e.tip) notes.push("", t.tipLbl + ": " + e.tip[lang]);
+  notes.push("", t.calGuide + ": " + link, t.calProg + ": " + t.calSrc);
+  const common = ["SUMMARY;LANGUAGE=" + lang + ":" + icsText(e.title[lang])];
+  if (place) common.push("LOCATION;LANGUAGE=" + lang + ":" + icsText(place));
+  /* Coordinates: GEO is the standard field; the Apple one lets iPhone Calendar place a pin. */
+  if (v && v.lat) {
+    const q = function(s){ return String(s).replace(/"/g, "'"); };
+    common.push("GEO:" + v.lat + ";" + v.lng,
+      'X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="' + q(v.q || v.n + ", Barcelona") +
+      '";X-APPLE-RADIUS=100;X-TITLE="' + q(e.loc ? e.loc[lang] : v.n) + '":geo:' + v.lat + "," + v.lng);
+  }
+  common.push("DESCRIPTION;LANGUAGE=" + lang + ":" + icsText(notes.join("\n")),
+              "URL:" + link, "STATUS:CONFIRMED", "TRANSP:OPAQUE");
+  /* One VEVENT per session; two sessions give two entries in the same file. */
+  const uid = CAL.id + "-" + d.id + "-" + i;
+  const one = function(when, n){
+    return ["BEGIN:VEVENT", "UID:" + uid + (n ? "-" + n : "") + "@lexatarg.github.io", "DTSTAMP:" + stamp]
+      .concat(when, common, ["END:VEVENT"]);
+  };
+  let evs = [];
+  if (!slots.length) {
+    evs = one(["DTSTART;VALUE=DATE:" + ymd(calDate(d.num, 0)), "DTEND;VALUE=DATE:" + ymd(calDate(d.num, 1))], 0);
+  } else slots.forEach(function(s, n){
+    const when = ["DTSTART;TZID=" + CAL.tz + ":" + icsTime(d.num, s[0])];
+    if (s[1]) when.push("DTEND;TZID=" + CAL.tz + ":" + icsTime(d.num, s[1]));
+    evs = evs.concat(one(when, slots.length > 1 ? n + 1 : 0));
+  });
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Lexatarg//Barcelona fiestas//EN",
+                 "CALSCALE:GREGORIAN", "METHOD:PUBLISH"].concat(VTZ, evs, ["END:VCALENDAR"]);
+  return lines.map(icsFold).join("\r\n") + "\r\n";
+}
+
+/* The "Add to calendar" link. At the moment it is tapped, the file is built in
+   the current language and handed to the device. iPhone opens Add to Calendar;
+   Android and computers receive an .ics file that the calendar app opens. */
+function calClick(a){
+  const k = a.dataset.cal.split(":"), i = parseInt(k[1], 10);
+  const d = DAYS.filter(function(x){ return x.id === k[0]; })[0];
+  const ics = buildIcs(d, d.events[i], i, L_CUR);
+  if (a.href.indexOf("blob:") === 0) URL.revokeObjectURL(a.href);
+  a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar;charset=utf-8"}));
+  a.download = CAL.id + "-" + d.id + "-" + (i + 1) + ".ics";
+}
+
 function render(lang){
   L_CUR = lang;
   const t = T[lang];
@@ -980,13 +1112,14 @@ function render(lang){
     h += '<section class="day" id="' + d.id + '"><div class="day-head"><div class="day-num">' + d.num + '</div>';
     h += '<div class="day-txt"><div class="dow">' + esc(d.dow[lang]) + '</div><h2>' + esc(d.title[lang]) + '</h2><div class="note">' + esc(d.note[lang]) + '</div></div></div>';
     h += '<div class="timeline">';
-    d.events.forEach(function(e){
+    d.events.forEach(function(e, i){
       h += '<div class="ev"><div class="ev-top"><span class="ev-time">' + esc(e.time[lang]) + '</span><span class="ev-tags">';
       e.tags.forEach(function(tag){
         h += '<span class="tg ' + (tag === "free" ? "fr" : "hi") + '">' + esc(TAG[tag][lang]) + '</span>';
       });
       h += '</span></div><h3>' + esc(e.title[lang]) + '</h3><div class="loc">' + esc(e.loc[lang]);
       if (e.v) h += ' <button class="golink" data-go="' + e.v + '">' + esc(t.dirs) + '</button>';
+      h += ' <a class="golink" href="#" data-cal="' + d.id + ':' + i + '">' + esc(t.cal) + '</a>';
       h += '</div><p>' + esc(e.desc[lang]) + '</p>';
       if (e.tip) h += '<div class="tip"><b>' + esc(t.tipLbl) + '</b> ' + esc(e.tip[lang]) + '</div>';
       h += '</div>';
@@ -1015,6 +1148,9 @@ function render(lang){
 
   document.getElementById("k-body").querySelectorAll("[data-go]").forEach(function(b){
     b.addEventListener("click", function(){ openSheet(b.dataset.go); });
+  });
+  document.getElementById("k-body").querySelectorAll("[data-cal]").forEach(function(b){
+    b.addEventListener("click", function(){ calClick(b); });
   });
 
   initSpy();

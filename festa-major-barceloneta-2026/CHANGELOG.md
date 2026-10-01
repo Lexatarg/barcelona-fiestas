@@ -13,6 +13,15 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.3.0] — 2026-10-02
+
+### Added
+- "Add to calendar" on every event. The page builds an .ics file in the
+  browser, in the language the reader has chosen, with the Barcelona time
+  (including events that run past midnight), the title, the place with its
+  address and coordinates, the description, tags and tips, a link to the guide
+  and a link to the official programme. Nothing is sent anywhere.
+
 ## [1.2.5] — 2026-10-01
 
 ### Changed
