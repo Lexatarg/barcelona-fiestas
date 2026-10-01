@@ -27,9 +27,9 @@ its own README and changelog.
 
 The sources and information in each guide come only from that festival's
 official programme or official website, which each guide links in its footer.
-The guides are put together with the help of AI tools, which make it easier to
-keep up with long festival programmes in three languages, and every page is
-read and checked before it is published. If anything on a page differs from
+Although the guides are put together with the help of AI tools, which make it
+easier to keep up with long festival programmes in three languages, every page
+is read and checked before it is published. If anything on a page differs from
 the official source, the official source is the one to follow.
 
 ## Licence
