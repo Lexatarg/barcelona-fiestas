@@ -15,7 +15,7 @@ Live at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcel
 ## What each guide includes
 
 Each guide is a single page that follows its festival day by day, with the time,
-place and a short description of every event in the official programme. Every
+place and a short description of each event taken from the official programme. Every
 venue has a directions link that opens in whichever maps app the reader uses,
 and a final section brings together the practical information the organisers
 publish, such as safety advice for the fire runs and where to find support
