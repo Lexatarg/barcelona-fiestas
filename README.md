@@ -10,9 +10,9 @@ Visit the guides at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.gith
 
 | Guide | Dates | Folder | Page |
 | --- | --- | --- | --- |
-| Festa Major de Sarrià 2026 | 2–12 October 2026 | [`festa-major-sarria-2026`](festa-major-sarria-2026/) | [Open](https://lexatarg.github.io/barcelona-fiestas/festa-major-sarria-2026/) |
-| Festa Major de la Barceloneta 2026 | 25 September – 4 October 2026 | [`festa-major-barceloneta-2026`](festa-major-barceloneta-2026/) | [Open](https://lexatarg.github.io/barcelona-fiestas/festa-major-barceloneta-2026/) |
-| La Mercè 2026 | 23–27 September 2026 | [`la-merce-2026`](la-merce-2026/) | [Open](https://lexatarg.github.io/barcelona-fiestas/la-merce-2026/) |
+| Festa Major de Sarrià 2026 | October 2–12, 2026 | [`festa-major-sarria-2026`](festa-major-sarria-2026/) | [Open](https://lexatarg.github.io/barcelona-fiestas/festa-major-sarria-2026/) |
+| Festa Major de la Barceloneta 2026 | September 25 – October 4, 2026 | [`festa-major-barceloneta-2026`](festa-major-barceloneta-2026/) | [Open](https://lexatarg.github.io/barcelona-fiestas/festa-major-barceloneta-2026/) |
+| La Mercè 2026 | September 23–27, 2026 | [`la-merce-2026`](la-merce-2026/) | [Open](https://lexatarg.github.io/barcelona-fiestas/la-merce-2026/) |
 
 ## What each guide includes
 

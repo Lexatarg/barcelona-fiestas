@@ -1,7 +1,7 @@
 # Festa Major de Sarrià 2026
 
 An unofficial, hour-by-hour guide to the Festa Major de Sarrià, the Festes del
-Roser, in Barcelona, 2–12 October 2026.
+Roser, in Barcelona, October 2–12, 2026.
 Available in Catalan, Castilian and English.
 
 ## About

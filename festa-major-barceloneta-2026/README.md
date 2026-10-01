@@ -1,7 +1,7 @@
 # Festa Major de la Barceloneta 2026
 
 An unofficial, hour-by-hour guide to the Barceloneta neighbourhood festival
-in Barcelona, 25 September – 4 October 2026.
+in Barcelona, September 25 – October 4, 2026.
 Available in Catalan, Castilian and English.
 
 ## About

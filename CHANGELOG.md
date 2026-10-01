@@ -8,6 +8,11 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Changed
+- English dates now use the month-day order, as in "Friday, October 2" and
+  "October 2–12, 2026". Catalan and Castilian keep day-month order, and the
+  Castilian abbreviation for September follows the RAE ("sept.").
+
 ## [1.4.0] — 2026-10-01
 
 ### Changed
