@@ -16,6 +16,8 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Guides are listed as Coming up, Happening now and Past, each with its own
   marker. Past guides keep the same layout in grey.
 - "Open the guide" links work like the Directions links inside the guides.
+- Section names in Catalan and Castilian now read as a set: Properes, En curs,
+  Anteriors and Próximas, En curso, Anteriores.
 - The intro, the guide descriptions and the footer share one text width.
 
 ## [1.3.0] — 2026-10-01
