@@ -13,6 +13,21 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.2.0] — 2026-10-01
+
+### Added
+- The first six days of the festival, from the opening speech on Friday
+  25 September to Wednesday 30 September, so the guide now covers the whole
+  programme.
+- The Punt Lila on Saturday 26 September in Plaça de la Barceloneta.
+- Venues for the new days, including the church of Sant Miquel del Port, the
+  Port Vell street market and Plaça d'Antoni Genescà i Coromines.
+
+### Changed
+- The essentials now include the opening speech and the havaneres.
+- The note under the places describes the Barceloneta Residents exhibition
+  that opened on 17 September.
+
 ## [1.1.0] — 2026-10-01
 
 ### Added
@@ -48,6 +63,7 @@ For a content site rather than a library, the versions are read as:
 - Venues are searched by address rather than by coordinates, so the maps app
   resolves the exact spot.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.1.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.0...HEAD
+[1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.1.0...festa-major-barceloneta-2026-v1.2.0
 [1.1.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.0.0...festa-major-barceloneta-2026-v1.1.0
 [1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/festa-major-barceloneta-2026-v1.0.0

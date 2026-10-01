@@ -1,7 +1,7 @@
 # La Mercè 2026 — Barcelona
 
 An unofficial, hour-by-hour guide to Barcelona's Festa Major, 23–27 September 2026.
-Available in **Català**, **Castellà** and **English**.
+Available in Catalan, Castilian and English.
 
 ## About
 

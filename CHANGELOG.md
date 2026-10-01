@@ -8,6 +8,13 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.2.0] — 2026-10-01
+
+### Changed
+- The Festa Major de la Barceloneta guide now covers 25 September to
+  4 October, and its dates are updated on the index page and in the README.
+- The README introduction no longer uses bold text.
+
 ## [1.1.0] — 2026-10-01
 
 ### Added
@@ -27,6 +34,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - The Festa Major de la Barceloneta 2026 guide, moved from its own repository
   with its full history.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/v1.0.0

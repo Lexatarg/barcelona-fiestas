@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Festa Major de la Barceloneta 2026</title>
-<meta name="description" content="Hour-by-hour guide to the last four days of the Festa Major de la Barceloneta, 1 to 4 October 2026. Català, castellà, English.">
+<meta name="description" content="Hour-by-hour guide to the Festa Major de la Barceloneta, 25 September to 4 October 2026. Català, castellà, English.">
 <meta property="og:title" content="Festa Major de la Barceloneta 2026">
-<meta property="og:description" content="Hour-by-hour guide to the last four days of the Barceloneta festival, 1 to 4 October. Català, castellà, English.">
+<meta property="og:description" content="Hour-by-hour guide to the Barceloneta festival, 25 September to 4 October. Català, castellà, English.">
 <meta property="og:type" content="website">
 <style>
   :root{
@@ -210,7 +210,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.1.0";
+const VERSION = "1.2.0";
 
 /* Venues. q is the search text handed to the maps app. */
 const V = {
@@ -235,7 +235,14 @@ const V = {
   pompeu     : {n:"Plaça de Pompeu Gener",                  q:"Plaça de Pompeu Gener, Barcelona"},
   conreria   : {n:"Carrer de la Conreria",                  q:"Carrer de la Conreria, Barcelona"},
   moll       : {n:"Moll de la Barceloneta",                 q:"Moll de la Barceloneta, Barcelona"},
-  mercat     : {n:"Mercat de la Barceloneta",               q:"Mercat de la Barceloneta, Barcelona"}
+  mercat     : {n:"Mercat de la Barceloneta",               q:"Mercat de la Barceloneta, Barcelona"},
+  portvell   : {n:"Port Vell",                              q:"Port Vell, Barcelona"},
+  salvat     : {n:"Passeig de Salvat Papasseit",            q:"Passeig de Salvat Papasseit, Barcelona"},
+  mollpesc   : {n:"Moll de Pescadors",                      q:"Moll de Pescadors, Barcelona"},
+  genesca    : {n:"Plaça d'Antoni Genescà i Coromines",     q:"Plaça d'Antoni Genescà i Coromines, Barcelona"},
+  casalcivic : {n:"Casal Cívic i Comunitari Barceloneta",   q:"Carrer del Baluard 28, Barcelona"},
+  maquinista : {n:"Pistes de la Maquinista",                q:"Passeig de Salvat Papasseit 45, Barcelona"},
+  esglesia   : {n:"Església de Sant Miquel del Port",       q:"Carrer de Sant Miquel 39, Barcelona"}
 };
 
 /* Times are written once, in local notation, and converted for English. */
@@ -258,6 +265,12 @@ function E(a,b,tags,v,title,desc,extra){
 }
 function S(s){ return {ca:s, es:s, en:s}; }
 
+const MARKET = {
+  title:{ca:"Street Market",es:"Street Market",en:"Street Market"},
+  desc:{ca:"Els comerços del barri mostren els seus millors productes a la fira dels artesans.",
+        es:"Los comercios del barrio muestran sus mejores productos en la feria de artesanos.",
+        en:"Local shops show their best products at the artisans' fair."}
+};
 const CORREFOC_TIP = {
   ca:"Porteu roba de protecció que tapi el cos i calçat tancat, i protegiu-vos els ulls i les orelles. No porteu els infants a les primeres files.",
   es:"Llevad ropa de protección que cubra el cuerpo y calzado cerrado, y protegeos los ojos y los oídos. No llevéis a los niños a las primeras filas.",
@@ -279,93 +292,93 @@ const BOMBA = {
 
 const T = {
   ca:{
-    eyebrow:"Festa Major · 1–4 d'octubre",
-    meta:[["Festa major","25 set. – 4 oct."],["Aquesta guia","Dj 1 – Dg 4"],["Patró","Sant Miquel"],["Districte","Ciutat Vella"]],
-    lede:"La festa major de la Barceloneta, en honor de Sant Miquel. Aquesta guia recull els quatre últims dies: dos correfocs, la cercavila del Canó, les festes dels carrers Baluard, Pescadors i del Mar i el fi de festa a la plaça de la Barceloneta.",
-    nav:["Essencials","Dj 1","Dv 2","Ds 3","Dg 4","Llocs","Abans d'anar-hi"],
+    eyebrow:"Festa Major · 25 set. – 4 oct.",
+    meta:[["Festa major","25 set. – 4 oct."],["Pregó","Dv 25 · 19 h"],["Patró","Sant Miquel"],["Districte","Ciutat Vella"]],
+    lede:"La festa major de la Barceloneta, en honor de Sant Miquel, del 25 de setembre al 4 d'octubre. Deu dies amb el pregó, les havaneres, dos correfocs, la Cercavila del Canó, les festes dels carrers Baluard, Pescadors i del Mar i el fi de festa a la plaça de la Barceloneta.",
+    nav:["Essencials","Dv 25","Ds 26","Dg 27","Dl 28","Dt 29","Dc 30","Dj 1","Dv 2","Ds 3","Dg 4","Llocs","Abans d'anar-hi"],
     essLbl:"Si només feu cinc coses",essTitle:"Els essencials",
     placesLbl:"Els llocs",placesTitle:"On passa tot",
     placesNote:"Toqueu «Com arribar-hi» i trieu l'aplicació de mapes que useu habitualment.",
     dirs:"Com arribar-hi", tipLbl:"Consell", openIn:"Trieu una aplicació de mapes",
     copy:"Copia l'adreça", copied:"Copiat", close:"Tanca", go:"Obre",
     knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
-    calloutB:"Sobre les dates.",
-    callout:" La festa major va començar el 25 de setembre amb el pregó de la waterpolista Paula Leitón. Aquesta guia comença el dijous 1 d'octubre i arriba fins al final, diumenge 4. Els dies anteriors són al programa oficial.",
+    calloutB:"Abans de la festa.",
+    callout:" El dijous 17 de setembre a les 19 h, a la plaça dels Escacs, es va inaugurar la 23a edició de l'exposició Barceloneta Residents, amb obres d'artistes del barri, i es va presentar el cartell guanyador de la festa major.",
     foot1:'Tota la informació d\'aquesta pàgina s\'ha recollit del <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_FM_Barceloneta.a7bf2a66.pdf" target="_blank" rel="noopener">programa oficial</a> de la Festa Major, publicat per l\'Ajuntament de Barcelona. Consulteu-lo per al programa complet i per a qualsevol canvi.',
     foot2:"És un projecte personal, fet perquè tothom pugui trobar els horaris i els llocs amb més facilitat i gaudir de la festa. No és una publicació oficial. La pàgina no fa servir galetes ni recull cap dada de qui la visita.",
     ess:[
+      {t:"Pregó de Festa Major",w:"Divendres 25 · 19 h",d:"A la plaça de la Barceloneta, amb els gegants, el lliurament del Canó de plata i el pregó de la waterpolista Paula Leitón."},
+      {t:"Cantada d'havaneres",w:"Dissabte 26 · 19 h",d:"Memorial Pepe Vilches a la plaça de la Barceloneta, amb el tradicional rom cremat."},
       {t:"Correfoc del Canó",w:"Divendres 2 · tabalada a les 19.15 h, foc a les 20 h",d:"Surt del passeig Marítim, a l'altura d'Andrea Dòria, i passa per Pepe Rubianes i Joan de Borbó fins a la plaça de la Barceloneta."},
       {t:"Cercavila del Canó",w:"Dissabte 3 · 10 h",d:"«Senyor Rector, volem el canó!» El canó de la Barceloneta fa la volta al barri amb una cercavila familiar. És un dels actes més esperats pels infants."},
-      {t:"Foc Bestial i versots infernals",w:"Dissabte 3 · 19 h",d:"Cercavila amb torxes des del carrer de la Conreria, correfoc i, a la plaça de la Barceloneta, la lectura dels versots i la cremada final."},
-      {t:"Les festes de carrer",w:"Cada dia, a Baluard, Pescadors i Mar",d:"Vermuts, paelles, sardinades i ball fins a la matinada. Els tres carrers fan la festa entre Pepe Rubianes i Emília Llorca."},
-      {t:"Fi de festa",w:"Diumenge 4 · 19 h",d:"A la plaça de la Barceloneta, amb un monòleg de Pepi Labrador i una sessió de PD per tancar la festa."}
+      {t:"Foc Bestial i versots infernals",w:"Dissabte 3 · 19 h",d:"Cercavila amb torxes des del carrer de la Conreria, correfoc i, a la plaça de la Barceloneta, la lectura dels versots i la cremada final."}
     ],
     know:[
       ["Seguretat als correfocs","Porteu roba de protecció que tapi el cos i calçat tancat, i protegiu-vos els ulls i les orelles. No porteu els infants a les primeres files. Seguiu en tot moment les indicacions de l'organització, la policia i els serveis sanitaris."],
       ["Els tres carrers en festa","Baluard, Pescadors i Mar fan la festa en el mateix tram, entre el carrer de Pepe Rubianes i el d'Emília Llorca."],
-      ["Punt Lila","Punt d'informació, prevenció i atenció davant les violències masclistes i LGTBIfòbiques. Divendres 2 al carrer de l'Atlàntida, 78 (22–2 h) i dissabte 3 a la plaça del Mar (21.30–1.30 h). Als mateixos llocs i hores hi ha el punt Rumba & Sexualitats i el d'Energy Control."],
+      ["Punt Lila","Punt d'informació, prevenció i atenció davant les violències masclistes i LGTBIfòbiques. Dissabte 26 a la plaça de la Barceloneta (22–2.30 h), divendres 2 al carrer de l'Atlàntida, 78 (22–2 h) i dissabte 3 a la plaça del Mar (21.30–1.30 h). Els dies 2 i 3, als mateixos llocs i hores, també hi ha el punt Rumba & Sexualitats i el d'Energy Control."],
       ["Lavabos públics","Plaça del Poeta Boscà amb Sant Carles, passeig Joan de Borbó amb plaça del Mar, passeig Marítim amb Atlàntida i amb Trelawny, i parc de la Barceloneta amb el passeig Marítim. També hi ha cabines mòbils als espais de la festa."],
       ["Durant tota la festa","Fira d'atraccions i casetes d'artesans al moll de la Barceloneta, exposició d'imatgeria festiva al Mercat, aparadors engalanats (ruta a acib.cat) i l'exposició «Receptes del passat per a salvar el futur» a la Casa de la Barceloneta 1761."],
       ["Emergències","Telèfon d'emergències: 112. Contra la violència masclista: 900 900 120, les 24 hores, en 124 idiomes, confidencial i gratuït."]
     ]
   },
   es:{
-    eyebrow:"Fiesta Mayor · 1–4 de octubre",
-    meta:[["Fiesta mayor","25 sep. – 4 oct."],["Esta guía","Jue 1 – Dom 4"],["Patrón","Sant Miquel"],["Distrito","Ciutat Vella"]],
-    lede:"La fiesta mayor de la Barceloneta, en honor de Sant Miquel. Esta guía recoge los cuatro últimos días: dos correfocs, la cercavila del Canó, las fiestas de las calles Baluard, Pescadors y del Mar y el fin de fiesta en la plaza de la Barceloneta.",
-    nav:["Esenciales","Jue 1","Vie 2","Sáb 3","Dom 4","Lugares","Antes de ir"],
+    eyebrow:"Fiesta Mayor · 25 sep. – 4 oct.",
+    meta:[["Fiesta mayor","25 sep. – 4 oct."],["Pregón","Vie 25 · 19 h"],["Patrón","Sant Miquel"],["Distrito","Ciutat Vella"]],
+    lede:"La fiesta mayor de la Barceloneta, en honor de Sant Miquel, del 25 de septiembre al 4 de octubre. Diez días con el pregón, las habaneras, dos correfocs, la Cercavila del Canó, las fiestas de las calles Baluard, Pescadors y del Mar y el fin de fiesta en la plaza de la Barceloneta.",
+    nav:["Esenciales","Vie 25","Sáb 26","Dom 27","Lun 28","Mar 29","Mié 30","Jue 1","Vie 2","Sáb 3","Dom 4","Lugares","Antes de ir"],
     essLbl:"Si solo hacéis cinco cosas",essTitle:"Lo esencial",
     placesLbl:"Los lugares",placesTitle:"Dónde pasa todo",
     placesNote:"Tocad «Cómo llegar» y elegid la aplicación de mapas que uséis habitualmente.",
     dirs:"Cómo llegar", tipLbl:"Consejo", openIn:"Elegid una aplicación de mapas",
     copy:"Copiar la dirección", copied:"Copiado", close:"Cerrar", go:"Abrir",
     knowLbl:"Práctico",knowTitle:"Antes de ir",
-    calloutB:"Sobre las fechas.",
-    callout:" La fiesta mayor empezó el 25 de septiembre con el pregón de la waterpolista Paula Leitón. Esta guía empieza el jueves 1 de octubre y llega hasta el final, el domingo 4. Los días anteriores están en el programa oficial.",
+    calloutB:"Antes de la fiesta.",
+    callout:" El jueves 17 de septiembre a las 19 h, en la plaza dels Escacs, se inauguró la 23.ª edición de la exposición Barceloneta Residents, con obras de artistas del barrio, y se presentó el cartel ganador de la fiesta mayor.",
     foot1:'Toda la información de esta página se ha recogido del <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_FM_Barceloneta.a7bf2a66.pdf" target="_blank" rel="noopener">programa oficial</a> de la Festa Major, publicado por el Ayuntamiento de Barcelona. Consultadlo para el programa completo y para cualquier cambio.',
     foot2:"Es un proyecto personal, hecho para que todo el mundo pueda encontrar los horarios y los lugares con más facilidad y disfrutar de la fiesta. No es una publicación oficial. La página no usa cookies ni recoge ningún dato de quien la visita.",
     ess:[
+      {t:"Pregón de Fiesta Mayor",w:"Viernes 25 · 19 h",d:"En la plaza de la Barceloneta, con los gigantes, la entrega del Canó de plata y el pregón de la waterpolista Paula Leitón."},
+      {t:"Cantada de habaneras",w:"Sábado 26 · 19 h",d:"Memorial Pepe Vilches en la plaza de la Barceloneta, con el tradicional ron quemado."},
       {t:"Correfoc del Canó",w:"Viernes 2 · tabalada a las 19.15 h, fuego a las 20 h",d:"Sale del paseo Marítimo, a la altura de Andrea Dòria, y pasa por Pepe Rubianes y Joan de Borbó hasta la plaza de la Barceloneta."},
       {t:"Cercavila del Canó",w:"Sábado 3 · 10 h",d:"«Senyor Rector, volem el canó!» El cañón de la Barceloneta da la vuelta al barrio con un pasacalle familiar. Es uno de los actos más esperados por los niños."},
-      {t:"Foc Bestial y versots infernals",w:"Sábado 3 · 19 h",d:"Pasacalle con antorchas desde la calle de la Conreria, correfoc y, en la plaza de la Barceloneta, la lectura de los versots y la quema final."},
-      {t:"Las fiestas de calle",w:"Cada día, en Baluard, Pescadors y Mar",d:"Vermuts, paellas, sardinadas y baile hasta la madrugada. Las tres calles hacen la fiesta entre Pepe Rubianes y Emília Llorca."},
-      {t:"Fin de fiesta",w:"Domingo 4 · 19 h",d:"En la plaza de la Barceloneta, con un monólogo de Pepi Labrador y una sesión de DJ para cerrar la fiesta."}
+      {t:"Foc Bestial y versots infernals",w:"Sábado 3 · 19 h",d:"Pasacalle con antorchas desde la calle de la Conreria, correfoc y, en la plaza de la Barceloneta, la lectura de los versots y la quema final."}
     ],
     know:[
       ["Seguridad en los correfocs","Llevad ropa de protección que cubra el cuerpo y calzado cerrado, y protegeos los ojos y los oídos. No llevéis a los niños a las primeras filas. Seguid en todo momento las indicaciones de la organización, la policía y los servicios sanitarios."],
       ["Las tres calles en fiesta","Baluard, Pescadors y Mar hacen la fiesta en el mismo tramo, entre la calle de Pepe Rubianes y la de Emília Llorca."],
-      ["Punto Lila","Punto de información, prevención y atención ante las violencias machistas y LGTBIfóbicas. Viernes 2 en la calle de l'Atlàntida, 78 (22–2 h) y sábado 3 en la plaza del Mar (21.30–1.30 h). En los mismos lugares y horas están el punto Rumba & Sexualitats y el de Energy Control."],
+      ["Punto Lila","Punto de información, prevención y atención ante las violencias machistas y LGTBIfóbicas. Sábado 26 en la plaza de la Barceloneta (22–2.30 h), viernes 2 en la calle de l'Atlàntida, 78 (22–2 h) y sábado 3 en la plaza del Mar (21.30–1.30 h). Los días 2 y 3, en los mismos lugares y horas, también están el punto Rumba & Sexualitats y el de Energy Control."],
       ["Lavabos públicos","Plaza del Poeta Boscà con Sant Carles, paseo Joan de Borbó con plaza del Mar, paseo Marítimo con Atlàntida y con Trelawny, y parque de la Barceloneta con el paseo Marítimo. También hay cabinas móviles en los espacios de la fiesta."],
       ["Durante toda la fiesta","Feria de atracciones y casetas de artesanos en el muelle de la Barceloneta, exposición de imaginería festiva en el Mercado, escaparates engalanados (ruta en acib.cat) y la exposición «Receptes del passat per a salvar el futur» en la Casa de la Barceloneta 1761."],
       ["Emergencias","Teléfono de emergencias: 112. Contra la violencia machista: 900 900 120, las 24 horas, en 124 idiomas, confidencial y gratuito."]
     ]
   },
   en:{
-    eyebrow:"Festa Major · 1–4 October",
-    meta:[["Festival","25 Sep – 4 Oct"],["This guide","Thu 1 – Sun 4"],["Patron saint","Sant Miquel"],["District","Ciutat Vella"]],
-    lede:"Barceloneta's neighbourhood festival, held for Sant Miquel. This guide covers the last four days, with two fire runs, the cannon parade, the street parties on Baluard, Pescadors and Carrer del Mar, and a closing night in Plaça de la Barceloneta.",
-    nav:["Essentials","Thu 1","Fri 2","Sat 3","Sun 4","Places","Before you go"],
+    eyebrow:"Festa Major · 25 Sep – 4 Oct",
+    meta:[["Festival","25 Sep – 4 Oct"],["Opening speech","Fri 25 · 7:00 PM"],["Patron saint","Sant Miquel"],["District","Ciutat Vella"]],
+    lede:"Barceloneta's neighbourhood festival, held for Sant Miquel from 25 September to 4 October. Ten days with the opening speech, havaneres, two fire runs, the Cercavila del Canó, the street parties on Baluard, Pescadors and Carrer del Mar, and a closing night in Plaça de la Barceloneta.",
+    nav:["Essentials","Fri 25","Sat 26","Sun 27","Mon 28","Tue 29","Wed 30","Thu 1","Fri 2","Sat 3","Sun 4","Places","Before you go"],
     essLbl:"If you only do five things",essTitle:"The essentials",
     placesLbl:"The places",placesTitle:"Where it all happens",
     placesNote:"Tap Directions and pick whichever maps app you normally use.",
     dirs:"Directions", tipLbl:"Tip", openIn:"Choose a maps app",
     copy:"Copy address", copied:"Copied", close:"Close", go:"Open",
     knowLbl:"Practical",knowTitle:"Before you go",
-    calloutB:"About the dates.",
-    callout:" The festival began on 25 September, with an opening speech by the water polo player Paula Leitón. This guide picks up on Thursday 1 October and runs to the end on Sunday 4. The earlier days are in the official programme.",
+    calloutB:"Before the festival.",
+    callout:" On Thursday 17 September at 7:00 PM, in Plaça dels Escacs, the 23rd Barceloneta Residents exhibition of work by local artists opened, and the winning festival poster was presented.",
     foot1:'All the information on this page was gathered from the <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_FM_Barceloneta.a7bf2a66.pdf" target="_blank" rel="noopener">official programme</a> published by Barcelona City Council. Please check it for the full programme and any changes.',
     foot2:"This is a personal project, made so that everyone can find the times and places more easily and enjoy the festival. It is not an official publication. The page sets no cookies and collects nothing about the people who read it.",
     ess:[
+      {t:"Pregó, the opening speech",w:"Friday 25 · 7:00 PM",d:"In Plaça de la Barceloneta, with the giants, the presentation of the Canó de plata and a speech by the water polo player Paula Leitón."},
+      {t:"Havaneres",w:"Saturday 26 · 7:00 PM",d:"The Pepe Vilches memorial in Plaça de la Barceloneta, with the traditional rom cremat."},
       {t:"Correfoc del Canó",w:"Friday 2 · drums at 7:15 PM, fire at 8:00 PM",d:"The fire run sets off from Passeig Marítim at Andrea Dòria and goes along Pepe Rubianes and Joan de Borbó to Plaça de la Barceloneta."},
       {t:"Cercavila del Canó",w:"Saturday 3 · 10:00 AM",d:"\"Senyor Rector, volem el canó!\" The Barceloneta cannon goes round the neighbourhood in a family parade. It is one of the events children look forward to most."},
-      {t:"Foc Bestial and the versots",w:"Saturday 3 · 7:00 PM",d:"A torchlit parade from Carrer de la Conreria, then a fire run. It ends in Plaça de la Barceloneta with the reading of the versots and a final burning."},
-      {t:"The street parties",w:"Every day, on Baluard, Pescadors and Mar",d:"Vermouth, paella, grilled sardines and dancing into the early hours. All three streets hold their party between Pepe Rubianes and Emília Llorca."},
-      {t:"Fi de festa",w:"Sunday 4 · 7:00 PM",d:"The closing night in Plaça de la Barceloneta, with a monologue by Pepi Labrador and a DJ set to finish."}
+      {t:"Foc Bestial and the versots",w:"Saturday 3 · 7:00 PM",d:"A torchlit parade from Carrer de la Conreria, then a fire run. It ends in Plaça de la Barceloneta with the reading of the versots and a final burning."}
     ],
     know:[
       ["Fire run safety","Wear protective clothing that covers your body and closed shoes, and protect your eyes and ears. Keep children out of the front rows. Follow the instructions of the organisers, the police and the medical teams at all times."],
       ["Three streets, one stretch","Baluard, Pescadors and Mar all hold their parties on the same stretch, between Carrer de Pepe Rubianes and Carrer d'Emília Llorca."],
-      ["Punt Lila","Information, prevention and support for anyone facing sexist or anti-LGBTI violence. Friday 2 at Carrer de l'Atlàntida 78 (10:00 PM–2:00 AM) and Saturday 3 in Plaça del Mar (9:30 PM–1:30 AM). The Rumba & Sexualitats and Energy Control information points are at the same places and times."],
+      ["Punt Lila","Information, prevention and support for anyone facing sexist or anti-LGBTI violence. Saturday 26 in Plaça de la Barceloneta (10:00 PM–2:30 AM), Friday 2 at Carrer de l'Atlàntida 78 (10:00 PM–2:00 AM) and Saturday 3 in Plaça del Mar (9:30 PM–1:30 AM). On the 2nd and 3rd, the Rumba & Sexualitats and Energy Control information points are at the same places and times."],
       ["Public toilets","Plaça del Poeta Boscà at Sant Carles, Passeig Joan de Borbó at Plaça del Mar, Passeig Marítim at Atlàntida and at Trelawny, and Parc de la Barceloneta at Passeig Marítim. There are also portable toilets at the festival spaces."],
       ["Throughout the festival","A funfair and craft stalls on Moll de la Barceloneta, the festive figures on display at the Mercat, decorated shop windows (route on acib.cat), and the exhibition on old seafaring recipes at Casa de la Barceloneta 1761."],
       ["Emergencies","Emergency number: 112. For gender-based violence: 900 900 120, around the clock, in 124 languages, confidential and free."]
@@ -383,6 +396,195 @@ const TAG = {
 };
 
 const DAYS = [
+  { id:"d25", num:"25",
+    dow:{ca:"Divendres · 25 de setembre",es:"Viernes · 25 de septiembre",en:"Friday · 25 September"},
+    title:{ca:"El pregó obre la festa",es:"El pregón abre la fiesta",en:"The opening speech"},
+    note:{ca:"Des de les 11 h",es:"Desde las 11 h",en:"From 11:00 AM"},
+    events:[
+      E("11","13",[],"bosca",
+        {ca:"La Secció Muntada a la festa major",es:"La Sección Montada en la fiesta mayor",en:"The Mounted Unit at the festival"},
+        {ca:"Descobriu el dia a dia de la Unitat Muntada de la Guàrdia Urbana: com cuiden, alimenten i entrenen els cavalls.",
+         es:"Descubrid el día a día de la Unidad Montada de la Guardia Urbana: cómo cuidan, alimentan y entrenan a los caballos.",
+         en:"A look at the daily work of the Guàrdia Urbana's Mounted Unit and how they care for, feed and train their horses."}),
+      E("12","20.30",[],"portvell", MARKET.title, MARKET.desc),
+      E("17","18.30",["book"],"casa1761",
+        {ca:"Ruta guiada: memòria històrica i social del barri",es:"Ruta guiada: memoria histórica y social del barrio",en:"Guided walk through the neighbourhood's social history"},
+        {ca:"Un recorregut per indrets lligats al moviment obrer, l'antifeixisme, l'antiracisme, les lluites veïnals i la igualtat de gènere, alguns encara drets i d'altres ja desapareguts.",
+         es:"Un recorrido por lugares ligados al movimiento obrero, el antifascismo, el antirracismo, las luchas vecinales y la igualdad de género, algunos aún en pie y otros ya desaparecidos.",
+         en:"A walk past places tied to the workers' movement, anti-fascism, anti-racism, neighbourhood campaigns and gender equality. Some are still standing and some are long gone."},
+        {loc:S("Casa de la Barceloneta 1761, c. de Sant Carles, 6"),
+         tip:{ca:"Places limitades. Inscripció a info@casabarceloneta1761.cat o al 93 688 49 56.",
+              es:"Plazas limitadas. Inscripción en info@casabarceloneta1761.cat o en el 93 688 49 56.",
+              en:"Places are limited. Book at info@casabarceloneta1761.cat or on 93 688 49 56."}}),
+      E("17.30","18.30",[],"biblio",
+        {ca:"Concert de Festa Major",es:"Concierto de Fiesta Mayor",en:"Festa Major concert"},
+        {ca:"Actuació de Zoe & The Longplay Band, organitzada per la Biblioteca de la Barceloneta – La Fraternitat.",
+         es:"Actuación de Zoe & The Longplay Band, organizada por la Biblioteca de la Barceloneta – La Fraternitat.",
+         en:"Zoe & The Longplay Band, in a concert organised by the Biblioteca de la Barceloneta – La Fraternitat."},
+        {loc:S("C. Felícia Fuster i Viladecans, 8")}),
+      E("18.30","03",[],"baluard",
+        {ca:"Festa major al carrer Baluard",es:"Fiesta mayor en la calle Baluard",en:"Festa major on Carrer Baluard"},
+        {ca:"Concert de Combo la Brava de 18.30 a 20 h, DJ Juli de 20 a 22 h, concert amb banda de 23 a 00.30 h i DJ Juli i Xisquet el Terrible fins a les 3 h.",
+         es:"Concierto de Combo la Brava de 18.30 a 20 h, DJ Juli de 20 a 22 h, concierto con banda de 23 a 00.30 h y DJ Juli y Xisquet el Terrible hasta las 3 h.",
+         en:"Combo la Brava play from 6:30 to 8:00 PM and DJ Juli from 8:00 to 10:00. A band plays from 11:00 PM to 12:30 AM, then DJ Juli and Xisquet el Terrible until 3:00 AM."}),
+      E("19","22",["open","miss"],"plbcn",
+        {ca:"Pregó de Festa Major",es:"Pregón de Fiesta Mayor",en:"Pregó, the opening speech"},
+        {ca:"Presenta l'acte Ma Luisa Mera (wisa). A les 19.10 h arriben i ballen els gegants de la Barceloneta, a les 19.25 h l'AV. Barceloneta lliura el Canó de plata i a les 19.45 h fa el pregó Paula Leitón, waterpolista del CNAB i medallista olímpica. Després dels parlaments (20.10 h) i del ball de sortida dels gegants (20.25 h), concert de Ravals Band i refrigeri a càrrec de la Fundació Costa Este (20.35 h).",
+         es:"Presenta el acto Ma Luisa Mera (wisa). A las 19.10 h llegan y bailan los gigantes de la Barceloneta, a las 19.25 h la AV. Barceloneta entrega el Canó de plata y a las 19.45 h da el pregón Paula Leitón, waterpolista del CNAB y medallista olímpica. Tras los parlamentos (20.10 h) y el baile de salida de los gigantes (20.25 h), concierto de Ravals Band y refrigerio a cargo de la Fundació Costa Este (20.35 h).",
+         en:"Ma Luisa Mera (wisa) presents the evening. The Barceloneta giants arrive and dance at 7:10 PM, the AV. Barceloneta presents the Canó de plata at 7:25, and at 7:45 Paula Leitón, CNAB water polo player and Olympic medallist, gives the opening speech. After the speeches (8:10) and the giants' farewell dance (8:25), Ravals Band play and the Fundació Costa Este serves refreshments (8:35)."}),
+      E("20.30","22",[],"pescadors",
+        {ca:"Presentació de la geganta gitana «La Dolores»",es:"Presentación de la gigante gitana «La Dolores»",en:"La Dolores, the new Gitano giant"},
+        {ca:"Cercavila des del carrer Pescadors per Pepe Rubianes, Salamanca i Sant Carles fins a la font de Carmen Amaya, on es fa una ofrena en homenatge a la bailaora. Parlaments, una petita sorpresa a ritme de rumba i ball de la geganta. Després, el recorregut continua per Andrea Dòria, el Poeta Boscà, Miquel de Pedrola i Pepe Rubianes.",
+         es:"Pasacalle desde la calle Pescadors por Pepe Rubianes, Salamanca y Sant Carles hasta la fuente de Carmen Amaya, donde se hace una ofrenda en homenaje a la bailaora. Parlamentos, una pequeña sorpresa a ritmo de rumba y baile de la gigante. Después, el recorrido sigue por Andrea Dòria, el Poeta Boscà, Miquel de Pedrola y Pepe Rubianes.",
+         en:"A parade from Carrer Pescadors along Pepe Rubianes, Salamanca and Sant Carles to the Carmen Amaya fountain, where an offering is made in tribute to the dancer. Speeches, a small surprise to a rumba beat, and the giant's first dance. The route then continues along Andrea Dòria, Poeta Boscà, Miquel de Pedrola and Pepe Rubianes."},
+        {loc:{ca:"Surt del c. Pescadors (entre Pepe Rubianes i Emília Llorca)",es:"Sale de la c. Pescadors (entre Pepe Rubianes y Emília Llorca)",en:"Starts on Carrer Pescadors (between Pepe Rubianes and Emília Llorca)"}})
+    ]},
+
+  { id:"d26", num:"26",
+    dow:{ca:"Dissabte · 26 de setembre",es:"Sábado · 26 de septiembre",en:"Saturday · 26 September"},
+    title:{ca:"Barceloneta Urbana i havaneres",es:"Barceloneta Urbana y habaneras",en:"Street art and havaneres"},
+    note:{ca:"Des de les 10 h",es:"Desde las 10 h",en:"From 10:00 AM"},
+    events:[
+      E("10","14",[],"somorrostro",
+        {ca:"Torneig de petanca i dominó",es:"Torneo de petanca y dominó",en:"Petanque and dominoes tournament"},
+        {ca:"Una jornada de convivència, diversió i competició, organitzada pel Centre d'Esports de la Platja.",
+         es:"Una jornada de convivencia, diversión y competición, organizada por el Centre d'Esports de la Platja.",
+         en:"A morning of friendly competition, organised by the Centre d'Esports de la Platja."}),
+      E("11","14",["kids"],"salvat",
+        {ca:"Festa infantil: inflables",es:"Fiesta infantil: hinchables",en:"Children's party with inflatables"},
+        {ca:"Festa d'inflables i activitats per als més petits.",
+         es:"Fiesta de hinchables y actividades para los más pequeños.",
+         en:"Inflatables and activities for young children."}),
+      E("11","21.30",[],"parc",
+        {ca:"Jornada Barceloneta Urbana",es:"Jornada Barceloneta Urbana",en:"Barceloneta Urbana"},
+        {ca:"D'11 a 20 h, trobada d'artistes muralistes i grafiters al mur del parc, coordinada per Turkesa. A les 12 h, davant del Centre Cívic, Octavi de la Iglesia presenta «¡Estamos grabando!», assaig obert d'una peça de teatre de carrer. De 16 a 21.30 h, Red Line, 16a edició del campionat de breaking 2 contra 2, amb categories infantil, dona i general.",
+         es:"De 11 a 20 h, encuentro de artistas muralistas y grafiteros en el muro del parque, coordinado por Turkesa. A las 12 h, delante del Centre Cívic, Octavi de la Iglesia presenta «¡Estamos grabando!», ensayo abierto de una pieza de teatro de calle. De 16 a 21.30 h, Red Line, 16.ª edición del campeonato de breaking 2 contra 2, con categorías infantil, mujer y general.",
+         en:"From 11:00 AM to 8:00 PM, muralists and graffiti artists paint the park wall, coordinated by Turkesa. At noon, outside the Centre Cívic, Octavi de la Iglesia presents ¡Estamos grabando!, an open rehearsal of a street theatre piece. From 4:00 to 9:30 PM, Red Line holds its 16th 2-on-2 breaking championship, with children's, women's and open categories."},
+        {loc:{ca:"Parc de la Barceloneta i pl. dels Escacs",es:"Parque de la Barceloneta y pl. dels Escacs",en:"Parc de la Barceloneta and Plaça dels Escacs"}}),
+      E("12","20.30",[],"portvell", MARKET.title, MARKET.desc),
+      E("12","02",[],"baluard",
+        {ca:"Festa major al carrer Baluard",es:"Fiesta mayor en la calle Baluard",en:"Festa major on Carrer Baluard"},
+        {ca:"Vermut i rumba amb D'estraperlo de 12 a 14 h, sopar de germanor de 20.30 a 22.30 h i concert amb l'orquestra Aquarium fins a les 2 h.",
+         es:"Vermut y rumba con D'estraperlo de 12 a 14 h, cena de hermandad de 20.30 a 22.30 h y concierto con la orquesta Aquarium hasta las 2 h.",
+         en:"Vermouth and rumba with D'estraperlo from noon to 2:00 PM, a street dinner from 8:30 to 10:30 PM, then the Aquarium orchestra until 2:00 AM."}),
+      E("18","21",[],"mollpesc",
+        {ca:"Degustació de productes pesquers",es:"Degustación de productos pesqueros",en:"Seafood tasting"},
+        {ca:"Degustació de productes pesquers i begudes, a càrrec de la Confraria de Pescadors de Barcelona.",
+         es:"Degustación de productos pesqueros y bebidas, a cargo de la Confraria de Pescadors de Barcelona.",
+         en:"Fish, seafood and drinks to taste, served by the Confraria de Pescadors de Barcelona."}),
+      E("19","21",["miss"],"plbcn",
+        {ca:"Cantada d'havaneres Memorial Pepe Vilches",es:"Cantada de habaneras Memorial Pepe Vilches",en:"Havaneres in memory of Pepe Vilches"},
+        {ca:"La tradicional cantada d'havaneres en record de Pepe Vilches, amb el tradicional rom cremat.",
+         es:"La tradicional cantada de habaneras en recuerdo de Pepe Vilches, con el tradicional ron quemado.",
+         en:"The traditional evening of havaneres in memory of Pepe Vilches, with rom cremat, the traditional burnt rum."})
+    ]},
+
+  { id:"d27", num:"27",
+    dow:{ca:"Diumenge · 27 de setembre",es:"Domingo · 27 de septiembre",en:"Sunday · 27 September"},
+    title:{ca:"Gòspel a la plaça",es:"Góspel en la plaza",en:"Gospel in the square"},
+    note:{ca:"Des de les 11.30 h",es:"Desde las 11.30 h",en:"From 11:30 AM"},
+    events:[
+      E("11.30","13.30",["kids"],"genesca",
+        {ca:"Jocs infantils d'aventura",es:"Juegos infantiles de aventura",en:"Adventure games for children"},
+        {ca:"Per a infants de 3 a 10 anys.",
+         es:"Para niños de 3 a 10 años.",
+         en:"For children aged 3 to 10."}),
+      E("12","20.30",[],"portvell", MARKET.title, MARKET.desc),
+      E("12","21",[],"baluard",
+        {ca:"Festa major al carrer Baluard",es:"Fiesta mayor en la calle Baluard",en:"Festa major on Carrer Baluard"},
+        {ca:"Botifarrada amb música de 12 a 14 h. De 18 a 21 h, playbacks: pugeu a l'escenari i interpreteu les vostres cançons preferides.",
+         es:"Butifarrada con música de 12 a 14 h. De 18 a 21 h, playbacks: subid al escenario e interpretad vuestras canciones favoritas.",
+         en:"A sausage grill with music from noon to 2:00 PM. From 6:00 to 9:00 PM, playbacks: get on stage and perform your favourite songs."}),
+      E("19","21",[],"plbcn",
+        {ca:"Gòspel",es:"Góspel",en:"Gospel"},
+        {ca:"Música coral inspirada en la tradició gòspel, a càrrec del Little Light Gòspel Choir.",
+         es:"Música coral inspirada en la tradición góspel, a cargo del Little Light Gòspel Choir.",
+         en:"Choral music in the gospel tradition, sung by the Little Light Gòspel Choir."})
+    ]},
+
+  { id:"d28", num:"28",
+    dow:{ca:"Dilluns · 28 de setembre",es:"Lunes · 28 de septiembre",en:"Monday · 28 September"},
+    title:{ca:"Ruta històrica i sopar de gala",es:"Ruta histórica y cena de gala",en:"History walk and gala dinner"},
+    note:{ca:"Des de les 11 h",es:"Desde las 11 h",en:"From 11:00 AM"},
+    events:[
+      E("11","13.30",["book","free"],"casalcivic",
+        {ca:"Ruta històrica per la Barceloneta",es:"Ruta histórica por la Barceloneta",en:"A historical walk through Barceloneta"},
+        {ca:"Itinerari amb Carmen Núñez des del c. Baluard, 28, pel passeig Joan de Borbó, la plaça del Mar, la plaça de la Rosa dels Vents i el passeig del Trencaones. Activitat gratuïta, places limitades.",
+         es:"Itinerario con Carmen Núñez desde la c. Baluard, 28, por el paseo Joan de Borbó, la plaza del Mar, la plaza de la Rosa dels Vents y el paseo del Trencaones. Actividad gratuita, plazas limitadas.",
+         en:"A walk led by Carmen Núñez from Carrer Baluard 28 along Passeig Joan de Borbó, Plaça del Mar, Plaça de la Rosa dels Vents and Passeig del Trencaones. Free, with limited places."},
+        {loc:S("Casal Cívic i Comunitari Barcelona – Barceloneta, c. Baluard, 28"),
+         tip:{ca:"Inscripcions a partir del 14 de setembre al Casal, a cc.barcelonabarceloneta@gencat.cat o al 932 21 67 16.",
+              es:"Inscripciones a partir del 14 de septiembre en el Casal, en cc.barcelonabarceloneta@gencat.cat o en el 932 21 67 16.",
+              en:"Registration from 14 September at the Casal, at cc.barcelonabarceloneta@gencat.cat or on 932 21 67 16."}}),
+      E("16.30","19.30",["kids"],"bosca",
+        {ca:"Jocs sobredimensionats",es:"Juegos sobredimensionados",en:"Giant games"},
+        {ca:"Jocs de gran format perquè els infants juguin i descobreixin en companyia.",
+         es:"Juegos de gran formato para que los niños jueguen y descubran en compañía.",
+         en:"Oversized games for children to play and discover together."}),
+      E("18","18.45",[],"genesca",
+        {ca:"L'Ecopagès: que l'alimentació ecològica t'acompanyi",es:"L'Ecopagès: que la alimentación ecológica te acompañe",en:"L'Ecopagès: may organic food be with you"},
+        {ca:"Espectacle participatiu i amb humor de Rufi Rodríguez sobre els aliments ecològics. Amb preguntes i jocs, desmunta alguns mites sobre l'ecologia i la sostenibilitat. Proposta familiar, amb berenar.",
+         es:"Espectáculo participativo y con humor de Rufi Rodríguez sobre los alimentos ecológicos. Con preguntas y juegos, desmonta algunos mitos sobre la ecología y la sostenibilidad. Propuesta familiar, con merienda.",
+         en:"A participatory, humorous show by Rufi Rodríguez about organic food. Through questions and games, it takes apart some common myths about ecology and sustainability. For families, with an afternoon snack."}),
+      E("18","20",["kids"],"baluard",
+        {ca:"Actuació infantil i berenar",es:"Actuación infantil y merienda",en:"Children's show and snack"},
+        {ca:"Espectacle infantil i berenar per als més petits.",
+         es:"Espectáculo infantil y merienda para los más pequeños.",
+         en:"A show and an afternoon snack for young children."}),
+      E("19","23",[],"maquinista",
+        {ca:"Sopar de gala de la gent gran",es:"Cena de gala de la gente mayor",en:"Gala dinner for older residents"},
+        {ca:"Espectacle del casal i sopar amb ball per a la gent gran del barri.",
+         es:"Espectáculo del casal y cena con baile para la gente mayor del barrio.",
+         en:"A show by the seniors' centre and a dinner dance for the neighbourhood's older residents."},
+        {loc:S("Pistes de la Maquinista, pg. de Salvat Papasseit, 45")})
+    ]},
+
+  { id:"d29", num:"29",
+    dow:{ca:"Dimarts · 29 de setembre",es:"Martes · 29 de septiembre",en:"Tuesday · 29 September"},
+    title:{ca:"Sant Miquel",es:"Sant Miquel",en:"Sant Miquel"},
+    note:{ca:"Des de les 10 h",es:"Desde las 10 h",en:"From 10:00 AM"},
+    events:[
+      E("10","11.30",["kids"],"parc",
+        {ca:"Espectacle de circ i visita del Canó a les escoles",es:"Espectáculo de circo y visita del Canó a las escuelas",en:"Circus show and the Canó visits the schools"},
+        {ca:"Espectacle de circ «Back2Classics» de la companyia Planeta Trampolí i visita del Canó i del General Lagarto. Activitat adreçada a les escoles de primària del barri.",
+         es:"Espectáculo de circo «Back2Classics» de la compañía Planeta Trampolí y visita del Canó y del General Lagarto. Actividad dirigida a las escuelas de primaria del barrio.",
+         en:"The circus show Back2Classics by Planeta Trampolí, and a visit from the Canó and General Lagarto. For the neighbourhood's primary schools."}),
+      E("17","21",[],"cc",
+        {ca:"Tarda de donacions",es:"Tarde de donaciones",en:"Blood and food donations"},
+        {ca:"Donació de sang i recollida d'aliments.",
+         es:"Donación de sangre y recogida de alimentos.",
+         en:"Blood donation and a food collection."},
+        {loc:S("Centre Cívic Barceloneta, c. de la Conreria, 1")}),
+      E("17.30","20.15",[],"esglesia",
+        {ca:"Ofrena floral i missa",es:"Ofrenda floral y misa",en:"Flower offering and mass"},
+        {ca:"Ofrena floral i missa en honor de Sant Miquel, patró de la Barceloneta.",
+         es:"Ofrenda floral y misa en honor de Sant Miquel, patrón de la Barceloneta.",
+         en:"A flower offering and mass in honour of Sant Miquel, patron saint of Barceloneta."})
+    ]},
+
+  { id:"d30", num:"30",
+    dow:{ca:"Dimecres · 30 de setembre",es:"Miércoles · 30 de septiembre",en:"Wednesday · 30 September"},
+    title:{ca:"Tallers i contes",es:"Talleres y cuentos",en:"Workshops and stories"},
+    note:{ca:"Des de les 17 h",es:"Desde las 17 h",en:"From 5:00 PM"},
+    events:[
+      E("17","19",[],"bosca",
+        {ca:"Tallers de cultura",es:"Talleres de cultura",en:"Traditional culture workshops"},
+        {ca:"Tallers de cultura tradicional amb els Diables i Diablesses, els Gegants, el Grup Sardanista i el Taller d'Història de la Barceloneta.",
+         es:"Talleres de cultura tradicional con los Diables i Diablesses, los Gegants, el Grup Sardanista y el Taller d'Història de la Barceloneta.",
+         en:"Workshops on traditional culture with Barceloneta's devils, giants, sardana group and local history workshop."}),
+      E("18","20",[],"baluard",
+        {ca:"Conta contes i xocolata",es:"Cuentacuentos y chocolate",en:"Storytelling and hot chocolate"},
+        {ca:"Històries plenes de màgia i imaginació, acompanyades d'una tassa de xocolata.",
+         es:"Historias llenas de magia e imaginación, acompañadas de una taza de chocolate.",
+         en:"Stories full of magic and imagination, with a cup of hot chocolate."}),
+      E("19","20",[],"cc",
+        {ca:"Projecció de «Timbalaye»",es:"Proyección de «Timbalaye»",en:"Screening of Timbalaye"},
+        {ca:"Documental en procés sobre la música cubana, dirigit per Lucian Segura.",
+         es:"Documental en proceso sobre la música cubana, dirigido por Lucian Segura.",
+         en:"A documentary in progress about Cuban music, directed by Lucian Segura."},
+        {loc:S("Centre Cívic Barceloneta, c. de la Conreria, 1-9")})
+    ]},
+
   { id:"d1", num:"1",
     dow:{ca:"Dijous · 1 d'octubre",es:"Jueves · 1 de octubre",en:"Thursday · 1 October"},
     title:{ca:"El carrer del Mar obre la festa",es:"La calle del Mar abre la fiesta",en:"Carrer del Mar joins in"},
@@ -636,9 +838,18 @@ const DAYS = [
 ];
 
 const PLACES = [
-  { k:"plbcn", d:{ca:"Galejada i Cercavila del Canó dissabte, arribada dels dos correfocs i fi de festa diumenge",
-      es:"Galejada y Cercavila del Canó el sábado, llegada de los dos correfocs y fin de fiesta el domingo",
-      en:"The wake-up call and cannon parade on Saturday, the end point of both fire runs, and Sunday's closing night"} },
+  { k:"esglesia", d:{ca:"Ofrena floral i missa en honor de Sant Miquel, dimarts 29 a les 17.30 h",
+      es:"Ofrenda floral y misa en honor de Sant Miquel, martes 29 a las 17.30 h",
+      en:"Flower offering and mass for Sant Miquel, Tuesday 29 at 5:30 PM"} },
+  { k:"portvell", d:{ca:"Street Market de divendres 25 a diumenge 27",
+      es:"Street Market de viernes 25 a domingo 27",
+      en:"Street Market from Friday 25 to Sunday 27"} },
+  { k:"genesca", d:{ca:"Jocs infantils d'aventura i L'Ecopagès",
+      es:"Juegos infantiles de aventura y L'Ecopagès",
+      en:"Adventure games for children and L'Ecopagès"} },
+  { k:"plbcn", d:{ca:"Pregó, havaneres i gòspel, la Galejada i la Cercavila del Canó, l'arribada dels dos correfocs i el fi de festa",
+      es:"Pregón, habaneras y góspel, la Galejada y la Cercavila del Canó, la llegada de los dos correfocs y el fin de fiesta",
+      en:"The opening speech, havaneres and gospel, the wake-up call and cannon parade, the end of both fire runs, and the closing night"} },
   { k:"andrea", d:{ca:"Sortida del Correfoc del Canó, divendres a les 20 h",
       es:"Salida del Correfoc del Canó, viernes a las 20 h",
       en:"Where the Correfoc del Canó starts, Friday at 8:00 PM"} },
@@ -692,7 +903,7 @@ const PLACES = [
       en:"Spa open to neighbours on Friday and Saturday, with booking"} }
 ];
 
-const IDS = ["ess","d1","d2","d3","d4","places","know"];
+const IDS = ["ess","d25","d26","d27","d28","d29","d30","d1","d2","d3","d4","places","know"];
 const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 let L_CUR = "en";
 
