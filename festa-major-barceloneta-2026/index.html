@@ -210,39 +210,39 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.2.0";
+const VERSION = "1.2.1";
 
 /* Venues. q is the search text handed to the maps app. */
 const V = {
-  santmiquel : {n:"Platja de Sant Miquel",                  q:"Platja de Sant Miquel, Barcelona"},
-  cc         : {n:"Centre Cívic Barceloneta",               q:"Centre Cívic Barceloneta, Carrer de la Conreria 1, Barcelona"},
-  escacs     : {n:"Plaça dels Escacs",                      q:"Plaça dels Escacs, Barcelona"},
-  sardineta  : {n:"Carrer de l'Atlàntida / Passeig Marítim", q:"Carrer de l'Atlàntida 78, Barcelona"},
-  baluard    : {n:"Carrer del Baluard",                     q:"Carrer del Baluard, Barcelona"},
-  biblio     : {n:"Biblioteca Barceloneta – La Fraternitat", q:"Carrer de Felícia Fuster i Viladecans 8, Barcelona"},
-  mar        : {n:"Carrer del Mar",                         q:"Carrer del Mar, La Barceloneta, Barcelona"},
-  pescadors  : {n:"Carrer dels Pescadors",                  q:"Carrer dels Pescadors, Barcelona"},
-  cem        : {n:"CEM Claror Marítim",                     q:"Passeig Marítim de la Barceloneta 33, Barcelona"},
-  casa1761   : {n:"Casa de la Barceloneta 1761",            q:"Carrer de Sant Carles 6, Barcelona"},
+  santmiquel: {n:"Platja de Sant Miquel",                  q:"Platja de Sant Miquel, Barcelona", lat:41.376160, lng:2.190950},
+  cc        : {n:"Centre Cívic Barceloneta",               q:"Centre Cívic Barceloneta, Carrer de la Conreria 1, Barcelona", lat:41.380300, lng:2.192316},
+  escacs    : {n:"Plaça dels Escacs",                      q:"Plaça dels Escacs, Barcelona", lat:41.380300, lng:2.192316},
+  sardineta : {n:"Carrer de l'Atlàntida / Passeig Marítim", q:"Carrer de l'Atlàntida 78, Barcelona", lat:41.379632, lng:2.192662},
+  baluard   : {n:"Carrer del Baluard",                     q:"Carrer del Baluard, Barcelona", lat:41.378658, lng:2.190577},
+  biblio    : {n:"Biblioteca Barceloneta – La Fraternitat", q:"Carrer de Felícia Fuster i Viladecans 8, Barcelona", lat:41.379233, lng:2.188872},
+  mar       : {n:"Carrer del Mar",                         q:"Carrer del Mar, La Barceloneta, Barcelona", lat:41.378658, lng:2.190577},
+  pescadors : {n:"Carrer dels Pescadors",                  q:"Carrer dels Pescadors, Barcelona", lat:41.378658, lng:2.190577},
+  cem       : {n:"CEM Claror Marítim",                     q:"Passeig Marítim de la Barceloneta 33, Barcelona", lat:41.384700, lng:2.195900},
+  casa1761  : {n:"Casa de la Barceloneta 1761",            q:"Carrer de Sant Carles 6, Barcelona", lat:41.379100, lng:2.188630},
   hilari     : {n:"Plaça d'Hilari Salvadó",                 q:"Plaça d'Hilari Salvadó, Barcelona"},
-  bosca      : {n:"Plaça del Poeta Boscà",                  q:"Plaça del Poeta Boscà, Barcelona"},
-  andrea     : {n:"Passeig Marítim / Andrea Dòria",         q:"Carrer d'Andrea Dòria, Barcelona"},
-  plbcn      : {n:"Plaça de la Barceloneta",                q:"Plaça de la Barceloneta, Barcelona"},
-  prbb       : {n:"PRBB",                                   q:"Carrer del Doctor Aiguader 88, Barcelona"},
-  somorrostro: {n:"Platja del Somorrostro",                 q:"Platja del Somorrostro, Barcelona"},
-  parc       : {n:"Parc de la Barceloneta",                 q:"Parc de la Barceloneta, Barcelona"},
-  plmar      : {n:"Plaça del Mar",                          q:"Plaça del Mar, Barcelona"},
-  pompeu     : {n:"Plaça de Pompeu Gener",                  q:"Plaça de Pompeu Gener, Barcelona"},
-  conreria   : {n:"Carrer de la Conreria",                  q:"Carrer de la Conreria, Barcelona"},
-  moll       : {n:"Moll de la Barceloneta",                 q:"Moll de la Barceloneta, Barcelona"},
-  mercat     : {n:"Mercat de la Barceloneta",               q:"Mercat de la Barceloneta, Barcelona"},
-  portvell   : {n:"Port Vell",                              q:"Port Vell, Barcelona"},
-  salvat     : {n:"Passeig de Salvat Papasseit",            q:"Passeig de Salvat Papasseit, Barcelona"},
-  mollpesc   : {n:"Moll de Pescadors",                      q:"Moll de Pescadors, Barcelona"},
+  bosca     : {n:"Plaça del Poeta Boscà",                  q:"Plaça del Poeta Boscà, Barcelona", lat:41.380246, lng:2.189281},
+  andrea    : {n:"Passeig Marítim / Andrea Dòria",         q:"Carrer d'Andrea Dòria, Barcelona", lat:41.380400, lng:2.193000},
+  plbcn     : {n:"Plaça de la Barceloneta",                q:"Plaça de la Barceloneta, Barcelona", lat:41.379930, lng:2.188050},
+  prbb      : {n:"PRBB",                                   q:"Carrer del Doctor Aiguader 88, Barcelona", lat:41.385576, lng:2.194017},
+  somorrostro: {n:"Platja del Somorrostro",                 q:"Platja del Somorrostro, Barcelona", lat:41.383721, lng:2.195757},
+  parc      : {n:"Parc de la Barceloneta",                 q:"Parc de la Barceloneta, Barcelona", lat:41.382055, lng:2.193838},
+  plmar     : {n:"Plaça del Mar",                          q:"Plaça del Mar, Barcelona", lat:41.373444, lng:2.188685},
+  pompeu    : {n:"Plaça de Pompeu Gener",                  q:"Plaça de Pompeu Gener, Barcelona", lat:41.381643, lng:2.190717},
+  conreria  : {n:"Carrer de la Conreria",                  q:"Carrer de la Conreria, Barcelona", lat:41.380300, lng:2.192316},
+  moll      : {n:"Moll de la Barceloneta",                 q:"Moll de la Barceloneta, Barcelona", lat:41.380839, lng:2.185874},
+  mercat    : {n:"Mercat de la Barceloneta",               q:"Mercat de la Barceloneta, Barcelona", lat:41.380246, lng:2.189281},
+  portvell  : {n:"Port Vell",                              q:"Port Vell, Barcelona", lat:41.380839, lng:2.185874},
+  salvat    : {n:"Passeig de Salvat Papasseit",            q:"Passeig de Salvat Papasseit, Barcelona", lat:41.383032, lng:2.191280},
+  mollpesc  : {n:"Moll de Pescadors",                      q:"Moll de Pescadors, Barcelona", lat:41.375831, lng:2.186997},
   genesca    : {n:"Plaça d'Antoni Genescà i Coromines",     q:"Plaça d'Antoni Genescà i Coromines, Barcelona"},
-  casalcivic : {n:"Casal Cívic i Comunitari Barceloneta",   q:"Carrer del Baluard 28, Barcelona"},
-  maquinista : {n:"Pistes de la Maquinista",                q:"Passeig de Salvat Papasseit 45, Barcelona"},
-  esglesia   : {n:"Església de Sant Miquel del Port",       q:"Carrer de Sant Miquel 39, Barcelona"}
+  casalcivic: {n:"Casal Cívic i Comunitari Barceloneta",   q:"Carrer del Baluard 28, Barcelona", lat:41.380445, lng:2.188552},
+  maquinista: {n:"Pistes de la Maquinista",                q:"Passeig de Salvat Papasseit 45, Barcelona", lat:41.383400, lng:2.191400},
+  esglesia  : {n:"Església de Sant Miquel del Port",       q:"Carrer de Sant Miquel 39, Barcelona", lat:41.379930, lng:2.188050}
 };
 
 /* Times are written once, in local notation, and converted for English. */
@@ -909,12 +909,15 @@ let L_CUR = "en";
 
 function links(v){
   const q = encodeURIComponent(v.q);
-  return [
+  const rows = [
     ["Google Maps",   "https://www.google.com/maps/search/?api=1&query=" + q],
     ["Apple Maps",    "https://maps.apple.com/?q=" + q],
-    ["Citymapper",    "https://citymapper.com/directions?endaddress=" + q + "&endname=" + encodeURIComponent(v.n)],
     ["OpenStreetMap", "https://www.openstreetmap.org/search?query=" + q]
   ];
+  /* Citymapper needs coordinates; it ignores a plain address. */
+  if (v.lat) rows.splice(2, 0, ["Citymapper", "https://citymapper.com/directions?endcoord=" + v.lat + "," + v.lng +
+    "&endname=" + encodeURIComponent(v.n) + "&endaddress=" + q]);
+  return rows;
 }
 
 function showSheet(title, sub, rows, copyValue){

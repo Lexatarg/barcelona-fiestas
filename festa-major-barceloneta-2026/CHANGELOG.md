@@ -13,6 +13,15 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.2.1] — 2026-10-01
+
+### Fixed
+- Citymapper links now open with the destination filled in. Citymapper needs
+  coordinates rather than an address, so each venue now carries them, taken
+  from Barcelona's open data and OpenStreetMap address points. Plaça d'Hilari
+  Salvadó and Plaça d'Antoni Genescà i Coromines offer the other three maps
+  apps only.
+
 ## [1.2.0] — 2026-10-01
 
 ### Added
@@ -63,7 +72,8 @@ For a content site rather than a library, the versions are read as:
 - Venues are searched by address rather than by coordinates, so the maps app
   resolves the exact spot.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.1...HEAD
+[1.2.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.0...festa-major-barceloneta-2026-v1.2.1
 [1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.1.0...festa-major-barceloneta-2026-v1.2.0
 [1.1.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.0.0...festa-major-barceloneta-2026-v1.1.0
 [1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/festa-major-barceloneta-2026-v1.0.0
