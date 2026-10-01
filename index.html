@@ -89,7 +89,7 @@
 </div></footer>
 
 <script>
-/* Newest first. Each guide is shown as happening now, coming up or past, using Barcelona time. */
+/* Newest first. Each guide is shown as happening now or past, using Barcelona time. */
 const GUIDES = [
   { path:"festa-major-barceloneta-2026/", year:"2026", start:"2026-09-25", end:"2026-10-04", color:"#3e679c",
     title:{ca:"Festa Major de la Barceloneta",es:"Fiesta Mayor de la Barceloneta",en:"Festa Major de la Barceloneta"},
@@ -106,17 +106,17 @@ const GUIDES = [
 ];
 
 const T = {
-  ca:{eyebrow:"Guies de festes majors", now:"Ara en marxa", next:"Properament", past:"Anteriors",
+  ca:{eyebrow:"Guies de festes majors", now:"Ara en marxa", past:"Anteriors",
       lede:"Guies hora a hora de les festes de Barcelona, en català, castellà i anglès.",
       open:"Obre la guia",
       foot1:"La informació de cada guia s'ha recollit dels programes i les pàgines oficials de cada festa. Cada guia enllaça la seva font.",
       foot2:"És un projecte personal, fet perquè tothom pugui gaudir de les festes amb més facilitat. No és una publicació oficial. Aquestes pàgines no fan servir galetes ni recullen dades personals."},
-  es:{eyebrow:"Guías de fiestas mayores", now:"En curso", next:"Próximamente", past:"Anteriores",
+  es:{eyebrow:"Guías de fiestas mayores", now:"En curso", past:"Anteriores",
       lede:"Guías hora a hora de las fiestas de Barcelona, en catalán, castellano e inglés.",
       open:"Abrir la guía",
       foot1:"La información de cada guía se ha recogido de los programas y las páginas oficiales de cada fiesta. Cada guía enlaza su fuente.",
       foot2:"Es un proyecto personal, hecho para que todo el mundo pueda disfrutar de las fiestas con más facilidad. No es una publicación oficial. Estas páginas no utilizan cookies ni recogen datos personales."},
-  en:{eyebrow:"Festival guides", now:"Happening now", next:"Coming up", past:"Past guides",
+  en:{eyebrow:"Festival guides", now:"Happening now", past:"Past guides",
       lede:"Hour-by-hour guides to Barcelona's festivals, in Catalan, Castilian and English.",
       open:"Open the guide",
       foot1:"The information in each guide was gathered from that festival's official programme and pages. Each guide links its source.",
@@ -141,11 +141,9 @@ function render(lang){
       '<p>' + esc(g.desc[lang]) + '</p><span class="open">' + esc(t.open) + '</span></a>';
   };
   const now  = GUIDES.filter(function(g){ return g.start <= today && today <= g.end; });
-  const next = GUIDES.filter(function(g){ return g.start > today; }).reverse();
   const past = GUIDES.filter(function(g){ return g.end < today; });
   let h = "";
   if (now.length)  { h += '<div class="sec-h">' + esc(t.now) + '</div>' + now.map(card).join(""); }
-  if (next.length) { h += '<div class="sec-h">' + esc(t.next) + '</div>' + next.map(card).join(""); }
   if (past.length) {
     h += '<div class="sec-h">' + esc(t.past) + '</div>';
     let lastYear = null;
