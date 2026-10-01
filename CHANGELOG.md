@@ -11,6 +11,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [1.3.0] — 2026-10-01
 
 ### Added
+- The Festa Major de Sarrià 2026 guide, 2–12 October.
 - The index page now groups guides under Happening now and Past guides,
   based on each festival's dates in Barcelona time. Past guides are still
   grouped by year.
