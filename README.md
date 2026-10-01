@@ -1,9 +1,11 @@
 # Barcelona fiestas
 
 Daily & hourly guides to Barcelona's festes majors, in Catalan, Castilian
-and English.
+and English. This is a personal project, made so that everyone can enjoy the festivities more
+easily. It is not an official publication and the festival information, names and programmes belong to their organisers and
+official sources.
 
-Live at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcelona-fiestas/).
+Visit the guides at: [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcelona-fiestas/).
 
 ## Guides
 
@@ -26,9 +28,6 @@ Each guide's folder also has its own README and changelog.
 
 The information in each guide was gathered from that festival's official programme
 or official website, which each guide links in its footer.
-
-This is a personal project, made so that everyone can enjoy the festivities more
-easily. It is not an official publication.
 
 ## How the content is made
 
