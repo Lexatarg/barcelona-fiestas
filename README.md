@@ -30,7 +30,16 @@ or official website, which each guide links in its footer.
 This is a personal project, made so that everyone can enjoy the festivities more
 easily. It is not an official publication.
 
+## How the content is made
+
+These guides are put together with the help of AI tools, which make it easier
+to keep up with long festival programmes in three languages. Every page is read
+and checked before it is published, and the information comes only
+from each festival's official programme or website. If anything on a page
+differs from the official source, the official source is the one to follow.
+
 ## Licence
 
-Content belongs to its respective sources. The pages themselves are free to copy
-and adapt.
+The festival information, names and programmes belong to their organisers and
+official sources, and this project claims no ownership of them. The pages
+themselves are free to copy and adapt.
