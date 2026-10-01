@@ -10,9 +10,9 @@
 <meta property="og:type" content="website">
 <style>
   :root{
-    --ink:#17203a;--paper:#f3f1ec;--sub:#666b78;
-    --hair:rgba(23,32,58,.16);--accent:#2c56a8;--sea:#2c56a8;
-    --dark:#132447;--dark-ink:#f4f2ec;--dark-sub:#a7b0c4;--band:#c9d6ee;--sheet:#fbfaf7;
+    --ink:#1a2a4a;--paper:#f4ecd8;--sub:#5d6478;--hero-acc:#23927c;
+    --hair:rgba(26,42,74,.16);--accent:#1e50a8;--sea:#23927c;
+    --dark:#ecdfbf;--dark-ink:#1e50a8;--dark-sub:#4f5c7c;--band:#5ec4b0;--sheet:#fbf6ea;
     box-sizing:border-box;
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
@@ -20,15 +20,15 @@
   *,*::before,*::after{box-sizing:border-box;}
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
-      --ink:#eceef3;--paper:#10131b;--sub:#979cab;
-      --hair:rgba(236,238,243,.2);--accent:#8fb0ec;--sea:#8fb0ec;
-      --dark:#0a1020;--dark-ink:#eceef3;--dark-sub:#8f97a6;--band:#34507f;--sheet:#1a1e27;
+      --ink:#e9ecf2;--paper:#0f1626;--sub:#98a0b3;--hero-acc:#6fd3bd;
+      --hair:rgba(233,236,242,.18);--accent:#8fb2f0;--sea:#6fd3bd;
+      --dark:#0a1120;--dark-ink:#e9ecf2;--dark-sub:#8e97ab;--band:#2f8f7d;--sheet:#182033;
     }
   }
   :root[data-theme="dark"]{
-      --ink:#eceef3;--paper:#10131b;--sub:#979cab;
-      --hair:rgba(236,238,243,.2);--accent:#8fb0ec;--sea:#8fb0ec;
-      --dark:#0a1020;--dark-ink:#eceef3;--dark-sub:#8f97a6;--band:#34507f;--sheet:#1a1e27;
+      --ink:#e9ecf2;--paper:#0f1626;--sub:#98a0b3;--hero-acc:#6fd3bd;
+      --hair:rgba(233,236,242,.18);--accent:#8fb2f0;--sea:#6fd3bd;
+      --dark:#0a1120;--dark-ink:#e9ecf2;--dark-sub:#8e97ab;--band:#2f8f7d;--sheet:#182033;
   }
   html{scroll-padding-top:86px;-webkit-text-size-adjust:100%;}
   body{margin:0;background:var(--paper);color:var(--ink);
@@ -36,7 +36,7 @@
     font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;
     overflow-x:hidden;}
   a{color:inherit;}
-  h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.03em;line-height:1;}
+  h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.015em;line-height:1;}
   .wrap{max-width:640px;margin:0 auto;padding:0 22px;}
   @media (max-width:400px){ .wrap{padding:0 18px;} }
 
@@ -47,18 +47,18 @@
   .hero-in{max-width:640px;margin:0 auto;}
   .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:32px;}
   .eyebrow{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;
-    color:#a9c2f2;padding-top:6px;min-width:0;}
+    color:var(--hero-acc);padding-top:6px;min-width:0;}
   .langs{display:flex;gap:2px;flex:0 0 auto;}
   .langs button{background:none;border:0;color:var(--dark-sub);cursor:pointer;font-family:inherit;
     font-size:.64rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 7px;}
-  .langs button.on{color:#a9c2f2;}
-  .hero h1{font-size:clamp(2.7rem,14.5vw,5.2rem);letter-spacing:-.045em;line-height:.92;}
-  .hero .yr{display:block;color:#c9d6ee;}
+  .langs button.on{color:var(--hero-acc);}
+  .hero h1{font-size:clamp(2.7rem,14.5vw,5.2rem);letter-spacing:-.025em;line-height:.92;}
+  .hero .yr{display:block;color:var(--hero-acc);}
   .hero-lede{margin:24px 0 0;font-size:.95rem;color:var(--dark-sub);max-width:46ch;}
   .hero-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 20px;margin-top:30px;}
   @media (min-width:520px){ .hero-meta{grid-template-columns:repeat(4,minmax(0,1fr));} }
   .hm .k{font-size:.55rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dark-sub);margin-bottom:6px;}
-  .hm .v{font-size:.95rem;font-weight:700;letter-spacing:-.02em;}
+  .hm .v{font-size:.95rem;font-weight:700;letter-spacing:-.005em;}
 
   /* NAV */
   nav.days{position:sticky;top:0;z-index:600;background:var(--paper);}
@@ -74,30 +74,30 @@
 
   .lbl{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px;}
   .sec{padding:60px 0 0;}
-  .sec > h2{font-size:clamp(1.7rem,7vw,2.3rem);letter-spacing:-.035em;margin-bottom:32px;line-height:1.05;}
+  .sec > h2{font-size:clamp(1.7rem,7vw,2.3rem);letter-spacing:-.02em;margin-bottom:32px;line-height:1.05;}
 
   /* ESSENTIALS */
   .ess ol{margin:0;padding:0;counter-reset:e;}
   .ess li{list-style:none;position:relative;padding:0 0 30px 42px;counter-increment:e;}
   .ess li::before{content:counter(e,decimal-leading-zero);position:absolute;left:0;top:3px;
     font-size:.72rem;font-weight:700;color:var(--accent);letter-spacing:.04em;}
-  .ess .t{font-size:1.08rem;font-weight:700;letter-spacing:-.02em;line-height:1.22;margin-bottom:5px;}
+  .ess .t{font-size:1.08rem;font-weight:700;letter-spacing:-.01em;line-height:1.22;margin-bottom:5px;}
   .ess .w{font-size:.83rem;color:var(--accent);font-weight:700;margin-bottom:6px;}
   .ess .d{font-size:.88rem;color:var(--sub);max-width:52ch;}
 
   /* DAY HEADER */
   .day{padding:68px 0 0;}
-  .day-head{display:flex;align-items:center;gap:18px;margin-bottom:32px;}
+  .day-head{display:flex;align-items:center;gap:13px;margin-bottom:32px;}
   .day-num{flex:0 0 auto;font-size:clamp(4rem,19vw,5.4rem);font-weight:700;
-    letter-spacing:-.06em;line-height:.82;color:var(--sea);
-    display:flex;align-items:center;min-width:.9em;}
+    letter-spacing:-.03em;line-height:.82;color:var(--sea);
+    display:flex;align-items:center;}
   .day-txt{min-width:0;}
   .day-txt .dow{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sub);
     font-weight:700;margin-bottom:9px;line-height:1.3;}
-  .day-txt h2{font-size:clamp(1.05rem,4.6vw,1.24rem);letter-spacing:-.025em;line-height:1.15;}
+  .day-txt h2{font-size:clamp(1.05rem,4.6vw,1.24rem);letter-spacing:-.01em;line-height:1.15;}
   .day-txt .note{font-size:.78rem;color:var(--sub);margin-top:8px;font-weight:400;letter-spacing:0;line-height:1.4;}
   @media (max-width:400px){
-    .day-head{gap:15px;margin-bottom:28px;}
+    .day-head{gap:11px;margin-bottom:28px;}
     .day-txt .dow{letter-spacing:.16em;margin-bottom:7px;}
   }
 
@@ -109,14 +109,14 @@
     border-radius:50%;background:var(--accent);}
   .ev:last-child{padding-bottom:6px;}
   .ev-top{display:flex;align-items:center;gap:7px 12px;margin-bottom:8px;flex-wrap:wrap;}
-  .ev-time{font-size:.93rem;font-weight:700;letter-spacing:-.015em;line-height:1.35;
+  .ev-time{font-size:.93rem;font-weight:700;letter-spacing:0;line-height:1.35;
     font-variant-numeric:tabular-nums;white-space:nowrap;}
   .ev-tags{display:flex;align-items:center;gap:7px 12px;flex-wrap:wrap;}
   .tg{font-size:.62rem;letter-spacing:.11em;text-transform:uppercase;font-weight:700;
     line-height:1.35;white-space:nowrap;}
   .tg.hi{color:var(--accent);}
   .tg.fr{color:var(--sub);}
-  .ev h3{font-size:1.04rem;letter-spacing:-.022em;line-height:1.28;margin-bottom:6px;}
+  .ev h3{font-size:1.04rem;letter-spacing:-.008em;line-height:1.28;margin-bottom:6px;}
   .ev .loc{font-size:.81rem;color:var(--sub);margin-bottom:9px;
     display:flex;gap:6px 12px;flex-wrap:wrap;align-items:baseline;}
   .ev p{margin:0;font-size:.88rem;color:var(--ink);opacity:.82;max-width:56ch;}
@@ -130,7 +130,7 @@
   /* PLACES */
   .grid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;margin-top:34px;}
   @media (min-width:560px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 34px;} }
-  .gi h4{font-size:.95rem;font-weight:700;letter-spacing:-.018em;margin:0 0 5px;line-height:1.3;}
+  .gi h4{font-size:.95rem;font-weight:700;letter-spacing:-.005em;margin:0 0 5px;line-height:1.3;}
   .gi p{margin:0;font-size:.84rem;color:var(--sub);}
   .gi .golink{margin-top:8px;display:inline-block;font-size:.74rem;}
 
@@ -142,9 +142,9 @@
     border-top:3px solid var(--band);}
   @media (max-width:400px){ footer{padding:44px 18px 40px;} }
   .foot-in{max-width:640px;margin:0 auto;}
-  footer .fm{font-size:clamp(1.4rem,6vw,1.7rem);font-weight:700;letter-spacing:-.04em;margin-bottom:20px;}
+  footer .fm{font-size:clamp(1.4rem,6vw,1.7rem);font-weight:700;letter-spacing:-.02em;margin-bottom:20px;}
   footer .fs{font-size:.84rem;color:var(--dark-sub);line-height:1.7;max-width:52ch;margin:0 0 16px;}
-  footer .fs a{color:#a9c2f2;font-weight:700;text-decoration:none;}
+  footer .fs a{color:var(--hero-acc);font-weight:700;text-decoration:none;}
   footer .fmini{font-size:.76rem;color:var(--dark-sub);opacity:.8;line-height:1.7;max-width:52ch;margin:0;}
   footer .ver{margin-top:20px;font-size:.66rem;color:var(--dark-sub);opacity:.7;letter-spacing:.1em;text-transform:uppercase;}
 
@@ -156,7 +156,7 @@
     padding:22px 22px calc(24px + env(safe-area-inset-bottom,0px));
     max-height:88vh;overflow-y:auto;}
   @media (min-width:560px){ .ovl{align-items:center;} .sheet{border-radius:14px;} }
-  .sheet h3{font-size:1.08rem;margin-bottom:3px;letter-spacing:-.02em;line-height:1.25;}
+  .sheet h3{font-size:1.08rem;margin-bottom:3px;letter-spacing:-.008em;line-height:1.25;}
   .sheet .sub{font-size:.77rem;color:var(--sub);margin-bottom:16px;}
   .sheet a,.sheet button.copy{display:flex;align-items:center;justify-content:space-between;gap:12px;
     padding:14px 0;text-decoration:none;color:var(--ink);font-size:.92rem;font-weight:600;
@@ -311,8 +311,8 @@ const T = {
   },
   es:{
     eyebrow:"Fiesta Mayor · 2–12 de octubre",
-    meta:[["Fiesta mayor","2 – 12 oct."],["Toc d'inici","Vie 2 · 19 h"],["Patrona","Mare de Déu del Roser"],["Distrito","Sarrià – Sant Gervasi"]],
-    lede:"La Fiesta Mayor de Sarrià, las Fiestas del Roser, del 2 al 12 de octubre. Once días con el Toc d'inici y el pregón, la XIII Batalla per Sarrià, los 25 años del gigantillo Blauet, el correfoc Sarrià en flames, la diada castellera de los 150 años de castells y la Baixada de carros.",
+    meta:[["Fiesta mayor","2 – 12 oct."],["Toque de inicio","Vie 2 · 19 h"],["Patrona","Mare de Déu del Roser"],["Distrito","Sarrià – Sant Gervasi"]],
+    lede:"La Fiesta Mayor de Sarrià, las Fiestas del Roser, del 2 al 12 de octubre. Once días con el Toc d'inici, el toque de inicio, y el pregón, la XIII Batalla per Sarrià, los 25 años del gigantillo Blauet, el correfoc Sarrià en flames, la diada castellera de los 150 años de castells y la Baixada de carros.",
     nav:["Esenciales","Vie 2","Sáb 3","Dom 4","Lun 5","Mar 6","Mié 7","Jue 8","Vie 9","Sáb 10","Dom 11","Lun 12","Lugares","Antes de ir"],
     essLbl:"Si solo hacéis cinco cosas",essTitle:"Lo esencial",
     placesLbl:"Los lugares",placesTitle:"Dónde pasa todo",
@@ -325,7 +325,7 @@ const T = {
     foot1:'Toda la información de esta página se ha recogido del <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf" target="_blank" rel="noopener">programa oficial</a> de la Fiesta Mayor de Sarrià. Consultadlo para el programa completo y para cualquier cambio.',
     foot2:"Es un proyecto personal, hecho para que todo el mundo pueda encontrar los horarios y los lugares con más facilidad y disfrutar de la fiesta. No es una publicación oficial. Esta página no utiliza cookies ni recoge datos personales.",
     ess:[
-      {t:"Toc d'inici y pregón",w:"Viernes 2 · 19 h",d:"Las entidades de cultura popular salen de la plaza de Sarrià, delante de la iglesia, y estrenan recorrido hasta la plaza del Consell de la Vila, donde se da el pregón."},
+      {t:"Toc d'inici (toque de inicio) y pregón",w:"Viernes 2 · 19 h",d:"Con el toque de inicio, las entidades de cultura popular salen de la plaza de Sarrià, delante de la iglesia, y estrenan recorrido hasta la plaza del Consell de la Vila, donde se da el pregón."},
       {t:"Pasacalle nocturno del Blauet",w:"Sábado 3 · 20 h",d:"El gigantillo Blauet celebra sus 25 años con un pasacalle excepcional de noche por las calles de Sarrià."},
       {t:"Sarrià en flames 26",w:"Sábado 10 · tabalada a las 19.30 h, fuego a las 20.30 h",d:"Las tres colles de fuego de la vila y colles invitadas: espectáculo y versots, empetxinada, correfoc y final con techo de fuego."},
       {t:"Diada castellera: 150 años de castells",w:"Domingo 11 · 11.15 h",d:"Los Castellers de Sarrià, con los Castellers de Barcelona y los Matossers de Molins de Rei, en la plaza del Consell de la Vila."},
@@ -344,8 +344,8 @@ const T = {
   },
   en:{
     eyebrow:"Festa Major · 2–12 October",
-    meta:[["Festival","2 – 12 Oct"],["Toc d'inici","Fri 2 · 7:00 PM"],["Patron","Mare de Déu del Roser"],["District","Sarrià – Sant Gervasi"]],
-    lede:"Sarrià's festival, the Festes del Roser, from 2 to 12 October. Eleven days with the Toc d'inici and opening speech, the 13th Batalla per Sarrià, 25 years of the Blauet giant, the Sarrià en flames fire run, a human towers day marking 150 years of castells, and the Baixada de carros.",
+    meta:[["Festival","2 – 12 Oct"],["Opening call","Fri 2 · 7:00 PM"],["Patron","Mare de Déu del Roser"],["District","Sarrià – Sant Gervasi"]],
+    lede:"Sarrià's festival, the Festes del Roser, from 2 to 12 October. Eleven days with the Toc d'inici opening call and speech, the 13th Batalla per Sarrià, 25 years of the Blauet giant, the Sarrià en flames fire run, a human towers day marking 150 years of castells, and the Baixada de carros.",
     nav:["Essentials","Fri 2","Sat 3","Sun 4","Mon 5","Tue 6","Wed 7","Thu 8","Fri 9","Sat 10","Sun 11","Mon 12","Places","Before you go"],
     essLbl:"If you only do five things",essTitle:"The essentials",
     placesLbl:"The places",placesTitle:"Where it all happens",
@@ -358,7 +358,7 @@ const T = {
     foot1:'All the information on this page was gathered from the <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf" target="_blank" rel="noopener">official programme</a> of the Festa Major de Sarrià. Please check it for the full programme and any changes.',
     foot2:"This is a personal project, made so that everyone can find the times and places more easily and enjoy the festival. It is not an official publication. This page does not use cookies or collect any personal data.",
     ess:[
-      {t:"Toc d'inici and opening speech",w:"Friday 2 · 7:00 PM",d:"The neighbourhood's popular culture groups set off from Plaça de Sarrià, in front of the church, on a new route to Plaça del Consell de la Vila, where the opening speech is given."},
+      {t:"Toc d'inici (opening call) and speech",w:"Friday 2 · 7:00 PM",d:"With the opening call, the neighbourhood's popular culture groups set off from Plaça de Sarrià, in front of the church, on a new route to Plaça del Consell de la Vila, where the opening speech is given."},
       {t:"The Blauet's night parade",w:"Saturday 3 · 8:00 PM",d:"The Blauet giant marks its 25th birthday with a one-off night parade through the streets of Sarrià."},
       {t:"Sarrià en flames 26",w:"Saturday 10 · drums at 7:30 PM, fire at 8:30 PM",d:"Sarrià's three fire groups and visiting groups: a show with versots, the empetxinada, the fire run and a finale under a roof of fire."},
       {t:"Human towers: 150 years of castells",w:"Sunday 11 · 11:15 AM",d:"The Castellers de Sarrià, with the Castellers de Barcelona and the Matossers de Molins de Rei, in Plaça del Consell de la Vila."},
@@ -390,11 +390,11 @@ const TAG = {
 const DAYS = [
   { id:"d2", num:"2",
     dow:L("Divendres · 2 d'octubre","Viernes · 2 de octubre","Friday · 2 October"),
-    title:L("El Toc d'inici obre la festa","El Toc d'inici abre la fiesta","The Toc d'inici opens the festival"),
+    title:L("El Toc d'inici obre la festa","El toque de inicio abre la fiesta","The opening call starts the festival"),
     note:L("Des de les 19 h","Desde las 19 h","From 7:00 PM"),
     events:[
       E("19","20.20",["open","miss"],"plsarria",
-        L("Toc d'inici","Toc d'inici","Toc d'inici"),
+        L("Toc d'inici","Toc d'inici, el toque de inicio","Toc d'inici, the opening call"),
         L("Amb música i cançó pròpies, les entitats de cultura popular surten de la plaça de Sarrià, davant de l'església, i estrenen recorregut fins a la plaça del Consell de la Vila.",
           "Con música y canción propias, las entidades de cultura popular salen de la plaza de Sarrià, delante de la iglesia, y estrenan recorrido hasta la plaza del Consell de la Vila.",
           "With its own music and song, the popular culture groups set off from Plaça de Sarrià, in front of the church, on a new route to Plaça del Consell de la Vila."),

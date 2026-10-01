@@ -16,6 +16,8 @@ For a content site rather than a library, the versions are read as:
 ## [1.4.1] — 2026-10-01
 
 ### Changed
+- Headings and titles use more open letter spacing, so they are easier to read.
+- The day header sits closer to its date number.
 - The footer now says plainly that the page does not use cookies or collect
   any personal data.
 

@@ -19,6 +19,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Changed
 - The footer now says plainly that the pages do not use cookies or collect
   any personal data.
+- Headings on the index page use more open letter spacing.
 
 ## [1.2.0] — 2026-10-01
 

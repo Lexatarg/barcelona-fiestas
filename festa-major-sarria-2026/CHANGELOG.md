@@ -20,6 +20,9 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - A directions sheet for every venue. Citymapper is offered where official
   coordinates from Barcelona's open data are available.
 - Light and dark mode with the shared toggle.
+- Colours taken from the official programme: cream paper, royal blue type and a
+  mint accent.
+- "Toc d'inici" is explained in Castilian and English as the opening call.
 
 ### Notes
 - Where the official programme gives two different times or places for the
