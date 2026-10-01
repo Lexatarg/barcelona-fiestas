@@ -13,6 +13,12 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.4.1] — 2026-10-01
+
+### Changed
+- The footer now says plainly that the page does not use cookies or collect
+  any personal data.
+
 ## [1.4.0] — 2026-10-01
 
 ### Added
@@ -109,7 +115,8 @@ For a content site rather than a library, the versions are read as:
 - All times cross-checked against the official programme from Barcelona City
   Council and betevé.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.1...HEAD
+[1.4.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.4.0...la-merce-2026-v1.4.1
 [1.4.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.3.0...la-merce-2026-v1.4.0
 [1.3.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.2.0...la-merce-2026-v1.3.0
 [1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.1.0...la-merce-2026-v1.2.0

@@ -8,6 +8,17 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.3.0] — 2026-10-01
+
+### Added
+- The index page now groups guides under Happening now, Coming up and Past
+  guides, based on each festival's dates in Barcelona time. Past guides are
+  still grouped by year.
+
+### Changed
+- The footer now says plainly that the pages do not use cookies or collect
+  any personal data.
+
 ## [1.2.0] — 2026-10-01
 
 ### Changed
@@ -34,7 +45,8 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - The Festa Major de la Barceloneta 2026 guide, moved from its own repository
   with its full history.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/v1.0.0

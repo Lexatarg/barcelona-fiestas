@@ -13,6 +13,12 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.2.2] — 2026-10-01
+
+### Changed
+- The footer now says plainly that the page does not use cookies or collect
+  any personal data.
+
 ## [1.2.1] — 2026-10-01
 
 ### Fixed
@@ -72,7 +78,8 @@ For a content site rather than a library, the versions are read as:
 - Venues are searched by address rather than by coordinates, so the maps app
   resolves the exact spot.
 
-[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.1...HEAD
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.2...HEAD
+[1.2.2]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.1...festa-major-barceloneta-2026-v1.2.2
 [1.2.1]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.2.0...festa-major-barceloneta-2026-v1.2.1
 [1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.1.0...festa-major-barceloneta-2026-v1.2.0
 [1.1.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.0.0...festa-major-barceloneta-2026-v1.1.0

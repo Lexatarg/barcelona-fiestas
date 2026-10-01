@@ -43,7 +43,8 @@
   h1{margin:0;font-size:clamp(2.7rem,14vw,5rem);letter-spacing:-.045em;line-height:.92;font-weight:700;}
   .lede{margin:24px 0 0;font-size:.95rem;color:var(--dark-sub);max-width:44ch;}
   main{padding:20px 22px 0;}
-  .yr{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:40px 0 4px;}
+  .sec-h{font-size:clamp(1.15rem,5vw,1.35rem);font-weight:700;letter-spacing:-.025em;margin:46px 0 2px;}
+  .yr{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:20px 0 0;}
   .g{display:block;text-decoration:none;padding:24px 0 26px;border-bottom:1px solid var(--hair);}
   .g .bar{width:34px;height:6px;margin-bottom:16px;}
   .g h2{margin:0 0 6px;font-size:clamp(1.35rem,6vw,1.7rem);letter-spacing:-.035em;line-height:1.1;}
@@ -88,15 +89,15 @@
 </div></footer>
 
 <script>
-/* Newest first. To add a guide, put its folder next to the others and add an entry here. */
+/* Newest first. Each guide is shown as happening now, coming up or past, using Barcelona time. */
 const GUIDES = [
-  { path:"festa-major-barceloneta-2026/", year:"2026", color:"#3e679c",
+  { path:"festa-major-barceloneta-2026/", year:"2026", start:"2026-09-25", end:"2026-10-04", color:"#3e679c",
     title:{ca:"Festa Major de la Barceloneta",es:"Fiesta Mayor de la Barceloneta",en:"Festa Major de la Barceloneta"},
     when:{ca:"25 de setembre – 4 d'octubre de 2026",es:"25 de septiembre – 4 de octubre de 2026",en:"25 September – 4 October 2026"},
     desc:{ca:"La festa major del barri, dia a dia: el pregó, les havaneres, els dos correfocs, la Cercavila del Canó i les festes dels carrers Baluard, Pescadors i del Mar.",
           es:"La fiesta mayor del barrio, día a día: el pregón, las habaneras, los dos correfocs, la Cercavila del Canó y las fiestas de las calles Baluard, Pescadors y del Mar.",
           en:"The neighbourhood festival, day by day: the opening speech, havaneres, both fire runs, the Cercavila del Canó and the street parties on Baluard, Pescadors and Carrer del Mar."} },
-  { path:"la-merce-2026/", year:"2026", color:"#d8341c",
+  { path:"la-merce-2026/", year:"2026", start:"2026-09-23", end:"2026-09-27", color:"#d8341c",
     title:{ca:"La Mercè",es:"La Mercè",en:"La Mercè"},
     when:{ca:"23–27 de setembre de 2026",es:"23–27 de septiembre de 2026",en:"23–27 September 2026"},
     desc:{ca:"La festa major de Barcelona, dia a dia: el Toc d'Inici, la diada castellera, el correfoc i el piromusical.",
@@ -105,21 +106,21 @@ const GUIDES = [
 ];
 
 const T = {
-  ca:{eyebrow:"Guies de festes majors",
+  ca:{eyebrow:"Guies de festes majors", now:"Ara en marxa", next:"Properament", past:"Anteriors",
       lede:"Guies hora a hora de les festes de Barcelona, en català, castellà i anglès.",
       open:"Obre la guia",
       foot1:"La informació de cada guia s'ha recollit dels programes i les pàgines oficials de cada festa. Cada guia enllaça la seva font.",
-      foot2:"És un projecte personal, fet perquè tothom pugui gaudir de les festes amb més facilitat. No és una publicació oficial. Aquestes pàgines no fan servir galetes ni recullen cap dada."},
-  es:{eyebrow:"Guías de fiestas mayores",
+      foot2:"És un projecte personal, fet perquè tothom pugui gaudir de les festes amb més facilitat. No és una publicació oficial. Aquestes pàgines no fan servir galetes ni recullen dades personals."},
+  es:{eyebrow:"Guías de fiestas mayores", now:"En curso", next:"Próximamente", past:"Anteriores",
       lede:"Guías hora a hora de las fiestas de Barcelona, en catalán, castellano e inglés.",
       open:"Abrir la guía",
       foot1:"La información de cada guía se ha recogido de los programas y las páginas oficiales de cada fiesta. Cada guía enlaza su fuente.",
-      foot2:"Es un proyecto personal, hecho para que todo el mundo pueda disfrutar de las fiestas con más facilidad. No es una publicación oficial. Estas páginas no usan cookies ni recogen ningún dato."},
-  en:{eyebrow:"Festival guides",
+      foot2:"Es un proyecto personal, hecho para que todo el mundo pueda disfrutar de las fiestas con más facilidad. No es una publicación oficial. Estas páginas no utilizan cookies ni recogen datos personales."},
+  en:{eyebrow:"Festival guides", now:"Happening now", next:"Coming up", past:"Past guides",
       lede:"Hour-by-hour guides to Barcelona's festivals, in Catalan, Castilian and English.",
       open:"Open the guide",
       foot1:"The information in each guide was gathered from that festival's official programme and pages. Each guide links its source.",
-      foot2:"This is a personal project, made so that everyone can enjoy the festivities more easily. It is not an official publication. These pages set no cookies and collect nothing."}
+      foot2:"This is a personal project, made so that everyone can enjoy the festivities more easily. It is not an official publication. These pages do not use cookies or collect any personal data."}
 };
 
 const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
@@ -131,13 +132,28 @@ function render(lang){
   document.getElementById("k-lede").textContent = t.lede;
   document.getElementById("k-foot1").textContent = t.foot1;
   document.getElementById("k-foot2").textContent = t.foot2;
-  let h = "", lastYear = null;
-  GUIDES.forEach(function(g){
-    if (g.year !== lastYear) { h += '<div class="yr">' + esc(g.year) + '</div>'; lastYear = g.year; }
-    h += '<a class="g" href="' + g.path + '"><div class="bar" style="background:' + g.color + '"></div>' +
-         '<h2>' + esc(g.title[lang]) + '</h2><div class="when">' + esc(g.when[lang]) + '</div>' +
-         '<p>' + esc(g.desc[lang]) + '</p><span class="open">' + esc(t.open) + '</span></a>';
-  });
+  let today;
+  try { today = new Date().toLocaleDateString("sv-SE", {timeZone:"Europe/Madrid"}); }
+  catch(e) { today = new Date().toISOString().slice(0,10); }
+  const card = function(g){
+    return '<a class="g" href="' + g.path + '"><div class="bar" style="background:' + g.color + '"></div>' +
+      '<h2>' + esc(g.title[lang]) + '</h2><div class="when">' + esc(g.when[lang]) + '</div>' +
+      '<p>' + esc(g.desc[lang]) + '</p><span class="open">' + esc(t.open) + '</span></a>';
+  };
+  const now  = GUIDES.filter(function(g){ return g.start <= today && today <= g.end; });
+  const next = GUIDES.filter(function(g){ return g.start > today; }).reverse();
+  const past = GUIDES.filter(function(g){ return g.end < today; });
+  let h = "";
+  if (now.length)  { h += '<div class="sec-h">' + esc(t.now) + '</div>' + now.map(card).join(""); }
+  if (next.length) { h += '<div class="sec-h">' + esc(t.next) + '</div>' + next.map(card).join(""); }
+  if (past.length) {
+    h += '<div class="sec-h">' + esc(t.past) + '</div>';
+    let lastYear = null;
+    past.forEach(function(g){
+      if (g.year !== lastYear) { h += '<div class="yr">' + esc(g.year) + '</div>'; lastYear = g.year; }
+      h += card(g);
+    });
+  }
   document.getElementById("k-list").innerHTML = h;
 }
 
