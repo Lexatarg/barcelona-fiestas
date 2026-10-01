@@ -1,6 +1,6 @@
 # Barcelona fiestas
 
-Hour-by-hour guides to Barcelona's festes majors, in Catalan, Castilian
+Daily and hourly guides to Barcelona's festes majors, in Catalan, Castilian
 and English.
 
 Live at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcelona-fiestas/).
