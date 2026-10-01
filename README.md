@@ -1,6 +1,6 @@
 # Barcelona fiestas
 
-Daily and hourly guides to Barcelona's festes majors, in Catalan, Castilian and
+Guides to Barcelona's festes majors, in Catalan, Castilian and
 English. This is a personal project, made so that everyone can enjoy the
 festivities more easily; it is not an official publication.
 
