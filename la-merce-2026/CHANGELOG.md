@@ -13,6 +13,11 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+### Changed
+- Moved into the barcelona-fiestas collection. The page now lives at
+  lexatarg.github.io/barcelona-fiestas/la-merce-2026/ and its version tags are
+  prefixed with the guide's folder name.
+
 ## [1.3.0] — 2026-09-24
 
 ### Added
@@ -97,8 +102,8 @@ For a content site rather than a library, the versions are read as:
 - All times cross-checked against the official programme from Barcelona City
   Council and betevé.
 
-[Unreleased]: https://github.com/Lexatarg/la-merce-2026/compare/v1.3.0...HEAD
-[1.3.0]: https://github.com/Lexatarg/la-merce-2026/compare/v1.2.0...v1.3.0
-[1.2.0]: https://github.com/Lexatarg/la-merce-2026/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/Lexatarg/la-merce-2026/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/Lexatarg/la-merce-2026/releases/tag/v1.0.0
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.3.0...HEAD
+[1.3.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.2.0...la-merce-2026-v1.3.0
+[1.2.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.1.0...la-merce-2026-v1.2.0
+[1.1.0]: https://github.com/Lexatarg/barcelona-fiestas/compare/la-merce-2026-v1.0.0...la-merce-2026-v1.1.0
+[1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/la-merce-2026-v1.0.0

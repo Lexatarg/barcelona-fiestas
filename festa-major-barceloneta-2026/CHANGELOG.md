@@ -13,6 +13,11 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+### Changed
+- Moved into the barcelona-fiestas collection. The page now lives at
+  lexatarg.github.io/barcelona-fiestas/festa-major-barceloneta-2026/ and its version tags are
+  prefixed with the guide's folder name.
+
 ## [1.0.0] — 2026-10-01
 
 ### Added
@@ -32,5 +37,5 @@ For a content site rather than a library, the versions are read as:
 - Venues are searched by address rather than by coordinates, so the maps app
   resolves the exact spot.
 
-[Unreleased]: https://github.com/Lexatarg/festa-major-barceloneta-2026/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/Lexatarg/festa-major-barceloneta-2026/releases/tag/v1.0.0
+[Unreleased]: https://github.com/Lexatarg/barcelona-fiestas/compare/festa-major-barceloneta-2026-v1.0.0...HEAD
+[1.0.0]: https://github.com/Lexatarg/barcelona-fiestas/releases/tag/festa-major-barceloneta-2026-v1.0.0
