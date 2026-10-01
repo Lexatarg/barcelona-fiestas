@@ -2,7 +2,7 @@
 
 Daily and hourly guides to Barcelona's festes majors, in Catalan, Castilian and
 English. This is a personal project, made so that everyone can enjoy the
-festivities more easily. It is not an official publication.
+festivities more easily; it is not an official publication.
 
 Visit the guides at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcelona-fiestas/).
 
@@ -17,7 +17,7 @@ Visit the guides at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.gith
 
 Each guide is a single page that follows its festival day by day, with the time,
 place and a short description of each event from the official programme. Every
-venue has a directions link that opens in your preferred maps app, and a final
+location has a directions link that opens in your preferred maps app, and a final
 section gathers the practical information the organisers publish, such as safety
 advice and where to find support during the festival. You can read every page in
 Catalan, Castilian or English, in light or dark mode. Each guide's folder also has
@@ -27,10 +27,10 @@ its own README and changelog.
 
 The sources and information in each guide come only from that festival's
 official programme or official website, which each guide links in its footer.
-Although the guides are put together with the help of AI tools, which make it
-easier to keep up with long festival programmes in three languages, every page
-is read and checked before it is published. If anything on a page differs from
-the official source, the official source is the one to follow.
+The guides are put together with the help of AI tools, which make it easier to
+keep up with long festival programmes in three languages; nevertheless, every
+page is read and checked before it is published. If anything on a page differs
+from the official source, the official source is the one to follow.
 
 ## Licence
 
