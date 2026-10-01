@@ -84,12 +84,12 @@
 
   /* DAY HEADER */
   .day{padding:68px 0 0;}
-  /* Fixed number column: two tabular digits wide, figures set flush right,
-     so every day's text starts on the same line whatever the date. */
+  /* Fixed number column, two tabular digits wide. The number starts on the
+     timeline's left edge and every day's text starts on the same line. */
   .day-head{display:grid;grid-template-columns:1.12em minmax(0,1fr);align-items:center;
     column-gap:.2em;margin-bottom:32px;font-size:clamp(4rem,19vw,5.4rem);}
   .day-num{font-size:1em;font-weight:700;font-variant-numeric:tabular-nums;
-    letter-spacing:-.03em;line-height:.8;color:var(--accent);text-align:right;}
+    letter-spacing:-.03em;line-height:.8;color:var(--accent);text-align:left;}
   .day-txt{min-width:0;font-size:15px;}
   .day-txt .dow{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sub);
     font-weight:700;margin-bottom:9px;line-height:1.3;}
