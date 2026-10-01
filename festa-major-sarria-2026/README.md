@@ -14,8 +14,8 @@ list of venues and the practical information from the official programme.
 
 All information on this page was gathered from the
 [official programme](https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf)
-of the Festa Major de Sarrià 2026 and the Sarrià – Sant Gervasi district's notice
-on the closure of Passatge de Mallofré. Please check the programme for the full
+of the Festa Major de Sarrià 2026 and the Sarrià – Sant Gervasi district's notices
+on street closures and the closure of Passatge de Mallofré. Please check the programme for the full
 details and any changes.
 
 This is a personal project, made so that everyone can enjoy the festivities more

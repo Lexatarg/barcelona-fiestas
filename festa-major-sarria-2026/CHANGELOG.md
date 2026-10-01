@@ -15,7 +15,8 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   the browser and remembered between visits.
 - Five essentials, a timeline for each day, a list of venues and a practical
   section on the FGC timetable, the Passatge de Mallofré closure, the funfair,
-  cups and water fountains, and the emergency number.
+  cups and water fountains, street closures from 2 to 8 October, where to find
+  the Punt Lila information, and the emergency number.
 - A directions sheet for every venue. Citymapper is offered where official
   coordinates from Barcelona's open data are available.
 - Light and dark mode with the shared toggle.
