@@ -13,8 +13,10 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Changed
 - The index page has a lighter design: a paper background, black and white type
   and no colour bars, so it does not compete with the guides' own colours.
-- Guides are listed as Coming up, Happening now and Past. Each state has its own
-  marker and card style: an outlined card, a raised card and a quiet list.
+- Guides are listed as Coming up, Happening now and Past, each with its own
+  marker. Past guides keep the same layout in grey.
+- "Open the guide" links work like the Directions links inside the guides.
+- The intro, the guide descriptions and the footer share one text width.
 
 ## [1.3.0] — 2026-10-01
 

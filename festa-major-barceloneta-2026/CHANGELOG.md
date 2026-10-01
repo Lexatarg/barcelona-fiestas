@@ -16,6 +16,8 @@ For a content site rather than a library, the versions are read as:
 ## [1.2.3] — 2026-10-01
 
 ### Changed
+- The header and footer now use the poster's light colours, like the Sarrià
+  guide, instead of a dark block. Dark mode is unchanged.
 - The date number keeps the same gap to its heading whether it has one digit or
   two, at every screen size.
 - The header, day navigation, page content and footer now share one left edge.
