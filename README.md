@@ -18,9 +18,9 @@ Each guide is a single page that follows its festival day by day, with the time,
 place and a short description of each event taken from the official programme. Every
 venue has a directions link that opens in whichever maps app the reader uses,
 and a final section brings together the practical information the organisers
-publish, such as safety advice for the fire runs and where to find support
-during the festival. The pages work in Catalan, Castilian and English, and in
-light or dark mode. Each guide's folder also has its own README and changelog.
+publish, such as safety advice and where to find support during the festival.
+The pages work in Catalan, Castilian and English, and in light or dark mode.
+Each guide's folder also has its own README and changelog.
 
 ## Sources
 
