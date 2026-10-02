@@ -8,6 +8,12 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.7.1] — 2026-10-02
+
+### Changed
+- The index footer now starts "Això és un projecte personal" in Catalan and
+  "Esto es un proyecto personal" in Castilian, matching the English wording.
+
 ## [1.7.0] — 2026-10-02
 
 ### Added

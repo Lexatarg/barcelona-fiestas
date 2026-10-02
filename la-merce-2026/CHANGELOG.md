@@ -13,6 +13,13 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.5.2] — 2026-10-02
+
+### Changed
+- The footer now says, in all three languages, that this is a personal project
+  made so that everyone can find the times and places more easily and enjoy the
+  festival, as in the other guides.
+
 ## [1.5.1] — 2026-10-02
 
 ### Changed

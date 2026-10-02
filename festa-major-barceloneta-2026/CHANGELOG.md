@@ -13,6 +13,12 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.3.2] — 2026-10-02
+
+### Changed
+- The footer now starts "Això és un projecte personal" in Catalan and "Esto es
+  un proyecto personal" in Castilian, matching the English wording.
+
 ## [1.3.1] — 2026-10-02
 
 ### Changed
