@@ -143,18 +143,18 @@ const T = {
   ca:{eyebrow:"Guies de festes majors", now:"En curs", next:"Properes", past:"Anteriors",
       lede:"Guies de les festes majors de Barcelona, amb els horaris i els llocs de les activitats de cada dia ben organitzats, perquè pugueu gaudir al màxim de cada festa.",
       open:"Obre la guia",
-      foot1:"La informació de cada guia s'ha recollit dels programes i les pàgines oficials de cada festa. Cada guia enllaça la seva font.",
-      foot2:"Això és un projecte personal, fet perquè tothom pugui gaudir de les festes amb més facilitat. No és una publicació oficial. Aquestes pàgines no fan servir galetes ni recullen dades personals."},
+      foot1:"La informació de cada guia prové del programa oficial o del web oficial de cada festa. Per al programa complet i per als canvis d'última hora, consulteu la font que enllaça cada guia.",
+      foot2:"Això és un projecte personal, fet amb dedicació i estima, i per això només es pot mantenir un nombre limitat de guies alhora, per oferir la millor experiència i cobertura possibles de cada festa major que apareix més amunt. No és una publicació oficial, i aquestes pàgines no fan servir galetes ni recullen dades personals. Totes les guies estan allotjades a GitHub Pages i subjectes a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>."},
   es:{eyebrow:"Guías de fiestas mayores", now:"En curso", next:"Próximas", past:"Anteriores",
-      lede:"Guías de las fiestas mayores de Barcelona, con los horarios y los lugares de las actividades de cada día bien organizados, para que podáis disfrutar al máximo de cada fiesta.",
+      lede:"Guías de las fiestas mayores de Barcelona, con los horarios y los lugares de las actividades de cada día bien organizados, para que pueda disfrutar al máximo de cada fiesta.",
       open:"Abrir la guía",
-      foot1:"La información de cada guía se ha recogido de los programas y las páginas oficiales de cada fiesta. Cada guía enlaza su fuente.",
-      foot2:"Esto es un proyecto personal, hecho para que todo el mundo pueda disfrutar de las fiestas con más facilidad. No es una publicación oficial. Estas páginas no utilizan cookies ni recogen datos personales."},
+      foot1:"La información de cada guía procede del programa oficial o de la web oficial de cada fiesta. Para el programa completo y para los cambios de última hora, consulte la fuente que enlaza cada guía.",
+      foot2:"Esto es un proyecto personal, hecho con dedicación y cariño, y por eso solo se puede mantener un número limitado de guías a la vez, para ofrecer la mejor experiencia y cobertura posibles de cada fiesta mayor que aparece más arriba. No es una publicación oficial, y estas páginas no utilizan cookies ni recogen datos personales. Todas las guías están alojadas en GitHub Pages y sujetas a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>."},
   en:{eyebrow:"Festival guides", now:"Happening now", next:"Coming up", past:"Past",
       lede:"Guides to Barcelona's festes majors, with the times and places of each day's activities clearly organised, so you can make the most of every festival.",
       open:"Open the guide",
-      foot1:"The information in each guide was gathered from that festival's official programme and pages. Each guide links its source.",
-      foot2:"This is a personal project, made so that everyone can enjoy the festivities more easily. It is not an official publication. These pages do not use cookies or collect any personal data."}
+      foot1:"The information in each guide comes from that festival's official programme or official website. For the full programme and any last-minute changes, see the source linked in each guide.",
+      foot2:"This is a personal project and a labour of love, so only a limited number of guides can be maintained at a time, in order to provide the best possible experience and coverage for every major festival listed above. It is not an official publication, and these pages do not use cookies or collect any personal data. All the guides are hosted on GitHub Pages and are subject to the <a href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>GitHub Privacy Statement</a>."}
 };
 
 const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
@@ -165,7 +165,7 @@ function render(lang){
   document.getElementById("k-eyebrow").textContent = t.eyebrow;
   document.getElementById("k-lede").textContent = t.lede;
   document.getElementById("k-foot1").textContent = t.foot1;
-  document.getElementById("k-foot2").textContent = t.foot2;
+  document.getElementById("k-foot2").innerHTML = t.foot2;
   let today;
   try { today = new Date().toLocaleDateString("sv-SE", {timeZone:"Europe/Madrid"}); }
   catch(e) { today = new Date().toISOString().slice(0,10); }

@@ -13,6 +13,17 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.5.3] — 2026-10-02
+
+### Changed
+- All running text (introduction, event descriptions, tips, essentials and
+  footer) now wraps at one width, as on the index.
+- Castilian now addresses the reader formally (usted) throughout.
+- Footer: a shorter first paragraph naming the official source and linking it
+  for the full programme and any last-minute changes, and a second paragraph
+  saying the page is hosted on GitHub Pages, with a link to the GitHub Privacy
+  Statement.
+
 ## [1.5.2] — 2026-10-02
 
 ### Changed

@@ -51,7 +51,7 @@
   .langs button.on{color:var(--accent);}
   .hero h1{font-size:clamp(2.9rem,17vw,5.4rem);letter-spacing:-.025em;line-height:.92;}
   .hero .yr{display:block;color:var(--accent);}
-  .hero-lede{margin:24px 0 0;font-size:.95rem;color:#a6a39b;max-width:44ch;}
+  .hero-lede{margin:24px 0 0;font-size:.95rem;color:#a6a39b;max-width:34rem;}
   .hero-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 20px;margin-top:30px;}
   @media (min-width:520px){ .hero-meta{grid-template-columns:repeat(4,minmax(0,1fr));} }
   .hm .k{font-size:.55rem;text-transform:uppercase;color:#78756d;margin-bottom:6px;}
@@ -80,7 +80,7 @@
     font-size:.72rem;font-weight:700;color:var(--accent);}
   .ess .t{font-size:1.08rem;font-weight:700;letter-spacing:-.01em;line-height:1.22;margin-bottom:5px;}
   .ess .w{font-size:.83rem;color:var(--accent);font-weight:700;margin-bottom:6px;}
-  .ess .d{font-size:.88rem;color:var(--sub);max-width:52ch;}
+  .ess .d{font-size:.88rem;color:var(--sub);max-width:34rem;}
 
   /* DAY HEADER */
   .day{padding:68px 0 0;}
@@ -119,8 +119,8 @@
   .ev h3{font-size:1.04rem;letter-spacing:-.008em;line-height:1.28;margin-bottom:6px;}
   .ev .loc{font-size:.81rem;color:var(--sub);margin-bottom:9px;
     display:flex;gap:6px 12px;flex-wrap:wrap;align-items:baseline;}
-  .ev p{margin:0;font-size:.88rem;color:var(--ink);opacity:.82;max-width:56ch;}
-  .tip{margin-top:11px;font-size:.82rem;color:var(--sub);max-width:54ch;}
+  .ev p{margin:0;font-size:.88rem;color:var(--ink);opacity:.82;max-width:34rem;}
+  .tip{margin-top:11px;font-size:.82rem;color:var(--sub);max-width:34rem;}
   .tip b{color:var(--accent);font-weight:700;text-transform:uppercase;font-size:.57rem;}
 
   .golink{background:none;border:0;padding:0;font:inherit;cursor:pointer;color:var(--accent);
@@ -136,16 +136,16 @@
   .gi .golink{margin-top:8px;display:inline-block;font-size:.74rem;}
 
   .callout{margin-top:42px;padding-left:16px;border-left:2px solid var(--accent);
-    font-size:.84rem;color:var(--sub);max-width:58ch;}
+    font-size:.84rem;color:var(--sub);max-width:34rem;}
   .callout b{color:var(--ink);font-weight:700;}
 
   footer{background:var(--dark);color:var(--dark-ink);margin-top:74px;padding:50px 22px 46px;}
   @media (max-width:400px){ footer{padding:44px 18px 40px;} }
   .foot-in{max-width:640px;margin:0 auto;}
   footer .fm{font-size:clamp(1.4rem,6vw,1.7rem);font-weight:700;letter-spacing:-.02em;margin-bottom:20px;}
-  footer .fs{font-size:.84rem;color:#a6a39b;line-height:1.7;max-width:52ch;margin:0 0 16px;}
+  footer .fs{font-size:.84rem;color:#a6a39b;line-height:1.7;max-width:34rem;margin:0 0 16px;}
   footer .fs a{color:var(--accent);font-weight:700;text-decoration:none;}
-  footer .fmini{font-size:.76rem;color:#6e6b64;line-height:1.7;max-width:52ch;margin:0;}
+  footer .fmini{font-size:.76rem;color:#6e6b64;line-height:1.7;max-width:34rem;margin:0;}
   footer .ver{margin-top:20px;font-size:.66rem;color:#5c5952;text-transform:uppercase;}
 
   /* DIRECTIONS SHEET */
@@ -210,7 +210,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.5.2";
+const VERSION = "1.5.3";
 
 const V = {
   santjaume : {n:"Plaça de Sant Jaume",            lat:41.382798, lng:2.177246},
@@ -249,8 +249,8 @@ const T = {
     knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
     calloutB:"Sobre la ubicació del Piromusical.",
     callout:" Els materials de l'Ajuntament han fet servir tant «Bogatell» com «Nova Icària». Els focs es disparen des de l'espigó del Bogatell i la zona de públic és la platja de la Nova Icària, al costat. La Nova Icària és el punt que recomana l'Ajuntament.",
-    foot1:'La informació d\'aquesta pàgina prové del programa oficial de l\'Ajuntament de Barcelona. Per al programa complet i per als canvis d\'última hora, consulteu <a href="https://www.barcelona.cat/lamerce/ca" target="_blank" rel="noopener">barcelona.cat/lamerce</a>.',
-    foot2:"Això és un projecte personal, fet perquè tothom pugui trobar els horaris i els llocs amb més facilitat i gaudir de la festa. No és una publicació oficial. Aquesta pàgina no fa servir galetes ni recull dades personals.",
+    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Mercè. Per al programa complet i per als canvis d\'última hora, consulteu <a href="https://www.barcelona.cat/lamerce/ca" target="_blank" rel="noopener">el web oficial</a>.',
+    foot2:"Això és un projecte personal, fet amb dedicació i estima per ajudar tothom a gaudir al màxim de la festa. No és una publicació oficial. Aquesta pàgina no fa servir galetes ni recull dades personals. Està allotjada a GitHub Pages i subjecta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>.",
     ess:[
       {t:"Toc d'Inici",w:"Avui · surt a les 19 h i arriba a la plaça cap a les 20 h",d:"Del Palau de la Virreina a la plaça de Sant Jaume. Els gegants, els dracs i les bèsties surten al carrer per obrir la festa."},
       {t:"Diada castellera",w:"Dijous 24 · 13 h",d:"Vuit colles aixequen castells a la plaça de Sant Jaume. Val més arribar-hi cap a les 12 h, perquè la plaça es tanca quan s'omple."},
@@ -272,12 +272,12 @@ const T = {
     meta:[["Fechas","23–27 de septiembre"],["Día grande","Jueves 24"],["Precio","Gratuito"],["Ciudad invitada","Shanghái"]],
     lede:"Cinco días de fiesta mayor por los diez distritos, con 109 conciertos. Hay castells, un vuelo de 750 drones, un correfoc que estrena una puerta de catorce metros y, para acabar, fuegos artificiales sobre el mar.",
     nav:["Esenciales","Mié 23","Jue 24","Vie 25","Sáb 26","Dom 27","Lugares","Antes de ir"],
-    essLbl:"Si solo hacéis cinco cosas",essTitle:"Lo esencial",
+    essLbl:"Si solo puede hacer cinco cosas",essTitle:"Lo esencial",
     placesLbl:"Los lugares",placesTitle:"Dónde pasa todo",
-    placesNote:"Tocad «Cómo llegar» y elegid la aplicación de mapas que uséis habitualmente.",
+    placesNote:"Toque «Cómo llegar» y elija la aplicación de mapas que use habitualmente.",
     dirs:"Cómo llegar", cal:"Añadir al calendario",
     calFest:"La Mercè 2026", calGuide:"Guía", calProg:"Web oficial",
-    calSrc:"https://www.barcelona.cat/lamerce/es", calTime:"Hora", tipLbl:"Consejo", openIn:"Elegid una aplicación de mapas",
+    calSrc:"https://www.barcelona.cat/lamerce/es", calTime:"Hora", tipLbl:"Consejo", openIn:"Elija una aplicación de mapas",
     copy:"Copiar las coordenadas", copied:"Copiado", close:"Cerrar", go:"Abrir",
     appName:"Mercè – Festa de Barcelona",
     appSub:"Aplicación oficial del Ayuntamiento de Barcelona. Es gratuita.",
@@ -285,18 +285,18 @@ const T = {
     knowLbl:"Práctico",knowTitle:"Antes de ir",
     calloutB:"Sobre la ubicación del Piromusical.",
     callout:" Los materiales del Ayuntamiento han usado tanto «Bogatell» como «Nova Icària». Los fuegos se lanzan desde el espigón del Bogatell y la zona de público es la playa de la Nova Icària, al lado. La Nova Icària es el punto que recomienda el Ayuntamiento.",
-    foot1:'La información de esta página procede del programa oficial del Ayuntamiento de Barcelona. Para el programa completo y para los cambios de última hora, consultad <a href="https://www.barcelona.cat/lamerce/es" target="_blank" rel="noopener">barcelona.cat/lamerce</a>.',
-    foot2:"Esto es un proyecto personal, hecho para que todo el mundo pueda encontrar los horarios y los lugares con más facilidad y disfrutar de la fiesta. No es una publicación oficial. Esta página no utiliza cookies ni recoge datos personales.",
+    foot1:'La información de esta página procede del programa oficial de la Mercè. Para el programa completo y para los cambios de última hora, consulte <a href="https://www.barcelona.cat/lamerce/es" target="_blank" rel="noopener">la web oficial</a>.',
+    foot2:"Esto es un proyecto personal, hecho con dedicación y cariño para ayudar a todos a disfrutar al máximo de la fiesta. No es una publicación oficial. Esta página no utiliza cookies ni recoge datos personales. Está alojada en GitHub Pages y sujeta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>.",
     ess:[
       {t:"Toc d'Inici",w:"Hoy · sale a las 19 h y llega a la plaza sobre las 20 h",d:"Del Palau de la Virreina a la plaza de Sant Jaume. Los gigantes, los dragones y las bestias salen a la calle para abrir la fiesta."},
       {t:"Diada castellera",w:"Jueves 24 · 13 h",d:"Ocho colles levantan castells en la plaza de Sant Jaume. Conviene llegar sobre las 12 h, porque la plaza se cierra cuando se llena."},
       {t:"Espectáculo de 750 drones",w:"Jueves 24 · 21 h y 22 h",d:"Se hace en el espigón del Gas y se ve especialmente bien desde la playa del Somorrostro, junto al Hospital del Mar."},
-      {t:"Correfoc y Porta de l'Infern",w:"Sábado 26 · 20.30 h",d:"En el paseo de Gracia. Se estrena una puerta de catorce metros hecha con cerca de mil cuerpos fragmentados. Si os acercáis, llevad ropa de algodón."},
-      {t:"Piromusical",w:"Domingo 27 · 22 h",d:"Se lanza desde el espigón del Bogatell y se mira desde la playa de la Nova Icària. Podéis buscar sitio sobre las 21 h."}
+      {t:"Correfoc y Porta de l'Infern",w:"Sábado 26 · 20.30 h",d:"En el paseo de Gracia. Se estrena una puerta de catorce metros hecha con cerca de mil cuerpos fragmentados. Si se acerca, lleve ropa de algodón."},
+      {t:"Piromusical",w:"Domingo 27 · 22 h",d:"Se lanza desde el espigón del Bogatell y se mira desde la playa de la Nova Icària. Puede buscar sitio sobre las 21 h."}
     ],
     know:[
       ["Casi todo es gratuito","Los conciertos, el correfoc, los castells, los drones y el piromusical no tienen entrada."],
-      ["Seguridad en el correfoc","Si os acercáis a los diables, llevad ropa de algodón, calzado cerrado y los ojos protegidos. Si lo miráis de lejos no hace falta ninguna precaución especial."],
+      ["Seguridad en el correfoc","Si se acerca a los diables, lleve ropa de algodón, calzado cerrado y los ojos protegidos. Si lo mira de lejos, no hace falta ninguna precaución especial."],
       ["La aplicación oficial","La aplicación «Mercè – Festa de Barcelona» tiene el programa en directo y un buscador de actividades por proximidad.","app"],
       ["Las noches de playa se llenan","El sábado en el Bogatell y el domingo en la Nova Icària son las noches con más gente. Conviene llegar una hora antes."],
       ["Moverse por la ciudad","La L4 llega a Barceloneta, Bogatell, Poblenou, Ciutadella Vila Olímpica y Jaume I."],
@@ -321,8 +321,8 @@ const T = {
     knowLbl:"Practical",knowTitle:"Before you go",
     calloutB:"About the Piromusical location.",
     callout:" The city council's materials have used both Bogatell and Nova Icària. The fireworks go up from the Espigó del Bogatell breakwater, and the public viewing area is Platja de la Nova Icària next to it. Nova Icària is the spot the council recommends.",
-    foot1:'The information on this page comes from the official programme published by Barcelona City Council. For the full programme and any late changes, see <a href="https://www.barcelona.cat/lamerce/en" target="_blank" rel="noopener">barcelona.cat/lamerce</a>.',
-    foot2:"This is a personal project, made so that everyone can find the times and places more easily and enjoy the festival. It is not an official publication. This page does not use cookies or collect any personal data.",
+    foot1:'The information on this page comes from the official programme of La Mercè. For the full programme and any last-minute changes, see <a href="https://www.barcelona.cat/lamerce/en" target="_blank" rel="noopener">the official website</a>.',
+    foot2:"This is a personal project and a labour of love, made to help everyone make the most of the festival. It is not an official publication. This page does not use cookies or collect any personal data. It is hosted on GitHub Pages and is subject to the <a href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>GitHub Privacy Statement</a>.",
     ess:[
       {t:"Toc d'Inici",w:"Tonight · leaves at 7:00 PM, reaches the square around 8:00 PM",d:"From the Palau de la Virreina to Plaça de Sant Jaume. The giants, dragons and beasts come out into the street to open the festival."},
       {t:"Diada castellera",w:"Thursday, September 24 · 1:00 PM",d:"Eight colles build human towers in Plaça de Sant Jaume. It is worth arriving by noon, because the square closes once it fills up."},
@@ -376,7 +376,7 @@ const DAYS = [
               es:"L'Àliga, el Lleó, la Mulassa, el Bou, la Víbria, el Drac, la Tarasca, los gigantes, los cabezudos, los Falcons y el Ball de Bastons salen de la Virreina hacia Sant Jaume. Este año los acompaña una actuación de linternas de Shanghái.",
               en:"L'Àliga, the Lleó, the Mulassa, the Bou, the Víbria, the Drac, the Tarasca, the giants, the big-heads, the Falcons and the Ball de Bastons set off from the Virreina towards Sant Jaume. This year a Shanghai lantern performance goes with them."},
         tip:{ca:"Si voleu veure com es forma la comitiva abans de sortir, sigueu a la Rambla cap a les 18.45 h.",
-             es:"Si queréis ver cómo se forma la comitiva antes de salir, estad en la Rambla sobre las 18.45 h.",
+             es:"Si quiere ver cómo se forma la comitiva antes de salir, esté en la Rambla sobre las 18.45 h.",
              en:"To watch the procession assemble before it leaves, be on La Rambla by about 6:45 PM."} },
       { time:{ca:"~20 h",es:"~20 h",en:"~8:00 PM"}, tags:["sig","free"], v:"santjaume",
         title:{ca:"Toc d'Inici",es:"Toc d'Inici",en:"Toc d'Inici"},
@@ -431,7 +431,7 @@ const DAYS = [
               es:"De 13 a 15 h. Ocho colles de la ciudad levantan castells: los Castellers de Barcelona, los de Sants, los de la Vila de Gràcia, los del Poble-sec, los de la Sagrada Família, la Colla Jove de Barcelona, los de Sarrià y la Colla Castellera de l'Esquerra de l'Eixample. Se puede seguir en directo en betevé.",
               en:"Runs from 1:00 to 3:00 PM. Eight of the city's colles build towers: Castellers de Barcelona, Sants, Vila de Gràcia, Poble-sec, Sagrada Família, the Colla Jove de Barcelona, Sarrià and the Colla Castellera de l'Esquerra de l'Eixample. Betevé broadcasts it live."},
         tip:{ca:"Arribeu-hi cap a les 12 h, perquè es talla l'accés quan la plaça s'omple. Quan la gralla anuncia que puja un castell, la plaça calla.",
-             es:"Llegad sobre las 12 h, porque se corta el acceso cuando la plaza se llena. Cuando la gralla anuncia que sube un castell, la plaza calla.",
+             es:"Llegue sobre las 12 h, porque se corta el acceso cuando la plaza se llena. Cuando la gralla anuncia que sube un castell, la plaza calla.",
              en:"Arrive by noon, as access closes once the square is full. When the gralla signals that a tower is going up, the square goes quiet."} },
       { time:{ca:"18 h",es:"18 h",en:"6:00 PM"}, tags:["free"], v:"catalunya",
         title:{ca:"Cavalcada de la Mercè",es:"Cabalgata de la Mercè",en:"Cavalcada de la Mercè"},
@@ -541,7 +541,7 @@ const DAYS = [
               es:"Empieza con la Ceptrotada, cuando todas las colles encienden a la vez ceptrots, horcas y estandartes, con Llucifer y la Diablessa al frente. Acto seguido se enciende la nueva Porta de l'Infern, un arco de catorce metros de ancho y siete de alto hecho con cerca de mil cuerpos fragmentados, obra del artista Daniel Esteban. De allí salen los diables, los dragones y las bestias de fuego.",
               en:"It begins with the Ceptrotada, when every colla lights its ceptrots, forks and banners at once, led by Llucifer and the Diablessa. The new Porta de l'Infern is then lit: an arc fourteen metres wide and seven metres tall, built from around a thousand fragmented bodies by the artist Daniel Esteban. The devils, dragons and fire beasts come out through it."},
         tip:{ca:"Si us hi voleu ficar, porteu roba de cotó, calçat tancat i els ulls protegits. Si ho mireu una passa enrere no cal cap precaució especial.",
-             es:"Si queréis meteros, llevad ropa de algodón, calzado cerrado y los ojos protegidos. Si lo miráis un paso atrás no hace falta ninguna precaución especial.",
+             es:"Si quiere meterse, lleve ropa de algodón, calzado cerrado y los ojos protegidos. Si lo mira un paso atrás, no hace falta ninguna precaución especial.",
              en:"If you want to go in among the runners, wear cotton clothing, closed shoes and eye protection. Watching from a step back needs no special precautions."} },
       { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"], v:"gas",
         title:{ca:"Festival Pirotècnic Internacional, la Xina",es:"Festival Pirotécnico Internacional, China",en:"Festival Pirotècnic Internacional, China"},
@@ -569,7 +569,7 @@ const DAYS = [
               es:"Una segunda diada de castells, con las colles invitadas Minyons de Terrassa y Colla Jove Xiquets de Valls junto a las colles de Barcelona.",
               en:"A second day of human towers, with the visiting colles Minyons de Terrassa and Colla Jove Xiquets de Valls alongside the Barcelona teams."},
         tip:{ca:"Si us vau perdre la de dijous, en aquesta sovint s'hi veuen castells més alts i tècnics.",
-             es:"Si os perdisteis la del jueves, en esta a menudo se ven castells más altos y técnicos.",
+             es:"Si se perdió la del jueves, en esta a menudo se ven castells más altos y técnicos.",
              en:"If you missed Thursday's, this one often brings taller and more technical towers."} },
       { time:{ca:"18 h",es:"18 h",en:"6:00 PM"}, tags:["free"], v:"sarria",
         title:{ca:"Girafes en ruta",es:"Girafes en ruta",en:"Girafes en ruta"},
@@ -863,7 +863,7 @@ function render(lang){
   });
 
   h += '<section class="sec" id="places"><div class="lbl">' + esc(t.placesLbl) + '</div><h2>' + esc(t.placesTitle) + '</h2>';
-  h += '<p style="font-size:.86rem;color:var(--sub);margin:0;max-width:52ch">' + esc(t.placesNote) + '</p><div class="grid">';
+  h += '<p style="font-size:.86rem;color:var(--sub);margin:0;max-width:34rem">' + esc(t.placesNote) + '</p><div class="grid">';
   PLACES.forEach(function(row){
     h += '<div class="gi"><h4>' + esc(V[row.k].n) + '</h4><p>' + esc(row.d[lang]) + '</p>' +
          '<button class="golink" data-go="' + row.k + '">' + esc(t.dirs) + '</button></div>';
@@ -880,7 +880,7 @@ function render(lang){
 
   document.getElementById("k-body").innerHTML = h;
   document.getElementById("k-foot1").innerHTML = t.foot1;
-  document.getElementById("k-foot2").textContent = t.foot2;
+  document.getElementById("k-foot2").innerHTML = t.foot2;
   document.getElementById("k-ver").textContent = "v" + VERSION;
 
   document.getElementById("k-body").querySelectorAll("[data-go]").forEach(function(b){

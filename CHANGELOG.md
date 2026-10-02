@@ -8,6 +8,16 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.7.2] — 2026-10-02
+
+### Changed
+- The index footer now explains that only a limited number of guides can be
+  maintained at a time, that the guides are hosted on GitHub Pages (with a link
+  to the GitHub Privacy Statement), and points to each guide's source for the
+  full programme and any last-minute changes.
+- Castilian on the index now addresses the reader formally (usted).
+- README: a new opening line, and new Coverage and Privacy sections.
+
 ## [1.7.1] — 2026-10-02
 
 ### Changed

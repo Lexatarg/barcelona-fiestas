@@ -1,8 +1,8 @@
 # Barcelona fiestas
 
-Guides to Barcelona's festes majors, in Catalan, Castilian and
-English. This is a personal project, made so that everyone can enjoy the
-festivities more easily; it is not an official publication.
+Guides to Barcelona's festes majors, in Catalan, Castilian and English. This is
+a personal project, made so that everyone can enjoy the festivities and have the
+best possible experience; it is not an official publication.
 
 Visit the guides at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcelona-fiestas/)
 
@@ -24,6 +24,22 @@ The guides are put together with the help of AI tools, which make it easier to
 keep up with long festival programmes in three languages; nevertheless, every
 page is read and checked before it is published. If anything on a page differs
 from the official source, the official source is the one to follow.
+
+## Coverage
+
+These guides are a labour of love, made in my free time alongside my job and
+everyday life. I do my best to provide guides for all the major festivals, but
+unfortunately it may not always be possible to cover them all. Even so, I always
+try my best to keep up with them and to include all the information I can in
+every guide.
+
+## Privacy
+
+All the guides are hosted on GitHub Pages and are subject to the
+[GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+
+The pages themselves never use cookies, analytics, adverts or accounts, and they
+never collect, store or share any personal data.
 
 ## Licence
 
