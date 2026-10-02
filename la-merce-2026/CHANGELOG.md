@@ -13,6 +13,13 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.5.4] — 2026-10-03
+
+### Changed
+- English text now uses US spelling and vocabulary (Merriam-Webster), for
+  example program, neighborhood, theater, labor of love and soccer. Catalan
+  names such as Centre Cívic stay as they are.
+
 ## [1.5.3] — 2026-10-02
 
 ### Changed

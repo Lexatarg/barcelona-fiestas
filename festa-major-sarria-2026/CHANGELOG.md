@@ -7,6 +7,13 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.1.5] — 2026-10-03
+
+### Changed
+- English text now uses US spelling and vocabulary (Merriam-Webster), for
+  example program, neighborhood, theater, labor of love and soccer. Catalan
+  names such as Centre Cívic stay as they are.
+
 ## [1.1.4] — 2026-10-02
 
 ### Changed

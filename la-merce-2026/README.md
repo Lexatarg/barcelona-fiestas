@@ -11,13 +11,13 @@ links and practical tips (where to stand, when to arrive, what to wear at the co
 
 ## Source
 
-All information comes from the official programme published by Barcelona City Council.
-For the full programme and any last-minute changes, see
+All information comes from the official program published by Barcelona City Council.
+For the full program and any last-minute changes, see
 [barcelona.cat/lamerce](https://www.barcelona.cat/lamerce/en).
 
-This page was made only to help find and organise that information so more people can
+This page was made only to help find and organize that information so more people can
 enjoy La Mercè. It is not an official publication.
 
-## Licence
+## License
 
 Content belongs to its respective sources. The page itself is free to copy and adapt.

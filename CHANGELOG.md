@@ -8,6 +8,16 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.7.3] — 2026-10-03
+
+### Changed
+- English on the index and in the READMEs now uses US spelling and vocabulary
+  (Merriam-Webster).
+- The index footer now ends "for every major festival included" in all three
+  languages.
+- README: clearer description of what each guide includes, and a shorter
+  Coverage section.
+
 ## [1.7.2] — 2026-10-02
 
 ### Changed
