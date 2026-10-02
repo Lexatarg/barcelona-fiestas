@@ -8,6 +8,19 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.7.0] — 2026-10-02
+
+### Added
+- Past is grouped by year, and each year opens and closes when its heading is
+  tapped. The most recent year starts open and older years start closed.
+
+### Changed
+- The Coming up, Happening now and Past headings, the line above the title,
+  the language buttons and the year labels now use normal letter spacing.
+- New heading icons: an empty circle for Coming up, a dot inside a circle for
+  Happening now, and a filled circle for Past.
+- In Past, the year is now a divider: the year followed by a thin line.
+
 ## [1.6.0] — 2026-10-02
 
 ### Added

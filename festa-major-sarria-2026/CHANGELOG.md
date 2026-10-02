@@ -7,6 +7,13 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.1.1] — 2026-10-02
+
+### Changed
+- Small text (the line above the title, labels, tags, weekdays, the version
+  number and the buttons in the directions sheet) now uses normal letter
+  spacing instead of spaced-out letters.
+
 ## [1.1.0] — 2026-10-02
 
 ### Added

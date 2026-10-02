@@ -13,6 +13,13 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.5.1] — 2026-10-02
+
+### Changed
+- Small text (the line above the title, labels, tags, weekdays, the version
+  number and the buttons in the directions sheet) now uses normal letter
+  spacing instead of spaced-out letters.
+
 ## [1.5.0] — 2026-10-02
 
 ### Added
