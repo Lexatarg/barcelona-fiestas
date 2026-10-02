@@ -214,7 +214,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.1.1";
+const VERSION = "1.1.2";
 
 /* Venues. q is the search text for the maps apps; lat/lng (from Barcelona's open data) enable Citymapper. */
 const V = {
@@ -547,11 +547,11 @@ const DAYS = [
         L("Torneig de futbito","Torneo de futbito","Five-a-side tournament"),
         L("Torneig de futbol sala. A partir de 14 anys.","Torneo de fútbol sala. A partir de 14 años.","An indoor football tournament. Ages 14 and up.")),
       E("22","00",[],"plsarria",
-        L("Concert: Golden Beat","Concierto: Golden Beat","Concert: Golden Beat"),
-        L("Versions per cantar i ballar.","Versiones para cantar y bailar.","Covers to sing and dance to.")),
-      E("00","02",[],"plsarria",
         L("Concert: Pascual i els Desnatats","Concierto: Pascual i els Desnatats","Concert: Pascual i els Desnatats"),
-        L("Directe festiu per ballar.","Directo festivo para bailar.","A lively set to dance to."))
+        L("Directe festiu per ballar.","Directo festivo para bailar.","A lively set to dance to.")),
+      E("00","02",[],"plsarria",
+        L("Concert: Golden Beat","Concierto: Golden Beat","Concert: Golden Beat"),
+        L("Versions per cantar i ballar.","Versiones para cantar y bailar.","Covers to sing and dance to."))
     ]},
 
   { id:"d4", num:"4",
@@ -655,11 +655,7 @@ const DAYS = [
         L("Sopar de carmanyoles i karaoke del veïnat del carrer Major.","Cena de fiambreras y karaoke del vecindario de la calle Major.","A bring-your-own-dinner and karaoke night with the Carrer Major neighbours.")),
       E("20.30","23.30",[],"cornet",
         L("Sopar a la fresca de Cornet i Mas","Cena al fresco de Cornet i Mas","Open-air dinner on Cornet i Mas"),
-        L("Sopar veïnal obert a tothom: cadascú porta el seu sopar.","Cena vecinal abierta a todos: cada uno lleva su cena.","A neighbours' dinner open to all; bring your own food.")),
-      E("22","22.30",[],"santvicenc",
-        L("XIII Batalla per Sarrià: Trivial Sarrianenc","XIII Batalla per Sarrià: Trivial Sarrianenc","Batalla per Sarrià: Sarrià trivia"),
-        L("Prova de preguntes sobre Sarrià.","Prueba de preguntas sobre Sarrià.","A quiz on Sarrià.")
-        ,{tip:BATALLA_TIP})
+        L("Sopar veïnal obert a tothom: cadascú porta el seu sopar.","Cena vecinal abierta a todos: cada uno lleva su cena.","A neighbours' dinner open to all; bring your own food."))
     ]},
 
   { id:"d8", num:"8",

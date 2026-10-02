@@ -7,6 +7,15 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.1.2] — 2026-10-02
+
+### Fixed
+- Saturday, October 3: following the updated official programme (dated
+  September 29), Pascual i els Desnatats now play from 22 to 00 h and Golden
+  Beat from 00 to 02 h; the two concerts had swapped places.
+- Wednesday, October 7: the Batalla per Sarrià Trivial Sarrianenc is removed,
+  as the updated programme no longer lists it.
+
 ## [1.1.1] — 2026-10-02
 
 ### Changed
