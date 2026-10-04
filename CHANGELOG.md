@@ -8,6 +8,18 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.8.0] — 2026-10-04
+
+### Added
+- The index footer shows the collection version, like the guides.
+- Happening now has a live "ping": a small dot with a circle that grows from it
+  and fades. With Reduce Motion turned on, the icon stays still instead.
+
+### Changed
+- Guides on the index are ordered by date: latest first in Happening now and
+  Past, soonest first in Coming up.
+- Coming up is now a dashed circle.
+
 ## [1.7.3] — 2026-10-03
 
 ### Changed
