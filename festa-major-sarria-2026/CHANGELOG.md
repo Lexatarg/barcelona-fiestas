@@ -77,7 +77,7 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   two, at every screen size.
 - The header, day navigation, page content and footer now share one left edge.
 
-## [1.0.0] — 2026-10-01
+## [1.0.0] — 2026-10-02
 
 ### Added
 - First release, covering the whole festival from Friday 2 to Monday 12

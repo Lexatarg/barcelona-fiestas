@@ -12,7 +12,6 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Added
 - First version: every day from October 2 to 12, with times, places, Directions
   and Add to calendar for each event, in Catalan, Castilian and English.
-- Sign-up and More information links to the official pages the program names.
-- The changes marked in the City Council's updated program: canceled and
-  postponed events are left out and listed under Places, and the Festa de la
-  cortsenca shows its new location.
+- More information and Sign up links to the festival website's event pages.
+- Where the festival website differs from the printed program, the event
+  follows the most recent information and notes the other version.

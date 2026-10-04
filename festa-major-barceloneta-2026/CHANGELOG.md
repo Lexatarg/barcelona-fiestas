@@ -124,7 +124,7 @@ For a content site rather than a library, the versions are read as:
   lexatarg.github.io/barcelona-fiestas/festa-major-barceloneta-2026/ and its version tags are
   prefixed with the guide's folder name.
 
-## [1.0.0] — 2026-10-01
+## [1.0.0] — 2026-09-25
 
 ### Added
 - First release, covering Thursday 1 to Sunday 4 October 2026 in Catalan,

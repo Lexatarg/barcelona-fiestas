@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Festa Major de l'Esquerra de l'Eixample 2026</title>
+<meta name="description" content="Hour-by-hour guide to the Festa Major de l'Esquerra de l'Eixample, October 2 to 12, 2026. Català, castellà, English.">
+<meta property="og:title" content="Festa Major de l'Esquerra de l'Eixample 2026">
+<meta property="og:description" content="Hour-by-hour guide to the Esquerra de l'Eixample festival, October 2 to 12. Català, castellà, English.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --ink:#241f3d;--paper:#f8efe3;--sub:#5f5872;--hero-acc:#f59a63;
+    --hair:rgba(36,31,61,.16);--accent:#4a3f8c;--sea:#c4402a;
+    --dark:#403878;--dark-ink:#e86830;--dark-sub:#f8e0c8;--band:#e86830;--sheet:#fffaf3;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ink:#eeeaf6;--paper:#15122a;--sub:#a39cbc;--hero-acc:#f59a63;
+      --hair:rgba(238,234,246,.18);--accent:#b3a6f0;--sea:#ff8a6b;
+      --dark:#403878;--dark-ink:#e86830;--dark-sub:#f8e0c8;--band:#e86830;--sheet:#211d3a;
+    }
+  }
+  :root[data-theme="dark"]{
+      --ink:#eeeaf6;--paper:#15122a;--sub:#a39cbc;--hero-acc:#f59a63;
+      --hair:rgba(238,234,246,.18);--accent:#b3a6f0;--sea:#ff8a6b;
+      --dark:#403878;--dark-ink:#e86830;--dark-sub:#f8e0c8;--band:#e86830;--sheet:#211d3a;
+  }
+  html{scroll-padding-top:86px;-webkit-text-size-adjust:100%;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;}
+  a{color:inherit;}
+  h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.015em;line-height:1;}
+  .wrap{max-width:684px;margin:0 auto;padding:0 22px;}
+  @media (max-width:400px){ .wrap{padding:0 18px;} nav.days .days-in{padding:0 6px;} }
+
+  /* HERO */
+  .hero{background:var(--dark);color:var(--dark-ink);padding:38px 22px 44px;
+    border-bottom:3px solid var(--band);}
+  @media (max-width:400px){ .hero{padding:32px 18px 38px;} }
+  .hero-in{max-width:640px;margin:0 auto;}
+  .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:32px;}
+  .eyebrow{font-size:.62rem;text-transform:uppercase;font-weight:700;
+    color:var(--hero-acc);padding-top:6px;min-width:0;}
+  .langs{display:flex;gap:2px;flex:0 0 auto;}
+  .langs button{background:none;border:0;color:var(--dark-sub);cursor:pointer;font-family:inherit;
+    font-size:.64rem;font-weight:700;text-transform:uppercase;padding:6px 7px;}
+  .langs button.on{color:var(--hero-acc);}
+  .hero h1{font-size:clamp(2.7rem,14.5vw,5.2rem);letter-spacing:-.025em;line-height:.92;}
+  .hero .yr{display:block;color:var(--dark-ink);}
+  .hero-lede{margin:24px 0 0;font-size:.95rem;color:var(--dark-sub);max-width:34rem;}
+  .hero-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 20px;margin-top:30px;}
+  @media (min-width:520px){ .hero-meta{grid-template-columns:repeat(4,minmax(0,1fr));} }
+  .hm .k{font-size:.55rem;text-transform:uppercase;color:var(--dark-sub);margin-bottom:6px;}
+  .hm .v{font-size:.95rem;font-weight:700;letter-spacing:-.005em;color:var(--dark-sub);}
+
+  /* NAV */
+  nav.days{position:sticky;top:0;z-index:600;background:var(--paper);}
+  nav.days::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--hair);}
+  .days-in{display:flex;overflow-x:auto;max-width:684px;margin:0 auto;padding:0 10px;
+    scrollbar-width:none;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;}
+  .days-in::-webkit-scrollbar{display:none;}
+  .days-in a{flex:0 0 auto;padding:14px 12px;text-decoration:none;font-size:.66rem;font-weight:700;
+    text-transform:uppercase;color:var(--sub);white-space:nowrap;
+    position:relative;transition:color .18s;}
+  .days-in a.on{color:var(--accent);}
+  .days-in a.on::after{content:"";position:absolute;left:12px;right:12px;bottom:0;height:2px;background:var(--accent);}
+
+  .lbl{font-size:.6rem;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px;}
+  .sec{padding:60px 0 0;}
+  .sec > h2{font-size:clamp(1.7rem,7vw,2.3rem);letter-spacing:-.02em;margin-bottom:32px;line-height:1.05;}
+
+  /* ESSENTIALS */
+  .ess ol{margin:0;padding:0;counter-reset:e;}
+  .ess li{list-style:none;position:relative;padding:0 0 30px 42px;counter-increment:e;}
+  .ess li::before{content:counter(e,decimal-leading-zero);position:absolute;left:0;top:3px;
+    font-size:.72rem;font-weight:700;color:var(--accent);}
+  .ess .t{font-size:1.08rem;font-weight:700;letter-spacing:-.01em;line-height:1.22;margin-bottom:5px;}
+  .ess .w{font-size:.83rem;color:var(--accent);font-weight:700;margin-bottom:6px;}
+  .ess .d{font-size:.88rem;color:var(--sub);max-width:34rem;}
+
+  /* DAY HEADER */
+  .day{padding:68px 0 0;}
+  /* The number sits on the timeline's left edge; the gap after it is a fixed
+     share of the number's size, so one- and two-digit dates sit equally close
+     to their text at every screen size. */
+  .day-head{display:flex;align-items:center;gap:.17em;margin-bottom:32px;
+    font-size:clamp(4rem,19vw,5.4rem);}
+  .day-num{flex:0 0 auto;font-size:1em;font-weight:700;font-variant-numeric:tabular-nums;
+    letter-spacing:-.03em;line-height:.8;color:var(--sea);}
+  .day-txt{min-width:0;font-size:15px;}
+  .day-txt .dow{font-size:.6rem;text-transform:uppercase;color:var(--sub);
+    font-weight:700;margin-bottom:9px;line-height:1.3;}
+  .day-txt h2{font-size:clamp(1.05rem,4.6vw,1.24rem);letter-spacing:-.01em;line-height:1.15;}
+  .day-txt .note{font-size:.78rem;color:var(--sub);margin-top:8px;font-weight:400;letter-spacing:0;line-height:1.4;}
+  @media (max-width:400px){
+    .day-head{margin-bottom:28px;}
+    .day-txt .dow{margin-bottom:7px;}
+  }
+
+  /* TIMELINE */
+  .timeline{border-left:1px solid var(--hair);margin-left:4px;}
+  .ev{position:relative;padding:0 0 32px 24px;}
+  @media (max-width:400px){ .ev{padding-left:20px;} }
+  .ev::before{content:"";position:absolute;left:-4.5px;top:7px;width:8px;height:8px;
+    border-radius:50%;background:var(--accent);}
+  .ev:last-child{padding-bottom:6px;}
+  .ev-top{display:flex;align-items:center;gap:7px 12px;margin-bottom:8px;flex-wrap:wrap;}
+  .ev-time{font-size:.93rem;font-weight:700;letter-spacing:0;line-height:1.35;
+    font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .ev-tags{display:flex;align-items:center;gap:7px 12px;flex-wrap:wrap;}
+  .tg{font-size:.62rem;text-transform:uppercase;font-weight:700;
+    line-height:1.35;white-space:nowrap;}
+  .tg.hi{color:var(--accent);}
+  .tg.fr{color:var(--sub);}
+  .ev h3{font-size:1.04rem;letter-spacing:-.008em;line-height:1.28;margin-bottom:6px;}
+  .ev .loc{font-size:.81rem;color:var(--sub);margin-bottom:9px;
+    display:flex;gap:6px 12px;flex-wrap:wrap;align-items:baseline;}
+  .ev p{margin:0;font-size:.88rem;color:var(--ink);opacity:.82;max-width:34rem;}
+  .tip{margin-top:11px;font-size:.82rem;color:var(--sub);max-width:34rem;}
+  .tip b{color:var(--accent);font-weight:700;text-transform:uppercase;font-size:.57rem;}
+
+  .golink{background:none;border:0;padding:0;font:inherit;cursor:pointer;color:var(--accent);
+    font-weight:700;font-size:.78rem;white-space:nowrap;text-align:left;}
+  a.golink{text-decoration:none;}
+  .golink:hover{text-decoration:underline;}
+
+  /* PLACES */
+  .grid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;margin-top:34px;}
+  @media (min-width:560px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 34px;} }
+  .gi h4{font-size:.95rem;font-weight:700;letter-spacing:-.005em;margin:0 0 5px;line-height:1.3;}
+  .gi p{margin:0;font-size:.84rem;color:var(--sub);}
+  .gi .golink{margin-top:8px;display:inline-block;font-size:.74rem;}
+
+  .callout{margin-top:42px;padding-left:16px;border-left:2px solid var(--sea);
+    font-size:.84rem;color:var(--sub);max-width:34rem;}
+  .callout b{color:var(--ink);font-weight:700;}
+
+  footer{background:var(--dark);color:var(--dark-ink);margin-top:74px;padding:50px 22px 46px;
+    border-top:3px solid var(--band);}
+  @media (max-width:400px){ footer{padding:44px 18px 40px;} }
+  .foot-in{max-width:640px;margin:0 auto;}
+  footer .fm{font-size:clamp(1.4rem,6vw,1.7rem);font-weight:700;letter-spacing:-.02em;margin-bottom:20px;}
+  footer .fs{font-size:.84rem;color:var(--dark-sub);line-height:1.7;max-width:34rem;margin:0 0 16px;}
+  footer .fs a{color:var(--hero-acc);font-weight:700;text-decoration:none;}
+  footer .fmini{font-size:.76rem;color:var(--dark-sub);opacity:.8;line-height:1.7;max-width:34rem;margin:0;}
+  footer .ver{margin-top:20px;font-size:.66rem;color:var(--dark-sub);opacity:.7;text-transform:uppercase;}
+
+  /* DIRECTIONS SHEET */
+  .ovl{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:2000;display:none;
+    align-items:flex-end;justify-content:center;}
+  .ovl.open{display:flex;}
+  .sheet{background:var(--sheet);width:100%;max-width:430px;border-radius:14px 14px 0 0;
+    padding:22px 22px calc(24px + env(safe-area-inset-bottom,0px));
+    max-height:88vh;overflow-y:auto;}
+  @media (min-width:560px){ .ovl{align-items:center;} .sheet{border-radius:14px;} }
+  .sheet h3{font-size:1.08rem;margin-bottom:3px;letter-spacing:-.008em;line-height:1.25;}
+  .sheet .sub{font-size:.77rem;color:var(--sub);margin-bottom:16px;}
+  .sheet a,.sheet button.copy{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:14px 0;text-decoration:none;color:var(--ink);font-size:.92rem;font-weight:600;
+    border:0;border-top:1px solid var(--hair);width:100%;background:none;
+    font-family:inherit;cursor:pointer;text-align:left;}
+  .sheet .ar{color:var(--accent);font-weight:700;font-size:.72rem;
+    text-transform:uppercase;flex:0 0 auto;}
+  .sheet .close{margin-top:16px;width:100%;padding:13px;background:none;border:1px solid var(--hair);
+    font-family:inherit;font-size:.72rem;font-weight:700;text-transform:uppercase;
+    color:var(--sub);cursor:pointer;}
+  .langs{align-items:center;}
+  .theme{background:none;border:0;cursor:pointer;padding:6px 4px 6px 10px;margin:0;
+    color:inherit;display:inline-flex;align-items:center;line-height:0;}
+  .theme svg{width:15px;height:15px;display:block;}
+  .theme .sun{display:none;}
+  .theme.is-dark .sun{display:block;}
+  .theme.is-dark .moon{display:none;}
+</style>
+<script>try{var t=localStorage.getItem("bcnf-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="toprow">
+      <div class="eyebrow" id="k-eyebrow"></div>
+      <div class="langs">
+        <button data-lang="ca">CAT</button>
+        <button data-lang="es">CAST</button>
+        <button data-lang="en" class="on">ENG</button>
+        <button class="theme" type="button" id="themeBtn"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg></button>
+      </div>
+    </div>
+    <h1>Esquerra de l'Eixample<span class="yr">2026</span></h1>
+    <p class="hero-lede" id="k-lede"></p>
+    <div class="hero-meta" id="k-meta"></div>
+  </div>
+</header>
+
+<nav class="days"><div class="days-in" id="k-nav"></div></nav>
+
+<div class="wrap" id="k-body"></div>
+
+<footer><div class="foot-in">
+  <div class="fm">Festa Major de l'Esquerra de l'Eixample 2026</div>
+  <div class="fs" id="k-foot1"></div>
+  <div class="fmini" id="k-foot2"></div>
+  <div class="ver" id="k-ver"></div>
+</div></footer>
+
+<div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
+
+<script>
+const VERSION = "1.0.0";
+
+/* Venues. q is the search text for the maps apps; addresses come from the programme's map.
+   No coordinates yet, so Citymapper is not offered. */
+const V = {
+  agora      : {n:"Ateneu l'Àgora",                           q:"Carrer del Consell de Cent 141, Barcelona"},
+  roma115    : {n:"Av. de Roma, 115",                         q:"Avinguda de Roma 115, Barcelona"},
+  romaentenca: {n:"Av. de Roma amb Entença",                  q:"Avinguda de Roma, Carrer d'Entença, Barcelona"},
+  romaqueer  : {n:"Av. de Roma (Casanova – Villarroel)",      q:"Avinguda de Roma, Carrer de Casanova, Barcelona"},
+  calcc      : {n:"Calàbria amb Consell de Cent",             q:"Carrer de Calàbria, Carrer del Consell de Cent, Barcelona"},
+  calabria   : {n:"Carrer de Calàbria (Josep Tarradellas – París)", q:"Carrer de Calàbria, Carrer de París, Barcelona"},
+  avvee      : {n:"Local de l'AVVEE",                         q:"Carrer de Calàbria 262, Barcelona"},
+  linaodena  : {n:"Casal Popular Lina Òdena",                 q:"Passatge de Batlló 4, Barcelona"},
+  golferichs : {n:"Centre Cívic Casa Golferichs",             q:"Gran Via de les Corts Catalanes 491, Barcelona"},
+  comteborrell:{n:"Comte Borrell (Rosselló – Provença)",      q:"Carrer del Comte Borrell, Carrer de Provença, Barcelona"},
+  ucb        : {n:"Comte d'Urgell, 176",                      q:"Carrer del Comte d'Urgell 176, Barcelona"},
+  ccviladomat: {n:"Consell de Cent (Viladomat – Comte Borrell)", q:"Carrer del Consell de Cent, Carrer de Viladomat, Barcelona"},
+  granados   : {n:"Enric Granados (Consell de Cent – Diputació)", q:"Carrer d'Enric Granados, Carrer de la Diputació, Barcelona"},
+  mallorca   : {n:"Escola Mallorca",                          q:"Carrer de Londres 64, Barcelona"},
+  roser      : {n:"Escola Mare de Déu del Roser",             q:"Carrer del Consell de Cent 214, Barcelona"},
+  nur        : {n:"Espai Nur",                                q:"Carrer del Consell de Cent 124, Barcelona"},
+  foodcoop   : {n:"FoodCoop BCN",                             q:"Passatge d'Aragó 9, Barcelona"},
+  hort       : {n:"Hort Espai Germanetes",                    q:"Carrer del Consell de Cent 150, Barcelona"},
+  emma       : {n:"Jardins d'Emma de Barcelona",              q:"Jardins d'Emma de Barcelona"},
+  ermessenda : {n:"Jardins d'Ermessenda de Carcassona",       q:"Carrer del Comte d'Urgell 145, Barcelona"},
+  montserrat : {n:"Jardins de Montserrat",                    q:"Jardins de Montserrat, Barcelona"},
+  deulofeu   : {n:"Interior d'illa de Rosa Deulofeu",         q:"Carrer de Calàbria 264, Barcelona"},
+  duran      : {n:"Jardins del Doctor Duran i Reynals",       q:"Jardins del Doctor Duran i Reynals, Barcelona"},
+  model      : {n:"La Model",                                 q:"Carrer d'Entença 155, Barcelona"},
+  merricat   : {n:"Llibreria Merricat",                       q:"Carrer del Rosselló 55, Barcelona"},
+  puntiapart : {n:"Llibreria Punt i apart",                   q:"Carrer del Comte Borrell 225, Barcelona"},
+  londres38  : {n:"Londres, 38 (pati interior)",              q:"Carrer de Londres 38, Barcelona"},
+  ninot      : {n:"Mercat del Ninot",                         q:"Carrer de Mallorca 153, Barcelona"},
+  joanmiro   : {n:"Pistes Poliesportives Municipals Joan Miró", q:"Carrer d'Aragó 2, Barcelona"},
+  parcmiro   : {n:"Parc de Joan Miró",                        q:"Parc de Joan Miró, Barcelona"},
+  gallinat   : {n:"Plaça d'Enriqueta Gallinat",               q:"Plaça d'Enriqueta Gallinat, Barcelona"},
+  universitat: {n:"Plaça de la Universitat",                  q:"Plaça de la Universitat, Barcelona"},
+  germanetes : {n:"Plaça del Mercat de Germanetes",           q:"Carrer del Consell de Cent 152, Barcelona"},
+  pellicer   : {n:"Passatge de Lluís Pellicer, 21",           q:"Passatge de Lluís Pellicer 21, Barcelona"},
+  urgellparis: {n:"Comte d'Urgell amb París",                 q:"Carrer del Comte d'Urgell, Carrer de París, Barcelona"},
+  tarradellas: {n:"Av. de Josep Tarradellas amb París",       q:"Avinguda de Josep Tarradellas, Carrer de París, Barcelona"},
+  villarroel : {n:"Villarroel amb París",                     q:"Carrer de Villarroel, Carrer de París, Barcelona"}
+};
+
+function toEn(s){
+  const p = String(s).split(".");
+  let h = parseInt(p[0],10); const m = p[1] || "00";
+  const ap = (h >= 12 && h < 24) ? "PM" : "AM";
+  h = h % 12; if (h === 0) h = 12;
+  return h + ":" + m + " " + ap;
+}
+function tm(a,b){
+  const loc = b ? a + "–" + b + " h" : a + " h";
+  return {ca:loc, es:loc, en: b ? toEn(a) + "–" + toEn(b) : toEn(a)};
+}
+function E(a,b,tags,v,title,desc,extra){
+  const e = {a:a, b:b, time:tm(a,b), tags:tags, v:v, title:title, desc:desc};
+  if (extra) for (const k in extra) e[k] = extra[k];
+  if (!e.loc) { const n = v ? V[v].n : ""; e.loc = {ca:n, es:n, en:n}; }
+  return e;
+}
+function S(s){ return {ca:s, es:s, en:s}; }
+function L(ca,es,en){ return {ca:ca, es:es, en:en}; }
+
+const ROUTE = L("Recorregut","Recorrido","Route");
+const SRC = "https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Festa_Major_de_lEsquerra_de_lEixample_-_Programa_2026.1a0d984d.pdf";
+const WEB = "https://www.festesesquerraeixample.org/";
+const W = function(slug){ return WEB + slug + "/"; };
+const WEBONLY = L("Aquest acte apareix al web de la Festa Major, però no al programa imprès.",
+  "Este acto aparece en la web de la Fiesta Mayor, pero no en el programa impreso.",
+  "This event is on the festival website but not in the printed program.");
+const CASTELLS = L("Assaig de castells abans de la Diada de Festa Major del 17 d'octubre. Cal portar pantalons còmodes i una camisa vella. No cal reserva prèvia.",
+  "Ensayo de castells antes de la Diada de Fiesta Mayor del 17 de octubre. Hay que llevar pantalones cómodos y una camisa vieja. No hace falta reserva previa.",
+  "Human towers practice ahead of the festival's castells day on October 17. Wear comfortable trousers and an old shirt. No booking needed.");
+
+const T = {
+  ca:{
+    eyebrow:"Festa Major · 2–12 d'octubre",
+    meta:[["Festa major","2 – 12 oct."],["Pregó","Dv 2 · 19 h"],["Lema","Espai públic, espai veïnal"],["Districte","Eixample"]],
+    lede:"La Festa Major de l'Esquerra de l'Eixample, del 2 al 12 d'octubre, amb un centenar d'activitats gratuïtes de més de cinquanta entitats: el pregó, la Festa de la diversitat, el correfoc infantil, la IX Trobada de gegants, el sopar i ball de Festa Major i el concert de cloenda.",
+    nav:["Essencials","Dv 2","Ds 3","Dg 4","Dl 5","Dt 6","Dc 7","Dj 8","Dv 9","Ds 10","Dg 11","Dl 12","Llocs","Abans d'anar-hi"],
+    essLbl:"Si només feu cinc coses",essTitle:"Els essencials",
+    placesLbl:"Els llocs",placesTitle:"On passa tot",
+    placesNote:"Toqueu «Com arribar-hi» i trieu l'aplicació de mapes que useu habitualment.",
+    dirs:"Com arribar-hi", cal:"Afegeix al calendari", more:"Més informació", signup:"Inscripció",
+    calFest:"Festa Major de l'Esquerra de l'Eixample 2026", calGuide:"Guia", calProg:"Programa oficial", calLink:"Enllaç",
+    calSrc:SRC, calTime:"Hora", tipLbl:"Nota", openIn:"Trieu una aplicació de mapes",
+    copy:"Copia l'adreça", copied:"Copiat", close:"Tanca", go:"Obre",
+    knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
+    calloutB:"Programa imprès i web.",
+    callout:" El programa imprès es va tancar el 15 de setembre. El web de la Festa Major té la programació actualitzada: on el web dona dades diferents o noves, aquesta guia segueix la informació més recent i ho indica a l'acte.",
+    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Festa Major de l\'Esquerra de l\'Eixample. Per al programa complet i per als canvis d\'última hora, consulteu <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot2:"Això és un projecte personal, fet amb dedicació i estima per ajudar tothom a gaudir al màxim de la festa. No és una publicació oficial. Aquesta pàgina no fa servir galetes ni recull dades personals. Està allotjada a GitHub Pages i subjecta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>.",
+    ess:[
+      {t:"Pregó de Festa Major",w:"Divendres 2 · 19 h",d:"A l'interior d'illa de Rosa Deulofeu, amb la Rocío del Carmen Pérez i la Mercè Otero, els Gegants de l'Esquerra de l'Eixample, els Esquerdats i Soca-rel."},
+      {t:"Festa de la diversitat",w:"Dissabte 3 · d'11 a 2 h",d:"Mostra d'entitats, artesania i comerç LGTBIQA+ i un programa d'actuacions per a tots els públics a la plaça de la Universitat."},
+      {t:"Correfoc infantil",w:"Dissabte 3 · 20.30 h",d:"Amb la colla Els Malànimes, pel carrer de Villarroel, de París fins a Mallorca."},
+      {t:"IX Trobada de gegants",w:"Diumenge 4 · 10 h",d:"Plantada davant del Mercat del Ninot, cercavila a les 11 h i final de festa als jardins de Montserrat."},
+      {t:"Sopar i ball de Festa Major",w:"Dissabte 10 · 21 h",d:"Al carrer de Calàbria, entre Josep Tarradellas i París. Sopar: 20 €."}
+    ],
+    know:[
+      ["Tot gratuït i accessible","Totes les activitats són gratuïtes, llevat dels àpats amb preu, i tots els espais són accessibles per a persones amb mobilitat reduïda. El pregó, la ruta de memòria cooperativista i la visita als refugis antiaeris tenen servei de llengua de signes catalana."],
+      ["Punts lila","Festa de la diversitat (ds. 3, d'11 a 2 h, pl. de la Universitat), Aldafarra'26 (ds. 3, de 22 a 2 h, av. de Roma – Entença), vespreig i nit de concerts (ds. 3, de 20 a 2 h, Consell de Cent – Viladomat) i sopar i concert jove (ds. 10, de 22 a 2 h, jardins de Montserrat). Telèfon d'atenció contra la violència masclista: 900 900 120."],
+      ["Activitats de tota la setmana","Exposició de pintura a l'oli de Pilar Pérez Collado, del 5 al 9 d'octubre, de 10.30 a 13 h i de 17 a 20 h, al local de l'AVVEE (Calàbria, 262). Espai de joc infantil a la plaça del Mercat de Germanetes i als jardins d'Emma."],
+      ["Després de la Festa Major","Assajos castellers a La Model el 14 i el 16 d'octubre, a les 19 h. Diada castellera de Festa Major el dissabte 17 d'octubre, a partir de les 17.30 h, a Consell de Cent – Viladomat. Passejada «Recordant el teixit industrial» el diumenge 18 d'octubre, d'11.30 a 13.30 h, des de l'Escola Industrial, amb inscripció."],
+      ["Canvis","El programa imprès remet al web de la Festa Major, festesesquerraeixample.org, per als canvis."]
+    ]
+  },
+  es:{
+    eyebrow:"Fiesta Mayor · 2–12 de octubre",
+    meta:[["Fiesta mayor","2 – 12 oct."],["Pregón","Vie 2 · 19 h"],["Lema","Espai públic, espai veïnal"],["Distrito","Eixample"]],
+    lede:"La Fiesta Mayor de l'Esquerra de l'Eixample, del 2 al 12 de octubre, con un centenar de actividades gratuitas de más de cincuenta entidades: el pregón, la Fiesta de la diversidad, el correfoc infantil, el IX Encuentro de gigantes, la cena y baile de Fiesta Mayor y el concierto de clausura.",
+    nav:["Esenciales","Vie 2","Sáb 3","Dom 4","Lun 5","Mar 6","Mié 7","Jue 8","Vie 9","Sáb 10","Dom 11","Lun 12","Lugares","Antes de ir"],
+    essLbl:"Si solo puede hacer cinco cosas",essTitle:"Lo esencial",
+    placesLbl:"Los lugares",placesTitle:"Dónde pasa todo",
+    placesNote:"Toque «Cómo llegar» y elija la aplicación de mapas que use habitualmente.",
+    dirs:"Cómo llegar", cal:"Añadir al calendario", more:"Más información", signup:"Inscripción",
+    calFest:"Fiesta Mayor de l'Esquerra de l'Eixample 2026", calGuide:"Guía", calProg:"Programa oficial", calLink:"Enlace",
+    calSrc:SRC, calTime:"Hora", tipLbl:"Nota", openIn:"Elija una aplicación de mapas",
+    copy:"Copiar la dirección", copied:"Copiado", close:"Cerrar", go:"Abrir",
+    knowLbl:"Práctico",knowTitle:"Antes de ir",
+    calloutB:"Programa impreso y web.",
+    callout:" El programa impreso se cerró el 15 de septiembre. La web de la Fiesta Mayor tiene la programación actualizada: donde la web da datos distintos o nuevos, esta guía sigue la información más reciente y lo indica en el acto.",
+    foot1:'La información de esta página procede del programa oficial de la Fiesta Mayor de l\'Esquerra de l\'Eixample. Para el programa completo y para los cambios de última hora, consulte <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot2:"Esto es un proyecto personal, hecho con dedicación y cariño para ayudar a todos a disfrutar al máximo de la fiesta. No es una publicación oficial. Esta página no utiliza cookies ni recoge datos personales. Está alojada en GitHub Pages y sujeta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>.",
+    ess:[
+      {t:"Pregón de Fiesta Mayor",w:"Viernes 2 · 19 h",d:"En el interior de manzana de Rosa Deulofeu, con Rocío del Carmen Pérez y Mercè Otero, los Gegants de l'Esquerra de l'Eixample, los Esquerdats y Soca-rel."},
+      {t:"Fiesta de la diversidad",w:"Sábado 3 · de 11 a 2 h",d:"Muestra de entidades, artesanía y comercio LGTBIQA+ y un programa de actuaciones para todos los públicos en la plaza de la Universitat."},
+      {t:"Correfoc infantil",w:"Sábado 3 · 20.30 h",d:"Con la colla Els Malànimes, por la calle Villarroel, de París hasta Mallorca."},
+      {t:"IX Encuentro de gigantes",w:"Domingo 4 · 10 h",d:"Plantada delante del Mercat del Ninot, pasacalle a las 11 h y final de fiesta en los jardines de Montserrat."},
+      {t:"Cena y baile de Fiesta Mayor",w:"Sábado 10 · 21 h",d:"En la calle Calàbria, entre Josep Tarradellas y París. Cena: 20 €."}
+    ],
+    know:[
+      ["Todo gratuito y accesible","Todas las actividades son gratuitas, salvo las comidas con precio, y todos los espacios son accesibles para personas con movilidad reducida. El pregón, la ruta de memoria cooperativista y la visita a los refugios antiaéreos tienen servicio de lengua de signos catalana."],
+      ["Puntos lila","Fiesta de la diversidad (sáb. 3, de 11 a 2 h, pl. de la Universitat), Aldafarra'26 (sáb. 3, de 22 a 2 h, av. de Roma – Entença), vespreig y noche de conciertos (sáb. 3, de 20 a 2 h, Consell de Cent – Viladomat) y cena y concierto joven (sáb. 10, de 22 a 2 h, jardines de Montserrat). Teléfono de atención contra la violencia machista: 900 900 120."],
+      ["Actividades de toda la semana","Exposición de pintura al óleo de Pilar Pérez Collado, del 5 al 9 de octubre, de 10.30 a 13 h y de 17 a 20 h, en el local de la AVVEE (Calàbria, 262). Espacio de juego infantil en la plaza del Mercat de Germanetes y en los jardines de Emma."],
+      ["Después de la Fiesta Mayor","Ensayos castellers en La Model el 14 y el 16 de octubre, a las 19 h. Diada castellera de Fiesta Mayor el sábado 17 de octubre, desde las 17.30 h, en Consell de Cent – Viladomat. Paseo «Recordant el teixit industrial» el domingo 18 de octubre, de 11.30 a 13.30 h, desde la Escola Industrial, con inscripción."],
+      ["Cambios","El programa impreso remite a la web de la Fiesta Mayor, festesesquerraeixample.org, para los cambios."]
+    ]
+  },
+  en:{
+    eyebrow:"Festa Major · October 2–12",
+    meta:[["Festival","Oct 2–12"],["Opening speech","Fri, Oct 2 · 7:00 PM"],["Motto","Espai públic, espai veïnal"],["District","Eixample"]],
+    lede:"The Festa Major de l'Esquerra de l'Eixample, from October 2 to 12, with about a hundred free activities by more than fifty local groups: the opening speech, the Diversity Festival, the children's fire run, the 9th giants' gathering, the festival dinner and dance, and the closing concert.",
+    nav:["Essentials","Fri 2","Sat 3","Sun 4","Mon 5","Tue 6","Wed 7","Thu 8","Fri 9","Sat 10","Sun 11","Mon 12","Places","Before you go"],
+    essLbl:"If you only do five things",essTitle:"The essentials",
+    placesLbl:"The places",placesTitle:"Where it all happens",
+    placesNote:"Tap Directions and pick whichever maps app you normally use.",
+    dirs:"Directions", cal:"Add to calendar", more:"More information", signup:"Sign up",
+    calFest:"Festa Major de l'Esquerra de l'Eixample 2026", calGuide:"Guide", calProg:"Official program", calLink:"Link",
+    calSrc:SRC, calTime:"Time", tipLbl:"Note", openIn:"Choose a maps app",
+    copy:"Copy address", copied:"Copied", close:"Close", go:"Open",
+    knowLbl:"Practical",knowTitle:"Before you go",
+    calloutB:"Printed program and website.",
+    callout:" The printed program was closed on September 15. The festival website has the updated schedule: where it gives different or new details, this guide follows the most recent information and says so on the event.",
+    foot1:'The information on this page comes from the official program of the Festa Major de l\'Esquerra de l\'Eixample. For the full program and any last-minute changes, see <a href="' + SRC + '" target="_blank" rel="noopener">the official program (PDF)</a>.',
+    foot2:"This is a personal project and a labor of love, made to help everyone make the most of the festival. It is not an official publication. This page does not use cookies or collect any personal data. It is hosted on GitHub Pages and is subject to the <a href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>GitHub Privacy Statement</a>.",
+    ess:[
+      {t:"Opening speech",w:"Friday, October 2 · 7:00 PM",d:"In the Rosa Deulofeu courtyard garden, with Rocío del Carmen Pérez and Mercè Otero, the Gegants de l'Esquerra de l'Eixample, the Esquerdats human towers group and Soca-rel."},
+      {t:"Diversity Festival",w:"Saturday, October 3 · 11:00 AM–2:00 AM",d:"A fair of LGBTIQA+ groups, crafts and shops, with performances for all ages in Plaça de la Universitat."},
+      {t:"Children's fire run",w:"Saturday, October 3 · 8:30 PM",d:"With the Els Malànimes devils group, along Carrer de Villarroel from París to Mallorca."},
+      {t:"9th giants' gathering",w:"Sunday, October 4 · 10:00 AM",d:"The giants stand on display outside the Mercat del Ninot, parade at 11:00 AM and finish in the Jardins de Montserrat."},
+      {t:"Festival dinner and dance",w:"Saturday, October 10 · 9:00 PM",d:"On Carrer de Calàbria, between Josep Tarradellas and París. Dinner €20."}
+    ],
+    know:[
+      ["Free and accessible","All activities are free, except meals with a price, and every venue is accessible for people with reduced mobility. The opening speech, the cooperative history walk and the air-raid shelter visit have Catalan Sign Language interpreting."],
+      ["Punt Lila support points","The Diversity Festival (Sat, Oct 3, 11:00 AM–2:00 AM, Pl. de la Universitat), Aldafarra'26 (Sat, Oct 3, 10:00 PM–2:00 AM, Av. de Roma – Entença), the evening and concert night (Sat, Oct 3, 8:00 PM–2:00 AM, Consell de Cent – Viladomat) and the young people's dinner and concert (Sat, Oct 10, 10:00 PM–2:00 AM, Jardins de Montserrat). Helpline against gender-based violence: 900 900 120."],
+      ["All week","Oil paintings by Pilar Pérez Collado, October 5 to 9, 10:30 AM–1:00 PM and 5:00–8:00 PM, at the AVVEE neighborhood association (Calàbria, 262). A play area for young children in Plaça del Mercat de Germanetes and the Jardins d'Emma."],
+      ["After the festival","Human towers practice at La Model on October 14 and 16, at 7:00 PM. The festival's castells day on Saturday, October 17, from 5:30 PM, at Consell de Cent – Viladomat. The Recordant el teixit industrial walk on Sunday, October 18, 11:30 AM–1:30 PM, from the Escola Industrial, with sign-up."],
+      ["Changes","The printed program refers readers to the festival website, festesesquerraeixample.org, for changes."]
+    ]
+  }
+};
+
+const TAG = {
+  free:{ca:"Gratuït",es:"Gratuito",en:"Free"},
+  open:{ca:"Obre la festa",es:"Abre la fiesta",en:"Opening"},
+  miss:{ca:"Imprescindible",es:"Imprescindible",en:"Worth planning around"},
+  book:{ca:"Cal inscripció",es:"Inscripción previa",en:"Booking needed"},
+  ticket:{ca:"De pagament",es:"De pago",en:"Paid"},
+  kids:{ca:"Infants",es:"Niños",en:"For children"},
+  fire:{ca:"Foc",es:"Fuego",en:"Fire"},
+  fin:{ca:"Acte final",es:"Acto final",en:"Closing act"}
+};
+
+const DAYS = [
+  { id:"d2", num:"2",
+    dow:L("Divendres · 2 d'octubre","Viernes · 2 de octubre","Friday · October 2"),
+    title:L("El pregó obre la festa","El pregón abre la fiesta","The opening speech starts the festival"),
+    note:L("Des de les 11 h","Desde las 11 h","From 11:00 AM"),
+    events:[
+      E("11","13",["free"],"roser",
+        L("Obrim l'església al barri","Abrimos la iglesia al barrio","The school church opens its doors"),
+        L("Visita lliure a l'església de l'Escola Mare de Déu del Roser, obra de Joan Martorell, mestre i mentor d'Antoni Gaudí.",
+          "Visita libre a la iglesia de la Escola Mare de Déu del Roser, obra de Joan Martorell, maestro y mentor de Antoni Gaudí.",
+          "A free visit to the church of the Escola Mare de Déu del Roser, built by Joan Martorell, Antoni Gaudí's teacher and mentor."),
+        {link:["more",W("obrim-les-portes-de-lesglesia-al-barri-actuacio-ball-de-bastons")],
+         tip:L("El web indica d'11 a 13 h i de 16 a 18 h; el programa imprès, d'11 a 18 h.","La web indica de 11 a 13 h y de 16 a 18 h; el programa impreso, de 11 a 18 h.","The website gives 11:00 AM–1:00 PM and 4:00–6:00 PM; the printed program gives 11:00 AM–6:00 PM.")}),
+      E("16","18",["free"],"roser",
+        L("Obrim l'església al barri: ball de bastons","Abrimos la iglesia al barrio: ball de bastons","The school church opens its doors: stick dance"),
+        L("Segona franja de visita. A les 16 h, l'alumnat de l'escola balla el ball de bastons al pati de l'església.",
+          "Segunda franja de visita. A las 16 h, el alumnado de la escuela baila el ball de bastons en el patio de la iglesia.",
+          "The second visiting slot. At 4:00 PM, the school's pupils perform a traditional stick dance in the church courtyard."),
+        {link:["more",W("obrim-les-portes-de-lesglesia-al-barri-actuacio-ball-de-bastons")],
+         tip:L("El programa imprès parla d'actuacions de danses catalanes a la tarda; el web, del ball de bastons a les 16 h.","El programa impreso habla de actuaciones de danzas catalanas por la tarde; la web, del ball de bastons a las 16 h.","The printed program mentions Catalan dances in the afternoon; the website gives the stick dance at 4:00 PM.")}),
+      E("18","20",["free"],"pellicer",
+        L("Exposició «1-O. Ni oblit ni perdó»","Exposición «1-O. Ni oblit ni perdó»","Exhibition: 1-O. Ni oblit ni perdó"),
+        L("Fotografies del veïnat sobre els fets de l'1 d'octubre de 2017, a la seu territorial de l'ANC. També dissabte 3 i diumenge 4, de 10 a 13 h.",
+          "Fotografías del vecindario sobre los hechos del 1 de octubre de 2017, en la sede territorial de la ANC. También sábado 3 y domingo 4, de 10 a 13 h.",
+          "Neighbors' photographs of the events of October 1, 2017, at the local ANC office. Also Saturday 3 and Sunday 4, 10:00 AM–1:00 PM.")),
+      E("18","23",["ticket","book"],"pellicer",
+        L("Tast artesà","Cata artesana","Artisan tasting"),
+        L("Cerveses artesanes, formatges, embotits i olives de proximitat, amb l'Associació d'Amics del Passatge Lluís Pellicer. Preu: 20 €; persones associades, 15 €. Reserves a amicspassatgelluispellicer@gmail.com.",
+          "Cervezas artesanas, quesos, embutidos y aceitunas de proximidad, con la Associació d'Amics del Passatge Lluís Pellicer. Precio: 20 €; personas asociadas, 15 €. Reservas en amicspassatgelluispellicer@gmail.com.",
+          "Craft beers, local cheeses, cured meats and olives, with the Passatge Lluís Pellicer friends' association. €20; members €15. Bookings at amicspassatgelluispellicer@gmail.com."),
+        {link:["more",W("tast-artesa")],
+         tip:L("El programa imprès indica de 18 a 23 h; el web indica les 19.30 h i hi afegeix el preu.","El programa impreso indica de 18 a 23 h; la web indica las 19.30 h y añade el precio.","The printed program gives 6:00–11:00 PM; the website gives 7:30 PM and adds the price.")}),
+      E("19","21",["open","miss","free"],"deulofeu",
+        L("Pregó de Festa Major","Pregón de Fiesta Mayor","Opening speech"),
+        L("Parlament de les autoritats del districte i pregó de la Rocío del Carmen Pérez, cuidadora, i la Mercè Otero, professora jubilada i activista feminista, amb els Gegants de l'Esquerra de l'Eixample, la colla castellera dels Esquerdats i la música de Soca-rel. Amb llengua de signes catalana.",
+          "Discurso de las autoridades del distrito y pregón de Rocío del Carmen Pérez, cuidadora, y Mercè Otero, profesora jubilada y activista feminista, con los Gegants de l'Esquerra de l'Eixample, la colla castellera dels Esquerdats y la música de Soca-rel. Con lengua de signos catalana.",
+          "A few words from the district authorities, then the speech by Rocío del Carmen Pérez, a caregiver, and Mercè Otero, a retired teacher and feminist activist, with the Gegants de l'Esquerra de l'Eixample, the Esquerdats human towers group and music by Soca-rel. With Catalan Sign Language."),
+        {loc:L("Interior d'illa de Rosa Deulofeu (Calàbria, 264)","Interior de manzana de Rosa Deulofeu (Calàbria, 264)","Rosa Deulofeu courtyard garden (Calàbria, 264)"),
+         link:["more",W("prego-festa-major")],
+         tip:L("El web anuncia també una cercavila de pilars castellers fins al pregó, sense hora ni recorregut.","La web anuncia también un pasacalle de pilares castellers hasta el pregón, sin hora ni recorrido.","The website also announces a parade of human pillars to the opening speech, with no time or route.")}),
+      E("19","22",["free"],"montserrat",
+        L("Assaig casteller","Ensayo castellero","Human towers practice"),
+        CASTELLS,
+        {tip:L("El programa imprès indica de 19 a 22 h; el web anuncia un assaig obert de castellets a les 20 h.","El programa impreso indica de 19 a 22 h; la web anuncia un ensayo abierto de castellets a las 20 h.","The printed program gives 7:00–10:00 PM; the website announces an open practice at 8:00 PM."),
+         link:["more",W("assaig-obert-de-castellets")]})
+    ]},
+  { id:"d3", num:"3",
+    dow:L("Dissabte · 3 d'octubre","Sábado · 3 de octubre","Saturday · October 3"),
+    title:L("Diversitat, cultura popular i correfoc infantil","Diversidad, cultura popular y correfoc infantil","Diversity, popular culture and a children's fire run"),
+    note:L("Des de les 9 h","Desde las 9 h","From 9:00 AM"),
+    events:[
+      E("9","14",[],"germanetes",
+        L("Parades d'alimentació ecològica","Puestos de alimentación ecológica","Organic food stalls"),
+        L("Parades d'alimentació agroecològica del Mercat de Pagès de Germanetes, directament de qui la produeix.","Puestos de alimentación agroecológica del Mercat de Pagès de Germanetes, directamente de quien la produce.","Agroecological food stalls of the Mercat de Pagès de Germanetes, straight from the farmers.")),
+      E("9","19",[],"joanmiro",
+        L("Campionat de futbol botons","Campeonato de fútbol chapas","Button football championship"),
+        L("La Copa He-Roi, amb jugadors i jugadores de tot Catalunya i convidats d'altres associacions de l'Estat i d'Europa.","La Copa He-Roi, con jugadores de toda Cataluña e invitados de otras asociaciones de España y de Europa.","The He-Roi Cup, with players from across Catalonia and guests from associations in Spain and elsewhere in Europe.")),
+      E("10","13",["kids"],"agora",
+        L("L'Àgora surt al carrer","L'Àgora sale a la calle","L'Àgora takes to the street"),
+        L("Activitats al carrer amb un debat sobre temes actuals, música, exposicions, jocs infantils i xocolatada.","Actividades en la calle con un debate sobre temas actuales, música, exposiciones, juegos infantiles y chocolatada.","Street activities with a debate on current issues, music, exhibitions, children's games and hot chocolate.")),
+      E("10","13",[],"germanetes",
+        L("Exposició «Comunitats de sembra d'aigua»","Exposición «Comunitats de sembra d'aigua»","Exhibition: Comunitats de sembra d'aigua"),
+        L("Un projecte d'organització comunitària per recuperar aigües grises i mantenir el verd del barri.","Un proyecto de organización comunitaria para recuperar aguas grises y mantener el verde del barrio.","A community project that reuses gray water to keep the neighborhood's green spaces alive.")),
+      E("10","17",[],"germanetes",
+        L("Jornada «Dret al verd, dret a la salut»","Jornada «Dret al verd, dret a la salut»","Dret al verd, dret a la salut: a day for green space and health"),
+        L("Jornada en defensa del territori i del verd urbà. Segons el web: exposició de col·lectius d'11 a 12.30 h, presentació de la campanya a les 12.30 h i dinar agroecològic a les 13.30 h.",
+          "Jornada en defensa del territorio y del verde urbano. Según la web: exposición de colectivos de 11 a 12.30 h, presentación de la campaña a las 12.30 h y comida agroecológica a las 13.30 h.",
+          "A day in defense of green urban space. According to the website: groups' displays 11:00 AM–12:30 PM, the campaign launch at 12:30 PM and an agroecological lunch at 1:30 PM."),
+        {link:["more",W("acte-de-presentacio-de-la-campanya-dret-al-verd-dret-a-la-salut")],
+         tip:L("El programa imprès indica una taula rodona a les 12.30 h i la presentació del manifest a les 13.15 h.","El programa impreso indica una mesa redonda a las 12.30 h y la presentación del manifiesto a las 13.15 h.","The printed program gives a round table at 12:30 PM and the manifesto at 1:15 PM.")}),
+      E("10","13",["free"],"pellicer",
+        L("Exposició «1-O. Ni oblit ni perdó»","Exposición «1-O. Ni oblit ni perdó»","Exhibition: 1-O. Ni oblit ni perdó"),
+        L("Fotografies del veïnat sobre l'1 d'octubre de 2017. També s'hi recullen imatges del veïnat.","Fotografías del vecindario sobre el 1 de octubre de 2017. También se recogen imágenes del vecindario.","Neighbors' photographs of October 1, 2017. Neighbors can also bring their own pictures.")),
+      E("11",null,["book"],"tarradellas",
+        L("Visita «Buscant els refugis antiaeris del barri»","Visita «Buscant els refugis antiaeris del barri»","Visit: looking for the neighborhood's air-raid shelters"),
+        L("Visita al subsòl de l'avinguda de Josep Tarradellas per veure un refugi antiaeri de la Guerra Civil, amb l'historiador Josep Maria Contel. Amb llengua de signes catalana. Inscripció per correu a lamemoriahistoricae.e@gmail.com.",
+          "Visita al subsuelo de la avenida de Josep Tarradellas para ver un refugio antiaéreo de la Guerra Civil, con el historiador Josep Maria Contel. Con lengua de signos catalana. Inscripción por correo en lamemoriahistoricae.e@gmail.com.",
+          "A visit under Avinguda de Josep Tarradellas to see a Spanish Civil War air-raid shelter, with historian Josep Maria Contel. With Catalan Sign Language. Sign up by email at lamemoriahistoricae.e@gmail.com."),
+        {tip:L("L'adreça de correu és la del web del districte; el web de la Festa Major l'escriu «lamemoriahistoriae.e@gmail.com».","La dirección de correo es la de la web del distrito; la web de la Fiesta Mayor la escribe «lamemoriahistoriae.e@gmail.com».","The email address is the one on the district website; the festival website spells it lamemoriahistoriae.e@gmail.com.")}),
+      E("11","12",["kids"],"mallorca",
+        L("Taller de plantació i biodiversitat","Taller de plantación y biodiversidad","Planting and biodiversity workshop"),
+        L("Per a infants i adolescents: fer planter des de la llavor per entendre com funciona la natura.","Para niños y adolescentes: hacer semilleros desde la semilla para entender cómo funciona la naturaleza.","For children and teenagers: growing seedlings from seed to learn how nature works.")),
+      E("11","12.30",[],"mallorca",
+        L("Activitats esportives","Actividades deportivas","Sports taster"),
+        L("Tast dels esports que s'organitzen a l'escola durant el curs.","Muestra de los deportes que se organizan en la escuela durante el curso.","A taster of the sports the school offers during the year.")),
+      E("11","12.30",["free"],"hort",
+        L("Partides simultànies d'escacs","Partidas simultáneas de ajedrez","Simultaneous chess games"),
+        L("Partides simultànies contra Julio Benedetti, mestre internacional d'escacs: cinc taulells alhora. Sense inscripció.","Partidas simultáneas contra Julio Benedetti, maestro internacional de ajedrez: cinco tableros a la vez. Sin inscripción.","Play International Master Julio Benedetti, five boards at a time. No sign-up needed."),
+        {loc:L("Davant dels horts de Germanetes (Consell de Cent, 152)","Delante de los huertos de Germanetes (Consell de Cent, 152)","Outside the Germanetes gardens (Consell de Cent, 152)"),
+         tip:WEBONLY, link:["more",W("partides-simultanies-descacs")]}),
+      E("11","13",[],"duran",
+        L("Cartografiem el barri: mapatge feminista","Cartografiamos el barrio: mapeo feminista","Mapping the neighborhood: a feminist map"),
+        L("Per identificar espais segurs i insegurs del barri i construir una xarxa de punts lila de proximitat.","Para identificar espacios seguros e inseguros del barrio y construir una red de puntos lila de proximidad.","To map the neighborhood's safe and unsafe places and build a local network of Punt Lila support points.")),
+      E("11","13",["free"],"urgellparis",
+        L("Ruta de memòria cooperativista","Ruta de memoria cooperativista","Cooperative history walk"),
+        L("Pel passat obrer i cooperatiu del barri: l'Escola Industrial, les antigues cooperatives del Rellotge i la Dignitat i la Unió Cooperatista Barcelonesa. Amb llengua de signes catalana. El web indica que no cal inscripció.",
+          "Por el pasado obrero y cooperativo del barrio: la Escola Industrial, las antiguas cooperativas del Rellotge y la Dignitat y la Unió Cooperatista Barcelonesa. Con lengua de signos catalana. La web indica que no hace falta inscripción.",
+          "Through the neighborhood's working-class and cooperative past: the Escola Industrial, the old Rellotge and Dignitat cooperatives and the Unió Cooperatista Barcelonesa. With Catalan Sign Language. The website says no sign-up is needed."),
+        {loc:L("Punt d'inici: Comte d'Urgell amb París","Punto de inicio: Comte d'Urgell con París","Start: Comte d'Urgell at París")}),
+      E("11","02",["miss","free"],"universitat",
+        L("Festa de la diversitat","Fiesta de la diversidad","Diversity Festival"),
+        L("Mostra d'entitats, artesania i comerç LGTBIQA+ i un programa d'activitats i actuacions per a tots els públics. Hi ha punt lila.",
+          "Muestra de entidades, artesanía y comercio LGTBIQA+ y un programa de actividades y actuaciones para todos los públicos. Hay punto lila.",
+          "A fair of LGBTIQA+ groups, crafts and local shops, with activities and performances for all ages. There is a Punt Lila support point."),
+        {link:["more",W("festa-de-la-diversitat-i-mostra-dentitats-artesania-i-comerciants-lgtbiq")]}),
+      E("11.15","12",["kids"],"merricat",
+        L("Contacontes La Mila Mola","Cuentacuentos La Mila Mola","Storytelling: La Mila Mola"),
+        L("Lectura del conte i un desplegable perquè els infants el pintin.","Lectura del cuento y un desplegable para que los niños lo pinten.","A story reading, with a fold-out for the children to color in.")),
+      E("11.30","13",["kids"],"ninot",
+        L("Taller de construcció «Petits grans arquitectes»","Taller de construcción «Petits grans arquitectes»","Building workshop: little big architects"),
+        L("Construccions amb peces de fusta davant del Mercat del Ninot.","Construcciones con piezas de madera delante del Mercat del Ninot.","Building with wooden blocks outside the Mercat del Ninot.")),
+      E("11.30","13",["kids"],"ninot",
+        L("Taller infantil de pintura amb flors","Taller infantil de pintura con flores","Children's flower painting workshop"),
+        L("Davant del Mercat del Ninot.","Delante del Mercat del Ninot.","Outside the Mercat del Ninot.")),
+      E("12","12.30",["kids"],"mallorca",
+        L("Contacontes amb valors","Cuentacuentos con valores","Stories with values"),
+        L("Contes per aprendre convivència, respecte i pau.","Cuentos para aprender convivencia, respeto y paz.","Stories about living together, respect and peace.")),
+      E("12.30","14",[],"ermessenda",
+        L("Vermut Interferències: concert de Celobert","Vermut Interferències: concierto de Celobert","Vermut Interferències: Celobert in concert"),
+        L("Indie pop amb Celobert, amb el Centre Cívic Urgell. Aforament limitat.","Indie pop con Celobert, con el Centre Cívic Urgell. Aforo limitado.","Indie pop by Celobert, with the Centre Cívic Urgell. Limited capacity.")),
+      E("13","14",["kids"],"mallorca",
+        L("Concert amb Mallorkings i pica-pica musical","Concierto con Mallorkings y picoteo musical","Mallorkings concert and music party"),
+        L("La banda de les famílies de l'escola toca cançons de sempre i els èxits de l'estiu.","La banda de las familias de la escuela toca canciones de siempre y los éxitos del verano.","The school families' band plays old favorites and this summer's hits.")),
+      E("13.30","15",["book"],"germanetes",
+        L("Dinar de Festa Major amb productes del mercat","Comida de Fiesta Mayor con productos del mercado","Festival lunch with market produce"),
+        L("Menú de productes agroecològics i de proximitat, amb el Mercat de Pagès de Germanetes. Cal reserva prèvia.","Menú de productos agroecológicos y de proximidad, con el Mercat de Pagès de Germanetes. Hay que reservar.","An agroecological, locally sourced menu with the Mercat de Pagès de Germanetes. Booking needed.")),
+      E("16",null,[],"germanetes",
+        L("Per una sanitat 100% pública: Recuperem el Sagrat Cor","Por una sanidad 100% pública: Recuperem el Sagrat Cor","For fully public health care: reclaim the Sagrat Cor hospital"),
+        L("Tarda reivindicativa amb xerrades, debats i música, i presentació de la campanya «Fem públic l'Hospital Sagrat Cor».","Tarde reivindicativa con charlas, debates y música, y presentación de la campaña «Fem públic l'Hospital Sagrat Cor».","An afternoon of talks, debate and music, and the launch of the Fem públic l'Hospital Sagrat Cor campaign."),
+        {link:["more",W("presentacio-de-la-campanya-fem-public-lhospital-sagrat-cor")],
+         loc:S("Espai Germanetes"), tip:L("Lloc del web. El programa imprès el situava a Calàbria amb Consell de Cent.","Lugar de la web. El programa impreso lo situaba en Calàbria con Consell de Cent.","Place from the website. The printed program placed it at Calàbria and Consell de Cent.")}),
+      E("16","21.30",[],"ucb",
+        L("Jornada de cultura popular de la UCB","Jornada de cultura popular de la UCB","UCB popular culture day"),
+        L("Balls tradicionals, tallers, glosa, xerrades, concerts i una mostra d'art i artesanies, per reclamar la recuperació de l'edifici de la Unió Cooperatista Barcelonesa. Segons el web, a les 19 h hi haurà un anunci.",
+          "Bailes tradicionales, talleres, glosa, charlas, conciertos y una muestra de arte y artesanía, para reclamar la recuperación del edificio de la Unió Cooperatista Barcelonesa. Según la web, a las 19 h habrá un anuncio.",
+          "Traditional dances, workshops, improvised verse, talks, concerts and an art and crafts fair, calling for the Unió Cooperatista Barcelonesa building to be recovered. According to the website, there will be an announcement at 7:00 PM."),
+        {loc:L("Comte d'Urgell, 176 (Mallorca – Provença)","Comte d'Urgell, 176 (Mallorca – Provença)","Comte d'Urgell, 176 (Mallorca – Provença)"), link:["more",W("jornada-cultural-per-la-recuperacio-de-lateneu-ucb")]}),
+      E("16.30","17.30",[],"mallorca",
+        L("Taller «Educar en el feminisme»","Taller «Educar en el feminisme»","Workshop: raising children with feminist values"),
+        L("Per a mares i pares, amb Feministes de l'Esquerra de l'Eixample.","Para madres y padres, con Feministes de l'Esquerra de l'Eixample.","For parents, with Feministes de l'Esquerra de l'Eixample.")),
+      E("16.30","02",[],"romaentenca",
+        L("Aldafarra'26: els 19 anys del cau Aldaia","Aldafarra'26: los 19 años del cau Aldaia","Aldafarra'26: the Aldaia scout group turns 19"),
+        L("Jocs, tallers i pintacares per a totes les edats, i després bingo musical i discjòqueis. Punt lila de 22 a 2 h.","Juegos, talleres y pintacaras para todas las edades, y después bingo musical y DJ. Punto lila de 22 a 2 h.","Games, workshops and face painting for all ages, then music bingo and DJs. Punt Lila support point 10:00 PM–2:00 AM.")),
+      E("17","02",[],"ccviladomat",
+        L("Vespreig i nit de concerts","Vespreig y noche de conciertos","Evening and concert night"),
+        L("Activitats, sopar popular i nit de concerts, amb el Casal Popular Lina Òdena. Punt lila de 20 a 2 h.","Actividades, cena popular y noche de conciertos, con el Casal Popular Lina Òdena. Punto lila de 20 a 2 h.","Activities, a community dinner and a night of concerts, with the Casal Popular Lina Òdena. Punt Lila support point 8:00 PM–2:00 AM."),
+        {loc:L("Consell de Cent amb Viladomat","Consell de Cent con Viladomat","Consell de Cent at Viladomat")}),
+      E("18.30","19.30",[],"ninot",
+        L("Desfilada de moda i complements","Desfile de moda y complementos","Fashion and accessories show"),
+        L("Davant del Mercat del Ninot.","Delante del Mercat del Ninot.","Outside the Mercat del Ninot.")),
+      E("20","24",[],"ninot",
+        L("Tastet de nit o nit de tapes","Tastet de nit o noche de tapas","Night of tapas"),
+        L("Degustació de productes del mercat al Mercat del Ninot.","Degustación de productos del mercado en el Mercat del Ninot.","Market food tastings at the Mercat del Ninot.")),
+      E("20.30","21.30",["miss","fire","kids"],"villarroel",
+        L("Correfoc infantil amb la colla Els Malànimes","Correfoc infantil con la colla Els Malànimes","Children's fire run with Els Malànimes"),
+        L("Correfoc infantil amb batucada dels Diables Malànimes del Ninot.","Correfoc infantil con batucada de los Diables Malànimes del Ninot.","A children's fire run with drums by the Diables Malànimes del Ninot."),
+        {loc:L("Recorregut: Villarroel, de París a Mallorca; final a la placeta de Villarroel amb Mallorca","Recorrido: Villarroel, de París a Mallorca; final en la placeta de Villarroel con Mallorca","Route: Villarroel, from París to Mallorca; ends at the small square at Villarroel and Mallorca")}),
+      E("21","24",[],"ninot",
+        L("Música al carrer amb discjòqueis","Música en la calle con DJ","Street music with DJs"),
+        L("Davant del Mercat del Ninot, durant el Tastet de nit.","Delante del Mercat del Ninot, durante el Tastet de nit.","Outside the Mercat del Ninot, during the night of tapas."))
+    ]},
+  { id:"d4", num:"4",
+    dow:L("Diumenge · 4 d'octubre","Domingo · 4 de octubre","Sunday · October 4"),
+    title:L("La IX Trobada de gegants","El IX Encuentro de gigantes","The 9th giants' gathering"),
+    note:L("Des de les 10 h","Desde las 10 h","From 10:00 AM"),
+    events:[
+      E("10",null,["miss"],"ninot",
+        L("IX Trobada de gegants: plantada","IX Encuentro de gigantes: plantada","9th giants' gathering: the giants on display"),
+        L("Gegants convidats de la ciutat i de fora i els gegants de les escoles del barri es planten davant del Mercat del Ninot.","Gigantes invitados de la ciudad y de fuera y los gigantes de las escuelas del barrio se plantan delante del Mercat del Ninot.","Visiting giants from Barcelona and beyond, and the neighborhood schools' giants, stand on display outside the Mercat del Ninot."),
+        {link:["more",W("ixa-trobada-de-gegants-de-lesquerra-de-leixample")]}),
+      E("10","13",["free"],"pellicer",
+        L("Exposició «1-O. Ni oblit ni perdó»","Exposición «1-O. Ni oblit ni perdó»","Exhibition: 1-O. Ni oblit ni perdó"),
+        L("Últim dia de l'exposició de fotografies sobre l'1 d'octubre de 2017.","Último día de la exposición de fotografías sobre el 1 de octubre de 2017.","Last day of the photo exhibition on October 1, 2017.")),
+      E("10","14.30",["book"],"joanmiro",
+        L("Torneig de futbol popular","Torneo de fútbol popular","Community soccer tournament"),
+        L("Partits de 10 minuts amb equips de mínim cinc persones, a poder ser mixtos. Inscripció obligatòria al web.","Partidos de 10 minutos con equipos de mínimo cinco personas, a poder ser mixtos. Inscripción obligatoria en la web.","Ten-minute games in teams of at least five, mixed where possible. Sign-up required on the website."),
+        {link:["signup",W("torneig-de-futbol-popular-a-les-pistes-joan-miro")]}),
+      E("10.30","11.30",["free"],"roma115",
+        L("Bicicletada de l'Esquerra de l'Eixample","Bicicletada de l'Esquerra de l'Eixample","Esquerra de l'Eixample bike ride"),
+        L("Bicicletada familiar d'uns 5 km pels carrers del barri, amb el Bicicleta Club de Catalunya. Sortida puntual.","Bicicletada familiar de unos 5 km por las calles del barrio, con el Bicicleta Club de Catalunya. Salida puntual.","A family bike ride of about 5 km through the neighborhood, with the Bicicleta Club de Catalunya. It leaves on time."),
+        {loc:L("Av. de Roma, 115 (Comte d'Urgell – Villarroel), davant del taller El Bon Pedal","Av. de Roma, 115 (Comte d'Urgell – Villarroel), delante del taller El Bon Pedal","Av. de Roma, 115 (Comte d'Urgell – Villarroel), outside the El Bon Pedal bike shop"),
+         link:["more",W("bicicletada-festa-major")],
+         tip:L("Horari actualitzat pel districte i el web. El programa imprès indicava activitats infantils de 10 a 11.30 h i la bicicletada d'11.30 a 12.30 h.","Horario actualizado por el distrito y la web. El programa impreso indicaba actividades infantiles de 10 a 11.30 h y la bicicletada de 11.30 a 12.30 h.","Times updated by the district and the website. The printed program gave children's activities 10:00–11:30 AM and the ride 11:30 AM–12:30 PM.")}),
+      E("10.30","12.30",[],"hort",
+        L("Visita guiada «El jardí obra d'art»","Visita guiada «El jardí obra d'art»","Guided visit: the garden as a work of art"),
+        L("Passejada per un jardí històric de Montjuïc: història de l'art, composició i espècies singulars. Podeu portar prismàtics, lupes, paper, llapis i càmera.","Paseo por un jardín histórico de Montjuïc: historia del arte, composición y especies singulares. Puede llevar prismáticos, lupas, papel, lápiz y cámara.","A walk through a historic garden on Montjuïc: art history, layout and unusual plants. You can bring binoculars, a magnifying glass, paper, a pencil and a camera."),
+        {loc:L("Punt d'inici: Hort Espai Germanetes (Consell de Cent, 150)","Punto de inicio: Hort Espai Germanetes (Consell de Cent, 150)","Start: Hort Espai Germanetes (Consell de Cent, 150)")}),
+      E("11",null,["miss"],"ninot",
+        L("IX Trobada de gegants: cercavila","IX Encuentro de gigantes: pasacalle","9th giants' gathering: the parade"),
+        L("Cercavila amb les colles convidades i els gegants de les escoles del barri.","Pasacalle con las colles invitadas y los gigantes de las escuelas del barrio.","The parade with the visiting groups and the neighborhood schools' giants."),
+        {loc:L("Recorregut: Mallorca, Comte Borrell, Rosselló, Calàbria i Còrsega","Recorrido: Mallorca, Comte Borrell, Rosselló, Calàbria y Còrsega","Route: Mallorca, Comte Borrell, Rosselló, Calàbria and Còrsega"),
+         link:["more",W("ixa-trobada-de-gegants-de-lesquerra-de-leixample")],
+         tip:L("El recorregut és el del web; el programa imprès no l'indica.","El recorrido es el de la web; el programa impreso no lo indica.","The route is from the website; the printed program does not give it.")}),
+      E("11.30","12.30",["kids"],"germanetes",
+        L("Màgia participativa per a la canalla","Magia participativa para los niños","Interactive magic for children"),
+        L("Màgia per a infants a partir de 4 anys, amb l'ANC.","Magia para niños a partir de 4 años, con la ANC.","Magic for children aged 4 and up, with the ANC.")),
+      E("11.30","13",["kids"],"roma115",
+        L("Bicicletada: activitats infantils","Bicicletada: actividades infantiles","Bike ride: children's activities"),
+        L("Concurs de dibuix infantil «La ciutat imaginada», taller d'estampació i serigrafia i taller «Punxa la roda i repara-la!».","Concurso de dibujo infantil «La ciutat imaginada», taller de estampación y serigrafía y taller «Punxa la roda i repara-la!».","A children's drawing contest, a printing and screen-printing workshop, and a fix-your-flat-tire workshop."),
+        {link:["more",W("bicicletada-festa-major")]}),
+      E("13",null,["miss"],"montserrat",
+        L("IX Trobada de gegants: final de festa","IX Encuentro de gigantes: final de fiesta","9th giants' gathering: the finale"),
+        L("Ballades als jardins de Montserrat, amb servei de bar.","Bailes en los jardines de Montserrat, con servicio de bar.","Giant dances in the Jardins de Montserrat, with a bar."),
+        {link:["more",W("ixa-trobada-de-gegants-de-lesquerra-de-leixample")],
+         tip:L("El web indica el final a les 13 h; el programa imprès situa la trobada fins a les 14 h.","La web indica el final a las 13 h; el programa impreso sitúa el encuentro hasta las 14 h.","The website gives the finale at 1:00 PM; the printed program runs the gathering until 2:00 PM.")}),
+      E("16","21",["book","free"],"joanmiro",
+        L("Torneig de voleibol","Torneo de voleibol","Volleyball tournament"),
+        L("Equips mixtos de mínim sis persones; els equips més petits s'ajunten. Per a tots els nivells. Inscripció prèvia, gratuïta.","Equipos mixtos de mínimo seis personas; los equipos más pequeños se juntan. Para todos los niveles. Inscripción previa, gratuita.","Mixed teams of at least six; smaller teams are combined. All levels welcome. Free, with advance sign-up."),
+        {link:["signup",W("torneig-popular-de-voleibol")]}),
+      E("17","19",[],"deulofeu",
+        L("Actuació de l'escola de dansa i música Elisenda Tarragó","Actuación de la escuela de danza y música Elisenda Tarragó","Elisenda Tarragó dance and music school show"),
+        L("Mostra de claqué, ballet, dansa comercial i jazz.","Muestra de claqué, ballet, danza comercial y jazz.","Tap, ballet, commercial dance and jazz.")),
+      E("18","20",[],"ccviladomat",
+        L("Actuació i ball obert","Actuación y baile abierto","Dance show and open dancing"),
+        L("Espectacle de dansa tradicional catalana i música en directe dels Ballets de Catalunya, i després danses populars per a tothom.","Espectáculo de danza tradicional catalana y música en directo de los Ballets de Catalunya, y después danzas populares para todos.","Traditional Catalan dance and live music by the Ballets de Catalunya, then folk dances for everyone to join."))
+    ]},
+  { id:"d5", num:"5",
+    dow:L("Dilluns · 5 d'octubre","Lunes · 5 de octubre","Monday · October 5"),
+    title:L("El futur urbanístic del barri","El futuro urbanístico del barrio","The neighborhood's urban future"),
+    note:L("Des de les 16 h","Desde las 16 h","From 4:00 PM"),
+    events:[
+      E("16","20",["free"],"model",
+        L("Jornada sobre la transformació urbanística de l'Esquerra de l'Eixample","Jornada sobre la transformación urbanística de l'Esquerra de l'Eixample","Day on the neighborhood's urban transformation"),
+        L("Taula rodona amb persones expertes, exposicions i activitats participatives per conèixer la transformació del barri i animar-se a incidir-hi.","Mesa redonda con personas expertas, exposiciones y actividades participativas para conocer la transformación del barrio y animarse a incidir en ella.","A round table with experts, exhibitions and hands-on activities about how the neighborhood is changing and how to have a say.")),
+      E("16.30","18",["kids"],"emma",
+        L("Inauguració de «Vine a jugar al parc»","Inauguración de «Vine a jugar al parc»","Opening of the Vine a jugar al parc play area"),
+        L("Espai de joc amb joguines per a infants fins a 6 anys, obert fins al divendres 9.","Espacio de juego con juguetes para niños de hasta 6 años, abierto hasta el viernes 9.","A play area with toys for children up to age 6, open until Friday, October 9."),
+        {link:["more",W("vine-a-jugar-a-jardins-demma")],
+         tip:L("El programa imprès indica de 16.30 a 18 h; el web situa la inauguració a les 17 h.","El programa impreso indica de 16.30 a 18 h; la web sitúa la inauguración a las 17 h.","The printed program gives 4:30–6:00 PM; the website gives the opening at 5:00 PM.")}),
+      E("18","19",["free"],"deulofeu",
+        L("Txi-kung, la gimnàstica de l'eterna joventut","Chi kung, la gimnasia de la eterna juventud","Qigong, the exercise of eternal youth"),
+        L("Exercicis suaus a l'aire lliure. Sense inscripció.","Ejercicios suaves al aire libre. Sin inscripción.","Gentle outdoor exercise. No sign-up needed."),
+        {loc:S("Jardins de Rosa Deulofeu")})
+    ]},
+  { id:"d6", num:"6",
+    dow:L("Dimarts · 6 d'octubre","Martes · 6 de octubre","Tuesday · October 6"),
+    title:L("Ball per a la gent gran i llibres","Baile para las personas mayores y libros","A dance for older neighbors, and books"),
+    note:L("Des de les 11 h","Desde las 11 h","From 11:00 AM"),
+    events:[
+      E("11",null,["book"],"avvee",
+        L("Xerrada sobre gimnàstica cerebral amb Milós González","Charla sobre gimnasia cerebral con Milós González","Brain-training talk with Milós González"),
+        L("Beneficis de la gimnàstica cerebral i exercicis adaptables a totes les persones. Inscripció: 934 532 879, vodisee@gmail.com o Irene Beltrán, 666 383 096.","Beneficios de la gimnasia cerebral y ejercicios adaptables a todas las personas. Inscripción: 934 532 879, vodisee@gmail.com o Irene Beltrán, 666 383 096.","The benefits of brain training, with exercises anyone can do. Sign up at 934 532 879, vodisee@gmail.com or with Irene Beltrán, 666 383 096.")),
+      E("16.30","18",[],"model",
+        L("Salut fora de l'armari","Salud fuera del armario","Health out of the closet"),
+        L("Taller per a persones LGTBIQA+ per compartir vivències i proposar millores a l'atenció primària, amb el CAPSBE.","Taller para personas LGTBIQA+ para compartir vivencias y proponer mejoras a la atención primaria, con el CAPSBE.","A workshop for LGBTIQA+ people to share experiences and suggest improvements to primary care, with the CAPSBE health service.")),
+      E("17","19",[],"deulofeu",
+        L("Ball per a les grans veïnes i veïns","Baile para las vecinas y vecinos mayores","Dance for older neighbors"),
+        L("Música, ball i animació amb l'Isidre Vallès, i un berenar per compartir.","Música, baile y animación con Isidre Vallès, y una merienda para compartir.","Music, dancing and fun with Isidre Vallès, and an afternoon snack to share."),
+        {loc:S("Jardins de Rosa Deulofeu"), link:["more",W("ball-per-a-les-grans-veines-i-veins")]}),
+      E("18","20",["kids"],"hort",
+        L("Coneix els horts de Germanetes","Conoce los huertos de Germanetes","Get to know the Germanetes gardens"),
+        L("Jornada de treball a l'hort amb el voluntariat i una activitat dinamitzada. Segons el web, hi ha un taller familiar per fer planter: cal portar un pot de iogurt.",
+          "Jornada de trabajo en el huerto con el voluntariado y una actividad dinamizada. Según la web, hay un taller familiar para hacer semilleros: hay que llevar un bote de yogur.",
+          "A work session in the garden with the volunteers, plus an activity. According to the website, there is a family seedling workshop: bring an empty yogurt pot."),
+        {link:["more",W("taller-familiar-coneix-els-horts-de-germanetes")],
+         tip:L("El programa imprès indica de 18 a 20 h; el web indica les 17 h.","El programa impreso indica de 18 a 20 h; la web indica las 17 h.","The printed program gives 6:00–8:00 PM; the website gives 5:00 PM.")}),
+      E("18","20.30",[],"model",
+        L("Presentació del llibre «Manual de defensa del català», amb Òscar Andreu","Presentación del libro «Manual de defensa del català», con Òscar Andreu","Book launch: Manual de defensa del català, with Òscar Andreu"),
+        L("A la sala d'actes de La Model. L'autor signarà llibres.","En la sala de actos de La Model. El autor firmará libros.","In the La Model hall. The author will sign books."))
+    ]},
+  { id:"d7", num:"7",
+    dow:L("Dimecres · 7 d'octubre","Miércoles · 7 de octubre","Wednesday · October 7"),
+    title:L("Debats i castells","Debates y castells","Debates and human towers"),
+    note:L("Des de les 12 h","Desde las 12 h","From noon"),
+    events:[
+      E("12","13",["free"],"montserrat",
+        L("Txi-kung obert al barri","Chi kung abierto al barrio","Qigong for everyone"),
+        L("Exercicis suaus a l'aire lliure. Sense inscripció.","Ejercicios suaves al aire libre. Sin inscripción.","Gentle outdoor exercise. No sign-up needed.")),
+      E("17.30","19.30",[],"linaodena",
+        L("Taller d'escriptura creativa","Taller de escritura creativa","Creative writing workshop"),
+        L("Classe oberta del nou taller gratuït d'escriptura creativa per a joves del barri. No cal experiència.","Clase abierta del nuevo taller gratuito de escritura creativa para jóvenes del barrio. No hace falta experiencia.","An open class of a new free creative writing course for local young people. No experience needed.")),
+      E("18","19",[],"foodcoop",
+        L("Xerrada sobre l'etiquetatge dels aliments","Charla sobre el etiquetado de los alimentos","Talk: reading food labels"),
+        L("Com llegir les etiquetes per triar opcions més saludables, amb les dietistes-nutricionistes del CAP.","Cómo leer las etiquetas para elegir opciones más saludables, con las dietistas-nutricionistas del CAP.","How to read labels and choose healthier options, with the health center's dietitians.")),
+      E("18.30",null,[],"agora",
+        L("Debat a l'Àgora: Recuperem el control de la IA","Debate en el Àgora: Recuperem el control de la IA","Debate at l'Àgora: taking back control of AI"),
+        L("Debat sobre democràcia i sobirania tecnològica amb Aina Gallego, professora de la UB, i Bru Aguiló, assessor en sobirania tecnològica.","Debate sobre democracia y soberanía tecnológica con Aina Gallego, profesora de la UB, y Bru Aguiló, asesor en soberanía tecnológica.","A debate on democracy and technological sovereignty with Aina Gallego, a University of Barcelona professor, and Bru Aguiló, an adviser on technological sovereignty."),
+        {link:["more",W("debat-a-lagora")],
+         tip:L("El tema i els participants són els del web; el programa imprès només diu «debat d'actualitat».","El tema y los participantes son los de la web; el programa impreso solo dice «debate de actualidad».","The topic and speakers are from the website; the printed program only says \"current affairs debate\".")}),
+      E("19","21",[],"model",
+        L("Col·loqui «Sobirania de Catalunya. Art: justícia o espoli»","Coloquio «Sobirania de Catalunya. Art: justícia o espoli»","Talk: Catalan sovereignty and art, justice or plunder"),
+        L("Debat sobre el patrimoni artístic de Catalunya amb Albert Velasco, doctor en història de l'art, i Francesc Canosa, periodista i escriptor. A la sala d'actes.","Debate sobre el patrimonio artístico de Cataluña con Albert Velasco, doctor en historia del arte, y Francesc Canosa, periodista y escritor. En la sala de actos.","A debate on Catalonia's artistic heritage with art historian Albert Velasco and journalist and writer Francesc Canosa. In the hall.")),
+      E("19","21.30",["free"],"model",
+        L("Assaig casteller","Ensayo castellero","Human towers practice"),
+        CASTELLS)
+    ]},
+  { id:"d8", num:"8",
+    dow:L("Dijous · 8 d'octubre","Jueves · 8 de octubre","Thursday · October 8"),
+    title:L("Sardanes, salut i cinema","Sardanas, salud y cine","Sardanes, health and film"),
+    note:L("Des de les 10.30 h","Desde las 10.30 h","From 10:30 AM"),
+    events:[
+      E("10.30","17",[],"londres38",
+        L("Hospital al carrer","Hospital en la calle","The hospital in the street"),
+        L("Estands de l'Hospital Universitari Sagrat Cor amb activitats i demostracions sobre les seves especialitats.","Estands del Hospital Universitari Sagrat Cor con actividades y demostraciones sobre sus especialidades.","Hospital Universitari Sagrat Cor stands with activities and demonstrations about its specialties.")),
+      E("11","13.30",[],"ninot",
+        L("Ballada de sardanes amb cobla en directe","Baile de sardanas con cobla en directo","Sardanes with a live band"),
+        L("Davant del Mercat del Ninot. Segons el web, amb tres colles sènior i la Cobla Baix Llobregat.","Delante del Mercat del Ninot. Según la web, con tres colles sénior y la Cobla Baix Llobregat.","Outside the Mercat del Ninot. According to the website, with three senior dance groups and the Cobla Baix Llobregat."),
+        {link:["more",W("taller-de-sardanes-amb-cobla")]}),
+      E("17","19",[],"nur",
+        L("Taller d'esqueixos i Dia del voluntariat","Taller de esquejes y Día del voluntariado","Plant cuttings workshop and volunteers' day"),
+        L("Per conèixer aquest espai verd del barri i aprendre a fer esqueixos amb el voluntariat.","Para conocer este espacio verde del barrio y aprender a hacer esquejes con el voluntariado.","Discover this green space and learn to take plant cuttings with the volunteers.")),
+      E("17","20",["kids"],"montserrat",
+        L("Tallers a la Biblioteca de les coses","Talleres en la Biblioteca de les coses","Workshops at the Library of Things"),
+        L("Taller d'iniciació a l'electricitat amb Repair Café, taller de trasplantament de plantes i un espai de joc infantil.","Taller de iniciación a la electricidad con Repair Café, taller de trasplante de plantas y un espacio de juego infantil.","An intro to electrical wiring with Repair Café, a plant repotting workshop and a children's play area.")),
+      E("17.30","18.30",[],"montserrat",
+        L("Cuina en directe","Cocina en directo","Live cooking demonstration"),
+        L("Cuina teatralitzada amb productes del Mercat de Pagès, per tastar en acabar.","Cocina teatralizada con productos del Mercat de Pagès, para probar al terminar.","A cooking show with Mercat de Pagès produce, with tasting at the end."),
+        {loc:L("Mercat de Pagès dels jardins de Montserrat (Rosselló – Còrsega)","Mercat de Pagès de los jardines de Montserrat (Rosselló – Còrsega)","Mercat de Pagès, Jardins de Montserrat (Rosselló – Còrsega)"),
+         tip:WEBONLY, link:["more",W("cuina-en-directe-showcoocking")]}),
+      E("17.30","18.30",[],"avvee",
+        L("Berenar de les persones grans","Merienda de las personas mayores","Afternoon snack for older neighbors"),
+        L("Amb la Vocalia de gent gran de l'AVVEE.","Con la Vocalia de gent gran de la AVVEE.","With the AVVEE's seniors committee.")),
+      E("17.30","19.30",[],"comteborrell",
+        L("Passaport de salut","Pasaporte de salud","Health passport"),
+        L("Circuit d'estacions amb consells de salut sobre alimentació, exercici, memòria, medicació i cor.","Circuito de estaciones con consejos de salud sobre alimentación, ejercicio, memoria, medicación y corazón.","A circuit of stations with health tips on diet, exercise, memory, medication and heart health.")),
+      E("18","21",[],"model",
+        L("Cinefòrum: «Salvador», de Manuel Huerga","Cinefórum: «Salvador», de Manuel Huerga","Film forum: Salvador, by Manuel Huerga"),
+        L("Projecció i debat amb Magda Onarich, que va ser l'advocada de Salvador Puig Antich, executat en aquest recinte fa 52 anys. Al pati; si fa mal temps, a la sala d'actes.","Proyección y debate con Magda Onarich, que fue la abogada de Salvador Puig Antich, ejecutado en este recinto hace 52 años. En el patio; si hace mal tiempo, en la sala de actos.","A screening and debate with Magda Onarich, the lawyer of Salvador Puig Antich, who was executed here 52 years ago. In the courtyard, or in the hall if the weather is bad.")),
+      E("20","21.30",[],"montserrat",
+        L("Cinefòrum: «Yachay Terra»","Cinefórum: «Yachay Terra»","Film forum: Yachay Terra"),
+        L("Documental sobre les lluites de la pagesia al nord i al sud global, amb taula rodona posterior.","Documental sobre las luchas campesinas en el norte y el sur global, con mesa redonda posterior.","A documentary on farmers' struggles in the Global North and South, followed by a round table."),
+        {loc:L("Jardins de Montserrat (davant de l'espai Lola Anglada)","Jardines de Montserrat (delante del espacio Lola Anglada)","Jardins de Montserrat (outside the Lola Anglada space)")})
+    ]},
+  { id:"d9", num:"9",
+    dow:L("Divendres · 9 d'octubre","Viernes · 9 de octubre","Friday · October 9"),
+    title:L("Sardanes i havaneres","Sardanas y habaneras","Sardanes and havaneres"),
+    note:L("Des de les 17 h","Desde las 17 h","From 5:00 PM"),
+    events:[
+      E("17","18",["kids","free"],"ermessenda",
+        L("Concert de Sardines en llauna","Concierto de Sardines en llauna","Sardines en llauna concert"),
+        L("Un espectacle amb ritmes per moure's, cantar i jugar, amb el Casal Infantil Urgell.","Un espectáculo con ritmos para moverse, cantar y jugar, con el Casal Infantil Urgell.","A show full of rhythms to move, sing and play along to, with the Casal Infantil Urgell."),
+        {loc:L("Interior d'illa d'Ermessenda de Carcassona (Comte d'Urgell, 145)","Interior de manzana de Ermessenda de Carcassona (Comte d'Urgell, 145)","Ermessenda de Carcassona courtyard garden (Comte d'Urgell, 145)")}),
+      E("17","20",[],"foodcoop",
+        L("Free Market de tardor","Free Market de otoño","Autumn free market"),
+        L("Intercanvi de roba en bon estat: fins a quatre peces per persona, i se'n pot agafar sense límit. Amb vermut i música.","Intercambio de ropa en buen estado: hasta cuatro prendas por persona, y se puede coger sin límite. Con vermut y música.","A clothing swap: bring up to four items in good condition and take as many as you like. With vermouth and music.")),
+      E("18","19",[],"ccviladomat",
+        L("Zumba","Zumba","Zumba"),
+        L("Per a tota la família: porteu roba esportiva i aigua.","Para toda la familia: lleve ropa deportiva y agua.","For the whole family: bring sportswear and water."),
+        {loc:L("Consell de Cent (Comte Borrell – Viladomat)","Consell de Cent (Comte Borrell – Viladomat)","Consell de Cent (Comte Borrell – Viladomat)")}),
+      E("18","24",[],"gallinat",
+        L("Taller i ball de sardanes","Taller y baile de sardanas","Sardana workshop and dance"),
+        L("Iniciació a les sardanes, ballada oberta i sopar comunitari: cal portar menjar per compartir.","Iniciación a las sardanas, baile abierto y cena comunitaria: hay que llevar comida para compartir.","An introduction to the sardana, open dancing and a shared dinner: bring food to share.")),
+      E("19","20",[],"ccviladomat",
+        L("Bodycombat","Bodycombat","Bodycombat"),
+        L("Per a tota la família: porteu roba esportiva i aigua.","Para toda la familia: lleve ropa deportiva y agua.","For the whole family: bring sportswear and water."),
+        {loc:L("Consell de Cent (Comte Borrell – Viladomat)","Consell de Cent (Comte Borrell – Viladomat)","Consell de Cent (Comte Borrell – Viladomat)")}),
+      E("19","22",["free"],"model",
+        L("Assaig casteller","Ensayo castellero","Human towers practice"),
+        CASTELLS),
+      E("20","22",[],"deulofeu",
+        L("Havaneres","Habaneras","Havaneres"),
+        L("Cantada amb el grup Els Pescadors de l'Escala i rom cremat, amb l'AVVEE.","Cantada con el grupo Els Pescadors de l'Escala y ron quemado, con la AVVEE.","Sea shanties with Els Pescadors de l'Escala and flaming rum, hosted by the AVVEE."),
+        {loc:L("Interior d'illa de Rosa Deulofeu (Calàbria, 264)","Interior de manzana de Rosa Deulofeu (Calàbria, 264)","Rosa Deulofeu courtyard garden (Calàbria, 264)")})
+    ]},
+  { id:"d10", num:"10",
+    dow:L("Dissabte · 10 d'octubre","Sábado · 10 de octubre","Saturday · October 10"),
+    title:L("Falcons, ball de bot i el sopar de Festa Major","Falcons, ball de bot y la cena de Fiesta Mayor","Falcons, ball de bot and the festival dinner"),
+    note:L("Des de les 9 h","Desde las 9 h","From 9:00 AM"),
+    events:[
+      E("9","14",[],"germanetes",
+        L("Parades d'alimentació ecològica","Puestos de alimentación ecológica","Organic food stalls"),
+        L("Parades d'alimentació agroecològica del Mercat de Pagès de Germanetes.","Puestos de alimentación agroecológica del Mercat de Pagès de Germanetes.","Agroecological food stalls of the Mercat de Pagès de Germanetes.")),
+      E("10","17",[],"ccviladomat",
+        L("Fira d'art al barri","Feria de arte en el barrio","Neighborhood art fair"),
+        L("Amb l'Assemblea d'Artistes Participants.","Con la Assemblea d'Artistes Participants.","With the Assemblea d'Artistes Participants.")),
+      E("11","12.30",["free"],"hort",
+        L("Partides simultànies d'escacs","Partidas simultáneas de ajedrez","Simultaneous chess games"),
+        L("Partides simultànies contra Julio Benedetti, mestre internacional d'escacs: cinc taulells alhora. Sense inscripció.","Partidas simultáneas contra Julio Benedetti, maestro internacional de ajedrez: cinco tableros a la vez. Sin inscripción.","Play International Master Julio Benedetti, five boards at a time. No sign-up needed."),
+        {loc:L("Davant dels horts de Germanetes (Consell de Cent, 152)","Delante de los huertos de Germanetes (Consell de Cent, 152)","Outside the Germanetes gardens (Consell de Cent, 152)"),
+         link:["more",W("partides-simultanies-descacs")],
+         tip:L("Segons el web. El programa imprès anunciava un torneig d'escacs i dòmino de 10 a 13 h.","Según la web. El programa impreso anunciaba un torneo de ajedrez y dominó de 10 a 13 h.","According to the website. The printed program listed a chess and dominoes tournament, 10:00 AM–1:00 PM.")}),
+      E("11","12",["kids"],"germanetes",
+        L("Contacontes «Siguem petits llenguaferits»","Cuentacuentos «Siguem petits llenguaferits»","Storytelling: Siguem petits llenguaferits"),
+        L("Contes a dues veus sobre la riquesa de les llengües i el català, amb Òmnium Eixample.","Cuentos a dos voces sobre la riqueza de las lenguas y el catalán, con Òmnium Eixample.","Stories for two voices about the world's languages and Catalan, with Òmnium Eixample.")),
+      E("11","22",[],"germanetes",
+        L("Festa intercultural","Fiesta intercultural","Intercultural festival"),
+        L("Músiques, menjars i històries de vida per celebrar la diversitat i reclamar un habitatge digne. A les 19 h es trasllada davant de l'Espai Nur, i acaba amb l'estrena d'un documental sobre les veïnes desallotjades del parc de Joan Miró.",
+          "Músicas, comidas e historias de vida para celebrar la diversidad y reclamar una vivienda digna. A las 19 h se traslada delante del Espai Nur, y termina con el estreno de un documental sobre las vecinas desalojadas del parque de Joan Miró.",
+          "Music, food and life stories celebrating diversity and calling for decent housing. At 7:00 PM it moves outside the Espai Nur, and ends with the premiere of a documentary about the residents evicted from the Parc de Joan Miró.")),
+      E("11","02",[],"romaqueer",
+        L("Barcelona Queer Market","Barcelona Queer Market","Barcelona Queer Market"),
+        L("Mercat i festa per donar visibilitat a la diversitat del comerç de l'Eixample.","Mercado y fiesta para dar visibilidad a la diversidad del comercio del Eixample.","A market and party showcasing the diversity of Eixample's shops.")),
+      E("11.15","12",["kids"],"puntiapart",
+        L("Contacontes «Un bitxo de por»","Cuentacuentos «Un bitxo de por»","Storytelling: Un bitxo de por"),
+        L("Lectura del conte i un desplegable perquè els infants el pintin.","Lectura del cuento y un desplegable para que los niños lo pinten.","A story reading, with a fold-out for the children to color in.")),
+      E("11.30","12.30",["miss"],"ninot",
+        L("Falcons de Barcelona","Falcons de Barcelona","Falcons de Barcelona"),
+        L("Actuació de torres i pilars humans davant del Mercat del Ninot.","Actuación de torres y pilares humanos delante del Mercat del Ninot.","Human towers and pillars outside the Mercat del Ninot.")),
+      E("11.30","13",["kids"],"ninot",
+        L("Taller de màgia infantil","Taller de magia infantil","Children's magic workshop"),
+        L("Davant del Mercat del Ninot.","Delante del Mercat del Ninot.","Outside the Mercat del Ninot.")),
+      E("12","13",[],"golferichs",
+        L("Concert de Paco Pecado","Concierto de Paco Pecado","Paco Pecado in concert"),
+        L("Presenta «Entre Bodegas y Ferias» (2025), Primer Premi Rock Villa 2025 de Madrid. Al pati.","Presenta «Entre Bodegas y Ferias» (2025), Primer Premio Rock Villa 2025 de Madrid. En el patio.","Songs from Entre Bodegas y Ferias (2025), winner of Madrid's 2025 Rock Villa prize. In the courtyard.")),
+      E("12.30","13.30",[],"germanetes",
+        L("Concert de Júlia Nogués","Concierto de Júlia Nogués","Júlia Nogués in concert"),
+        L("Concert inaugural del seu projecte de pop i reggae, amb quatre músics.","Concierto inaugural de su proyecto de pop y reggae, con cuatro músicos.","The first concert of her pop-reggae project, with four musicians.")),
+      E("13.30","15",["book"],"germanetes",
+        L("Dinar de Festa Major amb productes del mercat","Comida de Fiesta Mayor con productos del mercado","Festival lunch with market produce"),
+        L("Menú de productes agroecològics i de proximitat, amb el Mercat de Pagès de Germanetes.","Menú de productos agroecológicos y de proximidad, con el Mercat de Pagès de Germanetes.","An agroecological, locally sourced menu with the Mercat de Pagès de Germanetes.")),
+      E("18",null,[],"agora",
+        L("Debat a l'Àgora: Conversa sobre la Xina","Debate en el Àgora: Conversa sobre la Xina","Debate at l'Àgora: a conversation about China"),
+        L("Amb Luís Campo Vidal, autor de «China, el futuro fue ayer», i Jorge Trujillo.","Con Luís Campo Vidal, autor de «China, el futuro fue ayer», y Jorge Trujillo.","With Luís Campo Vidal, author of China, el futuro fue ayer, and Jorge Trujillo."),
+        {tip:WEBONLY, link:["more",W("conversa-sobre-la-xina")]}),
+      E("18","21.30",[],"parcmiro",
+        L("Corredrag","Corredrag","Corredrag"),
+        L("Ruta pel barri amb parades, espectacles drag i música, amb el Casal de Joves Queix.","Ruta por el barrio con paradas, espectáculos drag y música, con el Casal de Joves Queix.","A route through the neighborhood with stops, drag shows and music, with the Casal de Joves Queix."),
+        {loc:L("Sortida: Parc de Joan Miró","Salida: Parque de Joan Miró","Start: Parc de Joan Miró")}),
+      E("18","22",["free"],"granados",
+        L("Ballada de ball de bot","Baile de ball de bot","Ball de bot dancing"),
+        L("Ball tradicional de Mallorca i les Balears amb dos grups en directe, Cofre Antic i Engrescats. Oberta a tothom.","Baile tradicional de Mallorca y Baleares con dos grupos en directo, Cofre Antic y Engrescats. Abierto a todos.","Traditional dancing from Mallorca and the Balearic Islands with two live bands, Cofre Antic and Engrescats. Everyone is welcome."),
+        {loc:L("Enric Granados amb Diputació","Enric Granados con Diputació","Enric Granados at Diputació")}),
+      E("18.30","22",[],"foodcoop",
+        L("Cinema a la fresca: IV Mostra de cinema etnobotànic i agroecològic","Cine al aire libre: IV Mostra de cinema etnobotànic i agroecològic","Outdoor cinema: ethnobotanical and agroecological film festival"),
+        L("Selecció de documentals del col·lectiu Eixarcolant, amb col·loqui posterior. Es poden comprar crispetes i begudes.","Selección de documentales del colectivo Eixarcolant, con coloquio posterior. Se pueden comprar palomitas y bebidas.","Documentaries chosen by the Eixarcolant collective, followed by a discussion. Popcorn and drinks on sale.")),
+      E("21","02",["miss","ticket"],"calabria",
+        L("Sopar i ball de Festa Major","Cena y baile de Fiesta Mayor","Festival dinner and dance"),
+        L("Sopar de Festa Major i, després, ball amb música en directe; segons el web, amb l'orquestra La Verbena. Sopar: 20 €. Tiquets al local de l'AVVEE (Calàbria, 262).",
+          "Cena de Fiesta Mayor y, después, baile con música en directo; según la web, con la orquesta La Verbena. Cena: 20 €. Tiques en el local de la AVVEE (Calàbria, 262).",
+          "The festival dinner, then dancing to live music, by the La Verbena orchestra according to the website. Dinner €20. Tickets at the AVVEE office (Calàbria, 262)."),
+        {link:["more",W("sopar-i-ball-de-festa-major")]}),
+      E("21.30","02",[],"montserrat",
+        L("Sopar i concert jove","Cena y concierto joven","Young people's dinner and concert"),
+        L("Grups emergents i discjòqueis per a la gent jove del barri, amb el Casal de Joves Queix. Punt lila de 22 a 2 h.","Grupos emergentes y DJ para la gente joven del barrio, con el Casal de Joves Queix. Punto lila de 22 a 2 h.","Up-and-coming bands and DJs for local young people, with the Casal de Joves Queix. Punt Lila support point 10:00 PM–2:00 AM."))
+    ]},
+  { id:"d11", num:"11",
+    dow:L("Diumenge · 11 d'octubre","Domingo · 11 de octubre","Sunday · October 11"),
+    title:L("Vermut i concert de cloenda","Vermut y concierto de clausura","Closing vermouth and concert"),
+    note:L("Des de les 12 h","Desde las 12 h","From noon"),
+    events:[
+      E("12","14",[],"hort",
+        L("Receptes de l'hort: fanzine, taller de cuina i vermut de cloenda","Recetas del huerto: fanzine, taller de cocina y vermut de clausura","Garden recipes: zine, cooking workshop and closing vermouth"),
+        L("Segons el web: a les 12 h, taller per fer remolatxa encurtida; a les 13 h, presentació del fanzine «De l'hort a la taula» i vermut de cloenda.","Según la web: a las 12 h, taller para hacer remolacha encurtida; a las 13 h, presentación del fanzine «De l'hort a la taula» y vermut de clausura.","According to the website: at noon, a pickled beet workshop; at 1:00 PM, the launch of the De l'hort a la taula recipe zine and a closing vermouth."),
+        {loc:L("Davant de l'Hort Espai Germanetes (Consell de Cent, 150)","Delante del Hort Espai Germanetes (Consell de Cent, 150)","Outside the Hort Espai Germanetes (Consell de Cent, 150)"),
+         link:["more",W("presentacio-del-1r-volum-del-fanzine-de-lhort-a-la-taula")]}),
+      E("19","21",["fin"],"granados",
+        L("Concert de cloenda amb Silver Bluesers","Concierto de clausura con Silver Bluesers","Closing concert with Silver Bluesers"),
+        L("Concert de cloenda contra les violències masclistes, amb la Vocalia de dones de l'AVVEE.","Concierto de clausura contra las violencias machistas, con la Vocalia de dones de la AVVEE.","The closing concert against gender-based violence, with the AVVEE women's committee."),
+        {link:["more",W("concert-de-cloenda-amb-silver-bluesers")],
+         tip:L("El nom del grup és del web; el programa imprès no l'indica.","El nombre del grupo es de la web; el programa impreso no lo indica.","The band's name is from the website; the printed program does not give it.")})
+    ]},
+  { id:"d12", num:"12",
+    dow:L("Dilluns · 12 d'octubre","Lunes · 12 de octubre","Monday · October 12"),
+    title:L("El 12, fem botifarra!","El 12, ¡hacemos butifarra!","On the 12th, botifarra!"),
+    note:L("Des de les 12 h","Desde las 12 h","From noon"),
+    events:[
+      E("12",null,[],"pellicer",
+        L("Taller del joc de cartes de la botifarra","Taller del juego de cartas de la butifarra","Learn to play botifarra"),
+        L("Per aprendre el joc de cartes, amb l'Associació d'Amics del Passatge Lluís Pellicer.","Para aprender el juego de cartas, con la Associació d'Amics del Passatge Lluís Pellicer.","Learn the Catalan card game, with the Passatge Lluís Pellicer friends' association."),
+        {loc:S("Passatge de Lluís Pellicer"), link:["more",W("el-12-fem-botifarra")]}),
+      E("14",null,["ticket","book"],"pellicer",
+        L("Botifarrada popular","Butifarrada popular","Sausage lunch"),
+        L("Reserves a amicspassatgelluispellicer@gmail.com. Places limitades.","Reservas en amicspassatgelluispellicer@gmail.com. Plazas limitadas.","Bookings at amicspassatgelluispellicer@gmail.com. Places are limited."),
+        {loc:S("Passatge de Lluís Pellicer"), link:["more",W("el-12-fem-botifarra")],
+         tip:L("El web indica 15 € per a socis fins al 5 d'octubre i 20 € després; el preu per a no socis abans del 5 hi apareix en blanc. El programa imprès no indica preu.","La web indica 15 € para socios hasta el 5 de octubre y 20 € después; el precio para no socios antes del 5 aparece en blanco. El programa impreso no indica precio.","The website gives €15 for members until October 5 and €20 after that; the non-member price before the 5th is left blank. The printed program gives no price.")}),
+      E("16",null,["book"],"pellicer",
+        L("Campionat de botifarra","Campeonato de butifarra","Botifarra championship"),
+        L("La parella guanyadora té un premi especial. Inscripcions a amicspassatgelluispellicer@gmail.com.","La pareja ganadora tiene un premio especial. Inscripciones en amicspassatgelluispellicer@gmail.com.","The winning pair gets a special prize. Sign up at amicspassatgelluispellicer@gmail.com."),
+        {loc:S("Passatge de Lluís Pellicer"), link:["more",W("el-12-fem-botifarra")]})
+    ]}
+];
+
+const PLACES = [
+  { k:"ninot", d:L("Trobada de gegants, Falcons, tallers infantils, sardanes i Tastet de nit","Encuentro de gigantes, Falcons, talleres infantiles, sardanas y Tastet de nit","The giants' gathering, Falcons, children's workshops, sardanes and the night of tapas") },
+  { k:"germanetes", d:L("Mercat de Pagès, dinars de Festa Major, Festa intercultural i espai de joc infantil","Mercat de Pagès, comidas de Fiesta Mayor, Fiesta intercultural y espacio de juego infantil","The farmers' market, festival lunches, the intercultural festival and the children's play area") },
+  { k:"deulofeu", d:L("Pregó, havaneres, txi-kung i ball per a la gent gran","Pregón, habaneras, chi kung y baile para las personas mayores","The opening speech, havaneres, qigong and the dance for older neighbors") },
+  { k:"montserrat", d:L("Final de la Trobada de gegants, cinefòrum i sopar i concert jove","Final del Encuentro de gigantes, cinefórum y cena y concierto joven","The giants' finale, a film forum and the young people's dinner and concert") },
+  { k:"model", d:L("Jornades, xerrades, cinefòrum i assajos castellers","Jornadas, charlas, cinefórum y ensayos castellers","Talks, a film forum and human towers practice") },
+  { k:"universitat", d:L("Festa de la diversitat, dissabte 3","Fiesta de la diversidad, sábado 3","The Diversity Festival, Saturday, October 3") },
+  { k:"calabria", d:L("Sopar i ball de Festa Major, dissabte 10","Cena y baile de Fiesta Mayor, sábado 10","The festival dinner and dance, Saturday, October 10") },
+  { k:"joanmiro", d:L("Futbol botons, futbol popular i voleibol","Fútbol chapas, fútbol popular y voleibol","Button football, community soccer and volleyball") },
+  { k:"pellicer", d:L("Tast artesà, exposició de l'1-O i El 12, fem botifarra!","Cata artesana, exposición del 1-O y El 12, fem botifarra!","The artisan tasting, the 1-O exhibition and the botifarra day") },
+  { k:"granados", d:L("Ball de bot i concert de cloenda","Ball de bot y concierto de clausura","Ball de bot and the closing concert") }
+];
+
+const IDS = ["ess","d2","d3","d4","d5","d6","d7","d8","d9","d10","d11","d12","places","know"];
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+let L_CUR = "en";
+
+function links(v){
+  const q = encodeURIComponent(v.q);
+  const rows = [
+    ["Google Maps",   "https://www.google.com/maps/search/?api=1&query=" + q],
+    ["Apple Maps",    "https://maps.apple.com/?q=" + q],
+    ["OpenStreetMap", "https://www.openstreetmap.org/search?query=" + q]
+  ];
+  /* Citymapper needs coordinates; it ignores a plain address. */
+  if (v.lat) rows.splice(2, 0, ["Citymapper", "https://citymapper.com/directions?endcoord=" + v.lat + "," + v.lng +
+    "&endname=" + encodeURIComponent(v.n) + "&endaddress=" + q]);
+  return rows;
+}
+
+function showSheet(title, sub, rows, copyValue){
+  const t = T[L_CUR];
+  let h = '<h3>' + esc(title) + '</h3><div class="sub">' + esc(sub) + '</div>';
+  rows.forEach(function(p){
+    h += '<a href="' + p[1] + '" target="_blank" rel="noopener">' + esc(p[0]) +
+         '<span class="ar">' + esc(t.go) + '</span></a>';
+  });
+  if (copyValue) {
+    h += '<button class="copy" data-val="' + esc(copyValue) + '"><span class="lab">' + esc(t.copy) + '</span></button>';
+  }
+  h += '<button class="close">' + esc(t.close) + '</button>';
+  const sheet = document.getElementById("sheet");
+  sheet.innerHTML = h;
+  document.getElementById("ovl").classList.add("open");
+  sheet.querySelector(".close").onclick = closeSheet;
+  const cp = sheet.querySelector(".copy");
+  if (cp) cp.onclick = function(){
+    const lab = cp.querySelector(".lab");
+    const done = function(){ lab.textContent = T[L_CUR].copied; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(cp.dataset.val).then(done, done);
+    else done();
+  };
+}
+
+function openSheet(key){
+  const v = V[key];
+  showSheet(v.n, T[L_CUR].openIn, links(v), v.q);
+}
+function closeSheet(){ document.getElementById("ovl").classList.remove("open"); }
+document.getElementById("ovl").addEventListener("click", function(e){ if (e.target.id === "ovl") closeSheet(); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeSheet(); });
+
+/* Add to calendar. The .ics file is built here in the browser; nothing is sent anywhere.
+   first is the festival's first day: lower day numbers fall in the following month. */
+const CAL = {id:"festa-major-esquerra-eixample-2026", year:2026, month:10, first:2, tz:"Europe/Madrid",
+  url:"https://lexatarg.github.io/barcelona-fiestas/festa-major-esquerra-eixample-2026/"};
+
+/* Barcelona's clock rules: summer time (UTC+2) from the last Sunday of March,
+   winter time (UTC+1) from the last Sunday of October. */
+const VTZ = [
+  "BEGIN:VTIMEZONE", "TZID:Europe/Madrid",
+  "BEGIN:DAYLIGHT", "TZOFFSETFROM:+0100", "TZOFFSETTO:+0200", "TZNAME:CEST",
+  "DTSTART:19700329T020000", "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU", "END:DAYLIGHT",
+  "BEGIN:STANDARD", "TZOFFSETFROM:+0200", "TZOFFSETTO:+0100", "TZNAME:CET",
+  "DTSTART:19701025T030000", "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU", "END:STANDARD",
+  "END:VTIMEZONE"
+];
+
+const pad = n => String(n).padStart(2, "0");
+
+/* The date of day number num, moved forward by extra days. */
+function calDate(num, extra){
+  const day = parseInt(num, 10);
+  return new Date(Date.UTC(CAL.year, CAL.month - 1 + (day < CAL.first ? 1 : 0), day + extra));
+}
+function ymd(dt){ return dt.getUTCFullYear() + pad(dt.getUTCMonth() + 1) + pad(dt.getUTCDate()); }
+
+/* "21.30" on day 2 becomes "20261002T213000". Times before 6 h belong to the
+   night that started the evening before, so they move to the next date. */
+function icsTime(num, s){
+  const p = String(s).split(".");
+  const h = parseInt(p[0], 10), m = parseInt(p[1] || "0", 10);
+  return ymd(calDate(num, h < 6 ? 1 : 0)) + "T" + pad(h) + pad(m) + "00";
+}
+
+/* Start and end of each session. Events with raw times (e.a, e.b) use them;
+   otherwise the times are read from the Catalan label: "11 – 12 h" is one
+   session with an end, "19.30 i 21 h" is two sessions, and a label with no
+   hours ("Vespre") gives none, so the event is added for the whole day. */
+function calSlots(e){
+  if (e.a) return [[e.a, e.b]];
+  const label = e.time.ca, n = label.match(/\d+(\.\d+)?/g) || [];
+  if (label.indexOf("–") > -1 && n.length === 2) return [[n[0], n[1]]];
+  return n.map(function(x){ return [x, null]; });
+}
+
+/* In .ics text, backslashes, semicolons, commas and line breaks need a backslash in front. */
+function icsText(s){
+  return String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+}
+
+/* Each line may be at most 75 bytes; a longer one continues on the next line,
+   which starts with a space. Accented letters take 2 bytes, so count bytes. */
+function icsFold(line){
+  const enc = new TextEncoder();
+  let out = "", cur = "", bytes = 0;
+  for (const ch of line) {
+    const n = enc.encode(ch).length;
+    if (bytes + n > 75) { out += cur + "\r\n "; cur = ""; bytes = 1; }
+    cur += ch; bytes += n;
+  }
+  return out + cur;
+}
+
+/* The place as text, followed by the street address when the place name alone is not one. */
+function icsPlace(e, lang){
+  const loc = e.loc ? e.loc[lang] : "", v = e.v ? V[e.v] : null;
+  if (v && v.q) return v.q.indexOf(loc) === 0 ? v.q : loc + ", " + v.q;
+  if (!loc) return v ? v.n + ", Barcelona" : "";
+  return loc.indexOf("Barcelona") > -1 ? loc : loc + ", Barcelona";
+}
+
+/* Everything is written in the language the reader has chosen (lang). */
+function buildIcs(d, e, i, lang){
+  const t = T[lang], v = e.v ? V[e.v] : null, slots = calSlots(e);
+  const link = CAL.url + "#" + d.id;
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const place = icsPlace(e, lang);
+  const notes = [t.calFest];
+  /* An approximate time ("~20 h") or one without hours is spelt out in the notes. */
+  if (!e.a && (e.time.ca.indexOf("~") > -1 || !slots.length)) notes.push(t.calTime + ": " + e.time[lang]);
+  notes.push("", e.desc[lang]);
+  if (e.tags.length) notes.push("", e.tags.map(function(tag){ return TAG[tag][lang]; }).join(" · "));
+  if (e.tip) notes.push("", t.tipLbl + ": " + e.tip[lang]);
+  if (e.link) notes.push("", t[e.link[0]] + ": " + e.link[1]);
+  notes.push("", t.calGuide + ": " + link, t.calProg + ": " + t.calSrc);
+  const common = ["SUMMARY;LANGUAGE=" + lang + ":" + icsText(e.title[lang])];
+  if (place) common.push("LOCATION;LANGUAGE=" + lang + ":" + icsText(place));
+  /* Coordinates: GEO is the standard field; the Apple one lets iPhone Calendar place a pin. */
+  if (v && v.lat) {
+    const q = function(s){ return String(s).replace(/"/g, "'"); };
+    common.push("GEO:" + v.lat + ";" + v.lng,
+      'X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="' + q(v.q || v.n + ", Barcelona") +
+      '";X-APPLE-RADIUS=100;X-TITLE="' + q(e.loc ? e.loc[lang] : v.n) + '":geo:' + v.lat + "," + v.lng);
+  }
+  common.push("DESCRIPTION;LANGUAGE=" + lang + ":" + icsText(notes.join("\n")),
+              "URL:" + link, "STATUS:CONFIRMED", "TRANSP:OPAQUE");
+  /* One VEVENT per session; two sessions give two entries in the same file. */
+  const uid = CAL.id + "-" + d.id + "-" + i;
+  const one = function(when, n){
+    return ["BEGIN:VEVENT", "UID:" + uid + (n ? "-" + n : "") + "@lexatarg.github.io", "DTSTAMP:" + stamp]
+      .concat(when, common, ["END:VEVENT"]);
+  };
+  let evs = [];
+  if (!slots.length) {
+    evs = one(["DTSTART;VALUE=DATE:" + ymd(calDate(d.num, 0)), "DTEND;VALUE=DATE:" + ymd(calDate(d.num, 1))], 0);
+  } else slots.forEach(function(s, n){
+    const when = ["DTSTART;TZID=" + CAL.tz + ":" + icsTime(d.num, s[0])];
+    if (s[1]) when.push("DTEND;TZID=" + CAL.tz + ":" + icsTime(d.num, s[1]));
+    evs = evs.concat(one(when, slots.length > 1 ? n + 1 : 0));
+  });
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Lexatarg//Barcelona fiestas//EN",
+                 "CALSCALE:GREGORIAN", "METHOD:PUBLISH"].concat(VTZ, evs, ["END:VCALENDAR"]);
+  return lines.map(icsFold).join("\r\n") + "\r\n";
+}
+
+/* The "Add to calendar" link. At the moment it is tapped, the file is built in
+   the current language and handed to the device. iPhone opens Add to Calendar;
+   Android and computers receive an .ics file that the calendar app opens. */
+function calClick(a){
+  const k = a.dataset.cal.split(":"), i = parseInt(k[1], 10);
+  const d = DAYS.filter(function(x){ return x.id === k[0]; })[0];
+  const ics = buildIcs(d, d.events[i], i, L_CUR);
+  if (a.href.indexOf("blob:") === 0) URL.revokeObjectURL(a.href);
+  a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar;charset=utf-8"}));
+  a.download = CAL.id + "-" + d.id + "-" + (i + 1) + ".ics";
+}
+
+function render(lang){
+  L_CUR = lang;
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.getElementById("k-eyebrow").textContent = t.eyebrow;
+  document.getElementById("k-meta").innerHTML = t.meta.map(function(m){
+    return '<div class="hm"><div class="k">' + esc(m[0]) + '</div><div class="v">' + esc(m[1]) + '</div></div>';
+  }).join("");
+  document.getElementById("k-lede").textContent = t.lede;
+
+  document.getElementById("k-nav").innerHTML = IDS.map(function(id,i){
+    return '<a href="#' + id + '" data-t="' + id + '">' + esc(t.nav[i]) + '</a>';
+  }).join("");
+
+  let h = "";
+  h += '<section class="sec ess" id="ess"><div class="lbl">' + esc(t.essLbl) + '</div><h2>' + esc(t.essTitle) + '</h2><ol>';
+  t.ess.forEach(function(e){
+    h += '<li><div class="t">' + esc(e.t) + '</div><div class="w">' + esc(e.w) + '</div><div class="d">' + esc(e.d) + '</div></li>';
+  });
+  h += '</ol></section>';
+
+  DAYS.forEach(function(d){
+    h += '<section class="day" id="' + d.id + '"><div class="day-head"><div class="day-num">' + d.num + '</div>';
+    h += '<div class="day-txt"><div class="dow">' + esc(d.dow[lang]) + '</div><h2>' + esc(d.title[lang]) + '</h2><div class="note">' + esc(d.note[lang]) + '</div></div></div>';
+    h += '<div class="timeline">';
+    d.events.forEach(function(e, i){
+      h += '<div class="ev"><div class="ev-top"><span class="ev-time">' + esc(e.time[lang]) + '</span><span class="ev-tags">';
+      e.tags.forEach(function(tag){
+        h += '<span class="tg ' + (tag === "free" ? "fr" : "hi") + '">' + esc(TAG[tag][lang]) + '</span>';
+      });
+      h += '</span></div><h3>' + esc(e.title[lang]) + '</h3><div class="loc">' + esc(e.loc[lang]);
+      if (e.v) h += ' <button class="golink" data-go="' + e.v + '">' + esc(t.dirs) + '</button>';
+      h += ' <a class="golink" href="#" data-cal="' + d.id + ':' + i + '">' + esc(t.cal) + '</a>';
+      if (e.link) h += ' <a class="golink" href="' + esc(e.link[1]) + '" target="_blank" rel="noopener">' + esc(t[e.link[0]]) + '</a>';
+      h += '</div><p>' + esc(e.desc[lang]) + '</p>';
+      if (e.tip) h += '<div class="tip"><b>' + esc(t.tipLbl) + '</b> ' + esc(e.tip[lang]) + '</div>';
+      h += '</div>';
+    });
+    h += '</div></section>';
+  });
+
+  h += '<section class="sec" id="places"><div class="lbl">' + esc(t.placesLbl) + '</div><h2>' + esc(t.placesTitle) + '</h2>';
+  h += '<p style="font-size:.86rem;color:var(--sub);margin:0;max-width:34rem">' + esc(t.placesNote) + '</p><div class="grid">';
+  PLACES.forEach(function(row){
+    h += '<div class="gi"><h4>' + esc(V[row.k].n) + '</h4><p>' + esc(row.d[lang]) + '</p>' +
+         '<button class="golink" data-go="' + row.k + '">' + esc(t.dirs) + '</button></div>';
+  });
+  h += '</div><div class="callout"><b>' + esc(t.calloutB) + '</b>' + esc(t.callout) + '</div></section>';
+
+  h += '<section class="sec" id="know"><div class="lbl">' + esc(t.knowLbl) + '</div><h2>' + esc(t.knowTitle) + '</h2><div class="grid" style="margin-top:0">';
+  t.know.forEach(function(k){
+    h += '<div class="gi"><h4>' + esc(k[0]) + '</h4><p>' + esc(k[1]) + '</p></div>';
+  });
+  h += '</div></section>';
+
+  document.getElementById("k-body").innerHTML = h;
+  document.getElementById("k-foot1").innerHTML = t.foot1;
+  document.getElementById("k-foot2").innerHTML = t.foot2;
+  document.getElementById("k-ver").textContent = "v" + VERSION;
+
+  document.getElementById("k-body").querySelectorAll("[data-go]").forEach(function(b){
+    b.addEventListener("click", function(){ openSheet(b.dataset.go); });
+  });
+  document.getElementById("k-body").querySelectorAll("[data-cal]").forEach(function(b){
+    b.addEventListener("click", function(){ calClick(b); });
+  });
+
+  initSpy();
+}
+
+let spyObs = null;
+function initSpy(){
+  if (spyObs) spyObs.disconnect();
+  if (typeof IntersectionObserver === "undefined") return;
+  const nav = document.getElementById("k-nav");
+  const anchors = Array.prototype.slice.call(nav.querySelectorAll("a"));
+  const targets = IDS.map(function(id){ return document.getElementById(id); }).filter(Boolean);
+  let active = null;
+  function setActive(id){
+    if (id === active) return;
+    active = id;
+    anchors.forEach(function(a){ a.classList.toggle("on", a.dataset.t === id); });
+    const cur = anchors.filter(function(a){ return a.dataset.t === id; })[0];
+    if (cur && nav.scrollTo) {
+      nav.scrollTo({left: Math.max(0, cur.offsetLeft - nav.clientWidth/2 + cur.offsetWidth/2), behavior:"smooth"});
+    }
+  }
+  spyObs = new IntersectionObserver(function(entries){
+    const vis = entries.filter(function(e){ return e.isIntersecting; })
+      .sort(function(a,b){ return a.boundingClientRect.top - b.boundingClientRect.top; });
+    if (vis.length) setActive(vis[0].target.id);
+  }, {rootMargin:"-86px 0px -55% 0px", threshold:0});
+  targets.forEach(function(s){ spyObs.observe(s); });
+}
+
+document.querySelectorAll(".langs button[data-lang]").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.remove("on"); });
+    b.classList.add("on");
+    render(b.dataset.lang);
+    try { localStorage.setItem("bcnf-lang", b.dataset.lang); } catch(e) {}
+  });
+});
+
+let start = "en";
+try {
+  /* "bcnf-lang" is shared by every page. */
+  const saved = localStorage.getItem("bcnf-lang");
+  if (saved && T[saved]) start = saved;
+  else {
+    const nl = (navigator.language || "en").toLowerCase();
+    if (nl.indexOf("ca") === 0) start = "ca";
+    else if (nl.indexOf("es") === 0) start = "es";
+  }
+} catch(e) {}
+document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.toggle("on", x.dataset.lang === start); });
+render(start);
+/* Light and dark mode: follows the device until the reader picks one. */
+(function(){
+  var root = document.documentElement, btn = document.getElementById("themeBtn");
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var LBL = {ca:["Canvia al mode fosc","Canvia al mode clar"], es:["Cambiar al modo oscuro","Cambiar al modo claro"], en:["Switch to dark mode","Switch to light mode"]};
+  function current(){ var t = root.getAttribute("data-theme"); return t ? t : (mq && mq.matches ? "dark" : "light"); }
+  function sync(){
+    var dark = current() === "dark", l = LBL[root.lang] || LBL.en;
+    btn.classList.toggle("is-dark", dark);
+    btn.setAttribute("aria-label", dark ? l[1] : l[0]);
+    btn.title = dark ? l[1] : l[0];
+  }
+  btn.addEventListener("click", function(){
+    var next = current() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("bcnf-theme", next); } catch(e) {}
+    sync();
+  });
+  if (mq) { if (mq.addEventListener) mq.addEventListener("change", sync); else if (mq.addListener) mq.addListener(sync); }
+  new MutationObserver(sync).observe(root, {attributes:true, attributeFilter:["lang"]});
+  sync();
+})();
+
+</script>
+
+</body>
+</html>
