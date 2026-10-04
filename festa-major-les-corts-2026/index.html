@@ -12,7 +12,7 @@
   :root{
     --ink:#2a1f1a;--paper:#fbf3e4;--sub:#6b5d52;--hero-acc:#287048;
     --hair:rgba(42,31,26,.16);--accent:#c22a36;--sea:#287048;
-    --dark:#f6dca6;--dark-ink:#c22a36;--dark-sub:#5e4c3c;--band:#e8a030;--sheet:#fffaf0;
+    --dark:#fdfaee;--dark-ink:#141414;--dark-sub:#5a524a;--band:#e8a030;--sheet:#fffaf0;
     box-sizing:border-box;
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
@@ -20,15 +20,15 @@
   *,*::before,*::after{box-sizing:border-box;}
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
-      --ink:#f1ebe4;--paper:#17120f;--sub:#a99d92;--hero-acc:#7fcf9f;
-      --hair:rgba(241,235,228,.18);--accent:#ff8a8f;--sea:#7fcf9f;
-      --dark:#100c0a;--dark-ink:#f0b450;--dark-sub:#a99d92;--band:#e83040;--sheet:#221a16;
+      --ink:#f2f0ea;--paper:#111110;--sub:#a8a59d;--hero-acc:#6cc08f;
+      --hair:rgba(242,240,234,.18);--accent:#ee4a55;--sea:#7fcf9f;
+      --dark:#0a0a09;--dark-ink:#fdfaee;--dark-sub:#b0ada5;--band:#e8a030;--sheet:#1b1b19;
     }
   }
   :root[data-theme="dark"]{
-      --ink:#f1ebe4;--paper:#17120f;--sub:#a99d92;--hero-acc:#7fcf9f;
-      --hair:rgba(241,235,228,.18);--accent:#ff8a8f;--sea:#7fcf9f;
-      --dark:#100c0a;--dark-ink:#f0b450;--dark-sub:#a99d92;--band:#e83040;--sheet:#221a16;
+      --ink:#f2f0ea;--paper:#111110;--sub:#a8a59d;--hero-acc:#6cc08f;
+      --hair:rgba(242,240,234,.18);--accent:#ee4a55;--sea:#7fcf9f;
+      --dark:#0a0a09;--dark-ink:#fdfaee;--dark-sub:#b0ada5;--band:#e8a030;--sheet:#1b1b19;
   }
   html{scroll-padding-top:86px;-webkit-text-size-adjust:100%;}
   body{margin:0;background:var(--paper);color:var(--ink);
@@ -218,7 +218,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.1.0";
+const VERSION = "1.1.1";
 
 /* Venues. q is the search text for the maps apps; addresses come from the programme's map.
    No coordinates yet, so Citymapper is not offered. */

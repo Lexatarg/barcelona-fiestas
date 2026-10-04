@@ -7,6 +7,14 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.1.1] — 2026-10-05
+
+### Changed
+- Header and footer colors follow the poster: its pastel cream with black
+  lettering, green for 2026 and an orange line in light mode. Dark mode uses
+  neutral near-blacks with cream lettering; links and labels keep the poster
+  red, in a lighter shade that reads on black.
+
 ## [1.1.0] — 2026-10-04
 
 ### Added
