@@ -214,7 +214,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.3.4";
+const VERSION = "1.3.5";
 
 /* Venues. q is the search text handed to the maps app. */
 const V = {
@@ -965,7 +965,7 @@ document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeS
 /* Add to calendar. The .ics file is built here in the browser; nothing is sent anywhere.
    first is the festival's first day: lower day numbers fall in the following month. */
 const CAL = {id:"festa-major-barceloneta-2026", year:2026, month:9, first:25, tz:"Europe/Madrid",
-  url:"https://lexatarg.github.io/barcelona-fiestas/festa-major-barceloneta-2026/"};
+  url:"https://lexatarg.github.io/festes-majors-barcelona/festa-major-barceloneta-2026/"};
 
 /* Barcelona's clock rules: summer time (UTC+2) from the last Sunday of March,
    winter time (UTC+1) from the last Sunday of October. */
@@ -1070,7 +1070,7 @@ function buildIcs(d, e, i, lang){
     if (s[1]) when.push("DTEND;TZID=" + CAL.tz + ":" + icsTime(d.num, s[1]));
     evs = evs.concat(one(when, slots.length > 1 ? n + 1 : 0));
   });
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Lexatarg//Barcelona fiestas//EN",
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Lexatarg//Festes Majors de Barcelona//EN",
                  "CALSCALE:GREGORIAN", "METHOD:PUBLISH"].concat(VTZ, evs, ["END:VCALENDAR"]);
   return lines.map(icsFold).join("\r\n") + "\r\n";
 }

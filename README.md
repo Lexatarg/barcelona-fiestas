@@ -1,10 +1,10 @@
-# Barcelona fiestas
+# Festes Majors de Barcelona
 
 Guides to Barcelona's festes majors, in Catalan, Castilian and English. This is
 a personal project, made so that everyone can enjoy the festivities and have the
 best possible experience; it is not an official publication.
 
-Visit the guides at [lexatarg.github.io/barcelona-fiestas](https://lexatarg.github.io/barcelona-fiestas/)
+Visit the guides at [lexatarg.github.io/festes-majors-barcelona](https://lexatarg.github.io/festes-majors-barcelona/)
 
 ## What each guide includes
 

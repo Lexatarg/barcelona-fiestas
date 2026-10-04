@@ -8,6 +8,13 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.13.0] — 2026-10-04
+
+### Changed
+- The collection is now called Festes Majors de Barcelona (Fiestas Mayores de
+  Barcelona in Castilian) and moves to lexatarg.github.io/festes-majors-barcelona.
+- The browser tab shows the name in the chosen language.
+
 ## [1.12.0] — 2026-10-04
 
 ### Added

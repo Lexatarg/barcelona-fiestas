@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Barcelona fiestas</title>
+<title>Festes Majors de Barcelona</title>
 <meta name="description" content="Hour-by-hour guides to Barcelona's festes majors, in Català, castellà and English.">
-<meta property="og:title" content="Barcelona fiestas">
+<meta property="og:title" content="Festes Majors de Barcelona">
 <meta property="og:description" content="Hour-by-hour guides to Barcelona's festes majors, in Català, castellà and English.">
 <meta property="og:type" content="website">
 <style>
@@ -130,7 +130,7 @@
         <button class="theme" type="button" id="themeBtn"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg></button>
     </div>
   </div>
-  <h1>Barcelona<br>fiestas</h1>
+  <h1 id="k-title">Festes Majors<br>de Barcelona</h1>
   <p class="lede" id="k-lede"></p>
 </div></header>
 
@@ -143,7 +143,7 @@
 </div></footer>
 
 <script>
-const VERSION = "1.12.0";
+const VERSION = "1.13.0";
 
 /* Each guide is shown as happening now, coming up or past, using Barcelona time.
    The order on the page comes from the dates, not from the order of this list. */
@@ -209,17 +209,17 @@ const GUIDES = [
 ];
 
 const T = {
-  ca:{eyebrow:"Guies de festes majors", now:"En curs", next:"Properes", past:"Anteriors",
+  ca:{eyebrow:"Guies de festes majors", name:"Festes Majors de Barcelona", title:"Festes Majors<br>de Barcelona", now:"En curs", next:"Properes", past:"Anteriors",
       lede:"Guies de les festes majors de Barcelona, amb els horaris i els llocs de les activitats de cada dia ben organitzats, perquè pugueu gaudir al màxim de cada festa.",
       open:"Obre la guia", soon:"Guia aviat", site:"Web oficial",
       foot1:"La informació de cada guia prové del programa oficial o del web oficial de cada festa. Per al programa complet i per als canvis d'última hora, consulteu la font que enllaça cada guia.",
       foot2:"Això és un projecte personal, fet amb dedicació i estima, i per això només es pot mantenir un nombre limitat de guies alhora, per oferir la millor experiència i cobertura possibles de cada festa major inclosa. No és una publicació oficial, i aquestes pàgines no fan servir galetes ni recullen dades personals. Totes les guies estan allotjades a GitHub Pages i subjectes a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>."},
-  es:{eyebrow:"Guías de fiestas mayores", now:"En curso", next:"Próximas", past:"Anteriores",
+  es:{eyebrow:"Guías de fiestas mayores", name:"Fiestas Mayores de Barcelona", title:"Fiestas Mayores<br>de Barcelona", now:"En curso", next:"Próximas", past:"Anteriores",
       lede:"Guías de las fiestas mayores de Barcelona, con los horarios y los lugares de las actividades de cada día bien organizados, para que pueda disfrutar al máximo de cada fiesta.",
       open:"Abrir la guía", soon:"Guía próximamente", site:"Web oficial",
       foot1:"La información de cada guía procede del programa oficial o de la web oficial de cada fiesta. Para el programa completo y para los cambios de última hora, consulte la fuente que enlaza cada guía.",
       foot2:"Esto es un proyecto personal, hecho con dedicación y cariño, y por eso solo se puede mantener un número limitado de guías a la vez, para ofrecer la mejor experiencia y cobertura posibles de cada fiesta mayor incluida. No es una publicación oficial, y estas páginas no utilizan cookies ni recogen datos personales. Todas las guías están alojadas en GitHub Pages y sujetas a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>."},
-  en:{eyebrow:"Festival guides", now:"Happening now", next:"Coming up", past:"Past",
+  en:{eyebrow:"Festival guides", name:"Festes Majors de Barcelona", title:"Festes Majors<br>de Barcelona", now:"Happening now", next:"Coming up", past:"Past",
       lede:"Guides to Barcelona's festes majors, with the times and places of each day's activities clearly organized, so you can make the most of every festival.",
       open:"Open the guide", soon:"Guide coming soon", site:"Official website",
       foot1:"The information in each guide comes from that festival's official program or official website. For the full program and any last-minute changes, see the source linked in each guide.",
@@ -233,6 +233,9 @@ function render(lang){
   document.documentElement.lang = lang;
   document.getElementById("k-eyebrow").textContent = t.eyebrow;
   document.getElementById("k-lede").textContent = t.lede;
+  /* The name in the reader's language: Castilian translates "festes majors", as the City Council does. */
+  document.getElementById("k-title").innerHTML = t.title;
+  document.title = t.name;
   document.getElementById("k-foot1").textContent = t.foot1;
   document.getElementById("k-foot2").innerHTML = t.foot2;
   document.getElementById("k-ver").textContent = "v" + VERSION;
