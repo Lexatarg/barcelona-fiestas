@@ -13,6 +13,15 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.5.6] — 2026-10-04
+
+### Changed
+- Advice that does not come from the official website is removed: arrival
+  times, crowd tips, viewing spots and the rain tip.
+- The correfoc safety advice, public transport, open museums, Punt Lila points
+  and rain information now follow the official website's own wording.
+- Event notes are labeled "Note" instead of "Tip".
+
 ## [1.5.5] — 2026-10-04
 
 ### Changed
