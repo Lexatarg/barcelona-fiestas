@@ -85,6 +85,7 @@
   /* Same treatment as the Directions links inside the guides */
   .g .open{display:inline-block;margin-top:12px;font-size:.82rem;font-weight:700;color:var(--ink);}
   .g:hover .open{text-decoration:underline;text-underline-offset:3px;}
+  .g .soon{display:inline-block;margin:12px 14px 0 0;font-size:.82rem;font-weight:700;color:var(--sub);}
   .g:hover h2{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;}
   /* Past: same layout, greyed */
   .g.past h2, .g.past .open{color:var(--faint);}
@@ -142,11 +143,33 @@
 </div></footer>
 
 <script>
-const VERSION = "1.11.0";
+const VERSION = "1.12.0";
 
 /* Each guide is shown as happening now, coming up or past, using Barcelona time.
    The order on the page comes from the dates, not from the order of this list. */
 const GUIDES = [
+  /* Coming up without a guide yet: "site" links the official page, and opens in a new tab.
+     When the guide is ready, add its path and remove "site". */
+  { site:"https://clotcampdelarpa.cat/", year:"2026", start:"2026-10-30", end:"2026-11-15",
+    title:{ca:"Festa Major del Clot – Camp de l'Arpa",es:"Fiesta Mayor del Clot – Camp de l'Arpa",en:"Festa Major del Clot – Camp de l'Arpa"},
+    when:{ca:"30 d'octubre – 15 de novembre de 2026",es:"30 de octubre – 15 de noviembre de 2026",en:"October 30 – November 15, 2026"},
+    desc:{ca:"El programa oficial encara no s'ha publicat. L'enllaç porta al web de la Federació d'Entitats del Clot-Camp de l'Arpa, que organitza la festa.",
+          es:"El programa oficial aún no se ha publicado. El enlace lleva a la web de la Federació d'Entitats del Clot-Camp de l'Arpa, que organiza la fiesta.",
+          en:"The official program has not been published yet. The link goes to the website of the Federació d'Entitats del Clot-Camp de l'Arpa, which organizes the festival."} },
+  { site:"https://festesdelasagrera.cat/", year:"2026", start:"2026-11-12", end:"2026-11-22",
+    title:{ca:"Festa Major de la Sagrera",es:"Fiesta Mayor de la Sagrera",en:"Festa Major de la Sagrera"},
+    when:{ca:"12–22 de novembre de 2026",es:"12–22 de noviembre de 2026",en:"November 12–22, 2026"},
+    desc:{ca:"El programa oficial encara no s'ha publicat. L'enllaç porta al web de la Comissió de Festes de la Sagrera, que organitza la festa.",
+          es:"El programa oficial aún no se ha publicado. El enlace lleva a la web de la Comissió de Festes de la Sagrera, que organiza la fiesta.",
+          en:"The official program has not been published yet. The link goes to the website of the Comissió de Festes de la Sagrera, which organizes the festival."} },
+  /* Sant Andreu: no official 2026 dates yet. start and end only place it in Coming up
+     and are not shown; replace them with the official dates when they are published. */
+  { site:"https://ajuntament.barcelona.cat/santandreu/ca/el-districte-i-els-seus-barris/sant-andreu-de-palomar/festa-major", year:"2026", start:"2026-11-27", end:"2026-12-08",
+    title:{ca:"Festa Major de Sant Andreu",es:"Fiesta Mayor de Sant Andreu",en:"Festa Major de Sant Andreu"},
+    when:{ca:"Finals de novembre de 2026 · dates per confirmar",es:"Finales de noviembre de 2026 · fechas por confirmar",en:"Late November 2026 · dates to be confirmed"},
+    desc:{ca:"Les dates i el programa oficials encara no s'han publicat. L'enllaç porta a la pàgina de la festa major del Districte de Sant Andreu.",
+          es:"Las fechas y el programa oficiales aún no se han publicado. El enlace lleva a la página de la fiesta mayor del Distrito de Sant Andreu.",
+          en:"The official dates and program have not been published yet. The link goes to the Sant Andreu district's festival page."} },
   { path:"festa-major-hostafrancs-2026/", year:"2026", start:"2026-10-02", end:"2026-10-11",
     title:{ca:"Festa Major d'Hostafrancs",es:"Fiesta Mayor de Hostafrancs",en:"Festa Major d'Hostafrancs"},
     when:{ca:"2–11 d'octubre de 2026",es:"2–11 de octubre de 2026",en:"October 2–11, 2026"},
@@ -188,17 +211,17 @@ const GUIDES = [
 const T = {
   ca:{eyebrow:"Guies de festes majors", now:"En curs", next:"Properes", past:"Anteriors",
       lede:"Guies de les festes majors de Barcelona, amb els horaris i els llocs de les activitats de cada dia ben organitzats, perquè pugueu gaudir al màxim de cada festa.",
-      open:"Obre la guia",
+      open:"Obre la guia", soon:"Guia aviat", site:"Web oficial",
       foot1:"La informació de cada guia prové del programa oficial o del web oficial de cada festa. Per al programa complet i per als canvis d'última hora, consulteu la font que enllaça cada guia.",
       foot2:"Això és un projecte personal, fet amb dedicació i estima, i per això només es pot mantenir un nombre limitat de guies alhora, per oferir la millor experiència i cobertura possibles de cada festa major inclosa. No és una publicació oficial, i aquestes pàgines no fan servir galetes ni recullen dades personals. Totes les guies estan allotjades a GitHub Pages i subjectes a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>."},
   es:{eyebrow:"Guías de fiestas mayores", now:"En curso", next:"Próximas", past:"Anteriores",
       lede:"Guías de las fiestas mayores de Barcelona, con los horarios y los lugares de las actividades de cada día bien organizados, para que pueda disfrutar al máximo de cada fiesta.",
-      open:"Abrir la guía",
+      open:"Abrir la guía", soon:"Guía próximamente", site:"Web oficial",
       foot1:"La información de cada guía procede del programa oficial o de la web oficial de cada fiesta. Para el programa completo y para los cambios de última hora, consulte la fuente que enlaza cada guía.",
       foot2:"Esto es un proyecto personal, hecho con dedicación y cariño, y por eso solo se puede mantener un número limitado de guías a la vez, para ofrecer la mejor experiencia y cobertura posibles de cada fiesta mayor incluida. No es una publicación oficial, y estas páginas no utilizan cookies ni recogen datos personales. Todas las guías están alojadas en GitHub Pages y sujetas a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>."},
   en:{eyebrow:"Festival guides", now:"Happening now", next:"Coming up", past:"Past",
       lede:"Guides to Barcelona's festes majors, with the times and places of each day's activities clearly organized, so you can make the most of every festival.",
-      open:"Open the guide",
+      open:"Open the guide", soon:"Guide coming soon", site:"Official website",
       foot1:"The information in each guide comes from that festival's official program or official website. For the full program and any last-minute changes, see the source linked in each guide.",
       foot2:"This is a personal project and a labor of love, so only a limited number of guides can be maintained at a time, in order to provide the best possible experience and coverage for every major festival included. It is not an official publication, and these pages do not use cookies or collect any personal data. All the guides are hosted on GitHub Pages and are subject to the <a href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>GitHub Privacy Statement</a>."}
 };
@@ -217,9 +240,13 @@ function render(lang){
   try { today = new Date().toLocaleDateString("sv-SE", {timeZone:"Europe/Madrid"}); }
   catch(e) { today = new Date().toISOString().slice(0,10); }
   const card = function(state){ return function(g){
-    return '<a class="g ' + state + '" href="' + g.path + '">' +
+    /* Without a guide yet, the card opens the official page in a new tab. */
+    const link = g.path ? 'href="' + g.path + '"' : 'href="' + esc(g.site) + '" target="_blank" rel="noopener"';
+    return '<a class="g ' + state + '" ' + link + '>' +
       '<h2>' + esc(g.title[lang]) + '</h2><div class="when">' + esc(g.when[lang]) + '</div>' +
-      '<p>' + esc(g.desc[lang]) + '</p><span class="open">' + esc(t.open) + '</span></a>';
+      '<p>' + esc(g.desc[lang]) + '</p>' +
+      (g.path ? '<span class="open">' + esc(t.open) + '</span>'
+              : '<span class="soon">' + esc(t.soon) + '</span><span class="open">' + esc(t.site) + '</span>') + '</a>';
   }; };
   /* Latest first; Coming up shows the soonest first. */
   const latest = function(a, b){ return a.start < b.start ? 1 : a.start > b.start ? -1 : 0; };

@@ -8,6 +8,13 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.12.0] — 2026-10-04
+
+### Added
+- Coming up lists the next major festivals before their guides are ready:
+  Clot – Camp de l'Arpa, la Sagrera and Sant Andreu. Each links to its
+  official website, opening in a new tab, until its guide is published.
+
 ## [1.11.0] — 2026-10-04
 
 ### Added
