@@ -8,6 +8,11 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.11.0] — 2026-10-04
+
+### Added
+- New guide: Festa Major d'Hostafrancs 2026.
+
 ## [1.10.0] — 2026-10-04
 
 ### Added

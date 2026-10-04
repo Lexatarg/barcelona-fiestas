@@ -7,6 +7,12 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.0.1] — 2026-10-04
+
+### Changed
+- Dark mode: the header and footer use a deep shade of the poster purple, with
+  the poster orange and cream, instead of the light-mode colors.
+
 ## [1.0.0] — 2026-10-02
 
 ### Added

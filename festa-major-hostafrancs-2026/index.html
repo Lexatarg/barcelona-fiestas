@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Festa Major d'Hostafrancs 2026</title>
+<meta name="description" content="Hour-by-hour guide to the Festa Major d'Hostafrancs, October 2 to 11, 2026. Català, castellà, English.">
+<meta property="og:title" content="Festa Major d'Hostafrancs 2026">
+<meta property="og:description" content="Hour-by-hour guide to the Hostafrancs festival, October 2 to 11. Català, castellà, English.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --ink:#102a24;--paper:#f2f8f4;--sub:#4b625b;--hero-acc:#f8e800;
+    --hair:rgba(16,42,36,.16);--accent:#1f6b55;--sea:#c8281f;
+    --dark:#1f6b55;--dark-ink:#f8e800;--dark-sub:#f2fbf7;--band:#e03028;--sheet:#fbfdfb;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ink:#e8f2ee;--paper:#0f1a17;--sub:#9fb8b0;--hero-acc:#f8e800;
+      --hair:rgba(232,242,238,.18);--accent:#7fd3b5;--sea:#ff7a6e;
+      --dark:#0b2e24;--dark-ink:#f8e800;--dark-sub:#d6ece3;--band:#e03028;--sheet:#17241f;
+    }
+  }
+  :root[data-theme="dark"]{
+      --ink:#e8f2ee;--paper:#0f1a17;--sub:#9fb8b0;--hero-acc:#f8e800;
+      --hair:rgba(232,242,238,.18);--accent:#7fd3b5;--sea:#ff7a6e;
+      --dark:#0b2e24;--dark-ink:#f8e800;--dark-sub:#d6ece3;--band:#e03028;--sheet:#17241f;
+  }
+  html{scroll-padding-top:86px;-webkit-text-size-adjust:100%;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;}
+  a{color:inherit;}
+  h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.015em;line-height:1;}
+  .wrap{max-width:684px;margin:0 auto;padding:0 22px;}
+  @media (max-width:400px){ .wrap{padding:0 18px;} nav.days .days-in{padding:0 6px;} }
+
+  /* HERO */
+  .hero{background:var(--dark);color:var(--dark-ink);padding:38px 22px 44px;
+    border-bottom:3px solid var(--band);}
+  @media (max-width:400px){ .hero{padding:32px 18px 38px;} }
+  .hero-in{max-width:640px;margin:0 auto;}
+  .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:32px;}
+  .eyebrow{font-size:.62rem;text-transform:uppercase;font-weight:700;
+    color:var(--hero-acc);padding-top:6px;min-width:0;}
+  .langs{display:flex;gap:2px;flex:0 0 auto;}
+  .langs button{background:none;border:0;color:var(--dark-sub);cursor:pointer;font-family:inherit;
+    font-size:.64rem;font-weight:700;text-transform:uppercase;padding:6px 7px;}
+  .langs button.on{color:var(--hero-acc);}
+  .hero h1{font-size:clamp(2.7rem,14.5vw,5.2rem);letter-spacing:-.025em;line-height:.92;}
+  .hero .yr{display:block;color:var(--hero-acc);}
+  .hero-lede{margin:24px 0 0;font-size:.95rem;color:var(--dark-sub);max-width:34rem;}
+  .hero-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 20px;margin-top:30px;}
+  @media (min-width:520px){ .hero-meta{grid-template-columns:repeat(4,minmax(0,1fr));} }
+  .hm .k{font-size:.55rem;text-transform:uppercase;color:var(--dark-sub);margin-bottom:6px;}
+  .hm .v{font-size:.95rem;font-weight:700;letter-spacing:-.005em;}
+
+  /* NAV */
+  nav.days{position:sticky;top:0;z-index:600;background:var(--paper);}
+  nav.days::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--hair);}
+  .days-in{display:flex;overflow-x:auto;max-width:684px;margin:0 auto;padding:0 10px;
+    scrollbar-width:none;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;}
+  .days-in::-webkit-scrollbar{display:none;}
+  .days-in a{flex:0 0 auto;padding:14px 12px;text-decoration:none;font-size:.66rem;font-weight:700;
+    text-transform:uppercase;color:var(--sub);white-space:nowrap;
+    position:relative;transition:color .18s;}
+  .days-in a.on{color:var(--accent);}
+  .days-in a.on::after{content:"";position:absolute;left:12px;right:12px;bottom:0;height:2px;background:var(--accent);}
+
+  .lbl{font-size:.6rem;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px;}
+  .sec{padding:60px 0 0;}
+  .sec > h2{font-size:clamp(1.7rem,7vw,2.3rem);letter-spacing:-.02em;margin-bottom:32px;line-height:1.05;}
+
+  /* ESSENTIALS */
+  .ess ol{margin:0;padding:0;counter-reset:e;}
+  .ess li{list-style:none;position:relative;padding:0 0 30px 42px;counter-increment:e;}
+  .ess li::before{content:counter(e,decimal-leading-zero);position:absolute;left:0;top:3px;
+    font-size:.72rem;font-weight:700;color:var(--accent);}
+  .ess .t{font-size:1.08rem;font-weight:700;letter-spacing:-.01em;line-height:1.22;margin-bottom:5px;}
+  .ess .w{font-size:.83rem;color:var(--accent);font-weight:700;margin-bottom:6px;}
+  .ess .d{font-size:.88rem;color:var(--sub);max-width:34rem;}
+
+  /* DAY HEADER */
+  .day{padding:68px 0 0;}
+  /* The number sits on the timeline's left edge; the gap after it is a fixed
+     share of the number's size, so one- and two-digit dates sit equally close
+     to their text at every screen size. */
+  .day-head{display:flex;align-items:center;gap:.17em;margin-bottom:32px;
+    font-size:clamp(4rem,19vw,5.4rem);}
+  .day-num{flex:0 0 auto;font-size:1em;font-weight:700;font-variant-numeric:tabular-nums;
+    letter-spacing:-.03em;line-height:.8;color:var(--sea);}
+  .day-txt{min-width:0;font-size:15px;}
+  .day-txt .dow{font-size:.6rem;text-transform:uppercase;color:var(--sub);
+    font-weight:700;margin-bottom:9px;line-height:1.3;}
+  .day-txt h2{font-size:clamp(1.05rem,4.6vw,1.24rem);letter-spacing:-.01em;line-height:1.15;}
+  .day-txt .note{font-size:.78rem;color:var(--sub);margin-top:8px;font-weight:400;letter-spacing:0;line-height:1.4;}
+  @media (max-width:400px){
+    .day-head{margin-bottom:28px;}
+    .day-txt .dow{margin-bottom:7px;}
+  }
+
+  /* TIMELINE */
+  .timeline{border-left:1px solid var(--hair);margin-left:4px;}
+  .ev{position:relative;padding:0 0 32px 24px;}
+  @media (max-width:400px){ .ev{padding-left:20px;} }
+  .ev::before{content:"";position:absolute;left:-4.5px;top:7px;width:8px;height:8px;
+    border-radius:50%;background:var(--accent);}
+  .ev:last-child{padding-bottom:6px;}
+  .ev-top{display:flex;align-items:center;gap:7px 12px;margin-bottom:8px;flex-wrap:wrap;}
+  .ev-time{font-size:.93rem;font-weight:700;letter-spacing:0;line-height:1.35;
+    font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .ev-tags{display:flex;align-items:center;gap:7px 12px;flex-wrap:wrap;}
+  .tg{font-size:.62rem;text-transform:uppercase;font-weight:700;
+    line-height:1.35;white-space:nowrap;}
+  .tg.hi{color:var(--accent);}
+  .tg.fr{color:var(--sub);}
+  .ev h3{font-size:1.04rem;letter-spacing:-.008em;line-height:1.28;margin-bottom:6px;}
+  .ev .loc{font-size:.81rem;color:var(--sub);margin-bottom:9px;
+    display:flex;gap:6px 12px;flex-wrap:wrap;align-items:baseline;}
+  .ev p{margin:0;font-size:.88rem;color:var(--ink);opacity:.82;max-width:34rem;}
+  .tip{margin-top:11px;font-size:.82rem;color:var(--sub);max-width:34rem;}
+  .tip b{color:var(--accent);font-weight:700;text-transform:uppercase;font-size:.57rem;}
+
+  .golink{background:none;border:0;padding:0;font:inherit;cursor:pointer;color:var(--accent);
+    font-weight:700;font-size:.78rem;white-space:nowrap;text-align:left;}
+  a.golink{text-decoration:none;}
+  .golink:hover{text-decoration:underline;}
+
+  /* PLACES */
+  .grid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;margin-top:34px;}
+  @media (min-width:560px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 34px;} }
+  .gi h4{font-size:.95rem;font-weight:700;letter-spacing:-.005em;margin:0 0 5px;line-height:1.3;}
+  .gi p{margin:0;font-size:.84rem;color:var(--sub);}
+  .gi .golink{margin-top:8px;display:inline-block;font-size:.74rem;}
+
+  .callout{margin-top:42px;padding-left:16px;border-left:2px solid var(--sea);
+    font-size:.84rem;color:var(--sub);max-width:34rem;}
+  .callout b{color:var(--ink);font-weight:700;}
+
+  footer{background:var(--dark);color:var(--dark-ink);margin-top:74px;padding:50px 22px 46px;
+    border-top:3px solid var(--band);}
+  @media (max-width:400px){ footer{padding:44px 18px 40px;} }
+  .foot-in{max-width:640px;margin:0 auto;}
+  footer .fm{font-size:clamp(1.4rem,6vw,1.7rem);font-weight:700;letter-spacing:-.02em;margin-bottom:20px;}
+  footer .fs{font-size:.84rem;color:var(--dark-sub);line-height:1.7;max-width:34rem;margin:0 0 16px;}
+  footer .fs a{color:var(--hero-acc);font-weight:700;text-decoration:none;}
+  footer .fmini{font-size:.76rem;color:var(--dark-sub);opacity:.8;line-height:1.7;max-width:34rem;margin:0;}
+  footer .ver{margin-top:20px;font-size:.66rem;color:var(--dark-sub);opacity:.7;text-transform:uppercase;}
+
+  /* DIRECTIONS SHEET */
+  .ovl{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:2000;display:none;
+    align-items:flex-end;justify-content:center;}
+  .ovl.open{display:flex;}
+  .sheet{background:var(--sheet);width:100%;max-width:430px;border-radius:14px 14px 0 0;
+    padding:22px 22px calc(24px + env(safe-area-inset-bottom,0px));
+    max-height:88vh;overflow-y:auto;}
+  @media (min-width:560px){ .ovl{align-items:center;} .sheet{border-radius:14px;} }
+  .sheet h3{font-size:1.08rem;margin-bottom:3px;letter-spacing:-.008em;line-height:1.25;}
+  .sheet .sub{font-size:.77rem;color:var(--sub);margin-bottom:16px;}
+  .sheet a,.sheet button.copy{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:14px 0;text-decoration:none;color:var(--ink);font-size:.92rem;font-weight:600;
+    border:0;border-top:1px solid var(--hair);width:100%;background:none;
+    font-family:inherit;cursor:pointer;text-align:left;}
+  .sheet .ar{color:var(--accent);font-weight:700;font-size:.72rem;
+    text-transform:uppercase;flex:0 0 auto;}
+  .sheet .close{margin-top:16px;width:100%;padding:13px;background:none;border:1px solid var(--hair);
+    font-family:inherit;font-size:.72rem;font-weight:700;text-transform:uppercase;
+    color:var(--sub);cursor:pointer;}
+  .langs{align-items:center;}
+  .theme{background:none;border:0;cursor:pointer;padding:6px 4px 6px 10px;margin:0;
+    color:inherit;display:inline-flex;align-items:center;line-height:0;}
+  .theme svg{width:15px;height:15px;display:block;}
+  .theme .sun{display:none;}
+  .theme.is-dark .sun{display:block;}
+  .theme.is-dark .moon{display:none;}
+</style>
+<script>try{var t=localStorage.getItem("bcnf-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="toprow">
+      <div class="eyebrow" id="k-eyebrow"></div>
+      <div class="langs">
+        <button data-lang="ca">CAT</button>
+        <button data-lang="es">CAST</button>
+        <button data-lang="en" class="on">ENG</button>
+        <button class="theme" type="button" id="themeBtn"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg></button>
+      </div>
+    </div>
+    <h1>Hostafrancs<span class="yr">2026</span></h1>
+    <p class="hero-lede" id="k-lede"></p>
+    <div class="hero-meta" id="k-meta"></div>
+  </div>
+</header>
+
+<nav class="days"><div class="days-in" id="k-nav"></div></nav>
+
+<div class="wrap" id="k-body"></div>
+
+<footer><div class="foot-in">
+  <div class="fm">Festa Major d'Hostafrancs 2026</div>
+  <div class="fs" id="k-foot1"></div>
+  <div class="fmini" id="k-foot2"></div>
+  <div class="ver" id="k-ver"></div>
+</div></footer>
+
+<div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
+
+<script>
+const VERSION = "1.0.0";
+
+/* Venues. q is the search text for the maps apps; addresses come from the programme.
+   No coordinates yet, so Citymapper is not offered. */
+const V = {
+  casinet   : {n:"Centre Cívic Casinet d'Hostafrancs",        q:"Carrer del Rector Triadó 53, Barcelona"},
+  seu       : {n:"Seu del Districte de Sants-Montjuïc",        q:"Carrer de la Creu Coberta 104, Barcelona"},
+  leiva     : {n:"Carrer de Leiva (Àliga – Hostafrancs de Sió)", q:"Carrer de Leiva, Carrer de l'Àliga, Barcelona"},
+  espanya   : {n:"Parc de l'Espanya Industrial",               q:"Parc de l'Espanya Industrial, Barcelona"},
+  creu      : {n:"Carrer de la Creu Coberta",                  q:"Carrer de la Creu Coberta, Barcelona"},
+  pelegri   : {n:"Plaça de Joan Pelegrí",                      q:"Plaça de Joan Pelegrí, Barcelona"},
+  santroc   : {n:"Sant Roc amb Creu Coberta",                  q:"Carrer de Sant Roc, Carrer de la Creu Coberta, Barcelona"},
+  mercat    : {n:"Mercat d'Hostafrancs",                       q:"Mercat d'Hostafrancs, Barcelona"},
+  consell   : {n:"Consell de Cent amb Torre d'en Damians",     q:"Carrer del Consell de Cent, Carrer de la Torre d'en Damians, Barcelona"},
+  temple    : {n:"Temple del Sant Àngel Custodi",              q:"Carrer de Vilardell 50, Barcelona"},
+  basset    : {n:"Espai Basset",                               q:"Carrer de l'Elisi 20, Barcelona"},
+  vilardell : {n:"Carrer de Vilardell",                        q:"Carrer de Vilardell, Barcelona"},
+  fundacio  : {n:"Fundació Cultural Hostafrancs",              q:"Carrer de la Torre d'en Damians 6, Barcelona"},
+  casamig   : {n:"FAB Casa del Mig",                           q:"Casa del Mig, Parc de l'Espanya Industrial, Barcelona"},
+  santcrist : {n:"Carrer del Sant Crist, 13",                  q:"Carrer del Sant Crist 13, Barcelona"},
+  herenni   : {n:"Plaça d'Herenni",                            q:"Plaça d'Herenni, Barcelona"},
+  creutorre : {n:"Creu Coberta amb Torre d'en Damians",        q:"Carrer de la Creu Coberta, Carrer de la Torre d'en Damians, Barcelona"},
+  corrades  : {n:"Plaça de Joan Corrades",                     q:"Plaça de Joan Corrades, Barcelona"},
+  llobet    : {n:"Carrer de Llobet",                           q:"Carrer de Llobet, Barcelona"}
+};
+
+function toEn(s){
+  const p = String(s).split(".");
+  let h = parseInt(p[0],10); const m = p[1] || "00";
+  const ap = (h >= 12 && h < 24) ? "PM" : "AM";
+  h = h % 12; if (h === 0) h = 12;
+  return h + ":" + m + " " + ap;
+}
+function tm(a,b){
+  const loc = b ? a + "–" + b + " h" : a + " h";
+  return {ca:loc, es:loc, en: b ? toEn(a) + "–" + toEn(b) : toEn(a)};
+}
+function E(a,b,tags,v,title,desc,extra){
+  const e = {a:a, b:b, time:tm(a,b), tags:tags, v:v, title:title, desc:desc};
+  if (extra) for (const k in extra) e[k] = extra[k];
+  if (!e.loc) { const n = v ? V[v].n : ""; e.loc = {ca:n, es:n, en:n}; }
+  return e;
+}
+function S(s){ return {ca:s, es:s, en:s}; }
+function L(ca,es,en){ return {ca:ca, es:es, en:en}; }
+
+const ROUTE = L("Recorregut","Recorrido","Route");
+const SRC = "https://federaciohostafrancs.cat/filemanager/media-resource/download/279";
+const APP = "https://programafm.federaciohostafrancs.cat/";
+const NEWS = "https://ajuntament.barcelona.cat/sants-montjuic/ca/noticies/ja-es-festa-major-a-hostafrancs-41414";
+
+const T = {
+  ca:{
+    eyebrow:"Festa Major · 2–11 d'octubre",
+    meta:[["Festa major","2 – 11 oct."],["Pregó","Dv 2 · 20.30 h"],["Edició","167a"],["Districte","Sants-Montjuïc"]],
+    lede:"La 167a Festa Major d'Hostafrancs, del 2 a l'11 d'octubre: més de setanta activitats d'una trentena d'entitats, amb el pregó de l'Orfeó Atlàntida, la XX Fira Medieval, la Fira de Magranes, la nit de concerts del carrer de Vilardell, el Festival Visual Brasil i el concert de l'Orquestra Di-Versiones.",
+    nav:["Essencials","Dv 2","Ds 3","Dg 4","Dl 5","Dt 6","Dc 7","Dj 8","Dv 9","Ds 10","Dg 11","Llocs","Abans d'anar-hi"],
+    essLbl:"Si només feu cinc coses",essTitle:"Els essencials",
+    placesLbl:"Els llocs",placesTitle:"On passa tot",
+    placesNote:"Toqueu «Com arribar-hi» i trieu l'aplicació de mapes que useu habitualment.",
+    dirs:"Com arribar-hi", cal:"Afegeix al calendari", more:"Més informació", signup:"Inscripció",
+    calFest:"Festa Major d'Hostafrancs 2026", calGuide:"Guia", calProg:"Programa oficial", calLink:"Enllaç",
+    calSrc:SRC, calTime:"Hora", tipLbl:"Nota", openIn:"Trieu una aplicació de mapes",
+    copy:"Copia l'adreça", copied:"Copiat", close:"Tanca", go:"Obre",
+    knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
+    calloutB:"Canvis per pluja.",
+    callout:" El programa actualitzat del districte i l'aplicació web de la Federació d'Hostafrancs marquen aquests canvis. Dissabte 3: la XX Fira Medieval es va anul·lar a partir del migdia, amb la inauguració, el concurs de tapes, la botifarrada, el Firajoc, la màgia de Bas Molina, el Cocodril Club, l'actuació de l'Esbart Ciutat Comtal, el passacarrers, el correfoc estàtic, el concert de PD Nyema i PD Pikas i els malabars de foc; L'Esbartjo s'ajorna al 17 d'octubre a la plaça de Sants. Diumenge 4: anul·lats la Fira Medieval, Coneix les entitats, el concurs de pintura, la cercavila de gegants, els trofeus de bàsquet, el taller d'origami, les Bastoneres, el Ball de Rams, el vermut musical, les sardanes, The Quiets, la botifarrada de la plaça del Sol i les havaneres.",
+    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Festa Major d\'Hostafrancs. Per al programa complet i per als canvis d\'última hora, consulteu <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot2:"Això és un projecte personal, fet amb dedicació i estima per ajudar tothom a gaudir al màxim de la festa. No és una publicació oficial. Aquesta pàgina no fa servir galetes ni recull dades personals. Està allotjada a GitHub Pages i subjecta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>.",
+    ess:[
+      {t:"Pregó de Festa Major",w:"Divendres 2 · 20.30 h",d:"A càrrec de l'Orfeó Atlàntida pel seu centenari, al Saló de Plens del Districte."},
+      {t:"Benedicció i Fira de Magranes",w:"Diumenge 4 · 10 h",d:"La tradició de les magranes beneïdes, aquest any dins del Temple del Sant Àngel Custodi per la pluja."},
+      {t:"Nit al carrer de Vilardell",w:"Divendres 9 · 21.15 h",d:"Percussió amb els Descentrats, la Joan Pelegrí Music Band i el cantautor Miquel del Roig a les 23 h."},
+      {t:"Festival Visual Brasil",w:"Divendres 9 i dissabte 10 · de 20 a 2 h",d:"VJ, instal·lacions audiovisuals i concerts a la Casa del Mig i al Parc de l'Espanya Industrial."},
+      {t:"Nit de dissabte",w:"Dissabte 10 · 21 h",d:"Hip hop en català a l'Espai Basset, PD Sants 3 Ràdio i, a les 0.15 h, l'Orquestra Di-Versiones al carrer de Vilardell."}
+    ],
+    know:[
+      ["Fonts","Aquesta guia segueix el programa imprès, el programa actualitzat del Districte de Sants-Montjuïc i l'aplicació web de la Federació d'Hostafrancs. On no coincideixen, segueix la informació més recent i ho indica a l'acte."],
+      ["Exposicions","XX Concurs de Cartells de la Festa Major, del 21 de setembre al 7 d'octubre, i exposició fotogràfica «Hostafrancs històric», del 2 a l'11 d'octubre, al Centre Cívic Casinet d'Hostafrancs (Rector Triadó, 53)."],
+      ["Carrer de Leiva","El tram entre Àliga i Hostafrancs de Sió es converteix en un passeig estel·lar guarnit per l'Escola Francesc Macià, del 2 a l'11 d'octubre."],
+      ["Concurs a Instagram","Fotografies de la Festa Major amb l'etiqueta #FMHostafrancs26, del 2 a l'11 d'octubre. Hi ha dos premis; les bases són a festamajorhostafrancs.cat."],
+      ["Abans de la festa","Els Jocs Florals de Sants, Hostafrancs i la Bordeta es van fer el 17 de setembre al Saló de Plens del Districte. L'1 d'octubre, de 16 a 20 h, campanya de donació de sang i plasma al Centre Cívic Casinet d'Hostafrancs, amb cita a ja.cat/donasangHostafrancs."]
+    ]
+  },
+  es:{
+    eyebrow:"Fiesta Mayor · 2–11 de octubre",
+    meta:[["Fiesta mayor","2 – 11 oct."],["Pregón","Vie 2 · 20.30 h"],["Edición","167.ª"],["Distrito","Sants-Montjuïc"]],
+    lede:"La 167.ª Fiesta Mayor de Hostafrancs, del 2 al 11 de octubre: más de setenta actividades de una treintena de entidades, con el pregón del Orfeó Atlàntida, la XX Feria Medieval, la Feria de Granadas, la noche de conciertos de la calle Vilardell, el Festival Visual Brasil y el concierto de la Orquestra Di-Versiones.",
+    nav:["Esenciales","Vie 2","Sáb 3","Dom 4","Lun 5","Mar 6","Mié 7","Jue 8","Vie 9","Sáb 10","Dom 11","Lugares","Antes de ir"],
+    essLbl:"Si solo puede hacer cinco cosas",essTitle:"Lo esencial",
+    placesLbl:"Los lugares",placesTitle:"Dónde pasa todo",
+    placesNote:"Toque «Cómo llegar» y elija la aplicación de mapas que use habitualmente.",
+    dirs:"Cómo llegar", cal:"Añadir al calendario", more:"Más información", signup:"Inscripción",
+    calFest:"Fiesta Mayor de Hostafrancs 2026", calGuide:"Guía", calProg:"Programa oficial", calLink:"Enlace",
+    calSrc:SRC, calTime:"Hora", tipLbl:"Nota", openIn:"Elija una aplicación de mapas",
+    copy:"Copiar la dirección", copied:"Copiado", close:"Cerrar", go:"Abrir",
+    knowLbl:"Práctico",knowTitle:"Antes de ir",
+    calloutB:"Cambios por lluvia.",
+    callout:" El programa actualizado del distrito y la aplicación web de la Federació d'Hostafrancs marcan estos cambios. Sábado 3: la XX Feria Medieval se anuló a partir del mediodía, con la inauguración, el concurso de tapas, la butifarrada, el Firajoc, la magia de Bas Molina, el Cocodril Club, la actuación del Esbart Ciutat Comtal, el pasacalle, el correfoc estático, el concierto de DJ Nyema y DJ Pikas y los malabares de fuego; L'Esbartjo se aplaza al 17 de octubre en la plaza de Sants. Domingo 4: anulados la Feria Medieval, Conoce las entidades, el concurso de pintura, el pasacalle de gigantes, los trofeos de baloncesto, el taller de origami, las Bastoneres, el Ball de Rams, el vermut musical, las sardanas, The Quiets, la butifarrada de la plaza del Sol y las habaneras.",
+    foot1:'La información de esta página procede del programa oficial de la Fiesta Mayor de Hostafrancs. Para el programa completo y para los cambios de última hora, consulte <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot2:"Esto es un proyecto personal, hecho con dedicación y cariño para ayudar a todos a disfrutar al máximo de la fiesta. No es una publicación oficial. Esta página no utiliza cookies ni recoge datos personales. Está alojada en GitHub Pages y sujeta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>.",
+    ess:[
+      {t:"Pregón de Fiesta Mayor",w:"Viernes 2 · 20.30 h",d:"A cargo del Orfeó Atlàntida por su centenario, en el Salón de Plenos del Distrito."},
+      {t:"Bendición y Feria de Granadas",w:"Domingo 4 · 10 h",d:"La tradición de las granadas bendecidas, este año dentro del Temple del Sant Àngel Custodi por la lluvia."},
+      {t:"Noche en la calle Vilardell",w:"Viernes 9 · 21.15 h",d:"Percusión con los Descentrats, la Joan Pelegrí Music Band y el cantautor Miquel del Roig a las 23 h."},
+      {t:"Festival Visual Brasil",w:"Viernes 9 y sábado 10 · de 20 a 2 h",d:"VJ, instalaciones audiovisuales y conciertos en la Casa del Mig y el Parque de l'Espanya Industrial."},
+      {t:"Noche del sábado",w:"Sábado 10 · 21 h",d:"Hip hop en catalán en el Espai Basset, DJ Sants 3 Ràdio y, a las 0.15 h, la Orquestra Di-Versiones en la calle Vilardell."}
+    ],
+    know:[
+      ["Fuentes","Esta guía sigue el programa impreso, el programa actualizado del Distrito de Sants-Montjuïc y la aplicación web de la Federació d'Hostafrancs. Donde no coinciden, sigue la información más reciente y lo indica en el acto."],
+      ["Exposiciones","XX Concurso de Carteles de la Fiesta Mayor, del 21 de septiembre al 7 de octubre, y exposición fotográfica «Hostafrancs històric», del 2 al 11 de octubre, en el Centro Cívico Casinet d'Hostafrancs (Rector Triadó, 53)."],
+      ["Calle Leiva","El tramo entre Àliga y Hostafrancs de Sió se convierte en un paseo estelar decorado por la Escola Francesc Macià, del 2 al 11 de octubre."],
+      ["Concurso en Instagram","Fotografías de la Fiesta Mayor con la etiqueta #FMHostafrancs26, del 2 al 11 de octubre. Hay dos premios; las bases están en festamajorhostafrancs.cat."],
+      ["Antes de la fiesta","Los Jocs Florals de Sants, Hostafrancs y la Bordeta se celebraron el 17 de septiembre en el Salón de Plenos del Distrito. El 1 de octubre, de 16 a 20 h, campaña de donación de sangre y plasma en el Centro Cívico Casinet d'Hostafrancs, con cita en ja.cat/donasangHostafrancs."]
+    ]
+  },
+  en:{
+    eyebrow:"Festa Major · October 2–11",
+    meta:[["Festival","Oct 2–11"],["Opening speech","Fri, Oct 2 · 8:30 PM"],["Edition","167th"],["District","Sants-Montjuïc"]],
+    lede:"The 167th Festa Major d'Hostafrancs, October 2 to 11: more than seventy activities by some thirty local groups, including the opening speech by the Orfeó Atlàntida, the 20th Medieval Fair, the pomegranate fair, the concert night on Carrer de Vilardell, the Festival Visual Brasil and the Orquestra Di-Versiones.",
+    nav:["Essentials","Fri 2","Sat 3","Sun 4","Mon 5","Tue 6","Wed 7","Thu 8","Fri 9","Sat 10","Sun 11","Places","Before you go"],
+    essLbl:"If you only do five things",essTitle:"The essentials",
+    placesLbl:"The places",placesTitle:"Where it all happens",
+    placesNote:"Tap Directions and pick whichever maps app you normally use.",
+    dirs:"Directions", cal:"Add to calendar", more:"More information", signup:"Sign up",
+    calFest:"Festa Major d'Hostafrancs 2026", calGuide:"Guide", calProg:"Official program", calLink:"Link",
+    calSrc:SRC, calTime:"Time", tipLbl:"Note", openIn:"Choose a maps app",
+    copy:"Copy address", copied:"Copied", close:"Close", go:"Open",
+    knowLbl:"Practical",knowTitle:"Before you go",
+    calloutB:"Rain changes.",
+    callout:" The district's updated program and the Federació d'Hostafrancs web app mark these changes. Saturday, October 3: the 20th Medieval Fair was canceled from noon, along with its opening, the tapas contest, the sausage lunch, the Firajoc games, Bas Molina's magic, Cocodril Club, the Esbart Ciutat Comtal dance show, the street parade, the static fire show, the DJ Nyema and DJ Pikas concert and the fire jugglers; L'Esbartjo is postponed to October 17 in Plaça de Sants. Sunday, October 4: canceled are the Medieval Fair, Meet the local groups, the children's painting contest, the giants' parade, the basketball trophies, the origami workshop, the Bastoneres, the Ball de Rams, the music vermouth, the sardanes, The Quiets, the plaça del Sol sausage lunch and the havaneres.",
+    foot1:'The information on this page comes from the official program of the Festa Major d\'Hostafrancs. For the full program and any last-minute changes, see <a href="' + SRC + '" target="_blank" rel="noopener">the official program (PDF)</a>.',
+    foot2:"This is a personal project and a labor of love, made to help everyone make the most of the festival. It is not an official publication. This page does not use cookies or collect any personal data. It is hosted on GitHub Pages and is subject to the <a href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>GitHub Privacy Statement</a>.",
+    ess:[
+      {t:"Opening speech",w:"Friday, October 2 · 8:30 PM",d:"Given by the Orfeó Atlàntida choir for its centenary, in the district council chamber."},
+      {t:"Pomegranate blessing and fair",w:"Sunday, October 4 · 10:00 AM",d:"The tradition of blessed pomegranates, held this year inside the Temple del Sant Àngel Custodi because of the rain."},
+      {t:"Night on Carrer de Vilardell",w:"Friday, October 9 · 9:15 PM",d:"Drums by the Descentrats, the Joan Pelegrí Music Band and singer-songwriter Miquel del Roig at 11:00 PM."},
+      {t:"Festival Visual Brasil",w:"Friday, October 9 and Saturday, October 10 · 8:00 PM–2:00 AM",d:"VJs, audiovisual installations and concerts at the Casa del Mig and the Parc de l'Espanya Industrial."},
+      {t:"Saturday night",w:"Saturday, October 10 · 9:00 PM",d:"Catalan hip hop at Espai Basset, DJ Sants 3 Ràdio and, at 12:15 AM, the Orquestra Di-Versiones on Carrer de Vilardell."}
+    ],
+    know:[
+      ["Sources","This guide follows the printed program, the Sants-Montjuïc district's updated program and the Federació d'Hostafrancs web app. Where they differ, it follows the most recent information and says so on the event."],
+      ["Exhibitions","The 20th festival poster contest, September 21 to October 7, and the Hostafrancs històric photo exhibition, October 2 to 11, at the Centre Cívic Casinet d'Hostafrancs (Rector Triadó, 53)."],
+      ["Carrer de Leiva","The stretch between Àliga and Hostafrancs de Sió becomes a starry walkway, decorated by the Escola Francesc Macià, October 2 to 11."],
+      ["Instagram contest","Festival photos tagged #FMHostafrancs26, October 2 to 11. There are two prizes; the rules are at festamajorhostafrancs.cat."],
+      ["Before the festival","The Jocs Florals poetry awards of Sants, Hostafrancs and la Bordeta took place on September 17 in the district council chamber. On October 1, 4:00–8:00 PM, a blood and plasma drive at the Centre Cívic Casinet d'Hostafrancs, by appointment at ja.cat/donasangHostafrancs."]
+    ]
+  }
+};
+
+const TAG = {
+  free:{ca:"Gratuït",es:"Gratuito",en:"Free"},
+  open:{ca:"Obre la festa",es:"Abre la fiesta",en:"Opening"},
+  miss:{ca:"Imprescindible",es:"Imprescindible",en:"Worth planning around"},
+  book:{ca:"Cal inscripció",es:"Inscripción previa",en:"Booking needed"},
+  ticket:{ca:"De pagament",es:"De pago",en:"Paid"},
+  kids:{ca:"Infants",es:"Niños",en:"For children"},
+  fin:{ca:"Acte final",es:"Acto final",en:"Closing act"}
+};
+
+const DAYS = [
+  { id:"d2", num:"2",
+    dow:L("Divendres · 2 d'octubre","Viernes · 2 de octubre","Friday · October 2"),
+    title:L("El pregó de l'Orfeó Atlàntida","El pregón del Orfeó Atlàntida","The Orfeó Atlàntida opens the festival"),
+    note:L("Des de les 16.30 h","Desde las 16.30 h","From 4:30 PM"),
+    events:[
+      E("16.30",null,["kids"],"leiva",
+        L("Berenar i espectacle «Danses esbojarrades»","Merienda y espectáculo «Danses esbojarrades»","Afternoon snack and the Danses esbojarrades show"),
+        L("L'Escola Francesc Macià celebra la Festa Major i l'inici de curs amb un berenar obert al barri. El carrer de Leiva amb Àliga es converteix en un viatge a l'espai.",
+          "La Escola Francesc Macià celebra la Fiesta Mayor y el inicio de curso con una merienda abierta al barrio. La calle Leiva con Àliga se convierte en un viaje al espacio.",
+          "The Escola Francesc Macià marks the festival and the new school year with a snack open to all. Carrer de Leiva at Àliga becomes a trip into space.")),
+      E("18.30",null,["free"],"espanya",
+        L("Passejada històrica per l'antiga fàbrica de l'Espanya Industrial","Paseo histórico por la antigua fábrica de l'Espanya Industrial","History walk through the old Espanya Industrial factory"),
+        L("Una experiència historicomusicoteatral sobre la fàbrica, amb Donar Veu a la Memòria i la Coral Sant Medir. No cal reserva prèvia.",
+          "Una experiencia histórica, musical y teatral sobre la fábrica, con Donar Veu a la Memòria y la Coral Sant Medir. No hace falta reserva previa.",
+          "A walk mixing history, music and theater about the old factory, with Donar Veu a la Memòria and the Coral Sant Medir choir. No booking needed."),
+        {loc:L("Punt de trobada: porta del Parc de l'Espanya Industrial","Punto de encuentro: puerta del Parque de l'Espanya Industrial","Meeting point: gate of the Parc de l'Espanya Industrial")}),
+      E("20.30",null,["open","miss"],"seu",
+        L("Pregó de Festa Major","Pregón de Fiesta Mayor","Opening speech"),
+        L("A càrrec de l'Orfeó Atlàntida amb motiu del seu centenari, que també hi actuarà.","A cargo del Orfeó Atlàntida con motivo de su centenario, que también actuará.","Given by the Orfeó Atlàntida choir for its centenary, which will also sing."),
+        {loc:L("Saló de Plens del Districte (Creu Coberta, 104)","Salón de Plenos del Distrito (Creu Coberta, 104)","District council chamber (Creu Coberta, 104)")})
+    ]},
+  { id:"d3", num:"3",
+    dow:L("Dissabte · 3 d'octubre","Sábado · 3 de octubre","Saturday · October 3"),
+    title:L("Fira Medieval, interrompuda per la pluja","Feria Medieval, interrumpida por la lluvia","The Medieval Fair, cut short by rain"),
+    note:L("Des de les 9.30 h","Desde las 9.30 h","From 9:30 AM"),
+    events:[
+      E(null,null,["miss"],"creu",
+        L("XX Fira Medieval","XX Feria Medieval","20th Medieval Fair"),
+        L("Espectacles, mercat, demostració d'oficis i activitats infantils pels carrers de la Creu Coberta, Consell de Cent, Diputació, Torre d'en Damians i Béjar.",
+          "Espectáculos, mercado, demostración de oficios y actividades infantiles por las calles de Creu Coberta, Consell de Cent, Diputació, Torre d'en Damians y Béjar.",
+          "Shows, a market, craft demonstrations and children's activities along Creu Coberta, Consell de Cent, Diputació, Torre d'en Damians and Béjar."),
+        {time:{ca:"Matí", es:"Mañana", en:"Morning"},
+         loc:L("Creu Coberta, Consell de Cent, Diputació, Torre d'en Damians i Béjar","Creu Coberta, Consell de Cent, Diputació, Torre d'en Damians y Béjar","Creu Coberta, Consell de Cent, Diputació, Torre d'en Damians and Béjar"),
+         tip:L("El districte la marca com a anul·lada per pluja a partir del migdia.","El distrito la marca como anulada por lluvia a partir del mediodía.","The district marks it as canceled from noon because of rain.")}),
+      E("9.30",null,["book"],"pelegri",
+        L("Torneig de futbol sala del Centre Montserrat-Xavier","Torneo de fútbol sala del Centre Montserrat-Xavier","Centre Montserrat-Xavier indoor soccer tournament"),
+        L("Obert a totes les edats, amb inscripció prèvia fins a l'1 d'octubre. Els partits i els premis s'ajusten a l'edat de qui hi participa.","Abierto a todas las edades, con inscripción previa hasta el 1 de octubre. Los partidos y los premios se ajustan a la edad de los participantes.","Open to all ages, with sign-up until October 1. Games and prizes are matched to the players' ages."),
+        {loc:L("Escola Joan Pelegrí (carrer d'Ermengarda) i plaça de Joan Pelegrí","Escola Joan Pelegrí (calle Ermengarda) y plaza de Joan Pelegrí","Escola Joan Pelegrí (Carrer d'Ermengarda) and Plaça de Joan Pelegrí")}),
+      E("10",null,[],"creu",
+        L("Carpa solidària d'AREDI","Carpa solidaria de AREDI","AREDI charity tent"),
+        L("A la Fira Medieval, per col·laborar amb l'Associació Ajuda a la Recerca en Diabetis tipus 1.","En la Feria Medieval, para colaborar con la Associació Ajuda a la Recerca en Diabetis tipus 1.","At the Medieval Fair, supporting the Associació Ajuda a la Recerca en Diabetis tipus 1 (type 1 diabetes research).")),
+      E("10",null,[],"santroc",
+        L("Trobada d'intercanvi de plaques de cava","Encuentro de intercambio de placas de cava","Cava cap swap"),
+        L("A la cruïlla dels carrers de Sant Roc i de la Creu Coberta.","En el cruce de las calles Sant Roc y Creu Coberta.","At the corner of Sant Roc and Creu Coberta.")),
+      E("11",null,["kids"],"mercat",
+        L("Pintacares per a infants amb la música de Santsfàrria","Pintacaras para niños con la música de Santsfàrria","Face painting for children with music by Santsfàrria"),
+        L("Al Mercat d'Hostafrancs.","En el Mercat d'Hostafrancs.","At the Mercat d'Hostafrancs."),
+        {tip:L("Aquest acte apareix al programa actualitzat del districte, però no al programa imprès ni a l'aplicació web.","Este acto aparece en el programa actualizado del distrito, pero no en el programa impreso ni en la aplicación web.","This event is in the district's updated program but not in the printed program or the web app.")}),
+      E("12",null,["kids"],"consell",
+        L("Màgia, pallassos i animació amb l'Escola de Circ La Colombina","Magia, payasos y animación con la Escola de Circ La Colombina","Magic, clowns and fun with the La Colombina circus school"),
+        L("Al carrer del Consell de Cent amb Torre d'en Damians.","En la calle Consell de Cent con Torre d'en Damians.","On Consell de Cent at Torre d'en Damians."),
+        {tip:L("La Fira Medieval es va anul·lar a partir del migdia; els programes no indiquen cap canvi per a aquest acte.","La Feria Medieval se anuló a partir del mediodía; los programas no indican ningún cambio para este acto.","The Medieval Fair was canceled from noon; the programs show no change for this event.")}),
+      E("17.30",null,[],"temple",
+        L("XX Trobada de Cant Coral","XX Encuentro de Canto Coral","20th choir gathering"),
+        L("Amb la Corale Giuseppe Savani de Carpi (Itàlia) i l'Orfeó Atlàntida.","Con la Corale Giuseppe Savani de Carpi (Italia) y el Orfeó Atlàntida.","With the Corale Giuseppe Savani of Carpi (Italy) and the Orfeó Atlàntida."),
+        {tip:L("El districte indica que es va avançar a les 17.30 h per previsió de pluja; el programa imprès i l'aplicació web indiquen les 19 h.","El distrito indica que se adelantó a las 17.30 h por previsión de lluvia; el programa impreso y la aplicación web indican las 19 h.","The district says it was moved earlier to 5:30 PM because rain was forecast; the printed program and the web app give 7:00 PM."),
+         link:["more",NEWS]}),
+      E("20",null,[],"basset",
+        L("Concurs musical per endevinar cançons","Concurso musical para adivinar canciones","Guess-the-song contest"),
+        L("Amb premis per a les persones guanyadores.","Con premios para las personas ganadoras.","With prizes for the winners.")),
+      E("21",null,[],"basset",
+        L("Nit de PD: PD Flamisell, PD Ringidingi i PD Ignacid","Noche de DJ: DJ Flamisell, DJ Ringidingi y DJ Ignacid","DJ night: DJ Flamisell, DJ Ringidingi and DJ Ignacid"),
+        L("A l'Espai Basset.","En el Espai Basset.","At Espai Basset."))
+    ]},
+  { id:"d4", num:"4",
+    dow:L("Diumenge · 4 d'octubre","Domingo · 4 de octubre","Sunday · October 4"),
+    title:L("Magranes beneïdes i sopar de germanor","Granadas bendecidas y cena de hermandad","Blessed pomegranates and the neighbors' dinner"),
+    note:L("Des de les 10 h","Desde las 10 h","From 10:00 AM"),
+    events:[
+      E("10",null,["miss"],"temple",
+        L("Benedicció i Fira de Magranes","Bendición y Feria de Granadas","Pomegranate blessing and fair"),
+        L("Segons la tradició, la fira se celebrava a les muralles de la ciutat, a l'actual Portal de l'Àngel. Venda de magranes beneïdes.","Según la tradición, la feria se celebraba en las murallas de la ciudad, en el actual Portal de l'Àngel. Venta de granadas bendecidas.","By tradition, the fair was held at the city walls, at today's Portal de l'Àngel. Blessed pomegranates are on sale."),
+        {tip:L("Traslladada a dins del temple per la pluja; el programa imprès la situava al carrer de Vilardell.","Trasladada al interior del templo por la lluvia; el programa impreso la situaba en la calle Vilardell.","Moved inside the church because of rain; the printed program placed it on Carrer de Vilardell.")}),
+      E("10.15",null,[],"temple",
+        L("Missa de Festa Major i ofrena floral al Sant Àngel Custodi","Misa de Fiesta Mayor y ofrenda floral al Sant Àngel Custodi","Festival mass and flower offering to the Guardian Angel"),
+        L("Missa concelebrada amb l'Orfeó Atlàntida i el ball d'homenatge de l'Esbart Ciutat Comtal.","Misa concelebrada con el Orfeó Atlàntida y el baile de homenaje del Esbart Ciutat Comtal.","A concelebrated mass with the Orfeó Atlàntida and a tribute dance by the Esbart Ciutat Comtal.")),
+      E("20",null,["ticket"],"casinet",
+        L("Sopar de germanor, ball de Festa Major i actuació del grup Rumberto","Cena de hermandad, baile de Fiesta Mayor y actuación del grupo Rumberto","Neighbors' dinner, festival dance and Rumberto"),
+        L("Ajornat del dissabte 3. Les reserves de taula es tancaven l'1 d'octubre; sense reserva es pot venir a l'actuació a partir de les 23 h.","Aplazado del sábado 3. Las reservas de mesa se cerraban el 1 de octubre; sin reserva se puede venir a la actuación a partir de las 23 h.","Postponed from Saturday, October 3. Table bookings closed on October 1; without one, you can come for the show from 11:00 PM."),
+        {link:["more",APP],
+         tip:L("L'aplicació web indica les 20 h; el programa actualitzat del districte, les 21.15 h, l'hora original.","La aplicación web indica las 20 h; el programa actualizado del distrito, las 21.15 h, la hora original.","The web app gives 8:00 PM; the district's updated program gives 9:15 PM, the original time.")})
+    ]},
+  { id:"d5", num:"5",
+    dow:L("Dilluns · 5 d'octubre","Lunes · 5 de octubre","Monday · October 5"),
+    title:L("Deu anys de Ràdio Hostafrancs","Diez años de Ràdio Hostafrancs","Ten years of Ràdio Hostafrancs"),
+    note:L("A les 19 h","A las 19 h","At 7:00 PM"),
+    events:[
+      E("19",null,["free"],"fundacio",
+        L("10è aniversari de Ràdio Hostafrancs i Premis Ràdio Hostafrancs 2026","10.º aniversario de Ràdio Hostafrancs y Premios Ràdio Hostafrancs 2026","Ràdio Hostafrancs 10th anniversary and 2026 awards"),
+        L("Acte obert amb actuacions musicals, un repàs als deu anys de la ràdio comunitària i reconeixements a persones i entitats del barri.","Acto abierto con actuaciones musicales, un repaso a los diez años de la radio comunitaria y reconocimientos a personas y entidades del barrio.","An open event with live music, a look back at ten years of the community radio and awards for local people and groups."))
+    ]},
+  { id:"d6", num:"6",
+    dow:L("Dimarts · 6 d'octubre","Martes · 6 de octubre","Tuesday · October 6"),
+    title:L("Festival infantil","Festival infantil","Children's festival"),
+    note:L("Des de les 17.15 h","Desde las 17.15 h","From 5:15 PM"),
+    events:[
+      E("17.15",null,["kids"],"casinet",
+        L("Festival infantil: cançons i pintacares amb La Tribu Gigi","Festival infantil: canciones y pintacaras con La Tribu Gigi","Children's festival: songs and face painting with La Tribu Gigi"),
+        L("Cançons infantils i pintacares.","Canciones infantiles y pintacaras.","Children's songs and face painting.")),
+      E("18.30",null,["kids"],"casinet",
+        L("Festival infantil: espectacle «Descontes» del Grup Creart","Festival infantil: espectáculo «Descontes» del Grup Creart","Children's festival: Descontes by Grup Creart"),
+        L("Espectacle per a infants.","Espectáculo para niños.","A show for children.")),
+      E("19",null,[],"basset",
+        L("Tarda de jocs de taula","Tarde de juegos de mesa","Board games afternoon"),
+        L("Amb la participació del grup de conversa en català.","Con la participación del grupo de conversación en catalán.","With the Catalan conversation group."))
+    ]},
+  { id:"d7", num:"7",
+    dow:L("Dimecres · 7 d'octubre","Miércoles · 7 de octubre","Wednesday · October 7"),
+    title:L("Torna l'Atlètic Hostafrancs","Vuelve el Atlètic Hostafrancs","Atlètic Hostafrancs returns"),
+    note:L("A les 19 h","A las 19 h","At 7:00 PM"),
+    events:[
+      E("19",null,[],"seu",
+        L("Presentació de la refundació de l'Atlètic Hostafrancs CF","Presentación de la refundación del Atlètic Hostafrancs CF","Relaunch of the Atlètic Hostafrancs soccer club"),
+        L("Una nova etapa per recuperar la història i la identitat futbolística del barri, i per explicar com s'hi pot participar.","Una nueva etapa para recuperar la historia y la identidad futbolística del barrio, y para explicar cómo se puede participar.","A new chapter to revive the neighborhood's soccer history and identity, and to explain how to get involved."))
+    ]},
+  { id:"d8", num:"8",
+    dow:L("Dijous · 8 d'octubre","Jueves · 8 de octubre","Thursday · October 8"),
+    title:L("Circ al Casinet","Circo en el Casinet","Circus at the Casinet"),
+    note:L("A les 19.30 h","A las 19.30 h","At 7:30 PM"),
+    events:[
+      E("19.30",null,[],"casinet",
+        L("Espectacle de circ «Banaba Flup»","Espectáculo de circo «Banaba Flup»","Circus show: Banaba Flup"),
+        L("Del cicle Escena BDC. Dos personatges, un bot salvavides i una gran inundació pel canvi climàtic: una història d'humor sobre com reaccionem davant d'una crisi.","Del ciclo Escena BDC. Dos personajes, un bote salvavidas y una gran inundación por el cambio climático: una historia de humor sobre cómo reaccionamos ante una crisis.","Part of the Escena BDC series. Two characters, a lifeboat and a great climate-change flood: a funny story about how we react in a crisis."))
+    ]},
+  { id:"d9", num:"9",
+    dow:L("Divendres · 9 d'octubre","Viernes · 9 de octubre","Friday · October 9"),
+    title:L("Pregó infantil i nit al carrer de Vilardell","Pregón infantil y noche en la calle Vilardell","Children's speech and a night on Vilardell"),
+    note:L("Des de les 17.15 h","Desde las 17.15 h","From 5:15 PM"),
+    events:[
+      E("17.15",null,["kids"],"vilardell",
+        L("Xocolatada infantil","Chocolatada infantil","Children's hot chocolate"),
+        L("Al carrer de Vilardell.","En la calle Vilardell.","On Carrer de Vilardell.")),
+      E("17.45",null,["kids"],"vilardell",
+        L("Pregó infantil","Pregón infantil","Children's opening speech"),
+        L("Els infants del barri prenen la paraula: aquest any, l'alumnat del Centre Montserrat-Xavier.","Los niños del barrio toman la palabra: este año, el alumnado del Centre Montserrat-Xavier.","The neighborhood's children take the floor: this year, pupils from the Centre Montserrat-Xavier.")),
+      E("18",null,["kids"],"vilardell",
+        L("Espectacle infantil amb el grup Bon Vent","Espectáculo infantil con el grupo Bon Vent","Children's show with Bon Vent"),
+        L("Al carrer de Vilardell.","En la calle Vilardell.","On Carrer de Vilardell.")),
+      E("20","02",["miss"],"casamig",
+        L("Festival Visual Brasil","Festival Visual Brasil","Festival Visual Brasil"),
+        L("VJ i instal·lacions audiovisuals d'artistes de Barcelona, Catalunya i el Brasil, amb concerts en directe i instal·lacions interactives a la Casa del Mig i al Parc de l'Espanya Industrial.",
+          "VJ e instalaciones audiovisuales de artistas de Barcelona, Cataluña y Brasil, con conciertos en directo e instalaciones interactivas en la Casa del Mig y el Parque de l'Espanya Industrial.",
+          "VJs and audiovisual installations by artists from Barcelona, Catalonia and Brazil, with live concerts and interactive pieces across the Casa del Mig and the Parc de l'Espanya Industrial."),
+        {loc:L("FAB Casa del Mig (Parc de l'Espanya Industrial)","FAB Casa del Mig (Parque de l'Espanya Industrial)","FAB Casa del Mig (Parc de l'Espanya Industrial)")}),
+      E("20",null,[],"santcrist",
+        L("XIII Tapa Solidària","XIII Tapa Solidaria","13th Charity Tapa"),
+        L("Tapes i música en directe de la Fundació Canpedró a benefici del projecte «Petits Dinars». Cuina oberta fins a les 24 h.","Tapas y música en directo de la Fundació Canpedró a beneficio del proyecto «Petits Dinars». Cocina abierta hasta las 24 h.","Tapas and live music by the Fundació Canpedró for its Petits Dinars children's meals project. Kitchen open until midnight.")),
+      E("21.15",null,["miss"],"temple",
+        L("Percussió amb el grup Descentrats","Percusión con el grupo Descentrats","Drums with Descentrats"),
+        L("Obre la nit de concerts al carrer de Vilardell.","Abre la noche de conciertos en la calle Vilardell.","Opens the concert night on Carrer de Vilardell."),
+        {loc:S("Carrer de Vilardell, 50")}),
+      E("21.45",null,[],"temple",
+        L("Joan Pelegrí Music Band","Joan Pelegrí Music Band","Joan Pelegrí Music Band"),
+        L("Actuació al carrer de Vilardell.","Actuación en la calle Vilardell.","Live on Carrer de Vilardell."),
+        {loc:S("Carrer de Vilardell, 50")}),
+      E("23",null,["miss"],"temple",
+        L("Concert de Miquel del Roig","Concierto de Miquel del Roig","Miquel del Roig in concert"),
+        L("El cantautor tanca la nit al carrer de Vilardell.","El cantautor cierra la noche en la calle Vilardell.","The singer-songwriter closes the night on Carrer de Vilardell."),
+        {loc:S("Carrer de Vilardell, 50")})
+    ]},
+  { id:"d10", num:"10",
+    dow:L("Dissabte · 10 d'octubre","Sábado · 10 de octubre","Saturday · October 10"),
+    title:L("Hip hop, Navaratri i l'Orquestra Di-Versiones","Hip hop, Navaratri y la Orquestra Di-Versiones","Hip hop, Navaratri and the Orquestra Di-Versiones"),
+    note:L("Des de les 10 h","Desde las 10 h","From 10:00 AM"),
+    events:[
+      E("10",null,["free"],"herenni",
+        L("Recorregut pel barri per conèixer fets històrics","Recorrido por el barrio para conocer hechos históricos","History walk through the neighborhood"),
+        L("Itinerari històric per Hostafrancs.","Itinerario histórico por Hostafrancs.","A walk through Hostafrancs's history."),
+        {loc:L("Sortida: plaça d'Herenni","Salida: plaza d'Herenni","Start: Plaça d'Herenni")}),
+      E("10",null,["kids"],"creutorre",
+        L("Descobrim el bàsquet","Descubrimos el baloncesto","Discover basketball"),
+        L("Taller de bàsquet per a la canalla amb l'Escola de Bàsquet del BAM.","Taller de baloncesto para los niños con la Escola de Bàsquet del BAM.","A basketball workshop for children with the BAM basketball school.")),
+      E(null,null,["free"],"seu",
+        L("Portes obertes a la seu del Districte","Puertas abiertas en la sede del Distrito","District headquarters open day"),
+        L("Visita guiada de Lluïsa Erill, presidenta del Secretariat d'Entitats de Sants, Hostafrancs i la Bordeta. No cal reserva prèvia.","Visita guiada de Lluïsa Erill, presidenta del Secretariat d'Entitats de Sants, Hostafrancs i la Bordeta. No hace falta reserva previa.","A guided visit with Lluïsa Erill, president of the Secretariat d'Entitats de Sants, Hostafrancs i la Bordeta. No booking needed."),
+        {time:{ca:"10.30 i 11.15 h", es:"10.30 y 11.15 h", en:"10:30 and 11:15 AM"}}),
+      E("11",null,["book"],"casinet",
+        L("Torneig d'escacs de la Festa Major","Torneo de ajedrez de la Fiesta Mayor","Festival chess tournament"),
+        L("Amb ritmes i normativa oficials però no homologat, obert a totes les edats i nivells, amb o sense llicència federativa. Cal inscripció prèvia.","Con ritmos y normativa oficiales pero no homologado, abierto a todas las edades y niveles, con o sin licencia federativa. Hay que inscribirse.","Official time controls and rules but unrated, open to all ages and levels, with or without a federation license. Sign-up needed.")),
+      E("12",null,[],"basset",
+        L("Vermut rumbero amb Jordi Cabós","Vermut rumbero con Jordi Cabós","Rumba vermouth with Jordi Cabós"),
+        L("Concert a l'Espai Basset.","Concierto en el Espai Basset.","A concert at Espai Basset.")),
+      E("12",null,[],"santcrist",
+        L("XIII Tapa Solidària","XIII Tapa Solidaria","13th Charity Tapa"),
+        L("Tapes i música en directe de la Fundació Canpedró a benefici del projecte «Petits Dinars». Cuina oberta fins a les 24 h.","Tapas y música en directo de la Fundació Canpedró a beneficio del proyecto «Petits Dinars». Cocina abierta hasta las 24 h.","Tapas and live music by the Fundació Canpedró for its Petits Dinars children's meals project. Kitchen open until midnight.")),
+      E("12",null,[],"corrades",
+        L("Botifarrada popular","Butifarrada popular","Sausage lunch"),
+        L("A la plaça de Joan Corrades.","En la plaza de Joan Corrades.","In Plaça de Joan Corrades."),
+        {tip:L("Apareix al programa imprès i a l'aplicació web, però no al programa actualitzat del districte.","Aparece en el programa impreso y en la aplicación web, pero no en el programa actualizado del distrito.","It is in the printed program and the web app, but not in the district's updated program.")}),
+      E("13",null,[],"basset",
+        L("Menjars del món","Comidas del mundo","Food from around the world"),
+        L("Paradetes amb menjar preparat per associacions d'arreu del món.","Puestos con comida preparada por asociaciones de todo el mundo.","Stalls with food made by community associations from around the world.")),
+      E("15",null,[],"basset",
+        L("Discomòbil","Discomóvil","Mobile disco"),
+        L("A l'Espai Basset.","En el Espai Basset.","At Espai Basset.")),
+      E("17.30",null,[],"herenni",
+        L("Navaratri","Navaratri","Navaratri"),
+        L("Festival hindú dedicat a la deessa Durga, que celebra la victòria del bé sobre el mal, amb oracions, danses i rituals.","Festival hindú dedicado a la diosa Durga, que celebra la victoria del bien sobre el mal, con oraciones, danzas y rituales.","A Hindu festival honoring the goddess Durga and the victory of good over evil, with prayers, dances and rituals.")),
+      E("18",null,[],"llobet",
+        L("Música a peu de carrer","Música a pie de calle","Street music"),
+        L("Actuacions de l'alumnat de l'Escola Jam Session: Laia Bastos, Uri Llongueras i Martí Garriga.","Actuaciones del alumnado de la Escola Jam Session: Laia Bastos, Uri Llongueras y Martí Garriga.","Performances by Escola Jam Session students Laia Bastos, Uri Llongueras and Martí Garriga."),
+        {link:["more",APP],
+         tip:L("No apareix al programa imprès. L'aplicació web indica les 18 h; el programa actualitzat del districte, les 19 h.","No aparece en el programa impreso. La aplicación web indica las 18 h; el programa actualizado del distrito, las 19 h.","Not in the printed program. The web app gives 6:00 PM; the district's updated program gives 7:00 PM.")}),
+      E("19",null,[],"basset",
+        L("Trobada de freestyle hip hop i taller de grafits","Encuentro de freestyle hip hop y taller de grafitis","Hip hop freestyle and graffiti workshop"),
+        L("Freestyle en català amb Raplegats i, alhora, un taller de grafits obert a tothom.","Freestyle en catalán con Raplegats y, a la vez, un taller de grafitis abierto a todos.","Catalan freestyle rap with Raplegats, alongside a graffiti workshop open to all.")),
+      E("20","02",["miss"],"casamig",
+        L("Festival Visual Brasil","Festival Visual Brasil","Festival Visual Brasil"),
+        L("Segona nit de VJ, instal·lacions audiovisuals i concerts en directe a la Casa del Mig i al Parc de l'Espanya Industrial.","Segunda noche de VJ, instalaciones audiovisuales y conciertos en directo en la Casa del Mig y el Parque de l'Espanya Industrial.","The second night of VJs, audiovisual installations and live concerts at the Casa del Mig and the Parc de l'Espanya Industrial."),
+        {loc:L("FAB Casa del Mig (Parc de l'Espanya Industrial)","FAB Casa del Mig (Parque de l'Espanya Industrial)","FAB Casa del Mig (Parc de l'Espanya Industrial)")}),
+      E("21",null,["miss"],"basset",
+        L("Concert de hip hop en català","Concierto de hip hop en catalán","Catalan hip hop concert"),
+        L("Amb Sr. À, Lírica de Trobadors i Hereus del Beat.","Con Sr. À, Lírica de Trobadors y Hereus del Beat.","With Sr. À, Lírica de Trobadors and Hereus del Beat.")),
+      E("22.30",null,[],"vilardell",
+        L("PD Sants 3 Ràdio","DJ Sants 3 Ràdio","DJ Sants 3 Ràdio"),
+        L("Al carrer de Vilardell.","En la calle Vilardell.","On Carrer de Vilardell.")),
+      E("00.15",null,["miss","fin"],"vilardell",
+        L("Concert amb l'Orquestra Di-Versiones","Concierto con la Orquestra Di-Versiones","Orquestra Di-Versiones in concert"),
+        L("Les cançons de l'estiu dels anys seixanta i setanta, per a tots els públics.","Las canciones del verano de los años sesenta y setenta, para todos los públicos.","Summer hits from the sixties and seventies, for all ages."),
+        {tip:L("És la nit de dissabte 10 a diumenge 11, segons l'ordre del programa imprès. L'aplicació web el mostra al principi del dissabte.","Es la noche del sábado 10 al domingo 11, según el orden del programa impreso. La aplicación web lo muestra al principio del sábado.","This is the night of Saturday into Sunday, going by the order of the printed program. The web app shows it at the start of Saturday.")})
+    ]},
+  { id:"d11", num:"11",
+    dow:L("Diumenge · 11 d'octubre","Domingo · 11 de octubre","Sunday · October 11"),
+    title:L("Vermut de cloenda","Vermut de clausura","Closing vermouth"),
+    note:L("A les 12 h","A las 12 h","At noon"),
+    events:[
+      E("12",null,["fin"],"basset",
+        L("Vermut musical","Vermut musical","Music vermouth"),
+        L("A l'Espai Basset.","En el Espai Basset.","At Espai Basset."))
+    ]}
+];
+
+const PLACES = [
+  { k:"vilardell", d:L("Nit de concerts del divendres 9, pregó infantil i l'Orquestra Di-Versiones","Noche de conciertos del viernes 9, pregón infantil y la Orquestra Di-Versiones","Friday's concert night, the children's speech and the Orquestra Di-Versiones") },
+  { k:"temple", d:L("Fira de Magranes, missa de Festa Major i Trobada de Cant Coral","Feria de Granadas, misa de Fiesta Mayor y Encuentro de Canto Coral","The pomegranate fair, the festival mass and the choir gathering") },
+  { k:"basset", d:L("Vermuts, jocs, hip hop i nits de PD","Vermuts, juegos, hip hop y noches de DJ","Vermouths, games, hip hop and DJ nights") },
+  { k:"casinet", d:L("Festival infantil, circ, escacs, sopar de germanor i exposicions","Festival infantil, circo, ajedrez, cena de hermandad y exposiciones","The children's festival, circus, chess, the neighbors' dinner and exhibitions") },
+  { k:"casamig", d:L("Festival Visual Brasil, divendres 9 i dissabte 10","Festival Visual Brasil, viernes 9 y sábado 10","Festival Visual Brasil, Friday and Saturday, October 9–10") },
+  { k:"seu", d:L("Pregó, Atlètic Hostafrancs i portes obertes","Pregón, Atlètic Hostafrancs y puertas abiertas","The opening speech, Atlètic Hostafrancs and the open day") },
+  { k:"herenni", d:L("Ruta històrica i Navaratri, dissabte 10","Ruta histórica y Navaratri, sábado 10","The history walk and Navaratri, Saturday, October 10") },
+  { k:"santcrist", d:L("XIII Tapa Solidària, divendres 9 i dissabte 10","XIII Tapa Solidaria, viernes 9 y sábado 10","The Charity Tapa, Friday and Saturday, October 9–10") }
+];
+
+const IDS = ["ess","d2","d3","d4","d5","d6","d7","d8","d9","d10","d11","places","know"];
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+let L_CUR = "en";
+
+function links(v){
+  const q = encodeURIComponent(v.q);
+  const rows = [
+    ["Google Maps",   "https://www.google.com/maps/search/?api=1&query=" + q],
+    ["Apple Maps",    "https://maps.apple.com/?q=" + q],
+    ["OpenStreetMap", "https://www.openstreetmap.org/search?query=" + q]
+  ];
+  /* Citymapper needs coordinates; it ignores a plain address. */
+  if (v.lat) rows.splice(2, 0, ["Citymapper", "https://citymapper.com/directions?endcoord=" + v.lat + "," + v.lng +
+    "&endname=" + encodeURIComponent(v.n) + "&endaddress=" + q]);
+  return rows;
+}
+
+function showSheet(title, sub, rows, copyValue){
+  const t = T[L_CUR];
+  let h = '<h3>' + esc(title) + '</h3><div class="sub">' + esc(sub) + '</div>';
+  rows.forEach(function(p){
+    h += '<a href="' + p[1] + '" target="_blank" rel="noopener">' + esc(p[0]) +
+         '<span class="ar">' + esc(t.go) + '</span></a>';
+  });
+  if (copyValue) {
+    h += '<button class="copy" data-val="' + esc(copyValue) + '"><span class="lab">' + esc(t.copy) + '</span></button>';
+  }
+  h += '<button class="close">' + esc(t.close) + '</button>';
+  const sheet = document.getElementById("sheet");
+  sheet.innerHTML = h;
+  document.getElementById("ovl").classList.add("open");
+  sheet.querySelector(".close").onclick = closeSheet;
+  const cp = sheet.querySelector(".copy");
+  if (cp) cp.onclick = function(){
+    const lab = cp.querySelector(".lab");
+    const done = function(){ lab.textContent = T[L_CUR].copied; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(cp.dataset.val).then(done, done);
+    else done();
+  };
+}
+
+function openSheet(key){
+  const v = V[key];
+  showSheet(v.n, T[L_CUR].openIn, links(v), v.q);
+}
+function closeSheet(){ document.getElementById("ovl").classList.remove("open"); }
+document.getElementById("ovl").addEventListener("click", function(e){ if (e.target.id === "ovl") closeSheet(); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeSheet(); });
+
+/* Add to calendar. The .ics file is built here in the browser; nothing is sent anywhere.
+   first is the festival's first day: lower day numbers fall in the following month. */
+const CAL = {id:"festa-major-hostafrancs-2026", year:2026, month:10, first:2, tz:"Europe/Madrid",
+  url:"https://lexatarg.github.io/barcelona-fiestas/festa-major-hostafrancs-2026/"};
+
+/* Barcelona's clock rules: summer time (UTC+2) from the last Sunday of March,
+   winter time (UTC+1) from the last Sunday of October. */
+const VTZ = [
+  "BEGIN:VTIMEZONE", "TZID:Europe/Madrid",
+  "BEGIN:DAYLIGHT", "TZOFFSETFROM:+0100", "TZOFFSETTO:+0200", "TZNAME:CEST",
+  "DTSTART:19700329T020000", "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU", "END:DAYLIGHT",
+  "BEGIN:STANDARD", "TZOFFSETFROM:+0200", "TZOFFSETTO:+0100", "TZNAME:CET",
+  "DTSTART:19701025T030000", "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU", "END:STANDARD",
+  "END:VTIMEZONE"
+];
+
+const pad = n => String(n).padStart(2, "0");
+
+/* The date of day number num, moved forward by extra days. */
+function calDate(num, extra){
+  const day = parseInt(num, 10);
+  return new Date(Date.UTC(CAL.year, CAL.month - 1 + (day < CAL.first ? 1 : 0), day + extra));
+}
+function ymd(dt){ return dt.getUTCFullYear() + pad(dt.getUTCMonth() + 1) + pad(dt.getUTCDate()); }
+
+/* "21.30" on day 2 becomes "20261002T213000". Times before 6 h belong to the
+   night that started the evening before, so they move to the next date. */
+function icsTime(num, s){
+  const p = String(s).split(".");
+  const h = parseInt(p[0], 10), m = parseInt(p[1] || "0", 10);
+  return ymd(calDate(num, h < 6 ? 1 : 0)) + "T" + pad(h) + pad(m) + "00";
+}
+
+/* Start and end of each session. Events with raw times (e.a, e.b) use them;
+   otherwise the times are read from the Catalan label: "11 – 12 h" is one
+   session with an end, "19.30 i 21 h" is two sessions, and a label with no
+   hours ("Vespre") gives none, so the event is added for the whole day. */
+function calSlots(e){
+  if (e.a) return [[e.a, e.b]];
+  const label = e.time.ca, n = label.match(/\d+(\.\d+)?/g) || [];
+  if (label.indexOf("–") > -1 && n.length === 2) return [[n[0], n[1]]];
+  return n.map(function(x){ return [x, null]; });
+}
+
+/* In .ics text, backslashes, semicolons, commas and line breaks need a backslash in front. */
+function icsText(s){
+  return String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+}
+
+/* Each line may be at most 75 bytes; a longer one continues on the next line,
+   which starts with a space. Accented letters take 2 bytes, so count bytes. */
+function icsFold(line){
+  const enc = new TextEncoder();
+  let out = "", cur = "", bytes = 0;
+  for (const ch of line) {
+    const n = enc.encode(ch).length;
+    if (bytes + n > 75) { out += cur + "\r\n "; cur = ""; bytes = 1; }
+    cur += ch; bytes += n;
+  }
+  return out + cur;
+}
+
+/* The place as text, followed by the street address when the place name alone is not one. */
+function icsPlace(e, lang){
+  const loc = e.loc ? e.loc[lang] : "", v = e.v ? V[e.v] : null;
+  if (v && v.q) return v.q.indexOf(loc) === 0 ? v.q : loc + ", " + v.q;
+  if (!loc) return v ? v.n + ", Barcelona" : "";
+  return loc.indexOf("Barcelona") > -1 ? loc : loc + ", Barcelona";
+}
+
+/* Everything is written in the language the reader has chosen (lang). */
+function buildIcs(d, e, i, lang){
+  const t = T[lang], v = e.v ? V[e.v] : null, slots = calSlots(e);
+  const link = CAL.url + "#" + d.id;
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const place = icsPlace(e, lang);
+  const notes = [t.calFest];
+  /* An approximate time ("~20 h") or one without hours is spelt out in the notes. */
+  if (!e.a && (e.time.ca.indexOf("~") > -1 || !slots.length)) notes.push(t.calTime + ": " + e.time[lang]);
+  notes.push("", e.desc[lang]);
+  if (e.tags.length) notes.push("", e.tags.map(function(tag){ return TAG[tag][lang]; }).join(" · "));
+  if (e.tip) notes.push("", t.tipLbl + ": " + e.tip[lang]);
+  if (e.link) notes.push("", t[e.link[0]] + ": " + e.link[1]);
+  notes.push("", t.calGuide + ": " + link, t.calProg + ": " + t.calSrc);
+  const common = ["SUMMARY;LANGUAGE=" + lang + ":" + icsText(e.title[lang])];
+  if (place) common.push("LOCATION;LANGUAGE=" + lang + ":" + icsText(place));
+  /* Coordinates: GEO is the standard field; the Apple one lets iPhone Calendar place a pin. */
+  if (v && v.lat) {
+    const q = function(s){ return String(s).replace(/"/g, "'"); };
+    common.push("GEO:" + v.lat + ";" + v.lng,
+      'X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="' + q(v.q || v.n + ", Barcelona") +
+      '";X-APPLE-RADIUS=100;X-TITLE="' + q(e.loc ? e.loc[lang] : v.n) + '":geo:' + v.lat + "," + v.lng);
+  }
+  common.push("DESCRIPTION;LANGUAGE=" + lang + ":" + icsText(notes.join("\n")),
+              "URL:" + link, "STATUS:CONFIRMED", "TRANSP:OPAQUE");
+  /* One VEVENT per session; two sessions give two entries in the same file. */
+  const uid = CAL.id + "-" + d.id + "-" + i;
+  const one = function(when, n){
+    return ["BEGIN:VEVENT", "UID:" + uid + (n ? "-" + n : "") + "@lexatarg.github.io", "DTSTAMP:" + stamp]
+      .concat(when, common, ["END:VEVENT"]);
+  };
+  let evs = [];
+  if (!slots.length) {
+    evs = one(["DTSTART;VALUE=DATE:" + ymd(calDate(d.num, 0)), "DTEND;VALUE=DATE:" + ymd(calDate(d.num, 1))], 0);
+  } else slots.forEach(function(s, n){
+    const when = ["DTSTART;TZID=" + CAL.tz + ":" + icsTime(d.num, s[0])];
+    if (s[1]) when.push("DTEND;TZID=" + CAL.tz + ":" + icsTime(d.num, s[1]));
+    evs = evs.concat(one(when, slots.length > 1 ? n + 1 : 0));
+  });
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Lexatarg//Barcelona fiestas//EN",
+                 "CALSCALE:GREGORIAN", "METHOD:PUBLISH"].concat(VTZ, evs, ["END:VCALENDAR"]);
+  return lines.map(icsFold).join("\r\n") + "\r\n";
+}
+
+/* The "Add to calendar" link. At the moment it is tapped, the file is built in
+   the current language and handed to the device. iPhone opens Add to Calendar;
+   Android and computers receive an .ics file that the calendar app opens. */
+function calClick(a){
+  const k = a.dataset.cal.split(":"), i = parseInt(k[1], 10);
+  const d = DAYS.filter(function(x){ return x.id === k[0]; })[0];
+  const ics = buildIcs(d, d.events[i], i, L_CUR);
+  if (a.href.indexOf("blob:") === 0) URL.revokeObjectURL(a.href);
+  a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar;charset=utf-8"}));
+  a.download = CAL.id + "-" + d.id + "-" + (i + 1) + ".ics";
+}
+
+function render(lang){
+  L_CUR = lang;
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.getElementById("k-eyebrow").textContent = t.eyebrow;
+  document.getElementById("k-meta").innerHTML = t.meta.map(function(m){
+    return '<div class="hm"><div class="k">' + esc(m[0]) + '</div><div class="v">' + esc(m[1]) + '</div></div>';
+  }).join("");
+  document.getElementById("k-lede").textContent = t.lede;
+
+  document.getElementById("k-nav").innerHTML = IDS.map(function(id,i){
+    return '<a href="#' + id + '" data-t="' + id + '">' + esc(t.nav[i]) + '</a>';
+  }).join("");
+
+  let h = "";
+  h += '<section class="sec ess" id="ess"><div class="lbl">' + esc(t.essLbl) + '</div><h2>' + esc(t.essTitle) + '</h2><ol>';
+  t.ess.forEach(function(e){
+    h += '<li><div class="t">' + esc(e.t) + '</div><div class="w">' + esc(e.w) + '</div><div class="d">' + esc(e.d) + '</div></li>';
+  });
+  h += '</ol></section>';
+
+  DAYS.forEach(function(d){
+    h += '<section class="day" id="' + d.id + '"><div class="day-head"><div class="day-num">' + d.num + '</div>';
+    h += '<div class="day-txt"><div class="dow">' + esc(d.dow[lang]) + '</div><h2>' + esc(d.title[lang]) + '</h2><div class="note">' + esc(d.note[lang]) + '</div></div></div>';
+    h += '<div class="timeline">';
+    d.events.forEach(function(e, i){
+      h += '<div class="ev"><div class="ev-top"><span class="ev-time">' + esc(e.time[lang]) + '</span><span class="ev-tags">';
+      e.tags.forEach(function(tag){
+        h += '<span class="tg ' + (tag === "free" ? "fr" : "hi") + '">' + esc(TAG[tag][lang]) + '</span>';
+      });
+      h += '</span></div><h3>' + esc(e.title[lang]) + '</h3><div class="loc">' + esc(e.loc[lang]);
+      if (e.v) h += ' <button class="golink" data-go="' + e.v + '">' + esc(t.dirs) + '</button>';
+      h += ' <a class="golink" href="#" data-cal="' + d.id + ':' + i + '">' + esc(t.cal) + '</a>';
+      if (e.link) h += ' <a class="golink" href="' + esc(e.link[1]) + '" target="_blank" rel="noopener">' + esc(t[e.link[0]]) + '</a>';
+      h += '</div><p>' + esc(e.desc[lang]) + '</p>';
+      if (e.tip) h += '<div class="tip"><b>' + esc(t.tipLbl) + '</b> ' + esc(e.tip[lang]) + '</div>';
+      h += '</div>';
+    });
+    h += '</div></section>';
+  });
+
+  h += '<section class="sec" id="places"><div class="lbl">' + esc(t.placesLbl) + '</div><h2>' + esc(t.placesTitle) + '</h2>';
+  h += '<p style="font-size:.86rem;color:var(--sub);margin:0;max-width:34rem">' + esc(t.placesNote) + '</p><div class="grid">';
+  PLACES.forEach(function(row){
+    h += '<div class="gi"><h4>' + esc(V[row.k].n) + '</h4><p>' + esc(row.d[lang]) + '</p>' +
+         '<button class="golink" data-go="' + row.k + '">' + esc(t.dirs) + '</button></div>';
+  });
+  h += '</div><div class="callout"><b>' + esc(t.calloutB) + '</b>' + esc(t.callout) + '</div></section>';
+
+  h += '<section class="sec" id="know"><div class="lbl">' + esc(t.knowLbl) + '</div><h2>' + esc(t.knowTitle) + '</h2><div class="grid" style="margin-top:0">';
+  t.know.forEach(function(k){
+    h += '<div class="gi"><h4>' + esc(k[0]) + '</h4><p>' + esc(k[1]) + '</p></div>';
+  });
+  h += '</div></section>';
+
+  document.getElementById("k-body").innerHTML = h;
+  document.getElementById("k-foot1").innerHTML = t.foot1;
+  document.getElementById("k-foot2").innerHTML = t.foot2;
+  document.getElementById("k-ver").textContent = "v" + VERSION;
+
+  document.getElementById("k-body").querySelectorAll("[data-go]").forEach(function(b){
+    b.addEventListener("click", function(){ openSheet(b.dataset.go); });
+  });
+  document.getElementById("k-body").querySelectorAll("[data-cal]").forEach(function(b){
+    b.addEventListener("click", function(){ calClick(b); });
+  });
+
+  initSpy();
+}
+
+let spyObs = null;
+function initSpy(){
+  if (spyObs) spyObs.disconnect();
+  if (typeof IntersectionObserver === "undefined") return;
+  const nav = document.getElementById("k-nav");
+  const anchors = Array.prototype.slice.call(nav.querySelectorAll("a"));
+  const targets = IDS.map(function(id){ return document.getElementById(id); }).filter(Boolean);
+  let active = null;
+  function setActive(id){
+    if (id === active) return;
+    active = id;
+    anchors.forEach(function(a){ a.classList.toggle("on", a.dataset.t === id); });
+    const cur = anchors.filter(function(a){ return a.dataset.t === id; })[0];
+    if (cur && nav.scrollTo) {
+      nav.scrollTo({left: Math.max(0, cur.offsetLeft - nav.clientWidth/2 + cur.offsetWidth/2), behavior:"smooth"});
+    }
+  }
+  spyObs = new IntersectionObserver(function(entries){
+    const vis = entries.filter(function(e){ return e.isIntersecting; })
+      .sort(function(a,b){ return a.boundingClientRect.top - b.boundingClientRect.top; });
+    if (vis.length) setActive(vis[0].target.id);
+  }, {rootMargin:"-86px 0px -55% 0px", threshold:0});
+  targets.forEach(function(s){ spyObs.observe(s); });
+}
+
+document.querySelectorAll(".langs button[data-lang]").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.remove("on"); });
+    b.classList.add("on");
+    render(b.dataset.lang);
+    try { localStorage.setItem("bcnf-lang", b.dataset.lang); } catch(e) {}
+  });
+});
+
+let start = "en";
+try {
+  /* "bcnf-lang" is shared by every page. */
+  const saved = localStorage.getItem("bcnf-lang");
+  if (saved && T[saved]) start = saved;
+  else {
+    const nl = (navigator.language || "en").toLowerCase();
+    if (nl.indexOf("ca") === 0) start = "ca";
+    else if (nl.indexOf("es") === 0) start = "es";
+  }
+} catch(e) {}
+document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.toggle("on", x.dataset.lang === start); });
+render(start);
+/* Light and dark mode: follows the device until the reader picks one. */
+(function(){
+  var root = document.documentElement, btn = document.getElementById("themeBtn");
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var LBL = {ca:["Canvia al mode fosc","Canvia al mode clar"], es:["Cambiar al modo oscuro","Cambiar al modo claro"], en:["Switch to dark mode","Switch to light mode"]};
+  function current(){ var t = root.getAttribute("data-theme"); return t ? t : (mq && mq.matches ? "dark" : "light"); }
+  function sync(){
+    var dark = current() === "dark", l = LBL[root.lang] || LBL.en;
+    btn.classList.toggle("is-dark", dark);
+    btn.setAttribute("aria-label", dark ? l[1] : l[0]);
+    btn.title = dark ? l[1] : l[0];
+  }
+  btn.addEventListener("click", function(){
+    var next = current() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("bcnf-theme", next); } catch(e) {}
+    sync();
+  });
+  if (mq) { if (mq.addEventListener) mq.addEventListener("change", sync); else if (mq.addListener) mq.addListener(sync); }
+  new MutationObserver(sync).observe(root, {attributes:true, attributeFilter:["lang"]});
+  sync();
+})();
+
+</script>
+
+</body>
+</html>

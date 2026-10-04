@@ -20,15 +20,15 @@
   *,*::before,*::after{box-sizing:border-box;}
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
-      --ink:#eeeaf6;--paper:#15122a;--sub:#a39cbc;--hero-acc:#f59a63;
+      --ink:#eeeaf6;--paper:#15122a;--sub:#a39cbc;--hero-acc:#e86830;
       --hair:rgba(238,234,246,.18);--accent:#b3a6f0;--sea:#ff8a6b;
-      --dark:#403878;--dark-ink:#e86830;--dark-sub:#f8e0c8;--band:#e86830;--sheet:#211d3a;
+      --dark:#1c1740;--dark-ink:#e86830;--dark-sub:#ecdcc8;--band:#e86830;--sheet:#211d3a;
     }
   }
   :root[data-theme="dark"]{
-      --ink:#eeeaf6;--paper:#15122a;--sub:#a39cbc;--hero-acc:#f59a63;
+      --ink:#eeeaf6;--paper:#15122a;--sub:#a39cbc;--hero-acc:#e86830;
       --hair:rgba(238,234,246,.18);--accent:#b3a6f0;--sea:#ff8a6b;
-      --dark:#403878;--dark-ink:#e86830;--dark-sub:#f8e0c8;--band:#e86830;--sheet:#211d3a;
+      --dark:#1c1740;--dark-ink:#e86830;--dark-sub:#ecdcc8;--band:#e86830;--sheet:#211d3a;
   }
   html{scroll-padding-top:86px;-webkit-text-size-adjust:100%;}
   body{margin:0;background:var(--paper);color:var(--ink);
@@ -214,7 +214,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.0.0";
+const VERSION = "1.0.1";
 
 /* Venues. q is the search text for the maps apps; addresses come from the programme's map.
    No coordinates yet, so Citymapper is not offered. */
