@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Festa Major de les Corts 2026</title>
+<meta name="description" content="Hour-by-hour guide to the Festa Major de les Corts, October 2 to 12, 2026. Català, castellà, English.">
+<meta property="og:title" content="Festa Major de les Corts 2026">
+<meta property="og:description" content="Hour-by-hour guide to the Les Corts festival, October 2 to 12. Català, castellà, English.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --ink:#2a1f1a;--paper:#fbf3e4;--sub:#6b5d52;--hero-acc:#287048;
+    --hair:rgba(42,31,26,.16);--accent:#c22a36;--sea:#287048;
+    --dark:#f6dca6;--dark-ink:#c22a36;--dark-sub:#5e4c3c;--band:#e8a030;--sheet:#fffaf0;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ink:#f1ebe4;--paper:#17120f;--sub:#a99d92;--hero-acc:#7fcf9f;
+      --hair:rgba(241,235,228,.18);--accent:#ff8a8f;--sea:#7fcf9f;
+      --dark:#100c0a;--dark-ink:#f0b450;--dark-sub:#a99d92;--band:#e83040;--sheet:#221a16;
+    }
+  }
+  :root[data-theme="dark"]{
+      --ink:#f1ebe4;--paper:#17120f;--sub:#a99d92;--hero-acc:#7fcf9f;
+      --hair:rgba(241,235,228,.18);--accent:#ff8a8f;--sea:#7fcf9f;
+      --dark:#100c0a;--dark-ink:#f0b450;--dark-sub:#a99d92;--band:#e83040;--sheet:#221a16;
+  }
+  html{scroll-padding-top:86px;-webkit-text-size-adjust:100%;}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;}
+  a{color:inherit;}
+  h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.015em;line-height:1;}
+  .wrap{max-width:684px;margin:0 auto;padding:0 22px;}
+  @media (max-width:400px){ .wrap{padding:0 18px;} nav.days .days-in{padding:0 6px;} }
+
+  /* HERO */
+  .hero{background:var(--dark);color:var(--dark-ink);padding:38px 22px 44px;
+    border-bottom:3px solid var(--band);}
+  @media (max-width:400px){ .hero{padding:32px 18px 38px;} }
+  .hero-in{max-width:640px;margin:0 auto;}
+  .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:32px;}
+  .eyebrow{font-size:.62rem;text-transform:uppercase;font-weight:700;
+    color:var(--hero-acc);padding-top:6px;min-width:0;}
+  .langs{display:flex;gap:2px;flex:0 0 auto;}
+  .langs button{background:none;border:0;color:var(--dark-sub);cursor:pointer;font-family:inherit;
+    font-size:.64rem;font-weight:700;text-transform:uppercase;padding:6px 7px;}
+  .langs button.on{color:var(--hero-acc);}
+  .hero h1{font-size:clamp(2.7rem,14.5vw,5.2rem);letter-spacing:-.025em;line-height:.92;}
+  .hero .yr{display:block;color:var(--hero-acc);}
+  .hero-lede{margin:24px 0 0;font-size:.95rem;color:var(--dark-sub);max-width:34rem;}
+  .hero-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 20px;margin-top:30px;}
+  @media (min-width:520px){ .hero-meta{grid-template-columns:repeat(4,minmax(0,1fr));} }
+  .hm .k{font-size:.55rem;text-transform:uppercase;color:var(--dark-sub);margin-bottom:6px;}
+  .hm .v{font-size:.95rem;font-weight:700;letter-spacing:-.005em;}
+
+  /* NAV */
+  nav.days{position:sticky;top:0;z-index:600;background:var(--paper);}
+  nav.days::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--hair);}
+  .days-in{display:flex;overflow-x:auto;max-width:684px;margin:0 auto;padding:0 10px;
+    scrollbar-width:none;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;}
+  .days-in::-webkit-scrollbar{display:none;}
+  .days-in a{flex:0 0 auto;padding:14px 12px;text-decoration:none;font-size:.66rem;font-weight:700;
+    text-transform:uppercase;color:var(--sub);white-space:nowrap;
+    position:relative;transition:color .18s;}
+  .days-in a.on{color:var(--accent);}
+  .days-in a.on::after{content:"";position:absolute;left:12px;right:12px;bottom:0;height:2px;background:var(--accent);}
+
+  .lbl{font-size:.6rem;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:12px;}
+  .sec{padding:60px 0 0;}
+  .sec > h2{font-size:clamp(1.7rem,7vw,2.3rem);letter-spacing:-.02em;margin-bottom:32px;line-height:1.05;}
+
+  /* ESSENTIALS */
+  .ess ol{margin:0;padding:0;counter-reset:e;}
+  .ess li{list-style:none;position:relative;padding:0 0 30px 42px;counter-increment:e;}
+  .ess li::before{content:counter(e,decimal-leading-zero);position:absolute;left:0;top:3px;
+    font-size:.72rem;font-weight:700;color:var(--accent);}
+  .ess .t{font-size:1.08rem;font-weight:700;letter-spacing:-.01em;line-height:1.22;margin-bottom:5px;}
+  .ess .w{font-size:.83rem;color:var(--accent);font-weight:700;margin-bottom:6px;}
+  .ess .d{font-size:.88rem;color:var(--sub);max-width:34rem;}
+
+  /* DAY HEADER */
+  .day{padding:68px 0 0;}
+  /* The number sits on the timeline's left edge; the gap after it is a fixed
+     share of the number's size, so one- and two-digit dates sit equally close
+     to their text at every screen size. */
+  .day-head{display:flex;align-items:center;gap:.17em;margin-bottom:32px;
+    font-size:clamp(4rem,19vw,5.4rem);}
+  .day-num{flex:0 0 auto;font-size:1em;font-weight:700;font-variant-numeric:tabular-nums;
+    letter-spacing:-.03em;line-height:.8;color:var(--sea);}
+  .day-txt{min-width:0;font-size:15px;}
+  .day-txt .dow{font-size:.6rem;text-transform:uppercase;color:var(--sub);
+    font-weight:700;margin-bottom:9px;line-height:1.3;}
+  .day-txt h2{font-size:clamp(1.05rem,4.6vw,1.24rem);letter-spacing:-.01em;line-height:1.15;}
+  .day-txt .note{font-size:.78rem;color:var(--sub);margin-top:8px;font-weight:400;letter-spacing:0;line-height:1.4;}
+  @media (max-width:400px){
+    .day-head{margin-bottom:28px;}
+    .day-txt .dow{margin-bottom:7px;}
+  }
+
+  /* TIMELINE */
+  .timeline{border-left:1px solid var(--hair);margin-left:4px;}
+  .ev{position:relative;padding:0 0 32px 24px;}
+  @media (max-width:400px){ .ev{padding-left:20px;} }
+  .ev::before{content:"";position:absolute;left:-4.5px;top:7px;width:8px;height:8px;
+    border-radius:50%;background:var(--accent);}
+  .ev:last-child{padding-bottom:6px;}
+  .ev-top{display:flex;align-items:center;gap:7px 12px;margin-bottom:8px;flex-wrap:wrap;}
+  .ev-time{font-size:.93rem;font-weight:700;letter-spacing:0;line-height:1.35;
+    font-variant-numeric:tabular-nums;white-space:nowrap;}
+  .ev-tags{display:flex;align-items:center;gap:7px 12px;flex-wrap:wrap;}
+  .tg{font-size:.62rem;text-transform:uppercase;font-weight:700;
+    line-height:1.35;white-space:nowrap;}
+  .tg.hi{color:var(--accent);}
+  .tg.fr{color:var(--sub);}
+  .ev h3{font-size:1.04rem;letter-spacing:-.008em;line-height:1.28;margin-bottom:6px;}
+  .ev .loc{font-size:.81rem;color:var(--sub);margin-bottom:9px;
+    display:flex;gap:6px 12px;flex-wrap:wrap;align-items:baseline;}
+  .ev p{margin:0;font-size:.88rem;color:var(--ink);opacity:.82;max-width:34rem;}
+  .tip{margin-top:11px;font-size:.82rem;color:var(--sub);max-width:34rem;}
+  .tip b{color:var(--accent);font-weight:700;text-transform:uppercase;font-size:.57rem;}
+
+  .golink{background:none;border:0;padding:0;font:inherit;cursor:pointer;color:var(--accent);
+    font-weight:700;font-size:.78rem;white-space:nowrap;text-align:left;}
+  a.golink{text-decoration:none;}
+  .golink:hover{text-decoration:underline;}
+
+  /* PLACES */
+  .grid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;margin-top:34px;}
+  @media (min-width:560px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 34px;} }
+  .gi h4{font-size:.95rem;font-weight:700;letter-spacing:-.005em;margin:0 0 5px;line-height:1.3;}
+  .gi p{margin:0;font-size:.84rem;color:var(--sub);}
+  .gi .golink{margin-top:8px;display:inline-block;font-size:.74rem;}
+
+  .callout{margin-top:42px;padding-left:16px;border-left:2px solid var(--sea);
+    font-size:.84rem;color:var(--sub);max-width:34rem;}
+  .callout b{color:var(--ink);font-weight:700;}
+
+  footer{background:var(--dark);color:var(--dark-ink);margin-top:74px;padding:50px 22px 46px;
+    border-top:3px solid var(--band);}
+  @media (max-width:400px){ footer{padding:44px 18px 40px;} }
+  .foot-in{max-width:640px;margin:0 auto;}
+  footer .fm{font-size:clamp(1.4rem,6vw,1.7rem);font-weight:700;letter-spacing:-.02em;margin-bottom:20px;}
+  footer .fs{font-size:.84rem;color:var(--dark-sub);line-height:1.7;max-width:34rem;margin:0 0 16px;}
+  footer .fs a{color:var(--hero-acc);font-weight:700;text-decoration:none;}
+  footer .fmini{font-size:.76rem;color:var(--dark-sub);opacity:.8;line-height:1.7;max-width:34rem;margin:0;}
+  footer .ver{margin-top:20px;font-size:.66rem;color:var(--dark-sub);opacity:.7;text-transform:uppercase;}
+
+  /* DIRECTIONS SHEET */
+  .ovl{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:2000;display:none;
+    align-items:flex-end;justify-content:center;}
+  .ovl.open{display:flex;}
+  .sheet{background:var(--sheet);width:100%;max-width:430px;border-radius:14px 14px 0 0;
+    padding:22px 22px calc(24px + env(safe-area-inset-bottom,0px));
+    max-height:88vh;overflow-y:auto;}
+  @media (min-width:560px){ .ovl{align-items:center;} .sheet{border-radius:14px;} }
+  .sheet h3{font-size:1.08rem;margin-bottom:3px;letter-spacing:-.008em;line-height:1.25;}
+  .sheet .sub{font-size:.77rem;color:var(--sub);margin-bottom:16px;}
+  .sheet a,.sheet button.copy{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:14px 0;text-decoration:none;color:var(--ink);font-size:.92rem;font-weight:600;
+    border:0;border-top:1px solid var(--hair);width:100%;background:none;
+    font-family:inherit;cursor:pointer;text-align:left;}
+  .sheet .ar{color:var(--accent);font-weight:700;font-size:.72rem;
+    text-transform:uppercase;flex:0 0 auto;}
+  .sheet .close{margin-top:16px;width:100%;padding:13px;background:none;border:1px solid var(--hair);
+    font-family:inherit;font-size:.72rem;font-weight:700;text-transform:uppercase;
+    color:var(--sub);cursor:pointer;}
+  .langs{align-items:center;}
+  .theme{background:none;border:0;cursor:pointer;padding:6px 4px 6px 10px;margin:0;
+    color:inherit;display:inline-flex;align-items:center;line-height:0;}
+  .theme svg{width:15px;height:15px;display:block;}
+  .theme .sun{display:none;}
+  .theme.is-dark .sun{display:block;}
+  .theme.is-dark .moon{display:none;}
+</style>
+<script>try{var t=localStorage.getItem("bcnf-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="toprow">
+      <div class="eyebrow" id="k-eyebrow"></div>
+      <div class="langs">
+        <button data-lang="ca">CAT</button>
+        <button data-lang="es">CAST</button>
+        <button data-lang="en" class="on">ENG</button>
+        <button class="theme" type="button" id="themeBtn"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg></button>
+      </div>
+    </div>
+    <h1>Les Corts<span class="yr">2026</span></h1>
+    <p class="hero-lede" id="k-lede"></p>
+    <div class="hero-meta" id="k-meta"></div>
+  </div>
+</header>
+
+<nav class="days"><div class="days-in" id="k-nav"></div></nav>
+
+<div class="wrap" id="k-body"></div>
+
+<footer><div class="foot-in">
+  <div class="fm">Festa Major de les Corts 2026</div>
+  <div class="fs" id="k-foot1"></div>
+  <div class="fmini" id="k-foot2"></div>
+  <div class="ver" id="k-ver"></div>
+</div></footer>
+
+<div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
+
+<script>
+const VERSION = "1.0.0";
+
+/* Venues. q is the search text for the maps apps; addresses come from the programme's map.
+   No coordinates yet, so Citymapper is not offered. */
+const V = {
+  plcomas    : {n:"Plaça de Comas",                          q:"Plaça de Comas, Barcelona"},
+  seu        : {n:"Seu del Districte de les Corts",          q:"Seu del Districte de les Corts, Plaça de Comas, Barcelona"},
+  concordia  : {n:"Plaça de la Concòrdia",                   q:"Plaça de la Concòrdia, Barcelona"},
+  remei      : {n:"Parròquia de Santa Maria del Remei",      q:"Parròquia de Santa Maria del Remei, Plaça de la Concòrdia, Barcelona"},
+  candeu     : {n:"Centre Cívic Can Deu",                    q:"Centre Cívic Can Deu, Plaça de la Concòrdia, Barcelona"},
+  tomasa     : {n:"Centre Cívic Tomasa Cuevas-Les Corts",    q:"Carrer de Dolors Masferrer i Bosch 33, Barcelona"},
+  joanoliver : {n:"Centre Cívic Joan Oliver «Pere Quart»",   q:"Carrer del Comandant Benítez 6, Barcelona"},
+  abello     : {n:"Biblioteca Montserrat Abelló",            q:"Carrer dels Comtes de Bell-lloc 192, Barcelona"},
+  ateneu     : {n:"Ateneu de Fabricació de les Corts",       q:"Carrer d'Evarist Arnús 59, Barcelona"},
+  espiga     : {n:"L'Espiga de les Corts",                   q:"Carrer de Joan Gamper 30, Barcelona"},
+  canroses   : {n:"Plaça de Can Rosés",                      q:"Plaça de Can Rosés, Barcelona"},
+  granvia    : {n:"Gran Via de Carles III amb av. de Madrid", q:"Gran Via de Carles III, Avinguda de Madrid, Barcelona"},
+  benavent   : {n:"Carrer de Benavent",                      q:"Carrer de Benavent, Barcelona"},
+  soldebaix  : {n:"Plaça del Sòl de Baix",                   q:"Plaça del Sòl de Baix, Barcelona"},
+  magali     : {n:"Jardins de Magalí",                       q:"Jardins de Magalí, Barcelona"},
+  santramon  : {n:"Avinguda de Sant Ramon Nonat",            q:"Avinguda de Sant Ramon Nonat, Barcelona"},
+  santramon37: {n:"Av. de Sant Ramon Nonat, 37",             q:"Avinguda de Sant Ramon Nonat 37, Barcelona"},
+  parrsramon : {n:"Parròquia de Sant Ramon Nonat",           q:"Parròquia de Sant Ramon Nonat, Barcelona"},
+  caritas    : {n:"Sala d'actes de la parròquia i Escola Sant Ramon", q:"Carretera de Collblanc 72, Barcelona"},
+  monestir   : {n:"Monestir de Pedralbes",                   q:"Baixada del Monestir 9, Barcelona"},
+  plmonestir : {n:"Plaça del Monestir",                      q:"Plaça del Monestir, Barcelona"},
+  cementiri  : {n:"Cementiri de les Corts",                  q:"Avinguda de Joan XXIII 5, Barcelona"},
+  mirall     : {n:"Plaça del Mirall de Pedralbes",           q:"Plaça del Mirall de Pedralbes, Barcelona"},
+  campoamor  : {n:"Jardins de Clara Campoamor",              q:"Jardins de Clara Campoamor, Barcelona"},
+  illa       : {n:"Pavelló Esportiu L'Illa",                 q:"Pavelló Esportiu L'Illa, Barcelona"},
+  auditori   : {n:"Auditori L'illa",                         q:"Avinguda Diagonal 547, Barcelona"},
+  paideia    : {n:"Escola Paideia",                          q:"Carrer de Montnegre 36, Barcelona"},
+  montnegre  : {n:"Carrer de Montnegre, 32",                 q:"Carrer de Montnegre 32, Barcelona"},
+  cannovell  : {n:"Espai per a Persones Grans Can Novell",   q:"Carrer de Caballero 29, Barcelona"},
+  cem        : {n:"CEM Les Corts",                           q:"Travessera de les Corts 252, Barcelona"},
+  clotsalvi  : {n:"Jardí del Clot d'en Salvi",               q:"Jardí del Clot d'en Salvi, Barcelona"},
+  paradis    : {n:"Carrer del Paradís, 10",                  q:"Carrer del Paradís 10, Barcelona"},
+  sunol      : {n:"Fundació Suñol",                          q:"Carrer de Mejía Lequerica 14, Barcelona"},
+  cantabria  : {n:"Casa de Cantabria a Barcelona",           q:"Carrer de Sor Eulàlia d'Anzizu 45, Barcelona"},
+  gamper     : {n:"Carrer de Joan Gamper",                   q:"Carrer de Joan Gamper, Barcelona"},
+  pratriba   : {n:"Plaça de Prat de la Riba",                q:"Plaça de Prat de la Riba, Barcelona"},
+  palaureial : {n:"Porta dels Jardins del Palau Reial",      q:"Jardins del Palau Reial de Pedralbes, Barcelona"},
+  joanxxiii  : {n:"Av. de Joan XXIII amb la Porta dels Güell", q:"Avinguda de Joan XXIII, Barcelona"},
+  mercat     : {n:"Mercat de les Corts",                     q:"Mercat de les Corts, Barcelona"},
+  vilamur    : {n:"Carrer de Vilamur",                       q:"Carrer de Vilamur, Barcelona"},
+  munte      : {n:"Jardins de Josep Munté",                  q:"Jardins de Josep Munté, Barcelona"},
+  laieta     : {n:"CE Laietà",                               q:"Carrer del Pintor Ribalta 2, Barcelona"},
+  bederrida  : {n:"Parc Esportiu Bederrida",                 q:"Parc Esportiu Bederrida, Barcelona"}
+};
+
+function toEn(s){
+  const p = String(s).split(".");
+  let h = parseInt(p[0],10); const m = p[1] || "00";
+  const ap = (h >= 12 && h < 24) ? "PM" : "AM";
+  h = h % 12; if (h === 0) h = 12;
+  return h + ":" + m + " " + ap;
+}
+function tm(a,b){
+  const loc = b ? a + "–" + b + " h" : a + " h";
+  return {ca:loc, es:loc, en: b ? toEn(a) + "–" + toEn(b) : toEn(a)};
+}
+function E(a,b,tags,v,title,desc,extra){
+  const e = {a:a, b:b, time:tm(a,b), tags:tags, v:v, title:title, desc:desc};
+  if (extra) for (const k in extra) e[k] = extra[k];
+  if (!e.loc) { const n = v ? V[v].n : ""; e.loc = {ca:n, es:n, en:n}; }
+  return e;
+}
+function S(s){ return {ca:s, es:s, en:s}; }
+function L(ca,es,en){ return {ca:ca, es:es, en:en}; }
+
+const ROUTE = L("Recorregut","Recorrido","Route");
+const SRC = "https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa.0989ff07.pdf";
+const RUTES = "https://ajuntament.barcelona.cat/lescorts/ca/noticia/rutas-por-les-corts-una-propuesta-para-descubrir-los-tres-barrios-durante-la-festa-major-41439";
+const MEET = L("Punt de trobada no indicat al programa","Punto de encuentro no indicado en el programa","Meeting point not given in the program");
+const RUTA_TIP = L("Places limitades. El programa no indica el punt de trobada.",
+  "Plazas limitadas. El programa no indica el punto de encuentro.",
+  "Places are limited. The program does not give the meeting point.");
+const MODERNISTA_DESC = L("Itinerari guiat per descobrir la petjada del modernisme a les Corts, organitzat per l'Institut Municipal de Paisatge Urbà. Dura unes dues hores i es fa a peu. Inscripció prèvia al telèfon 933 177 652.",
+  "Itinerario guiado para descubrir la huella del modernismo en Les Corts, organizado por el Institut Municipal de Paisatge Urbà. Dura unas dos horas y se hace a pie. Inscripción previa en el teléfono 933 177 652.",
+  "A guided walk through the Modernista heritage of Les Corts, organized by the Institut Municipal de Paisatge Urbà. It takes about two hours, on foot. Sign up in advance by phone at 933 177 652.");
+function MODERNISTA(x){ return L(x.ca + " " + MODERNISTA_DESC.ca, x.es + " " + MODERNISTA_DESC.es, x.en + " " + MODERNISTA_DESC.en); }
+const MODERNISTA_TIP = L("La pàgina de resum del programa indica de 10.30 a 11.30 h; el llistat del dia i el web del districte indiquen dues sessions, a les 10.30 i a les 12.30 h. El programa no indica el punt de trobada.",
+  "La página de resumen del programa indica de 10.30 a 11.30 h; el listado del día y la web del distrito indican dos sesiones, a las 10.30 y a las 12.30 h. El programa no indica el punto de encuentro.",
+  "The program's summary page gives 10:30–11:30 AM; the day listing and the district website give two sessions, at 10:30 AM and 12:30 PM. The program does not give the meeting point.");
+
+const T = {
+  ca:{
+    eyebrow:"Festa Major · 2–12 d'octubre",
+    meta:[["Festa major","2 – 12 oct."],["Toc d'inici","Dv 2 · 21 h"],["Lema","Omplim les Corts de colors"],["Districte","Les Corts"]],
+    lede:"La Festa Major de les Corts, del 2 al 12 d'octubre. Onze dies amb el Toc d'inici, el Seguici popular i el pregó, el 23è Correfoc unitari, la Carretillada de Sant Ramon, la diada castellera i el correfoc i el piromusical de cloenda.",
+    nav:["Essencials","Dv 2","Ds 3","Dg 4","Dl 5","Dt 6","Dc 7","Dj 8","Dv 9","Ds 10","Dg 11","Dl 12","Llocs","Abans d'anar-hi"],
+    essLbl:"Si només feu cinc coses",essTitle:"Els essencials",
+    placesLbl:"Els llocs",placesTitle:"On passa tot",
+    placesNote:"Toqueu «Com arribar-hi» i trieu l'aplicació de mapes que useu habitualment.",
+    dirs:"Com arribar-hi", cal:"Afegeix al calendari", more:"Més informació", signup:"Inscripció",
+    calFest:"Festa Major de les Corts 2026", calGuide:"Guia", calProg:"Programa oficial", calLink:"Enllaç",
+    calSrc:SRC, calTime:"Hora", tipLbl:"Nota", openIn:"Trieu una aplicació de mapes",
+    copy:"Copia l'adreça", copied:"Copiat", close:"Tanca", go:"Obre",
+    knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
+    calloutB:"Canvis al programa.",
+    callout:" El programa actualitzat de l'Ajuntament marca aquests canvis. Anul·lats: el sopar comunitari i el ball amb l'orquestra Aquarium (dv. 2), l'Aperitiu popular solidari, la Matinal de jocs en família i el concert amb Mar i Vent (ds. 3), la 4a Festa (animal) de les Corts i el Correllengua (dg. 4), les portes obertes del Centre de Serveis Socials (dj. 8) i Esports per a tothom (dv. 9). Ajornats: la xocolatada i festival infantil del Mirall de Pedralbes, al 16 d'octubre; la mostra de comerç del Mirall de Pedralbes, al 15 d'octubre; i la mostra del carrer de Joan Güell, sense data. La Festa de la cortsenca es trasllada a Ca la Panarra.",
+    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Festa Major de les Corts. Per al programa complet i per als canvis d\'última hora, consulteu <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot2:"Això és un projecte personal, fet amb dedicació i estima per ajudar tothom a gaudir al màxim de la festa. No és una publicació oficial. Aquesta pàgina no fa servir galetes ni recull dades personals. Està allotjada a GitHub Pages i subjecta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>.",
+    ess:[
+      {t:"Toc d'inici",w:"Divendres 2 · 21 h",d:"Pregó satíric, dansa i foc, l'alegre cercavila d'inici i els lluïments de les colles de foc cortsenques a la plaça de Comas."},
+      {t:"Seguici popular i pregó",w:"Dissabte 3 · 10.30 h",d:"Repicada de campanes i sortida del Seguici des de la plaça de la Concòrdia fins a la plaça de Comas, on es fa el pregó a les 12 h."},
+      {t:"23è Correfoc unitari",w:"Dissabte 3 · 21 h",d:"Les colles de foc de les Corts i colles convidades surten de la plaça de Comas. Abans, cercavila unitària a les 18 h i ball de diables a les 20.30 h."},
+      {t:"Diada castellera",w:"Dissabte 10 · 13 h",d:"Castellers de Barcelona, Castellers de Sants i els Xics de Granollers, com a colla convidada, a la plaça de Comas."},
+      {t:"Correfoc de fi de festa i piromusical",w:"Dilluns 12 · 19.30 h",d:"Tabalada a la plaça de Can Rosés, correfoc a les 20 h, lluïments finals als jardins de Magalí i piromusical de cloenda a les 21.30 h."}
+    ],
+    know:[
+      ["Horaris de final","De dilluns a dijous, fins a les 24 h; divendres i dissabte, fins a les 2 h; diumenge, fins a les 23 h."],
+      ["Punts lila","Correfoc (ds. 3, des de les 23 h, pl. de la Concòrdia), Miscel·lània de tradicions (dg. 4, des de les 10 h, pl. de Comas), Matí infantil (ds. 10, des de les 10 h, c. de Benavent), concerts (ds. 10, des de les 22 h, pl. de la Concòrdia) i nit de festa amb la Plataforma (ds. 10, des de les 00.00 h, pl. del Sòl de Baix). Les entitats en gestionen d'altres a la pl. del Sòl de Baix (dv. 9) i a la pl. de Can Rosés (dv. 9 i ds. 10)."],
+      ["Correfocs","Porteu roba que cobreixi el cos. No llanceu líquids a les colles ni entreu al seu espai, i seguiu-ne les indicacions. No es poden fer servir petards propis. Als recorreguts, tanqueu portes, finestres i persianes, protegiu els aparadors, recolliu els tendals i retireu la roba i els objectes dels balcons."],
+      ["Gots i normes","Porteu el got de casa. Hi ha lavabos a prop de cada espai de festa. Es prohibeix la venda i el consum de begudes alcohòliques als menors de 18 anys, i no es permet la venda ambulant."],
+      ["Accessibilitat","Els actes marcats al programa tenen mesures d'accessibilitat. Es poden demanar materials de lectura fàcil, en braille o en relleu per correu en fer la inscripció, i interpretació en llengua de signes amb tres dies feiners d'antelació. La portada del programa té un codi QR amb una versió en àudio."],
+      ["Fires i exposicions","Fira d'atraccions a la pl. de Can Rosés, del 2 al 12: de dilluns a dijous de 17 a 23 h; divendres, dissabtes i vigílies de festius de 10 a 23 h. 23è Mercat artesanal a la Gran Via de Carles III, de l'1 a l'11, de 10 a 22 h. Mostra de cultura popular a la Seu del Districte, del 2 al 12."],
+      ["Canvis","Els canvis es publiquen a barcelona.cat/lescorts."]
+    ]
+  },
+  es:{
+    eyebrow:"Fiesta Mayor · 2–12 de octubre",
+    meta:[["Fiesta mayor","2 – 12 oct."],["Toc d'inici","Vie 2 · 21 h"],["Lema","Omplim les Corts de colors"],["Distrito","Les Corts"]],
+    lede:"La Fiesta Mayor de Les Corts, del 2 al 12 de octubre. Once días con el Toc d'inici, el Seguici popular y el pregón, el 23.º Correfoc unitari, la Carretillada de Sant Ramon, la diada castellera y el correfoc y el piromusical de clausura.",
+    nav:["Esenciales","Vie 2","Sáb 3","Dom 4","Lun 5","Mar 6","Mié 7","Jue 8","Vie 9","Sáb 10","Dom 11","Lun 12","Lugares","Antes de ir"],
+    essLbl:"Si solo puede hacer cinco cosas",essTitle:"Lo esencial",
+    placesLbl:"Los lugares",placesTitle:"Dónde pasa todo",
+    placesNote:"Toque «Cómo llegar» y elija la aplicación de mapas que use habitualmente.",
+    dirs:"Cómo llegar", cal:"Añadir al calendario", more:"Más información", signup:"Inscripción",
+    calFest:"Fiesta Mayor de Les Corts 2026", calGuide:"Guía", calProg:"Programa oficial", calLink:"Enlace",
+    calSrc:SRC, calTime:"Hora", tipLbl:"Nota", openIn:"Elija una aplicación de mapas",
+    copy:"Copiar la dirección", copied:"Copiado", close:"Cerrar", go:"Abrir",
+    knowLbl:"Práctico",knowTitle:"Antes de ir",
+    calloutB:"Cambios en el programa.",
+    callout:" El programa actualizado del Ayuntamiento marca estos cambios. Anulados: la cena comunitaria y el baile con la orquesta Aquarium (vie. 2), el Aperitiu popular solidari, la Matinal de juegos en familia y el concierto con Mar i Vent (sáb. 3), la 4.ª Fiesta (animal) de Les Corts y el Correllengua (dom. 4), las puertas abiertas del Centro de Servicios Sociales (jue. 8) y Deportes para todos (vie. 9). Aplazados: la chocolatada y festival infantil del Mirall de Pedralbes, al 16 de octubre; la muestra de comercio del Mirall de Pedralbes, al 15 de octubre; y la muestra de la calle Joan Güell, sin fecha. La Festa de la cortsenca se traslada a Ca la Panarra.",
+    foot1:'La información de esta página procede del programa oficial de la Fiesta Mayor de Les Corts. Para el programa completo y para los cambios de última hora, consulte <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot2:"Esto es un proyecto personal, hecho con dedicación y cariño para ayudar a todos a disfrutar al máximo de la fiesta. No es una publicación oficial. Esta página no utiliza cookies ni recoge datos personales. Está alojada en GitHub Pages y sujeta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>.",
+    ess:[
+      {t:"Toc d'inici",w:"Viernes 2 · 21 h",d:"Pregón satírico, danza y fuego, el alegre pasacalle de inicio y las exhibiciones de las colles de fuego de Les Corts en la plaza de Comas."},
+      {t:"Seguici popular y pregón",w:"Sábado 3 · 10.30 h",d:"Repique de campanas y salida del Seguici desde la plaza de la Concòrdia hasta la plaza de Comas, donde se da el pregón a las 12 h."},
+      {t:"23.º Correfoc unitari",w:"Sábado 3 · 21 h",d:"Las colles de fuego de Les Corts y colles invitadas salen de la plaza de Comas. Antes, pasacalle unitario a las 18 h y baile de diablos a las 20.30 h."},
+      {t:"Diada castellera",w:"Sábado 10 · 13 h",d:"Castellers de Barcelona, Castellers de Sants y los Xics de Granollers, como colla invitada, en la plaza de Comas."},
+      {t:"Correfoc de fin de fiesta y piromusical",w:"Lunes 12 · 19.30 h",d:"Tabalada en la plaza de Can Rosés, correfoc a las 20 h, exhibiciones finales en los jardines de Magalí y piromusical de clausura a las 21.30 h."}
+    ],
+    know:[
+      ["Horarios de final","De lunes a jueves, hasta las 24 h; viernes y sábado, hasta las 2 h; domingo, hasta las 23 h."],
+      ["Puntos lila","Correfoc (sáb. 3, desde las 23 h, pl. de la Concòrdia), Miscel·lània de tradicions (dom. 4, desde las 10 h, pl. de Comas), Matí infantil (sáb. 10, desde las 10 h, c. de Benavent), conciertos (sáb. 10, desde las 22 h, pl. de la Concòrdia) y noche de fiesta con la Plataforma (sáb. 10, desde las 00.00 h, pl. del Sòl de Baix). Las entidades gestionan otros en la pl. del Sòl de Baix (vie. 9) y en la pl. de Can Rosés (vie. 9 y sáb. 10)."],
+      ["Correfocs","Lleve ropa que cubra el cuerpo. No lance líquidos a las colles ni entre en su espacio, y siga sus indicaciones. No se pueden usar petardos propios. En los recorridos, cierre puertas, ventanas y persianas, proteja los escaparates, recoja los toldos y retire la ropa y los objetos de los balcones."],
+      ["Vasos y normas","Lleve su propio vaso. Hay lavabos cerca de cada espacio de fiesta. Se prohíbe la venta y el consumo de bebidas alcohólicas a los menores de 18 años, y no se permite la venta ambulante."],
+      ["Accesibilidad","Los actos marcados en el programa tienen medidas de accesibilidad. Se pueden pedir materiales de lectura fácil, en braille o en relieve por correo al inscribirse, e interpretación en lengua de signos con tres días laborables de antelación. La portada del programa tiene un código QR con una versión en audio."],
+      ["Ferias y exposiciones","Feria de atracciones en la pl. de Can Rosés, del 2 al 12: de lunes a jueves de 17 a 23 h; viernes, sábados y vísperas de festivos de 10 a 23 h. 23.º Mercado artesanal en la Gran Via de Carles III, del 1 al 11, de 10 a 22 h. Muestra de cultura popular en la Sede del Distrito, del 2 al 12."],
+      ["Cambios","Los cambios se publican en barcelona.cat/lescorts."]
+    ]
+  },
+  en:{
+    eyebrow:"Festa Major · October 2–12",
+    meta:[["Festival","Oct 2–12"],["Opening","Fri, Oct 2 · 9:00 PM"],["Motto","Omplim les Corts de colors"],["District","Les Corts"]],
+    lede:"The Festa Major de les Corts, from October 2 to 12. Eleven days with the Toc d'inici opening, the Seguici popular parade and opening speech, the 23rd Correfoc unitari fire run, the Carretillada de Sant Ramon, a human towers day, and a closing fire run and fireworks to music.",
+    nav:["Essentials","Fri 2","Sat 3","Sun 4","Mon 5","Tue 6","Wed 7","Thu 8","Fri 9","Sat 10","Sun 11","Mon 12","Places","Before you go"],
+    essLbl:"If you only do five things",essTitle:"The essentials",
+    placesLbl:"The places",placesTitle:"Where it all happens",
+    placesNote:"Tap Directions and pick whichever maps app you normally use.",
+    dirs:"Directions", cal:"Add to calendar", more:"More information", signup:"Sign up",
+    calFest:"Festa Major de les Corts 2026", calGuide:"Guide", calProg:"Official program", calLink:"Link",
+    calSrc:SRC, calTime:"Time", tipLbl:"Note", openIn:"Choose a maps app",
+    copy:"Copy address", copied:"Copied", close:"Close", go:"Open",
+    knowLbl:"Practical",knowTitle:"Before you go",
+    calloutB:"Program changes.",
+    callout:" The City Council's updated program marks these changes. Canceled: the community dinner and dance with the Aquarium orchestra (Fri, Oct 2), the Aperitiu popular solidari, the family games morning and the Mar i Vent concert (Sat, Oct 3), the 4th Les Corts animal festival and the Correllengua (Sun, Oct 4), the social services center open day (Thu, Oct 8) and Esports per a tothom (Fri, Oct 9). Postponed: the Mirall de Pedralbes hot chocolate and children's festival, to October 16; the Mirall de Pedralbes shops showcase, to October 15; and the Carrer de Joan Güell showcase, with no new date. The Festa de la cortsenca moves to Ca la Panarra.",
+    foot1:'The information on this page comes from the official program of the Festa Major de les Corts. For the full program and any last-minute changes, see <a href="' + SRC + '" target="_blank" rel="noopener">the official program (PDF)</a>.',
+    foot2:"This is a personal project and a labor of love, made to help everyone make the most of the festival. It is not an official publication. This page does not use cookies or collect any personal data. It is hosted on GitHub Pages and is subject to the <a href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>GitHub Privacy Statement</a>.",
+    ess:[
+      {t:"Toc d'inici, the opening",w:"Friday, October 2 · 9:00 PM",d:"A satirical opening speech, dance and fire, the lively opening parade and displays by the Les Corts fire groups in Plaça de Comas."},
+      {t:"Seguici popular and opening speech",w:"Saturday, October 3 · 10:30 AM",d:"Church bells ring and the Seguici parade sets off from Plaça de la Concòrdia to Plaça de Comas, where the opening speech is given at noon."},
+      {t:"23rd Correfoc unitari",w:"Saturday, October 3 · 9:00 PM",d:"The Les Corts fire groups and visiting groups set off from Plaça de Comas. Before that, a joint parade at 6:00 PM and the devils' dance at 8:30 PM."},
+      {t:"Human towers",w:"Saturday, October 10 · 1:00 PM",d:"The Castellers de Barcelona, the Castellers de Sants and the visiting Xics de Granollers, in Plaça de Comas."},
+      {t:"Closing fire run and fireworks",w:"Monday, October 12 · 7:30 PM",d:"Drums in Plaça de Can Rosés, the fire run at 8:00 PM, final displays in the Jardins de Magalí and closing fireworks to music at 9:30 PM."}
+    ],
+    know:[
+      ["Closing times","Monday to Thursday, until midnight; Friday and Saturday, until 2:00 AM; Sunday, until 11:00 PM."],
+      ["Punt Lila support points","The fire run (Sat, Oct 3, from 11:00 PM, Pl. de la Concòrdia), the Miscel·lània de tradicions (Sun, Oct 4, from 10:00 AM, Pl. de Comas), the children's morning (Sat, Oct 10, from 10:00 AM, C. de Benavent), the concerts (Sat, Oct 10, from 10:00 PM, Pl. de la Concòrdia) and the young people's night (Sat, Oct 10, from midnight, Pl. del Sòl de Baix). Local groups run others in Pl. del Sòl de Baix (Fri, Oct 9) and Pl. de Can Rosés (Fri, Oct 9 and Sat, Oct 10)."],
+      ["Fire runs","Wear clothes that cover your body. Do not throw liquids at the fire groups or enter their space, and follow their instructions. Your own firecrackers are not allowed. Along the routes, close doors, windows and blinds, protect shop windows, roll in awnings and clear clothes and objects from balconies."],
+      ["Cups and rules","Bring your own cup. There are restrooms near every festival space. By law, people under 18 may not buy or drink alcohol, and street selling is not allowed."],
+      ["Accessibility","Events marked in the program have accessibility measures. Easy-read, Braille or raised materials can be requested by email when signing up, and sign language interpreting with three working days' notice. The program's cover has a QR code with an audio version."],
+      ["Fairs and exhibitions","Funfair in Pl. de Can Rosés, October 2 to 12: Monday to Thursday 5:00–11:00 PM; Fridays, Saturdays and the eves of public holidays 10:00 AM–11:00 PM. The 23rd craft market on Gran Via de Carles III, October 1 to 11, 10:00 AM–10:00 PM. The popular culture exhibition at the Seu del Districte, October 2 to 12."],
+      ["Changes","Changes are published at barcelona.cat/lescorts."]
+    ]
+  }
+};
+
+const TAG = {
+  free:{ca:"Gratuït",es:"Gratuito",en:"Free"},
+  open:{ca:"Obre la festa",es:"Abre la fiesta",en:"Opening"},
+  miss:{ca:"Imprescindible",es:"Imprescindible",en:"Worth planning around"},
+  book:{ca:"Cal inscripció",es:"Inscripción previa",en:"Booking needed"},
+  ticket:{ca:"De pagament",es:"De pago",en:"Paid"},
+  kids:{ca:"Infants",es:"Niños",en:"For children"},
+  fire:{ca:"Foc",es:"Fuego",en:"Fire"},
+  fin:{ca:"Acte final",es:"Acto final",en:"Closing act"}
+};
+
+const DAYS = [
+  { id:"d2", num:"2",
+    dow:L("Divendres · 2 d'octubre","Viernes · 2 de octubre","Friday · October 2"),
+    title:L("El Toc d'inici obre la festa","El Toc d'inici abre la fiesta","The Toc d'inici opens the festival"),
+    note:L("Des de les 10 h","Desde las 10 h","From 10:00 AM"),
+    events:[
+      E("10","12.30",["book"],"plcomas",
+        L("Gran caminada de les persones grans per les Corts","Gran caminata de las personas mayores por Les Corts","Older people's great walk through Les Corts"),
+        L("Caminada pel Dia Internacional de les Persones Grans. Inscripcions a les secretaries dels Espais de persones grans de les Corts.",
+          "Caminata por el Día Internacional de las Personas Mayores. Inscripciones en las secretarías de los Espais de persones grans de Les Corts.",
+          "A walk for the International Day of Older Persons. Sign up at the offices of the Les Corts Espais de persones grans (senior centers)."),
+        {loc:L("Sortida: plaça de Comas","Salida: plaza de Comas","Start: Plaça de Comas")}),
+      E("17.30","19.30",["book"],"joanoliver",
+        L("Festival Maker: conferència i mostra «Del residu al valor»","Festival Maker: conferencia y muestra «Del residu al valor»","Festival Maker: talk and showcase, Del residu al valor"),
+        L("A càrrec de Sylvia Calvo, sobre el tèxtil sostenible, amb una mostra de materials. Inscripció presencial o al web del centre.",
+          "A cargo de Sylvia Calvo, sobre el textil sostenible, con una muestra de materiales. Inscripción presencial o en la web del centro.",
+          "Sylvia Calvo on sustainable textiles, with a display of materials. Sign up in person or on the center's website.")),
+      E("18",null,["free"],"seu",
+        L("Mostra de cultura popular de la Festa Major","Muestra de cultura popular de la Fiesta Mayor","Festival popular culture exhibition"),
+        L("Exposició d'elements festius cortsencs a l'espai expositiu de la Seu del Districte, fins al 12 d'octubre.",
+          "Exposición de elementos festivos de Les Corts en el espacio expositivo de la Sede del Distrito, hasta el 12 de octubre.",
+          "An exhibition of Les Corts festival figures and objects in the Seu del Districte exhibition space, until October 12.")),
+      E("19",null,[],"candeu",
+        L("Concert: Improvís","Concierto: Improvís","Concert: Improvís"),
+        L("Un viatge sonor per l'impressionisme i el primitivisme, d'Erik Satie a Manuel de Falla, amb obres originals i inèdites d'Abril Riu.",
+          "Un viaje sonoro por el impresionismo y el primitivismo, de Erik Satie a Manuel de Falla, con obras originales e inéditas de Abril Riu.",
+          "A journey through impressionism and primitivism, from Erik Satie to Manuel de Falla, with original, unreleased works by Abril Riu.")),
+      E("19",null,["book"],"joanoliver",
+        L("Espectacle: No soy exótico","Espectáculo: No soy exótico","Show: No soy exótico"),
+        L("De l'Associació Puntos de Partida: una obra escènica híbrida de dansa, teatre i cabaret contemporani sobre la diversitat del cos. Inscripció al centre cívic.",
+          "De la Asociación Puntos de Partida: una obra escénica híbrida de danza, teatro y cabaret contemporáneo sobre la diversidad del cuerpo. Inscripción en el centro cívico.",
+          "By the Asociación Puntos de Partida: a hybrid stage piece of dance, theater and contemporary cabaret about body diversity. Sign up at the civic center.")),
+      E("19.30",null,[],"mirall",
+        L("Actuació dels Falcons de Barcelona","Actuación de los Falcons de Barcelona","Falcons de Barcelona performance"),
+        L("Organitza l'Associació de Comerciants del Mirall de Pedralbes.","Organiza la Asociación de Comerciantes del Mirall de Pedralbes.","Organized by the Mirall de Pedralbes traders' association."),
+        {tip:L("La xocolatada del mateix dia i lloc s'ha ajornat al 16 d'octubre; el programa no indica cap canvi per a aquesta actuació.",
+          "La chocolatada del mismo día y lugar se ha aplazado al 16 de octubre; el programa no indica ningún cambio para esta actuación.",
+          "The hot chocolate event at the same place and day was postponed to October 16; the program shows no change for this performance.")}),
+      E("20","21.30",["book"],"tomasa",
+        L("Teatre: El darrer tall de cabell o qui és l'assassí","Teatro: El darrer tall de cabell o qui és l'assassí","Theater: El darrer tall de cabell o qui és l'assassí"),
+        L("Obra de Mou-te: un crim a la perruqueria Tony's.","Obra de Mou-te: un crimen en la peluquería Tony's.","A play by Mou-te: a crime at Tony's hair salon.")),
+      E("21",null,["open","miss"],"plcomas",
+        L("Toc d'inici: pregó satíric","Toc d'inici: pregón satírico","Toc d'inici: satirical opening speech"),
+        L("El pregó satíric de Festa Major obre el Toc d'inici.","El pregón satírico de Fiesta Mayor abre el Toc d'inici.","The festival's satirical speech starts the Toc d'inici.")),
+      E("21.10",null,["miss"],"plcomas",
+        L("Toc d'inici: dansa i foc","Toc d'inici: danza y fuego","Toc d'inici: dance and fire"),
+        L("Espectacle amb actuacions de dansa i foc.","Espectáculo con actuaciones de danza y fuego.","A show with dance and fire performances.")),
+      E("21.30",null,["miss"],"plcomas",
+        L("Alegre cercavila d'inici","Alegre pasacalle de inicio","Lively opening parade"),
+        L("Amb Batukasola, Tokatoms, Diables i Timbalers d'Ítaca, els Bocs de Can Rosés, La Repúbli-k de l'Avern, Diables de les Corts i Pastorets de les Corts.",
+          "Con Batukasola, Tokatoms, Diables i Timbalers d'Ítaca, els Bocs de Can Rosés, La Repúbli-k de l'Avern, Diables de les Corts y Pastorets de les Corts.",
+          "With Batukasola, Tokatoms, Diables i Timbalers d'Ítaca, the Bocs de Can Rosés, La Repúbli-k de l'Avern, Diables de les Corts and Pastorets de les Corts."),
+        {loc:L("Recorregut: pl. de Comas, Remei, Galileu, Taquígraf Martí i pl. de Comas","Recorrido: pl. de Comas, Remei, Galileu, Taquígraf Martí y pl. de Comas","Route: Pl. de Comas, Remei, Galileu, Taquígraf Martí and back to Pl. de Comas")}),
+      E("22",null,["fire"],"plcomas",
+        L("Lluïments de cloenda","Exhibiciones de cierre","Closing displays"),
+        L("Enceses de les colles de foc cortsenques per tancar el Toc d'inici.","Encendidas de las colles de fuego de Les Corts para cerrar el Toc d'inici.","The Les Corts fire groups light up to close the Toc d'inici."))
+    ]},
+  { id:"d3", num:"3",
+    dow:L("Dissabte · 3 d'octubre","Sábado · 3 de octubre","Saturday · October 3"),
+    title:L("Seguici, pregó i Correfoc unitari","Seguici, pregón y Correfoc unitari","Parade, opening speech and the fire run"),
+    note:L("Des de les 9.30 h","Desde las 9.30 h","From 9:30 AM"),
+    events:[
+      E("9.30",null,[],"concordia",
+        L("Plantada de bèsties, gegants i gegantes","Plantada de bestias, gigantes y gigantas","Beasts and giants on display"),
+        L("Les figures del Seguici es planten a la plaça abans de sortir.","Las figuras del Seguici se plantan en la plaza antes de salir.","The parade's figures stand on display in the square before setting off.")),
+      E("10","11.30",["book"],"cementiri",
+        L("Ruta cultural al Cementiri de les Corts","Ruta cultural en el Cementiri de les Corts","Cultural tour of the Cementiri de les Corts"),
+        L("Visita guiada de Cementiris de Barcelona sobre patrimoni, història, art funerari i memòria.","Visita guiada de Cementiris de Barcelona sobre patrimonio, historia, arte funerario y memoria.","A guided visit by Cementiris de Barcelona on heritage, history, funerary art and memory."),
+        {link:["signup","https://cementiris.ajuntament.barcelona.cat"]}),
+      E("10","11.30",[],"granvia",
+        L("Esmorzar saludable","Desayuno saludable","Healthy breakfast"),
+        L("Tast de productes de mercat i aperitiu musical, amb l'AVV Les Corts Sud.","Degustación de productos de mercado y aperitivo musical, con la AVV Les Corts Sud.","A tasting of market produce and music, with the AVV Les Corts Sud.")),
+      E("10","13",["kids"],"magali",
+        L("Vine a jugar a voleibol amb el CVB Barça","Ven a jugar a voleibol con el CVB Barça","Come and play volleyball with CVB Barça"),
+        L("Activitats per a infants amb les jugadores del Club Voleibol Barcelona Barça.","Actividades para niños con las jugadoras del Club Voleibol Barcelona Barça.","Activities for children with the players of Club Voleibol Barcelona Barça."),
+        {loc:L("Pista esportiva dels jardins de Magalí","Pista deportiva de los jardines de Magalí","Sports court, Jardins de Magalí")}),
+      E("10","20",[],"montnegre",
+        L("6è Mercat de tardor dels horts urbans","6.º Mercado de otoño de los huertos urbanos","6th urban gardens autumn market"),
+        L("Organitza l'Hort Urbà de Colònia Castells.","Organiza el Hort Urbà de Colònia Castells.","Organized by the Hort Urbà de Colònia Castells.")),
+      E("10.30",null,["miss"],"concordia",
+        L("Repicada de campanes i sortida del Seguici popular","Repique de campanas y salida del Seguici popular","Church bells and the Seguici popular parade"),
+        L("Les campanes del Remei donen la sortida al Seguici: Gegants de les Corts, Ball de Pastorets, l'Aegis, Dragonets d'Ítaca, l'estendard de l'Espiga de les Corts, les colles de diables i de percussió, i els gegants i capgrossos de les escoles Anglesola, Solc i Barcelona i del carrer Vallespir.",
+          "Las campanas del Remei dan la salida al Seguici: Gegants de les Corts, Ball de Pastorets, l'Aegis, Dragonets d'Ítaca, el estandarte de l'Espiga de les Corts, las colles de diablos y de percusión, y los gigantes y cabezudos de las escuelas Anglesola, Solc y Barcelona y de la calle Vallespir.",
+          "The Remei church bells send off the Seguici: the Gegants de les Corts, the Ball de Pastorets, l'Aegis, Dragonets d'Ítaca, the banner of l'Espiga de les Corts, the devil and drum groups, and the giants and big heads of the Anglesola, Solc and Barcelona schools and of Carrer Vallespir."),
+        {loc:L("Recorregut: pl. de la Concòrdia, Solà, Vilamur, Taquígraf Garriga, Taquígraf Martí i pl. de Comas","Recorrido: pl. de la Concòrdia, Solà, Vilamur, Taquígraf Garriga, Taquígraf Martí y pl. de Comas","Route: Pl. de la Concòrdia, Solà, Vilamur, Taquígraf Garriga, Taquígraf Martí to Pl. de Comas")}),
+      E(null,null,["book"],null,
+        L("Ruta modernista de les Corts","Ruta modernista de Les Corts","Les Corts Modernista route"),
+        MODERNISTA(L("A les 10.30 h, en català; a les 12.30 h, en castellà.","A las 10.30 h, en catalán; a las 12.30 h, en castellano.","10:30 AM in Catalan; 12:30 PM in Spanish.")),
+        {time:{ca:"10.30 i 12.30 h", es:"10.30 y 12.30 h", en:"10:30 AM and 12:30 PM"}, loc:MEET, tip:MODERNISTA_TIP}),
+      E("11",null,["book"],"palaureial",
+        L("Conèixer les Corts: «Del món dels Güells al barraquisme»","Conèixer les Corts: «Del món dels Güells al barraquisme»","Conèixer les Corts: from the world of the Güells to the shantytowns"),
+        L("Itinerari per a adults amb Donar Veu a la Memòria. Inscripció al web de la Biblioteca Montserrat Abelló.",
+          "Itinerario para adultos con Donar Veu a la Memòria. Inscripción en la web de la Biblioteca Montserrat Abelló.",
+          "A walk for adults with Donar Veu a la Memòria. Sign up on the Biblioteca Montserrat Abelló website."),
+        {loc:L("Sortida: porta dels jardins del Palau Reial","Salida: puerta de los jardines del Palau Reial","Start: gate of the Jardins del Palau Reial")}),
+      E("11",null,["book","kids"],"abello",
+        L("Festival Maker: taller «Del residu a la creació tèxtil»","Festival Maker: taller «Del residu a la creació tèxtil»","Festival Maker: textile workshop, Del residu a la creació tèxtil"),
+        L("Taller familiar amb Sylvia Calvo.","Taller familiar con Sylvia Calvo.","A family workshop with Sylvia Calvo.")),
+      E("11",null,["book","free"],null,
+        L("Ruta pel barri de Pedralbes","Ruta por el barrio de Pedralbes","Pedralbes neighborhood walk"),
+        L("Passejada guiada per un dels barris amb més valor patrimonial de la ciutat i els seus espais històrics. Gratuïta amb inscripció prèvia.",
+          "Paseo guiado por uno de los barrios con más valor patrimonial de la ciudad y sus espacios históricos. Gratuito con inscripción previa.",
+          "A guided walk through one of the city's richest heritage neighborhoods and its historic places. Free, with advance sign-up."),
+        {loc:MEET, tip:RUTA_TIP, link:["signup",RUTES]}),
+      E("11","14",["kids"],"magali",
+        L("El Circ dels sentits (1a sessió)","El Circ dels sentits (1.ª sesión)","El Circ dels sentits (first session)"),
+        L("Instal·lació immersiva per a tota la família per viure amb els ulls tancats.","Instalación inmersiva para toda la familia para vivir con los ojos cerrados.","An immersive installation for the whole family, experienced with your eyes closed.")),
+      E("12",null,["open","miss"],"plcomas",
+        L("Pregó de Festa Major","Pregón de Fiesta Mayor","Opening speech"),
+        L("A càrrec de Manuel Murcia, de l'IE Tres Fonts, i de Maria Roura Vázquez, veïna centenària. Hi ha un espai reservat per a persones amb mobilitat reduïda.",
+          "A cargo de Manuel Murcia, del IE Tres Fonts, y de Maria Roura Vázquez, vecina centenaria. Hay un espacio reservado para personas con movilidad reducida.",
+          "Given by Manuel Murcia, of the IE Tres Fonts school, and Maria Roura Vázquez, a 100-year-old neighbor. There is a reserved area for people with reduced mobility.")),
+      E("12.15",null,[],"plcomas",
+        L("Ball de figures de cultura popular","Baile de figuras de cultura popular","Dance of the popular culture figures"),
+        L("Ball de pastorets amb tots els gegants, capgrossos, bèsties i colles de diables del Seguici.","Baile de pastorets con todos los gigantes, cabezudos, bestias y colles de diablos del Seguici.","The shepherds' dance with all the parade's giants, big heads, beasts and devil groups.")),
+      E("13",null,[],"concordia",
+        L("Aperitiu de vigília del correfoc","Aperitivo de víspera del correfoc","Pre-fire-run aperitif"),
+        L("Primer acte del 23è Correfoc unitari.","Primer acto del 23.º Correfoc unitari.","The first event of the 23rd Correfoc unitari.")),
+      E("13","14",[],"cantabria",
+        L("Sardinada popular","Sardinada popular","Sardine grill"),
+        L("Ració de sardines a la brasa, pa i beguda, a la Casa de Cantabria.","Ración de sardinas a la brasa, pan y bebida, en la Casa de Cantabria.","A serving of grilled sardines, bread and a drink, at the Casa de Cantabria.")),
+      E("16.30","19",["kids"],"magali",
+        L("El Circ dels sentits (2a sessió)","El Circ dels sentits (2.ª sesión)","El Circ dels sentits (second session)"),
+        L("Instal·lació immersiva per a tota la família per viure amb els ulls tancats.","Instalación inmersiva para toda la familia para vivir con los ojos cerrados.","An immersive installation for the whole family, experienced with your eyes closed.")),
+      E("17",null,["book","free"],null,
+        L("Ruta pel barri de la Maternitat i Sant Ramon","Ruta por el barrio de la Maternitat i Sant Ramon","La Maternitat i Sant Ramon neighborhood walk"),
+        L("Passejada guiada pels punts més destacats del barri, amb edificis històrics, equipaments i zones verdes. Gratuïta amb inscripció prèvia.",
+          "Paseo guiado por los puntos más destacados del barrio, con edificios históricos, equipamientos y zonas verdes. Gratuito con inscripción previa.",
+          "A guided walk past the neighborhood's highlights: historic buildings, public facilities and green spaces. Free, with advance sign-up."),
+        {loc:MEET, tip:RUTA_TIP, link:["signup",RUTES]}),
+      E("17","17.45",[],"campoamor",
+        L("Dansa regional","Danza regional","Regional dance"),
+        L("Grupo de Danzas San Sebastián, de Reinosa (Cantàbria), amb la Casa de Cantabria.","Grupo de Danzas San Sebastián, de Reinosa (Cantabria), con la Casa de Cantabria.","The Grupo de Danzas San Sebastián, from Reinosa in Cantabria, with the Casa de Cantabria.")),
+      E("17","19",["ticket"],"caritas",
+        L("Gala pro Càritas","Gala pro Cáritas","Charity gala for Càritas"),
+        L("Gala musical per recaptar fons per a Càritas Sant Ramon. Entrada: 10 €, a la parròquia els dimecres i divendres de 18 a 19.15 h.",
+          "Gala musical para recaudar fondos para Càritas Sant Ramon. Entrada: 10 €, en la parroquia los miércoles y viernes de 18 a 19.15 h.",
+          "A music gala raising funds for Càritas Sant Ramon. Tickets €10, at the parish on Wednesdays and Fridays, 6:00–7:15 PM."),
+        {loc:L("Sala d'actes de la parròquia i Escola Sant Ramon (accés per la ctra. de Collblanc, 72)","Salón de actos de la parroquia y Escola Sant Ramon (acceso por la ctra. de Collblanc, 72)","Hall of the parish and Escola Sant Ramon (entrance at Ctra. de Collblanc, 72)")}),
+      E("17.30","19",["book"],"candeu",
+        L("Taller: Personalitza el teu portagots!","Taller: ¡Personaliza tu portavasos!","Workshop: customize your cup holder"),
+        L("Taller de l'Aula d'Educació Ambiental, en dos torns: de 17.30 a 18.30 h i de 18.30 a 19.30 h.","Taller del Aula d'Educació Ambiental, en dos turnos: de 17.30 a 18.30 h y de 18.30 a 19.30 h.","A workshop by the Aula d'Educació Ambiental in two sessions: 5:30–6:30 PM and 6:30–7:30 PM."),
+        {tip:L("La capçalera indica de 17.30 a 19 h, però el segon torn acaba a les 19.30 h.","La cabecera indica de 17.30 a 19 h, pero el segundo turno termina a las 19.30 h.","The heading gives 5:30–7:00 PM, but the second session ends at 7:30 PM.")}),
+      E("18",null,["ticket"],"espiga",
+        L("Teatre: Rumors","Teatro: Rumors","Theater: Rumors"),
+        L("L'obra de Neil Simon, a la sala de teatre de L'Espiga de les Corts. General, 12 €; jubilats, 7 €. Reserves a teatre@espigadelescorts.cat.",
+          "La obra de Neil Simon, en la sala de teatro de L'Espiga de les Corts. General, 12 €; jubilados, 7 €. Reservas en teatre@espigadelescorts.cat.",
+          "Neil Simon's play, in the theater of L'Espiga de les Corts. €12; retirees, €7. Bookings at teatre@espigadelescorts.cat.")),
+      E("18",null,["fire"],"concordia",
+        L("Cercavila unitària","Pasacalle unitario","Joint parade"),
+        L("Bocs de Can Rosés, Repúbli-k de l'Avern, Diables i Timbalers d'Ítaca, Tokatoms i Batukasola, amb els Tabalers del Poble Sec, els Tabalers del Clot i Tabaldracs com a colles convidades.",
+          "Bocs de Can Rosés, Repúbli-k de l'Avern, Diables i Timbalers d'Ítaca, Tokatoms y Batukasola, con los Tabalers del Poble Sec, los Tabalers del Clot y Tabaldracs como colles invitadas.",
+          "Bocs de Can Rosés, Repúbli-k de l'Avern, Diables i Timbalers d'Ítaca, Tokatoms and Batukasola, with the visiting Tabalers del Poble Sec, Tabalers del Clot and Tabaldracs."),
+        {loc:L("Recorregut: pl. de la Concòrdia, Cabestany, Taquígraf Garriga, Joan Gamper, Solà, Vilamur, Anglesola, Doctor Ibáñez, pl. de la Concòrdia, Remei i pl. de Comas","Recorrido: pl. de la Concòrdia, Cabestany, Taquígraf Garriga, Joan Gamper, Solà, Vilamur, Anglesola, Doctor Ibáñez, pl. de la Concòrdia, Remei y pl. de Comas","Route: Pl. de la Concòrdia, Cabestany, Taquígraf Garriga, Joan Gamper, Solà, Vilamur, Anglesola, Doctor Ibáñez, Pl. de la Concòrdia, Remei to Pl. de Comas")}),
+      E("18","20",[],"illa",
+        L("20è aniversari de l'hoquei+","20.º aniversario del hockey+","20 years of hockey+"),
+        L("Tres partits, amb la reedició del primer partit d'hoquei+ a Catalunya, Barça-Moragas, i un Barça-Paideia.","Tres partidos, con la reedición del primer partido de hockey+ en Cataluña, Barça-Moragas, y un Barça-Paideia.","Three games, including a rematch of the first hockey+ game in Catalonia, Barça vs. Moragas, and Barça vs. Paideia.")),
+      E("19",null,["ticket"],"canroses",
+        L("Bingo musical","Bingo musical","Music bingo"),
+        L("Amb premis dels comerços. Cartó: 3 €.","Con premios de los comercios. Cartón: 3 €.","With prizes from local shops. Cards €3.")),
+      E("19","20.30",["book"],"tomasa",
+        L("Teatre: El darrer tall de cabell o qui és l'assassí","Teatro: El darrer tall de cabell o qui és l'assassí","Theater: El darrer tall de cabell o qui és l'assassí"),
+        L("Segona funció de l'obra de Mou-te: un crim a la perruqueria Tony's.","Segunda función de la obra de Mou-te: un crimen en la peluquería Tony's.","Second performance of Mou-te's play: a crime at Tony's hair salon.")),
+      E("20.15",null,[],"remei",
+        L("Concert de Festa Major de l'Orfeó de les Corts","Concierto de Fiesta Mayor del Orfeó de les Corts","Orfeó de les Corts festival concert"),
+        L("Òpera i música de pel·lícules.","Ópera y música de películas.","Opera and movie music.")),
+      E("20.30",null,["fire"],"plcomas",
+        L("Ball de diables","Baile de diablos","Devils' dance"),
+        L("Els versots de les colles de diables abans del correfoc.","Los versots de las colles de diablos antes del correfoc.","The devil groups recite their satirical verses before the fire run.")),
+      E("21",null,["miss","fire"],"plcomas",
+        L("23è Correfoc unitari","23.º Correfoc unitari","23rd Correfoc unitari fire run"),
+        L("Diables i Timbalers d'Ítaca, Repúbli-k de l'Avern, Bocs de Can Rosés, Diables de les Corts, l'Aegis i Dragonets d'Ítaca, amb l'Espategafoc de Sitges, els Diables de Tiana i els Diables de Florida com a colles convidades.",
+          "Diables i Timbalers d'Ítaca, Repúbli-k de l'Avern, Bocs de Can Rosés, Diables de les Corts, l'Aegis y Dragonets d'Ítaca, con el Espategafoc de Sitges, los Diables de Tiana y los Diables de Florida como colles invitadas.",
+          "Diables i Timbalers d'Ítaca, Repúbli-k de l'Avern, Bocs de Can Rosés, Diables de les Corts, l'Aegis and Dragonets d'Ítaca, with the visiting Espategafoc de Sitges, Diables de Tiana and Diables de Florida."),
+        {loc:L("Recorregut: pl. de Comas, Remei, Cabestany, Europa, Dr. Ibáñez, Cristalleries Planell, Anglesola, Joan Gamper, Taquígraf Garriga, Galileu, Remei i pl. de la Concòrdia","Recorrido: pl. de Comas, Remei, Cabestany, Europa, Dr. Ibáñez, Cristalleries Planell, Anglesola, Joan Gamper, Taquígraf Garriga, Galileu, Remei y pl. de la Concòrdia","Route: Pl. de Comas, Remei, Cabestany, Europa, Dr. Ibáñez, Cristalleries Planell, Anglesola, Joan Gamper, Taquígraf Garriga, Galileu, Remei to Pl. de la Concòrdia"),
+         tip:L("Vegeu les recomanacions per als correfocs a «Abans d'anar-hi».","Consulte las recomendaciones para los correfocs en «Antes de ir».","See the fire run advice under Before you go.")}),
+      E("21",null,[],"canroses",
+        L("Sopar de biquinada","Cena de biquinis","Toastie dinner"),
+        L("Festa a Can Rosés.","Fiesta en Can Rosés.","Part of the Can Rosés party.")),
+      E("21.30",null,["ticket"],"espiga",
+        L("Teatre: Rumors","Teatro: Rumors","Theater: Rumors"),
+        L("Segona funció. General, 12 €; jubilats, 7 €. Reserves a teatre@espigadelescorts.cat.","Segunda función. General, 12 €; jubilados, 7 €. Reservas en teatre@espigadelescorts.cat.","Second performance. €12; retirees, €7. Bookings at teatre@espigadelescorts.cat.")),
+      E("22",null,["ticket"],"canroses",
+        L("Bingo coreogràfic","Bingo coreográfico","Dance bingo"),
+        L("Amb premis dels comerços. Cartó: 3 €.","Con premios de los comercios. Cartón: 3 €.","With prizes from local shops. Cards €3.")),
+      E("23",null,[],"concordia",
+        L("Revetlla amb PD","Verbena con DJ","Street party with a DJ"),
+        L("Revetlla del correfoc. Porteu el got de casa.","Verbena del correfoc. Lleve su propio vaso.","The fire run's late-night party. Bring your own cup.")),
+      E("00.00",null,[],"canroses",
+        L("PD Víctor","DJ Víctor","DJ Víctor"),
+        L("Festa a Can Rosés.","Fiesta en Can Rosés.","Part of the Can Rosés party."))
+    ]},
+  { id:"d4", num:"4",
+    dow:L("Diumenge · 4 d'octubre","Domingo · 4 de octubre","Sunday · October 4"),
+    title:L("Tradicions a Comas i Elisendes a Pedralbes","Tradiciones en Comas y Elisendes en Pedralbes","Traditions in Comas, giants in Pedralbes"),
+    note:L("Des de les 9 h","Desde las 9 h","From 9:00 AM"),
+    events:[
+      E("9","13.30",["ticket"],"santramon",
+        L("14a Cursa solidària «En marxa per la paràlisi cerebral»","14.ª Carrera solidaria «En marxa per la paràlisi cerebral»","14th En marxa per la paràlisi cerebral charity run"),
+        L("Cursa 100% accessible i inclusiva pel Dia Mundial de la Paràlisi Cerebral, amb recorreguts d'1 km i 5 km que surten a les 9.30 i a les 10.45 h. Inscripció de 6 a 18 €.",
+          "Carrera 100% accesible e inclusiva por el Día Mundial de la Parálisis Cerebral, con recorridos de 1 km y 5 km que salen a las 9.30 y a las 10.45 h. Inscripción de 6 a 18 €.",
+          "A fully accessible, inclusive run for World Cerebral Palsy Day, with 1 km and 5 km courses starting at 9:30 and 10:45 AM. Entry €6 to €18."),
+        {loc:L("Sortida i arribada: av. de Sant Ramon Nonat","Salida y llegada: av. de Sant Ramon Nonat","Start and finish: Av. de Sant Ramon Nonat"), link:["more","https://cursaenmarxapc.org"]}),
+      E("9.30","13.30",["book","ticket","kids"],"gamper",
+        L("6è Open infantil d'escacs de Festa Major","6.º Open infantil de ajedrez de Fiesta Mayor","6th children's chess open"),
+        L("Torneig per a menors de 14 anys, amb trofeus i esmorzar. Inscripció: 5 €, a espigadelescorts.cat o al 651 304 562.",
+          "Torneo para menores de 14 años, con trofeos y desayuno. Inscripción: 5 €, en espigadelescorts.cat o en el 651 304 562.",
+          "A tournament for under-14s, with trophies and breakfast. Entry €5, at espigadelescorts.cat or 651 304 562."),
+        {link:["signup","https://espigadelescorts.cat"]}),
+      E("10","15",["free"],"plcomas",
+        L("Miscel·lània de tradicions","Miscel·lània de tradicions","Miscel·lània de tradicions, traditions fair"),
+        L("Fira d'artesania Espai d'Art i carpa solidària de l'Associació Futur Autista (10–15 h), estand informatiu del punt lila (10–14 h), trobada de puntaires (10.30–13.30 h), i mostra de tallers i tallers infantils gratuïts de reciclatge i manualitats (11.30–13.30 h).",
+          "Feria de artesanía Espai d'Art y carpa solidaria de la Associació Futur Autista (10–15 h), estand informativo del punto lila (10–14 h), encuentro de encajeras (10.30–13.30 h), y muestra de talleres y talleres infantiles gratuitos de reciclaje y manualidades (11.30–13.30 h).",
+          "The Espai d'Art craft fair and the Associació Futur Autista charity tent (10:00 AM–3:00 PM), a Punt Lila information stand (10:00 AM–2:00 PM), a lacemakers' gathering (10:30 AM–1:30 PM), and workshop showcases plus free children's recycling and crafts workshops (11:30 AM–1:30 PM).")),
+      E("10","17",["free"],"monestir",
+        L("Portes obertes al Monestir de Pedralbes","Puertas abiertas en el Monestir de Pedralbes","Monestir de Pedralbes open day"),
+        L("Visita lliure i gratuïta pels 700 anys del Monestir, el dia de la Trobada de gegantes Elisendes.","Visita libre y gratuita por los 700 años del Monestir, el día del Encuentro de gigantas Elisendes.","A free, self-guided visit for the monastery's 700th anniversary, on the day of the Elisendes giants' gathering.")),
+      E("10",null,["kids"],"monestir",
+        L("Matinal infantil amb tallers","Matinal infantil con talleres","Children's morning with workshops"),
+        L("Dins la Trobada de gegantes Elisendes.","Dentro del Encuentro de gigantas Elisendes.","Part of the Elisendes giants' gathering.")),
+      E("10","20",["kids"],"granvia",
+        L("Activitats de l'Escola Solc","Actividades de la Escola Solc","Escola Solc activities"),
+        L("Taller de percussió amb Gal Gomila (3–8 anys), construccions, contacontes, jocs de taula, taller de colònies i taumatrop.","Taller de percusión con Gal Gomila (3–8 años), construcciones, cuentacuentos, juegos de mesa, taller de colonias y taumatropo.","A percussion workshop with Gal Gomila (ages 3–8), building, storytelling, board games, a perfume workshop and thaumatropes.")),
+      E("10.15",null,["kids"],"joanoliver",
+        L("Tallers familiars de l'Escola Solc","Talleres familiares de la Escola Solc","Escola Solc family workshops"),
+        L("Expressió corporal, música i moviment per a infants de 2 a 6 anys.","Expresión corporal, música y movimiento para niños de 2 a 6 años.","Movement, music and expression for children aged 2 to 6.")),
+      E(null,null,["book"],null,
+        L("Ruta modernista de les Corts","Ruta modernista de Les Corts","Les Corts Modernista route"),
+        MODERNISTA(L("A les 10.30 h, en castellà; a les 12.30 h, en català.","A las 10.30 h, en castellano; a las 12.30 h, en catalán.","10:30 AM in Spanish; 12:30 PM in Catalan.")),
+        {time:{ca:"10.30 i 12.30 h", es:"10.30 y 12.30 h", en:"10:30 AM and 12:30 PM"}, loc:MEET, tip:MODERNISTA_TIP}),
+      E("11","12.30",["book"],"candeu",
+        L("Taller mediambiental inclusiu","Taller medioambiental inclusivo","Inclusive environmental workshop"),
+        L("Per a persones amb discapacitat visual. Inscripció presencial o al web del centre.","Para personas con discapacidad visual. Inscripción presencial o en la web del centro.","For people with visual impairments. Sign up in person or on the center's website.")),
+      E("11","13.30",["book","ticket"],"paideia",
+        L("II Concurs de puzles de Festa Major","II Concurso de puzles de Fiesta Mayor","2nd festival jigsaw puzzle contest"),
+        L("Per parelles, amb un màxim de dues hores, amb puzles de 500 o 200 peces. Inscripció: 10 €, amb formulari.","Por parejas, con un máximo de dos horas, con puzles de 500 o 200 piezas. Inscripción: 10 €, con formulario.","In pairs, two hours at most, with 500- or 200-piece puzzles. Entry €10, by form."),
+        {loc:L("Pati de l'Escola Paideia","Patio de la Escola Paideia","Escola Paideia playground")}),
+      E("11","20",[],null,
+        L("Festa de la cortsenca, vol. IV","Festa de la cortsenca, vol. IV","Festa de la cortsenca, vol. IV"),
+        L("De la revista Curtibus: presentació del projecte, tast de formatges i aperitiu musical, dinar, torneig i intercanvi de cartes, i concert.",
+          "De la revista Curtibus: presentación del proyecto, cata de quesos y aperitivo musical, comida, torneo e intercambio de cartas, y concierto.",
+          "By the magazine Curtibus: project presentation, cheese tasting with music, lunch, a card tournament and swap, and a concert."),
+        {loc:S("Ca la Panarra"), link:["more","https://curtibus.cat"],
+         tip:L("Canvi d'ubicació: el programa el situava a la plaça del Carme i ara indica Ca la Panarra, sense adreça.","Cambio de ubicación: el programa lo situaba en la plaza del Carme y ahora indica Ca la Panarra, sin dirección.","Change of place: the program listed Plaça del Carme and now says Ca la Panarra, with no address.")}),
+      E("11",null,["kids"],"monestir",
+        L("Contacontes familiar amb La Joaneta","Cuentacuentos familiar con La Joaneta","Family storytelling with La Joaneta"),
+        L("Dins la Trobada de gegantes Elisendes.","Dentro del Encuentro de gigantas Elisendes.","Part of the Elisendes giants' gathering.")),
+      E("11.30",null,[],"monestir",
+        L("Plantada d'Elisendes","Plantada de Elisendes","Elisendes giants on display"),
+        L("Les gegantes Elisendes es planten per als 700 anys del Monestir.","Las gigantas Elisendes se plantan por los 700 años del Monestir.","The Elisendes giants go on display for the monastery's 700th anniversary.")),
+      E("11.30","14",[],"cantabria",
+        L("Festes patronals de la Casa de Cantabria","Fiestas patronales de la Casa de Cantabria","Casa de Cantabria patron saint festivities"),
+        L("Processó, missa i el Grupo de Danzas San Sebastián.","Procesión, misa y el Grupo de Danzas San Sebastián.","A procession, mass and the Grupo de Danzas San Sebastián.")),
+      E("12",null,["kids"],"canroses",
+        L("Festa de l'escuma","Fiesta de la espuma","Foam party"),
+        L("Amb Remullats i Marc Oriol.","Con Remullats y Marc Oriol.","With Remullats and Marc Oriol.")),
+      E("12.30",null,[],"monestir",
+        L("Cercavila de les Elisendes","Pasacalle de las Elisendes","Elisendes parade"),
+        L("Dins la Trobada de gegantes Elisendes.","Dentro del Encuentro de gigantas Elisendes.","Part of the Elisendes giants' gathering.")),
+      E("12.30",null,[],"canroses",
+        L("Pica-pica amb Xibarri","Picoteo con Xibarri","Snacks with Xibarri"),
+        L("Rumba catalana.","Rumba catalana.","Catalan rumba.")),
+      E("12.30",null,[],"pratriba",
+        L("Concert de la Banda Simfònica de les Corts","Concierto de la Banda Simfònica de les Corts","Banda Simfònica de les Corts concert"),
+        L("Una banda amb més de cent anys d'història.","Una banda con más de cien años de historia.","A band with more than a hundred years of history."),
+        {loc:L("Numància amb la plaça de Prat de la Riba","Numància con la plaza de Prat de la Riba","Numància at Plaça de Prat de la Riba")}),
+      E("12.30","14",[],"concordia",
+        L("Aperitiu musical","Aperitivo musical","Aperitif with music"),
+        L("Organitzen Junts per Catalunya i JNC.","Organizan Junts per Catalunya y JNC.","Organized by Junts per Catalunya and JNC.")),
+      E("13",null,[],"monestir",
+        L("Presentació d'Elisendes i ballada conjunta","Presentación de Elisendes y baile conjunto","Elisendes presentation and joint dance"),
+        L("Final de la Trobada de gegantes Elisendes.","Final del Encuentro de gigantas Elisendes.","The finale of the Elisendes giants' gathering.")),
+      E("14",null,["ticket"],"canroses",
+        L("Barbacoa popular","Barbacoa popular","Community barbecue"),
+        L("Un quart de pollastre, xistorra, botifarró, cansalada i pa. Socis, 10 €; no socis, 12 €.","Un cuarto de pollo, chistorra, butifarrón, panceta y pan. Socios, 10 €; no socios, 12 €.","A quarter chicken, chistorra, botifarró, pork belly and bread. Members €10; non-members €12.")),
+      E("17",null,[],"canroses",
+        L("Jocs de taula en família","Juegos de mesa en familia","Family board games"),
+        L("Festa a Can Rosés.","Fiesta en Can Rosés.","Part of the Can Rosés party.")),
+      E("17",null,["book","free"],null,
+        L("Ruta pel barri de les Corts","Ruta por el barrio de Les Corts","Les Corts neighborhood walk"),
+        L("Passejada guiada pel nucli històric de les Corts, dels seus orígens fins a l'actualitat. Gratuïta amb inscripció prèvia.",
+          "Paseo guiado por el núcleo histórico de Les Corts, desde sus orígenes hasta la actualidad. Gratuito con inscripción previa.",
+          "A guided walk through the historic center of Les Corts, from its origins to today. Free, with advance sign-up."),
+        {loc:MEET, tip:RUTA_TIP, link:["signup",RUTES]}),
+      E("18",null,[],"parrsramon",
+        L("Trobada de corals de Festa Major","Encuentro de corales de Fiesta Mayor","Festival choir gathering"),
+        L("Trobada de corals a la parròquia de Sant Ramon Nonat.","Encuentro de corales en la parroquia de Sant Ramon Nonat.","A gathering of choirs at the Sant Ramon Nonat parish church.")),
+      E("18",null,["ticket"],"espiga",
+        L("Teatre: Rumors","Teatro: Rumors","Theater: Rumors"),
+        L("Tercera funció. General, 12 €; jubilats, 7 €. Reserves a teatre@espigadelescorts.cat.","Tercera función. General, 12 €; jubilados, 7 €. Reservas en teatre@espigadelescorts.cat.","Third performance. €12; retirees, €7. Bookings at teatre@espigadelescorts.cat."))
+    ]},
+  { id:"d5", num:"5",
+    dow:L("Dilluns · 5 d'octubre","Lunes · 5 de octubre","Monday · October 5"),
+    title:L("Ciència i homenatge a les entitats","Ciencia y homenaje a las entidades","Science and a tribute to local groups"),
+    note:L("Des de les 17.30 h","Desde las 17.30 h","From 5:30 PM"),
+    events:[
+      E("17.30",null,[],"abello",
+        L("Som investigadors! Computació quàntica, el futur de les dades","¡Somos investigadores! Computación cuántica, el futuro de los datos","Young researchers: quantum computing, the future of data"),
+        L("El Barcelona Supercomputing Center presenta l'ordinador quàntic MareNostrum Ona.","El Barcelona Supercomputing Center presenta el ordenador cuántico MareNostrum Ona.","The Barcelona Supercomputing Center presents the MareNostrum Ona quantum computer.")),
+      E("18",null,[],"candeu",
+        L("Homenatge a les entitats i proclamació del Cortsenc i la Cortsenca d'Honor","Homenaje a las entidades y proclamación del Cortsenc y la Cortsenca d'Honor","Tribute to local groups and the Cortsenc and Cortsenca d'Honor awards"),
+        L("El districte homenatja les entitats i proclama el Cortsenc i la Cortsenca d'Honor.","El distrito rinde homenaje a las entidades y proclama el Cortsenc y la Cortsenca d'Honor.","The district honors its local groups and names this year's Cortsenc and Cortsenca d'Honor."))
+    ]},
+  { id:"d6", num:"6",
+    dow:L("Dimarts · 6 d'octubre","Martes · 6 de octubre","Tuesday · October 6"),
+    title:L("Els secrets del Monestir de Pedralbes","Los secretos del Monestir de Pedralbes","The secrets of the Monestir de Pedralbes"),
+    note:L("Des de les 10 h","Desde las 10 h","From 10:00 AM"),
+    events:[
+      E("10","14",[],"granvia",
+        L("Jornada oberta a la fira d'atraccions","Jornada abierta en la feria de atracciones","Funfair open day for schools"),
+        L("Atraccions gratuïtes per a les escoles Esclat, Moragas i Paideia, amb el patrocini dels firaires.","Atracciones gratuitas para las escuelas Esclat, Moragas y Paideia, con el patrocinio de los feriantes.","Free rides for the Esclat, Moragas and Paideia schools, sponsored by the fairground operators."),
+        {loc:S("Gran Via de Carles III")}),
+      E("18","20",["book"],"monestir",
+        L("Descobrint els secrets del Reial Monestir de Pedralbes","Descubriendo los secretos del Reial Monestir de Pedralbes","Discovering the secrets of the Reial Monestir de Pedralbes"),
+        L("Club de lectura pels 700 anys del Monestir, amb visita prèvia, sobre «Pedres blanques», de Rosa Maria Prat i Balaguer. Condueix Mercè Carrillo. Inscripció al web de la biblioteca.",
+          "Club de lectura por los 700 años del Monestir, con visita previa, sobre «Pedres blanques», de Rosa Maria Prat i Balaguer. Conduce Mercè Carrillo. Inscripción en la web de la biblioteca.",
+          "A book club for the monastery's 700th anniversary, with a visit first, on Pedres blanques by Rosa Maria Prat i Balaguer, led by Mercè Carrillo. Sign up on the library's website."))
+    ]},
+  { id:"d7", num:"7",
+    dow:L("Dimecres · 7 d'octubre","Miércoles · 7 de octubre","Wednesday · October 7"),
+    title:L("Festa al jardí del Clot d'en Salvi","Fiesta en el jardín del Clot d'en Salvi","A party in the Clot d'en Salvi garden"),
+    note:L("Des de les 11.30 h","Desde las 11.30 h","From 11:30 AM"),
+    events:[
+      E("11.30",null,["book"],"cannovell",
+        L("El gran joc","El gran juego","The big game"),
+        L("Jocs de coneixença i de rol per a persones grans. Inscripció a la secretaria de l'Espai.","Juegos para conocerse y de rol para personas mayores. Inscripción en la secretaría del Espai.","Getting-to-know-you and role-playing games for older people. Sign up at the center's office.")),
+      E("17.30",null,["kids"],"abello",
+        L("Teatre familiar: Hänsel, Gretel... i qui més?","Teatro familiar: Hänsel, Gretel... i qui més?","Family theater: Hänsel, Gretel... i qui més?"),
+        L("De Peixospeixeres Teatre, per a infants de 4 a 10 anys.","De Peixospeixeres Teatre, para niños de 4 a 10 años.","By Peixospeixeres Teatre, for children aged 4 to 10.")),
+      E("17.30","20",["book"],"ateneu",
+        L("Festival Maker. Taller: Del residu al prototip","Festival Maker. Taller: Del residu al prototip","Festival Maker workshop: from waste to prototype"),
+        L("Amb Sylvia Calvo. Inscripció a afablescorts@bcn.cat.","Con Sylvia Calvo. Inscripción en afablescorts@bcn.cat.","With Sylvia Calvo. Sign up at afablescorts@bcn.cat.")),
+      E("17.30",null,["kids"],"clotsalvi",
+        L("Sac de rondalles","Saco de cuentos","A bag of folk tales"),
+        L("Contes amb Clara Ribatallada, a la Festa Major al jardí del Clot d'en Salvi.","Cuentos con Clara Ribatallada, en la Fiesta Mayor en el jardín del Clot d'en Salvi.","Stories with Clara Ribatallada, part of the festival in the Clot d'en Salvi garden.")),
+      E("18",null,["book"],"sunol",
+        L("Visita guiada: Com es gestiona una col·lecció d'art contemporani","Visita guiada: Cómo se gestiona una colección de arte contemporáneo","Guided visit: how a contemporary art collection is managed"),
+        L("Visita a la reserva de la Col·lecció Suñol Soler. Inscripció a fundaciosunol.org o a reserva@fundaciosunol.org.","Visita a la reserva de la Colección Suñol Soler. Inscripción en fundaciosunol.org o en reserva@fundaciosunol.org.","A visit to the Suñol Soler Collection's storage. Sign up at fundaciosunol.org or reserva@fundaciosunol.org."),
+        {link:["signup","https://fundaciosunol.org"]}),
+      E("19","20.30",["book"],"paradis",
+        L("Visita a una biblioteca singular","Visita a una biblioteca singular","Visit to a unique library"),
+        L("La biblioteca del Centre Excursionista de Catalunya, que fa 150 anys. Organitza la Biblioteca Les Corts-Miquel Llongueras; inscripció al seu web.","La biblioteca del Centre Excursionista de Catalunya, que cumple 150 años. Organiza la Biblioteca Les Corts-Miquel Llongueras; inscripción en su web.","The library of the Centre Excursionista de Catalunya, which turns 150. Organized by the Biblioteca Les Corts-Miquel Llongueras; sign up on its website."),
+        {loc:L("Punt de trobada: carrer del Paradís, 10","Punto de encuentro: calle del Paradís, 10","Meeting point: Carrer del Paradís, 10")}),
+      E("19.30",null,[],"clotsalvi",
+        L("Concert: Crazy Rhythm Cats","Concierto: Crazy Rhythm Cats","Concert: Crazy Rhythm Cats"),
+        L("Swing, a la Festa Major al jardí del Clot d'en Salvi.","Swing, en la Fiesta Mayor en el jardín del Clot d'en Salvi.","Swing, part of the festival in the Clot d'en Salvi garden."))
+    ]},
+  { id:"d8", num:"8",
+    dow:L("Dijous · 8 d'octubre","Jueves · 8 de octubre","Thursday · October 8"),
+    title:L("La Carretillada de Sant Ramon","La Carretillada de Sant Ramon","The Carretillada de Sant Ramon"),
+    note:L("Des de les 17 h","Desde las 17 h","From 5:00 PM"),
+    events:[
+      E("17",null,["kids"],"santramon37",
+        L("La Jugateca viatgera","La Jugateca viajera","The traveling toy library"),
+        L("Jocs sobre el medi ambient, amb l'AVV Sant Ramon.","Juegos sobre el medio ambiente, con la AVV Sant Ramon.","Games about the environment, with the AVV Sant Ramon."),
+        {loc:L("Av. de Sant Ramon Nonat, 37 (entre Cardenal Reig i el passatge de Xile)","Av. de Sant Ramon Nonat, 37 (entre Cardenal Reig y el pasaje de Xile)","Av. de Sant Ramon Nonat, 37 (between Cardenal Reig and Passatge de Xile)")}),
+      E("17","19.30",["free"],"plcomas",
+        L("Joc participatiu: I tu, coneixes les Corts?","Juego participativo: I tu, coneixes les Corts?","Participatory game: how well do you know Les Corts?"),
+        L("Amb serveis, equipaments i entitats del barri. Sense inscripció.","Con servicios, equipamientos y entidades del barrio. Sin inscripción.","With local services, facilities and groups. No sign-up needed.")),
+      E("17.30",null,["book"],"joanoliver",
+        L("Taller: Òpera per a tutti","Taller: Òpera per a tutti","Workshop: Òpera per a tutti"),
+        L("Amb Joan Martínez Colàs. Inscripció al centre cívic.","Con Joan Martínez Colàs. Inscripción en el centro cívico.","With Joan Martínez Colàs. Sign up at the civic center.")),
+      E("19",null,["book"],"candeu",
+        L("Conferència: Improvís a debat. Com es compon un concert?","Conferencia: Improvís a debate. ¿Cómo se compone un concierto?","Talk: Improvís in debate, how is a concert composed?"),
+        L("Amb Abril Riu. Inscripció presencial o al web del centre.","Con Abril Riu. Inscripción presencial o en la web del centro.","With Abril Riu. Sign up in person or on the center's website.")),
+      E("19.30",null,["miss","fire"],"santramon",
+        L("Carretillada de Sant Ramon: cercavila amb percussió","Carretillada de Sant Ramon: pasacalle con percusión","Carretillada de Sant Ramon: drum parade"),
+        L("Bocs de Can Rosés, Repúbli-k de l'Avern, Tokatoms, Batukasola, Diables i Timbalers d'Ítaca i Diables de les Corts, amb l'AVV Sant Ramon.",
+          "Bocs de Can Rosés, Repúbli-k de l'Avern, Tokatoms, Batukasola, Diables i Timbalers d'Ítaca y Diables de les Corts, con la AVV Sant Ramon.",
+          "Bocs de Can Rosés, Repúbli-k de l'Avern, Tokatoms, Batukasola, Diables i Timbalers d'Ítaca and Diables de les Corts, with the AVV Sant Ramon."),
+        {loc:L("Recorregut: av. de Sant Ramon Nonat, Cardenal Reig, Poblet, passatge de Xile i tornada a l'inici","Recorrido: av. de Sant Ramon Nonat, Cardenal Reig, Poblet, pasaje de Xile y vuelta al inicio","Route: Av. de Sant Ramon Nonat, Cardenal Reig, Poblet, Passatge de Xile and back to the start"),
+         tip:L("Vegeu les recomanacions per als correfocs a «Abans d'anar-hi».","Consulte las recomendaciones para los correfocs en «Antes de ir».","See the fire run advice under Before you go.")}),
+      E("20.15",null,["miss","fire"],"parrsramon",
+        L("Carretillada de Sant Ramon: lluïment de foc","Carretillada de Sant Ramon: exhibición de fuego","Carretillada de Sant Ramon: fire display"),
+        L("Lluïment de foc davant de l'església de Sant Ramon.","Exhibición de fuego delante de la iglesia de Sant Ramon.","A fire display in front of the Sant Ramon church."),
+        {loc:L("Davant de l'església de Sant Ramon","Delante de la iglesia de Sant Ramon","In front of the Sant Ramon church")})
+    ]},
+  { id:"d9", num:"9",
+    dow:L("Divendres · 9 d'octubre","Viernes · 9 de octubre","Friday · October 9"),
+    title:L("Nit de festa a tots els barris","Noche de fiesta en todos los barrios","A festival night in every neighborhood"),
+    note:L("Des de les 16 h","Desde las 16 h","From 4:00 PM"),
+    events:[
+      E("16","19",[],"abello",
+        L("Jocs de taula al carrer","Juegos de mesa en la calle","Board games in the street"),
+        L("Jocs lliures, inclusius i sensorials, amb la Biblioteca, la Ludoteca Guitard i l'Ateneu de Fabricació.","Juegos libres, inclusivos y sensoriales, con la Biblioteca, la Ludoteca Guitard y el Ateneu de Fabricació.","Open, inclusive and sensory games, with the library, the Ludoteca Guitard and the Ateneu de Fabricació."),
+        {loc:L("Carrer dels Comtes de Bell-lloc, davant de la Biblioteca Montserrat Abelló","Calle de los Comtes de Bell-lloc, delante de la Biblioteca Montserrat Abelló","Carrer dels Comtes de Bell-lloc, in front of the Biblioteca Montserrat Abelló")}),
+      E("17",null,["kids"],"concordia",
+        L("Espectacle infantil: La Rita és gegantina!","Espectáculo infantil: La Rita és gegantina!","Children's show: La Rita és gegantina!"),
+        L("De Llimac Teatre amb Shakespeare & Friends.","De Llimac Teatre con Shakespeare & Friends.","By Llimac Teatre with Shakespeare & Friends.")),
+      E("17.30",null,[],"canroses",
+        L("Xocolatada popular","Chocolatada popular","Hot chocolate"),
+        L("Amb La Trufa, a la Festa a Can Rosés.","Con La Trufa, en la Fiesta en Can Rosés.","With La Trufa, part of the Can Rosés party.")),
+      E("17.30",null,["kids"],"benavent",
+        L("Festa Major a Benavent!","¡Fiesta Mayor en Benavent!","Festival afternoon on Benavent"),
+        L("Manualitats, taller obert amb Tokatoms, jocs gegants, henna, torneig de vòlei i exhibició de zumba.","Manualidades, taller abierto con Tokatoms, juegos gigantes, henna, torneo de vóley y exhibición de zumba.","Crafts, an open workshop with Tokatoms, giant games, henna, a volleyball tournament and a Zumba display.")),
+      E("17.30","19",["kids"],"soldebaix",
+        L("Taller de circ infantil","Taller de circo infantil","Children's circus workshop"),
+        L("Per a infants de 6 a 12 anys, amb la Plataforma Infantil i Juvenil de les Corts.","Para niños de 6 a 12 años, con la Plataforma Infantil i Juvenil de les Corts.","For children aged 6 to 12, with the Plataforma Infantil i Juvenil de les Corts.")),
+      E("17.30","18.30",["kids"],"santramon",
+        L("Festa de l'escuma","Fiesta de la espuma","Foam party"),
+        L("Per a infants fins a 10 anys, amb l'Associació Les Corts Comerç 08028.","Para niños de hasta 10 años, con la Associació Les Corts Comerç 08028.","For children up to age 10, with the Associació Les Corts Comerç 08028.")),
+      E("18",null,["book"],"joanoliver",
+        L("Espectacle: Oveja eléctrica","Espectáculo: Oveja eléctrica","Show: Oveja eléctrica"),
+        L("De la companyia Pla Roig, guanyadora del Concurs de Performance dels Premis Òrbita de Dansa 2025. Inscripció al web del centre.","De la compañía Pla Roig, ganadora del Concurso de Performance de los Premis Òrbita de Dansa 2025. Inscripción en la web del centro.","By the Pla Roig company, winner of the 2025 Premis Òrbita de Dansa performance contest. Sign up on the center's website.")),
+      E("18.30",null,[],"benavent",
+        L("Zumba","Zumba","Zumba"),
+        L("Amb el CE Mediterrani i l'AVV Camp Nou.","Con el CE Mediterrani y la AVV Camp Nou.","With CE Mediterrani and the AVV Camp Nou.")),
+      E("18.30",null,["kids"],"concordia",
+        L("Festa polar amb Pol Nord","Fiesta polar con Pol Nord","Polar party with Pol Nord"),
+        L("Activitat musical infantil.","Actividad musical infantil.","A music activity for children.")),
+      E("19",null,[],"plmonestir",
+        L("Actuació de la Banda Municipal de Barcelona","Actuación de la Banda Municipal de Barcelona","Banda Municipal de Barcelona concert"),
+        L("Més de seixanta músics, amb repertori popular i clàssic.","Más de sesenta músicos, con repertorio popular y clásico.","More than sixty musicians playing popular and classical music.")),
+      E("19","20",[],"plcomas",
+        L("Concert de la JOSC","Concierto de la JOSC","JOSC concert"),
+        L("La Jove Orquestra Simfònica de les Corts.","La Jove Orquestra Simfònica de les Corts.","The Jove Orquestra Simfònica de les Corts youth orchestra.")),
+      E("19.30","20.30",[],"soldebaix",
+        L("Manifest de la festa major jove","Manifiesto de la fiesta mayor joven","Young people's festival manifesto"),
+        L("Xerrada amb la Plataforma Infantil i Juvenil de les Corts.","Charla con la Plataforma Infantil i Juvenil de les Corts.","A talk with the Plataforma Infantil i Juvenil de les Corts.")),
+      E("20","21.30",[],"tomasa",
+        L("Teatre: Te a la menta o te amb llimona","Teatro: Te a la menta o te amb llimona","Theater: Te a la menta o te amb llimona"),
+        L("D'ACTAC, amb subtítols, audiodescripció, visita tàctil anticipada i espai reservat.","De ACTAC, con subtítulos, audiodescripción, visita táctil anticipada y espacio reservado.","By ACTAC, with subtitles, audio description, a touch tour beforehand and reserved seating.")),
+      E("20.30",null,[],"plcomas",
+        L("Sopar de carmanyola de dones de les Corts","Cena de fiambrera de mujeres de Les Corts","Les Corts women's bring-your-own dinner"),
+        L("Organitza el Consell de Dones de les Corts; a les 21.15 h, concert de jazz.","Organiza el Consell de Dones de les Corts; a las 21.15 h, concierto de jazz.","Organized by the Consell de Dones de les Corts; a jazz concert follows at 9:15 PM.")),
+      E("21",null,[],"soldebaix",
+        L("Nit de festa jove: tabalada","Noche de fiesta joven: tabalada","Young people's night: drums"),
+        L("Amb la Plataforma Infantil i Juvenil de les Corts.","Con la Plataforma Infantil i Juvenil de les Corts.","With the Plataforma Infantil i Juvenil de les Corts.")),
+      E("21.15",null,[],"plcomas",
+        L("Concert de jazz","Concierto de jazz","Jazz concert"),
+        L("Després del sopar de carmanyola de dones de les Corts.","Después de la cena de fiambrera de mujeres de Les Corts.","After the Les Corts women's dinner.")),
+      E("21.30",null,[],"granvia",
+        L("Nit de Festa Major de les Corts Sud: pregó","Noche de Fiesta Mayor de Les Corts Sud: pregón","Les Corts Sud festival night: opening speech"),
+        L("Pregó de Victòria Garcia Gaitero, amb l'AVV Les Corts Sud.","Pregón de Victòria Garcia Gaitero, con la AVV Les Corts Sud.","An opening speech by Victòria Garcia Gaitero, with the AVV Les Corts Sud.")),
+      E("21.30",null,[],"benavent",
+        L("Sopar de carmanyola","Cena de fiambrera","Bring-your-own dinner"),
+        L("Nit de festa a Benavent, amb l'AVV Camp Nou.","Noche de fiesta en Benavent, con la AVV Camp Nou.","Festival night on Benavent, with the AVV Camp Nou.")),
+      E("21.45",null,["ticket"],"granvia",
+        L("Sopar inaugural","Cena inaugural","Opening dinner"),
+        L("Amb tiquet.","Con tique.","Ticket needed.")),
+      E("22",null,[],"granvia",
+        L("Amanda Vocalist","Amanda Vocalist","Amanda Vocalist"),
+        L("Actuació musical a la nit de Festa Major de les Corts Sud.","Actuación musical en la noche de Fiesta Mayor de Les Corts Sud.","Live music at the Les Corts Sud festival night.")),
+      E("22",null,[],"soldebaix",
+        L("Guanyador o guanyadora de la batalla de grups","Ganador o ganadora de la batalla de grupos","Battle of the bands winner"),
+        L("Actuació a la nit de festa jove.","Actuación en la noche de fiesta joven.","A performance at the young people's night.")),
+      E("22",null,[],"benavent",
+        L("Música i ball amb PD Maricarnevegana i Plaerdemavida","Música y baile con DJ Maricarnevegana y Plaerdemavida","Music and dancing with DJ Maricarnevegana and Plaerdemavida"),
+        L("Nit de festa a Benavent.","Noche de fiesta en Benavent.","Festival night on Benavent.")),
+      E("22",null,[],"santramon37",
+        L("Cantada d'havaneres","Cantada de habaneras","Havaneres singing"),
+        L("Amb Penjats de l'Ham, amb l'AVV Sant Ramon.","Con Penjats de l'Ham, con la AVV Sant Ramon.","With Penjats de l'Ham, hosted by the AVV Sant Ramon.")),
+      E("22.30",null,[],"canroses",
+        L("Ball amb PD Txanga","Baile con DJ Txanga","Dance with DJ Txanga"),
+        L("Música de la dècada dels vuitanta fins ara.","Música de la década de los ochenta hasta hoy.","Music from the eighties to today.")),
+      E("22.30",null,[],"concordia",
+        L("Nit de concerts: Pascual i Desnatats","Noche de conciertos: Pascual i Desnatats","Concert night: Pascual i Desnatats"),
+        L("A les 24 h, PD Renatas.","A las 24 h, DJ Renatas.","DJ Renatas follows at midnight.")),
+      E("23",null,[],"soldebaix",
+        L("Batalla de PD","Batalla de DJ","DJ battle"),
+        L("Nit de festa jove.","Noche de fiesta joven.","Young people's night.")),
+      E("23.30",null,[],"granvia",
+        L("El Guateque","El Guateque","El Guateque"),
+        L("Actuació musical a la nit de Festa Major de les Corts Sud.","Actuación musical en la noche de Fiesta Mayor de Les Corts Sud.","Live music at the Les Corts Sud festival night.")),
+      E("00.00",null,[],"concordia",
+        L("PD Renatas","DJ Renatas","DJ Renatas"),
+        L("Nit de concerts a la plaça de la Concòrdia.","Noche de conciertos en la plaza de la Concòrdia.","Concert night in Plaça de la Concòrdia."))
+    ]},
+  { id:"d10", num:"10",
+    dow:L("Dissabte · 10 d'octubre","Sábado · 10 de octubre","Saturday · October 10"),
+    title:L("Diada castellera i nit de concerts","Diada castellera y noche de conciertos","Human towers and a night of concerts"),
+    note:L("Des de les 10 h","Desde las 10 h","From 10:00 AM"),
+    events:[
+      E("10",null,["book","ticket"],"concordia",
+        L("Torneig de botifarra","Torneo de butifarra","Botifarra card tournament"),
+        L("Concurs del joc de cartes, amb premis. Inscripció de pagament.","Concurso del juego de cartas, con premios. Inscripción de pago.","A tournament of the Catalan card game, with prizes. Paid entry."),
+        {tip:L("El programa no indica el preu.","El programa no indica el precio.","The program does not give the price.")}),
+      E("10",null,[],"soldebaix",
+        L("Jornada de festa amb la Plataforma","Jornada de fiesta con la Plataforma","A day of fun with the Plataforma"),
+        L("Contacontes a les 10 h, torneig de vòlei a les 11.30 h, taller sorpresa a les 13 h, xerrada formativa a les 16.30 h i taller de grafiti a les 17.30 h.","Cuentacuentos a las 10 h, torneo de vóley a las 11.30 h, taller sorpresa a las 13 h, charla formativa a las 16.30 h y taller de grafiti a las 17.30 h.","Storytelling at 10:00 AM, a volleyball tournament at 11:30 AM, a surprise workshop at 1:00 PM, a talk at 4:30 PM and a graffiti workshop at 5:30 PM.")),
+      E("10","11",[],"granvia",
+        L("Showcooking","Showcooking","Cooking demonstration"),
+        L("Cuina amb productes de mercat, amb l'AVV Les Corts Sud i el Mercat de Pagès.","Cocina con productos de mercado, con la AVV Les Corts Sud y el Mercat de Pagès.","Cooking with market produce, with the AVV Les Corts Sud and the Mercat de Pagès.")),
+      E("10","14",[],"granvia",
+        L("5a Trobada d'intercanvi de plaques de cava","5.º Encuentro de intercambio de placas de cava","5th cava cap swap"),
+        L("Amb degustació.","Con degustación.","With a tasting.")),
+      E("10","13",["kids"],"benavent",
+        L("Matí infantil","Mañana infantil","Children's morning"),
+        L("PD Víctor Suco, trenet, tricicles i karts, bombolles, pintacares, globoflèxia, espai d'aigua d'Aigües de Barcelona i la patrulla canina de la Guàrdia Urbana.","DJ Víctor Suco, trenecito, triciclos y karts, burbujas, pintacaras, globoflexia, espacio de agua de Aigües de Barcelona y la patrulla canina de la Guardia Urbana.","DJ Víctor Suco, a little train, tricycles and go-karts, bubbles, face painting, balloon twisting, a water area by Aigües de Barcelona and the Guàrdia Urbana dog unit.")),
+      E("10","13",["book"],"benavent",
+        L("Campionat de dòmino","Campeonato de dominó","Dominoes championship"),
+        L("Amb l'AVV Camp Nou.","Con la AVV Camp Nou.","With the AVV Camp Nou.")),
+      E("10","14",[],"cem",
+        L("Jornada esportiva","Jornada deportiva","Sports day"),
+        L("Futbol sala i bàsquet, amb l'Associació Esportiva Les Corts.","Fútbol sala y baloncesto, con la Associació Esportiva Les Corts.","Indoor soccer and basketball, with the Associació Esportiva Les Corts."),
+        {loc:L("Pistes del CEM Les Corts","Pistas del CEM Les Corts","CEM Les Corts courts")}),
+      E("10","20",[],"santramon",
+        L("Mostra de comerç de Les Corts Comerç 08028","Muestra de comercio de Les Corts Comerç 08028","Les Corts Comerç 08028 shops showcase"),
+        L("Botigues, artesania, alimentació i activitats.","Tiendas, artesanía, alimentación y actividades.","Shops, crafts, food and activities.")),
+      E("10.30","12",[],"granvia",
+        L("Sardinada popular","Sardinada popular","Sardine grill"),
+        L("Amb pa i beguda, amb l'AVV Les Corts Sud.","Con pan y bebida, con la AVV Les Corts Sud.","With bread and a drink, with the AVV Les Corts Sud.")),
+      E("10.30","14.30",["book"],"tomasa",
+        L("Passejada feminista i actuació musical","Paseo feminista y actuación musical","Feminist walk and live music"),
+        L("Recorregut per diferents espais del districte que acaba davant del Centre Cívic Tomasa Cuevas, amb refrigeri i concert del grup Voleo. Inscripció a donesifeminismeslescorts@bcn.cat.","Recorrido por diferentes espacios del distrito que termina delante del Centro Cívico Tomasa Cuevas, con refrigerio y concierto del grupo Voleo. Inscripción en donesifeminismeslescorts@bcn.cat.","A walk through several places in the district ending in front of the Centre Cívic Tomasa Cuevas, with refreshments and a concert by Voleo. Sign up at donesifeminismeslescorts@bcn.cat."),
+        {loc:L("Arribada: c. de Dolors Masferrer, davant del CC Tomasa Cuevas","Llegada: c. de Dolors Masferrer, delante del CC Tomasa Cuevas","Finish: C. de Dolors Masferrer, in front of CC Tomasa Cuevas")}),
+      E("11",null,["book","free"],null,
+        L("Ruta pel barri de la Maternitat i Sant Ramon","Ruta por el barrio de la Maternitat i Sant Ramon","La Maternitat i Sant Ramon neighborhood walk"),
+        L("Passejada guiada pels punts més destacats del barri, amb edificis històrics, equipaments i zones verdes. Gratuïta amb inscripció prèvia.",
+          "Paseo guiado por los puntos más destacados del barrio, con edificios históricos, equipamientos y zonas verdes. Gratuito con inscripción previa.",
+          "A guided walk past the neighborhood's highlights: historic buildings, public facilities and green spaces. Free, with advance sign-up."),
+        {loc:MEET, tip:RUTA_TIP, link:["signup",RUTES]}),
+      E("11",null,[],"plcomas",
+        L("Marxa de pastorets amb els Gegants de les Corts","Marcha de pastorets con los Gigantes de Les Corts","Shepherds' march with the Gegants de les Corts"),
+        L("De la plaça de Comas a la plaça de la Concòrdia pel carrer del Remei. A les 11.30 h, lliurament i ball parlat a la plaça de la Concòrdia.","De la plaza de Comas a la plaza de la Concòrdia por la calle del Remei. A las 11.30 h, entrega y baile hablado en la plaza de la Concòrdia.","From Plaça de Comas to Plaça de la Concòrdia along Carrer del Remei. At 11:30 AM, a handover and spoken dance in Plaça de la Concòrdia."),
+        {loc:L("Recorregut: pl. de Comas, Remei i pl. de la Concòrdia","Recorrido: pl. de Comas, Remei y pl. de la Concòrdia","Route: Pl. de Comas, Remei to Pl. de la Concòrdia")}),
+      E("11",null,["kids"],"granvia",
+        L("Contacontes","Cuentacuentos","Storytelling"),
+        L("Amb el Mercat de Pagès.","Con el Mercat de Pagès.","With the Mercat de Pagès.")),
+      E("11","12.30",["book"],"joanxxiii",
+        L("Conèixer les Corts: «Entorns de la Maternitat: rieres, masies, salut i modernisme»","Conèixer les Corts: «Entorns de la Maternitat: rieres, masies, salut i modernisme»","Conèixer les Corts: around La Maternitat, streams, farmhouses, health and Modernisme"),
+        L("Itinerari amb Joan Sanromà, de Donar Veu a la Memòria. Organitza la Biblioteca Les Corts-Miquel Llongueras.","Itinerario con Joan Sanromà, de Donar Veu a la Memòria. Organiza la Biblioteca Les Corts-Miquel Llongueras.","A walk with Joan Sanromà, of Donar Veu a la Memòria. Organized by the Biblioteca Les Corts-Miquel Llongueras."),
+        {loc:L("Punt de trobada: av. de Joan XXIII amb la Porta dels Güell","Punto de encuentro: av. de Joan XXIII con la Porta dels Güell","Meeting point: Av. de Joan XXIII at the Porta dels Güell")}),
+      E("11","13.30",["kids"],"mercat",
+        L("Concurs infantil d'aeromodelisme","Concurso infantil de aeromodelismo","Children's model aircraft contest"),
+        L("Per a infants de 4 a 10 anys, amb el Club Velers Collserola.","Para niños de 4 a 10 años, con el Club Velers Collserola.","For children aged 4 to 10, with the Club Velers Collserola."),
+        {loc:L("C. de les Corts amb el Mercat (cantonada Doctor Nubiola i Espinós)","C. de les Corts con el Mercat (esquina Doctor Nubiola i Espinós)","C. de les Corts by the market (corner of Doctor Nubiola i Espinós)")}),
+      E("11",null,[],"canroses",
+        L("La fàbrica dels somnis","La fàbrica dels somnis","La fàbrica dels somnis"),
+        L("Exhibició de ball de l'escola de dansa La Fàbrica dels Somnis, a la Festa a Can Rosés.","Exhibición de baile de la escuela de danza La Fàbrica dels Somnis, en la Fiesta en Can Rosés.","A dance display by the La Fàbrica dels Somnis dance school, part of the Can Rosés party.")),
+      E("12",null,[],"concordia",
+        L("Actuació castellera amb Els Panarres de les Corts","Actuación castellera con Els Panarres de les Corts","Human towers by Els Panarres de les Corts"),
+        L("Castells a la plaça de la Concòrdia.","Castells en la plaza de la Concòrdia.","Human towers in Plaça de la Concòrdia.")),
+      E("12",null,[],"santramon37",
+        L("Actuació de la Banda Simfònica de les Corts","Actuación de la Banda Simfònica de les Corts","Banda Simfònica de les Corts performance"),
+        L("Amb l'AVV Sant Ramon.","Con la AVV Sant Ramon.","Hosted by the AVV Sant Ramon.")),
+      E("12.30",null,["book","free"],"concordia",
+        L("Concurs de paelles","Concurso de paellas","Paella contest"),
+        L("Cal portar cremador i gas. Inscripció gratuïta a festesconcordia@gmail.com.","Hay que llevar quemador y gas. Inscripción gratuita en festesconcordia@gmail.com.","Bring your own burner and gas. Free sign-up at festesconcordia@gmail.com.")),
+      E("12.30",null,["book"],"joanoliver",
+        L("Concert: Duo dinàmic de rock 'n' roll","Concierto: Duo dinàmic de rock 'n' roll","Concert: Duo dinàmic de rock 'n' roll"),
+        L("Amb Martí Solé i Arturo Doral.","Con Martí Solé y Arturo Doral.","With Martí Solé and Arturo Doral.")),
+      E("12.30",null,[],"canroses",
+        L("Karaoke amb Shakespeare & Friends","Karaoke con Shakespeare & Friends","Karaoke with Shakespeare & Friends"),
+        L("Festa a Can Rosés.","Fiesta en Can Rosés.","Part of the Can Rosés party.")),
+      E("13",null,["miss"],"plcomas",
+        L("Diada castellera","Diada castellera","Human towers day"),
+        L("Castellers de Barcelona i Castellers de Sants, amb els Xics de Granollers com a colla convidada.","Castellers de Barcelona y Castellers de Sants, con los Xics de Granollers como colla invitada.","The Castellers de Barcelona and Castellers de Sants, with the visiting Xics de Granollers.")),
+      E("13",null,[],"concordia",
+        L("Aperitiu musical amb Los Chukis","Aperitivo musical con Los Chukis","Aperitif with music by Los Chukis"),
+        L("A la plaça de la Concòrdia.","En la plaza de la Concòrdia.","In Plaça de la Concòrdia.")),
+      E("13",null,["ticket"],"gamper",
+        L("Àpat de Festa Major de la Penya Blaugrana","Comida de Fiesta Mayor de la Penya Blaugrana","Penya Blaugrana festival lunch"),
+        L("Preu: 45 €.","Precio: 45 €.","Price: €45."),
+        {loc:L("Carrer de Joan Gamper amb Solà","Calle de Joan Gamper con Solà","Carrer de Joan Gamper at Solà")}),
+      E("14",null,["ticket"],"canroses",
+        L("Botifarrada popular","Butifarrada popular","Sausage lunch"),
+        L("Gratuïta per a socis; no socis, 6 €.","Gratuita para socios; no socios, 6 €.","Free for members; non-members €6.")),
+      E("14",null,["book"],"benavent",
+        L("Pollastrada popular","Pollada popular","Chicken lunch"),
+        L("Reserva a l'AVV Camp Nou o a les instal·lacions Peñalba.","Reserva en la AVV Camp Nou o en las instalaciones Peñalba.","Book at the AVV Camp Nou or at the Peñalba facilities.")),
+      E("16","17.30",[],"benavent",
+        L("Bingo","Bingo","Bingo"),
+        L("Amb l'AVV Camp Nou.","Con la AVV Camp Nou.","With the AVV Camp Nou.")),
+      E("16",null,["book","free"],null,
+        L("Ruta pel barri de Pedralbes","Ruta por el barrio de Pedralbes","Pedralbes neighborhood walk"),
+        L("Passejada guiada per un dels barris amb més valor patrimonial de la ciutat i els seus espais històrics. Gratuïta amb inscripció prèvia.",
+          "Paseo guiado por uno de los barrios con más valor patrimonial de la ciudad y sus espacios históricos. Gratuito con inscripción previa.",
+          "A guided walk through one of the city's richest heritage neighborhoods and its historic places. Free, with advance sign-up."),
+        {loc:MEET, tip:RUTA_TIP, link:["signup",RUTES]}),
+      E("17",null,[],"canroses",
+        L("Cantada d'havaneres","Cantada de habaneras","Havaneres singing"),
+        L("Amb el grup Montjuïc.","Con el grupo Montjuïc.","With the Montjuïc group.")),
+      E("17","18.30",["kids"],"granvia",
+        L("Taller de circ","Taller de circo","Circus workshop"),
+        L("Amb l'AVV Les Corts Sud.","Con la AVV Les Corts Sud.","With the AVV Les Corts Sud.")),
+      E("17","19",["ticket"],"caritas",
+        L("Gala pro Càritas","Gala pro Cáritas","Charity gala for Càritas"),
+        L("Segona gala musical per a Càritas Sant Ramon. Entrada: 10 €.","Segunda gala musical para Càritas Sant Ramon. Entrada: 10 €.","Second music gala for Càritas Sant Ramon. Tickets €10."),
+        {loc:L("Sala d'actes de la parròquia i Escola Sant Ramon (accés per la ctra. de Collblanc, 72)","Salón de actos de la parroquia y Escola Sant Ramon (acceso por la ctra. de Collblanc, 72)","Hall of the parish and Escola Sant Ramon (entrance at Ctra. de Collblanc, 72)")}),
+      E("17",null,[],"magali",
+        L("Les Corts electrònica","Les Corts electrònica","Les Corts electrònica"),
+        L("Concert i activitats de música electrònica, amb l'Associació Praxis Barcelona.","Concierto y actividades de música electrónica, con la Associació Praxis Barcelona.","Electronic music concert and activities, with the Associació Praxis Barcelona.")),
+      E("17.30",null,["book"],"joanoliver",
+        L("Teatre: Improshow","Teatro: Improshow","Theater: Improshow"),
+        L("Teatre d'improvisació participatiu amb Planeta Impro. Entrades a la secretaria dels Espais per a persones grans.","Teatro de improvisación participativo con Planeta Impro. Entradas en la secretaría de los Espais per a persones grans.","Interactive improv theater with Planeta Impro. Tickets at the Espais per a persones grans offices.")),
+      E("17.30","19",[],"benavent",
+        L("Xocolatada per a tothom","Chocolatada para todos","Hot chocolate for everyone"),
+        L("Amb l'AVV Camp Nou.","Con la AVV Camp Nou.","With the AVV Camp Nou.")),
+      E("18",null,[],"remei",
+        L("Ofrena floral","Ofrenda floral","Flower offering"),
+        L("Pels 180 anys de la parròquia: una flor a la patrona.","Por los 180 años de la parroquia: una flor a la patrona.","For the parish's 180th anniversary: a flower for the patron saint.")),
+      E("18",null,["ticket"],"concordia",
+        L("20è Atabala'mmm","20.º Atabala'mmm","20th Atabala'mmm"),
+        L("Cercavila amb tres grups de percussió pel nucli antic, dels Diables de les Corts. Preu: 15 €; tiquets a les 16.30 h.","Pasacalle con tres grupos de percusión por el casco antiguo, de los Diables de les Corts. Precio: 15 €; tiques a las 16.30 h.","A parade with three drum groups through the old center, by the Diables de les Corts. Price €15; tickets at 4:30 PM.")),
+      E("19","20.30",[],"benavent",
+        L("Teatre a l'aire lliure: «Fortimbràs: un sopar amb molta merda!»","Teatro al aire libre: «Fortimbràs: un sopar amb molta merda!»","Outdoor theater: Fortimbràs, un sopar amb molta merda!"),
+        L("Amb l'AVV Camp Nou.","Con la AVV Camp Nou.","With the AVV Camp Nou.")),
+      E("19","20.30",[],"tomasa",
+        L("Teatre: Te a la menta o te amb llimona","Teatro: Te a la menta o te amb llimona","Theater: Te a la menta o te amb llimona"),
+        L("Segona funció d'ACTAC.","Segunda función de ACTAC.","ACTAC's second performance.")),
+      E("20","21",[],"soldebaix",
+        L("Micro obert","Micro abierto","Open mic"),
+        L("Joves artistes del barri.","Jóvenes artistas del barrio.","Young local artists.")),
+      E("20.30",null,["book"],"santramon37",
+        L("Sopar popular","Cena popular","Community dinner"),
+        L("Amb l'AVV Sant Ramon. Inscripció per WhatsApp al 646 133 293 o a avsanramon@gmail.com.","Con la AVV Sant Ramon. Inscripción por WhatsApp en el 646 133 293 o en avsanramon@gmail.com.","With the AVV Sant Ramon. Sign up by WhatsApp at 646 133 293 or at avsanramon@gmail.com.")),
+      E("21","23",[],"laieta",
+        L("Concert de la diada del soci del CE Laietà","Concierto de la diada del socio del CE Laietà","CE Laietà members' day concert"),
+        L("Amb Big Mouthers.","Con Big Mouthers.","With Big Mouthers."),
+        {loc:S("CE Laietà (Pintor Ribalta, 2–8)")}),
+      E("22",null,[],"concordia",
+        L("Nit de concerts: Mitjanit","Noche de conciertos: Mitjanit","Concert night: Mitjanit"),
+        L("A les 24 h, PD Kiwisound.","A las 24 h, DJ Kiwisound.","DJ Kiwisound follows at midnight.")),
+      E("22",null,[],"benavent",
+        L("Ball amb el Duet Zenit","Baile con el Duet Zenit","Dance with Duet Zenit"),
+        L("Amb l'AVV Camp Nou.","Con la AVV Camp Nou.","With the AVV Camp Nou.")),
+      E("22",null,[],"santramon37",
+        L("Música i ball amb Non Stop Band","Música y baile con Non Stop Band","Music and dancing with Non Stop Band"),
+        L("Amb l'AVV Sant Ramon.","Con la AVV Sant Ramon.","With the AVV Sant Ramon.")),
+      E("22","23.30",[],"granvia",
+        L("Actuació musical: Ambdós Two of Us","Actuación musical: Ambdós Two of Us","Live music: Ambdós Two of Us"),
+        L("Tribut a la música dels anys seixanta i setanta.","Tributo a la música de los años sesenta y setenta.","A tribute to the music of the sixties and seventies.")),
+      E("22.30",null,[],"canroses",
+        L("Concert amb la Lonelys Band","Concierto con la Lonelys Band","Concert with the Lonelys Band"),
+        L("Un repertori de versions.","Un repertorio de versiones.","A set of covers.")),
+      E("00.00",null,[],"concordia",
+        L("PD Kiwisound","DJ Kiwisound","DJ Kiwisound"),
+        L("Nit de concerts a la plaça de la Concòrdia.","Noche de conciertos en la plaza de la Concòrdia.","Concert night in Plaça de la Concòrdia.")),
+      E("00.00",null,[],"granvia",
+        L("Actuació musical: Barcelona Pop Cor","Actuación musical: Barcelona Pop Cor","Live music: Barcelona Pop Cor"),
+        L("Tribut als èxits del pop-rock espanyol.","Tributo a los éxitos del pop-rock español.","A tribute to Spanish pop-rock hits.")),
+      E("00.00",null,[],"soldebaix",
+        L("Actuació musical: Dinastia Z","Actuación musical: Dinastia Z","Live music: Dinastia Z"),
+        L("Amb la Plataforma Infantil i Juvenil de les Corts.","Con la Plataforma Infantil i Juvenil de les Corts.","With the Plataforma Infantil i Juvenil de les Corts."))
+    ]},
+  { id:"d11", num:"11",
+    dow:L("Diumenge · 11 d'octubre","Domingo · 11 de octubre","Sunday · October 11"),
+    title:L("Missa, sardanes i l'últim gran vespre","Misa, sardanas y la última gran noche","Mass, sardanes and the last big evening"),
+    note:L("Des de les 10 h","Desde las 10 h","From 10:00 AM"),
+    events:[
+      E("10",null,[],"remei",
+        L("Missa solemne de Festa Major","Misa solemne de Fiesta Mayor","Festival high mass"),
+        L("Amb acompanyament d'orgue i la participació de la coral Capella Bach.","Con acompañamiento de órgano y la participación de la coral Capella Bach.","With organ accompaniment and the Capella Bach choir.")),
+      E(null,null,[],"bederrida",
+        L("Jornada participativa dels 100 anys del bàsquet del FCB","Jornada participativa de los 100 años del baloncesto del FCB","FC Barcelona basketball centenary day"),
+        L("Activitats esportives del Barça Bàsquet.","Actividades deportivas del Barça Bàsquet.","Sports activities with Barça Basketball."),
+        {time:{ca:"Hora no indicada", es:"Hora no indicada", en:"Time not given"},
+         tip:L("El programa no indica l'horari i remet al web barcelona.cat/lescorts.","El programa no indica el horario y remite a la web barcelona.cat/lescorts.","The program gives no time and refers to barcelona.cat/lescorts.")}),
+      E("10","13",[],"benavent",
+        L("Campionat de dòmino","Campeonato de dominó","Dominoes championship"),
+        L("Amb l'AVV Camp Nou.","Con la AVV Camp Nou.","With the AVV Camp Nou.")),
+      E("10.30","13",[],"benavent",
+        L("Mostra de balls","Muestra de bailes","Dance showcase"),
+        L("Balls en línia, country i sevillanes.","Bailes en línea, country y sevillanas.","Line dancing, country and sevillanas.")),
+      E("11",null,["book","free"],null,
+        L("Ruta pel barri de les Corts","Ruta por el barrio de Les Corts","Les Corts neighborhood walk"),
+        L("Passejada guiada pel nucli històric de les Corts, dels seus orígens fins a l'actualitat. Gratuïta amb inscripció prèvia.",
+          "Paseo guiado por el núcleo histórico de Les Corts, desde sus orígenes hasta la actualidad. Gratuito con inscripción previa.",
+          "A guided walk through the historic center of Les Corts, from its origins to today. Free, with advance sign-up."),
+        {loc:MEET, tip:RUTA_TIP, link:["signup",RUTES]}),
+      E("11",null,[],"canroses",
+        L("Iniciació al rugbi","Iniciación al rugby","Introduction to rugby"),
+        L("Amb el CE Universitari Rugby Barcelona.","Con el CE Universitari Rugby Barcelona.","With CE Universitari Rugby Barcelona.")),
+      E("11","12.30",[],"granvia",
+        L("Xocolatada","Chocolatada","Hot chocolate"),
+        L("Amb la Xurreria Montse i la Pastisseria Boages.","Con la Xurreria Montse y la Pastisseria Boages.","With Xurreria Montse and Pastisseria Boages.")),
+      E("11","13",[],"soldebaix",
+        L("Bingo musical","Bingo musical","Music bingo"),
+        L("Amb la Plataforma Infantil i Juvenil de les Corts.","Con la Plataforma Infantil i Juvenil de les Corts.","With the Plataforma Infantil i Juvenil de les Corts.")),
+      E("11.30",null,[],"concordia",
+        L("Sardanes amb la Cobla Lluïsos","Sardanas con la Cobla Lluïsos","Sardanes with the Cobla Lluïsos"),
+        L("Amb Òmnium Cultural.","Con Òmnium Cultural.","With Òmnium Cultural.")),
+      E("12",null,[],"vilamur",
+        L("Aperitiu de farcellets","Aperitivo de farcellets","Farcellets aperitif"),
+        L("Àpat veïnal de carmanyola, amb La de Cal Deu i l'Associació de Comerciants El Cor de les Corts.","Comida vecinal de fiambrera, con La de Cal Deu y la Associació de Comerciants El Cor de les Corts.","A bring-your-own neighborhood meal, with La de Cal Deu and the El Cor de les Corts traders' association."),
+        {loc:L("Carrer de Vilamur, entre la travessera de les Corts i Taquígraf Garriga","Calle de Vilamur, entre la travesera de Les Corts y Taquígraf Garriga","Carrer de Vilamur, between Travessera de les Corts and Taquígraf Garriga")}),
+      E("12.30",null,[],"canroses",
+        L("Pica-pica swing amb Hot Club Sants","Picoteo swing con Hot Club Sants","Swing and snacks with Hot Club Sants"),
+        L("Festa a Can Rosés.","Fiesta en Can Rosés.","Part of the Can Rosés party.")),
+      E("13","14.30",[],"benavent",
+        L("Aperitiu: la rumba que tumba!","Aperitivo: ¡la rumba que tumba!","Aperitif: la rumba que tumba!"),
+        L("Amb Pol Pérez.","Con Pol Pérez.","With Pol Pérez.")),
+      E("13.30",null,[],"concordia",
+        L("Aperitiu de la cortsenca","Aperitivo de la cortsenca","La cortsenca aperitif"),
+        L("Amb la revista Curtibus i productes artesans.","Con la revista Curtibus y productos artesanos.","With the magazine Curtibus and artisan products.")),
+      E("14",null,[],"concordia",
+        L("Dinar popular","Comida popular","Community lunch"),
+        L("Amb L'Espiga de les Corts. A les 15.15 h, bingo musical amb PD Renates.","Con L'Espiga de les Corts. A las 15.15 h, bingo musical con DJ Renates.","With L'Espiga de les Corts. Music bingo with DJ Renates follows at 3:15 PM.")),
+      E("14",null,["ticket"],"canroses",
+        L("Fideuà popular","Fideuá popular","Community fideuà"),
+        L("Socis, 10 €; no socis, 12 €.","Socios, 10 €; no socios, 12 €.","Members €10; non-members €12.")),
+      E("16",null,[],"canroses",
+        L("Bingo popular km0","Bingo popular km0","Local bingo"),
+        L("Amb premis dels comerços.","Con premios de los comercios.","With prizes from local shops.")),
+      E("17","18.30",["kids"],"granvia",
+        L("Espectacle: En Clau Clown","Espectáculo: En Clau Clown","Show: En Clau Clown"),
+        L("De la companyia Bitxicleta.","De la compañía Bitxicleta.","By the Bitxicleta company.")),
+      E("18",null,[],"remei",
+        L("Concert d'orgue","Concierto de órgano","Organ concert"),
+        L("Amb Josep Maria Mas i Bonet, de l'Associació Amics de l'Orgue de les Corts.","Con Josep Maria Mas i Bonet, de la Associació Amics de l'Orgue de les Corts.","With Josep Maria Mas i Bonet, of the Associació Amics de l'Orgue de les Corts.")),
+      E("19","21",[],"granvia",
+        L("Havaneres","Habaneras","Havaneres"),
+        L("Amb el Grup d'Havaneres Montjuïc.","Con el Grup d'Havaneres Montjuïc.","With the Grup d'Havaneres Montjuïc.")),
+      E("20","22",["ticket"],"granvia",
+        L("Botifarrada popular","Butifarrada popular","Sausage dinner"),
+        L("Amb tiquet; inclou patates i beguda.","Con tique; incluye patatas y bebida.","Ticket needed; fries and a drink included.")),
+      E("20.30","22",[],"soldebaix",
+        L("Actuació musical: Pascual i Desnatats","Actuación musical: Pascual i Desnatats","Live music: Pascual i Desnatats"),
+        L("Amb la Plataforma Infantil i Juvenil de les Corts.","Con la Plataforma Infantil i Juvenil de les Corts.","With the Plataforma Infantil i Juvenil de les Corts.")),
+      E("21",null,[],"canroses",
+        L("Sopar a la fresca","Cena al fresco","Open-air dinner"),
+        L("A les 22.30 h, PD Jani.","A las 22.30 h, DJ Jani.","DJ Jani follows at 10:30 PM.")),
+      E("21",null,["book"],"benavent",
+        L("Sopar de germanor","Cena de hermandad","Neighbors' dinner"),
+        L("Inscripció a l'AVV Camp Nou.","Inscripción en la AVV Camp Nou.","Sign up at the AVV Camp Nou.")),
+      E("21.15",null,[],"concordia",
+        L("Vespreig musical amb Pla Desendreça","Vespreig musical con Pla Desendreça","Evening music with Pla Desendreça"),
+        L("A la plaça de la Concòrdia.","En la plaza de la Concòrdia.","In Plaça de la Concòrdia.")),
+      E("22",null,[],"benavent",
+        L("Ball de festa amb el Duet Àtrium","Baile de fiesta con el Duet Àtrium","Dance with Duet Àtrium"),
+        L("Amb l'AVV Camp Nou.","Con la AVV Camp Nou.","With the AVV Camp Nou.")),
+      E("22.30",null,[],"concordia",
+        L("Nit de concerts: Quatrevents","Noche de conciertos: Quatrevents","Concert night: Quatrevents"),
+        L("A les 24 h, PD Dosdepega.","A las 24 h, DJ Dosdepega.","DJ Dosdepega follows at midnight.")),
+      E("23",null,[],"soldebaix",
+        L("Actuacions musicals: PD Sushi i PD Espart","Actuaciones musicales: DJ Sushi y DJ Espart","DJ Sushi and DJ Espart"),
+        L("PD Sushi a les 23 h i PD Espart a les 0.30 h.","DJ Sushi a las 23 h y DJ Espart a las 0.30 h.","DJ Sushi at 11:00 PM and DJ Espart at 12:30 AM.")),
+      E("23",null,[],"granvia",
+        L("Actuació musical: Los Pasantes","Actuación musical: Los Pasantes","Live music: Los Pasantes"),
+        L("Amb l'AVV Les Corts Sud.","Con la AVV Les Corts Sud.","With the AVV Les Corts Sud.")),
+      E("00.00",null,[],"concordia",
+        L("PD Dosdepega","DJ Dosdepega","DJ Dosdepega"),
+        L("Nit de concerts a la plaça de la Concòrdia.","Noche de conciertos en la plaza de la Concòrdia.","Concert night in Plaça de la Concòrdia."))
+    ]},
+  { id:"d12", num:"12",
+    dow:L("Dilluns · 12 d'octubre","Lunes · 12 de octubre","Monday · October 12"),
+    title:L("Últim ball dels gegants, correfoc i piromusical","Último baile de los gigantes, correfoc y piromusical","Giants' last dance, fire run and fireworks"),
+    note:L("Des de les 9 h","Desde las 9 h","From 9:00 AM"),
+    events:[
+      E("9","17",[],"munte",
+        L("Torneig de petanca de Festa Major","Torneo de petanca de Fiesta Mayor","Festival pétanque tournament"),
+        L("Tres partides, àpat en comú i premis, amb el Club Petanca Sant Ramon Nonat i el Club Les Corts Esportiu.","Tres partidas, comida en común y premios, con el Club Petanca Sant Ramon Nonat y el Club Les Corts Esportiu.","Three games, a shared meal and prizes, with the Club Petanca Sant Ramon Nonat and the Club Les Corts Esportiu."),
+        {loc:L("Pistes de petanca dels jardins de Josep Munté","Pistas de petanca de los jardines de Josep Munté","Pétanque courts, Jardins de Josep Munté")}),
+      E("10","13",[],"benavent",
+        L("Campionat de dòmino","Campeonato de dominó","Dominoes championship"),
+        L("Amb l'AVV Camp Nou.","Con la AVV Camp Nou.","With the AVV Camp Nou.")),
+      E("10.30","13.30",[],"benavent",
+        L("Mostra de cultura popular i tradicional","Muestra de cultura popular y tradicional","Popular and traditional culture showcase"),
+        L("Tokatoms, sardanes, i taller i exhibició de castellers.","Tokatoms, sardanas, y taller y exhibición de castellers.","Tokatoms, sardanes, and a human towers workshop and display.")),
+      E("11",null,["ticket","kids"],"canroses",
+        L("Tallers minicomi","Talleres minicomi","Minicomi workshops"),
+        L("Tallers infantils, 3 € per persona.","Talleres infantiles, 3 € por persona.","Children's workshops, €3 per person.")),
+      E("12","14",[],"granvia",
+        L("Matinal de sardanes amb la Cobla Sant Jordi","Matinal de sardanas con la Cobla Sant Jordi","Sardanes morning with the Cobla Sant Jordi"),
+        L("Amb les colles Amunt 9, de Gràcia, Taulat Can Saladrigues, L'Espígol de l'Eixample i el Foment Sardanista Andreuenc.","Con las colles Amunt 9, de Gràcia, Taulat Can Saladrigues, L'Espígol de l'Eixample y el Foment Sardanista Andreuenc.","With the Amunt 9 de Gràcia, Taulat Can Saladrigues, L'Espígol de l'Eixample and Foment Sardanista Andreuenc dance groups.")),
+      E("12.30",null,["kids"],"canroses",
+        L("Un tren de cançons","Un tren de cançons","Un tren de cançons, songs for children"),
+        L("Amb Jordi Tonietti, XI Premi Oriol Canals d'animació infantil d'Òmnium Les Corts.","Con Jordi Tonietti, XI Premi Oriol Canals de animación infantil de Òmnium Les Corts.","With Jordi Tonietti, winner of Òmnium Les Corts's 11th Oriol Canals award for children's entertainment.")),
+      E("13.30",null,[],"canroses",
+        L("Pica-pica i jocs","Picoteo y juegos","Snacks and games"),
+        L("Festa a Can Rosés.","Fiesta en Can Rosés.","Part of the Can Rosés party.")),
+      E("13.30","14",[],"benavent",
+        L("Concurs de postres casolanes","Concurso de postres caseros","Homemade dessert contest"),
+        L("Festa Major a Benavent, amb l'AVV Camp Nou.","Fiesta Mayor en Benavent, con la AVV Camp Nou.","Festival on Benavent, with the AVV Camp Nou.")),
+      E("14",null,["ticket"],"canroses",
+        L("Mandonguillada","Albondigada","Meatball lunch"),
+        L("Mandonguilles amb tomàquet, patates xips, pa i beguda. Socis, 8 €; no socis, 10 €.","Albóndigas con tomate, patatas chips, pan y bebida. Socios, 8 €; no socios, 10 €.","Meatballs in tomato sauce, potato chips, bread and a drink. Members €8; non-members €10.")),
+      E("14",null,["ticket"],"benavent",
+        L("Botifarrada popular","Butifarrada popular","Sausage lunch"),
+        L("10 € anticipada; 12 € el mateix dia.","10 € anticipada; 12 € el mismo día.","€10 in advance; €12 on the day.")),
+      E("16","17.30",[],"benavent",
+        L("Bingo","Bingo","Bingo"),
+        L("Amb l'AVV Camp Nou.","Con la AVV Camp Nou.","With the AVV Camp Nou.")),
+      E("17",null,["kids"],"canroses",
+        L("Espectacle de màgia amb el Mag Uri","Espectáculo de magia con el Mag Uri","Magic show with Mag Uri"),
+        L("Festa a Can Rosés.","Fiesta en Can Rosés.","Part of the Can Rosés party.")),
+      E("17","18",["miss"],"plcomas",
+        L("Últim ball dels gegants","Último baile de los gigantes","The giants' last dance"),
+        L("Els gegants de les Corts, amb la Fal·lera Cortsenca.","Los gigantes de Les Corts, con la Fal·lera Cortsenca.","The Les Corts giants, with the Fal·lera Cortsenca.")),
+      E("17.30","20.30",[],"benavent",
+        L("Tardeig dels 80-90","Tardeo de los 80-90","80s and 90s afternoon"),
+        L("Amb PD Víctor Suco.","Con DJ Víctor Suco.","With DJ Víctor Suco.")),
+      E("19",null,["book","fin"],"auditori",
+        L("Concert de cloenda de Festa Major","Concierto de clausura de Fiesta Mayor","Closing concert"),
+        L("El violinista David Ruiz, guanyador del CIM 2025, i Blanca González al piano; presenta Maria Voronkova. Invitacions a la Seu del Districte, de 9 a 20 h, fins al 9 d'octubre o fins que s'exhaureixin.",
+          "El violinista David Ruiz, ganador del CIM 2025, y Blanca González al piano; presenta Maria Voronkova. Invitaciones en la Sede del Distrito, de 9 a 20 h, hasta el 9 de octubre o hasta agotarlas.",
+          "Violinist David Ruiz, winner of CIM 2025, with Blanca González on piano, presented by Maria Voronkova. Free invitations at the Seu del Districte, 9:00 AM–8:00 PM, until October 9 or while they last.")),
+      E("19.30",null,["fin","fire"],"canroses",
+        L("Tabalada estàtica","Tabalada estática","Drums in the square"),
+        L("Comença el correfoc de fi de Festa Major, amb els Bocs de Can Rosés i els Diables i Timbalers d'Ítaca.","Empieza el correfoc de fin de Fiesta Mayor, con los Bocs de Can Rosés y los Diables i Timbalers d'Ítaca.","The closing fire run begins, with the Bocs de Can Rosés and the Diables i Timbalers d'Ítaca.")),
+      E("20",null,["miss","fin","fire"],"canroses",
+        L("Correfoc de fi de Festa Major","Correfoc de fin de Fiesta Mayor","Closing fire run"),
+        L("Bocs de Can Rosés i Diables i Timbalers d'Ítaca. Acaba amb els lluïments finals als jardins de Magalí a les 21 h.","Bocs de Can Rosés y Diables i Timbalers d'Ítaca. Termina con las exhibiciones finales en los jardines de Magalí a las 21 h.","Bocs de Can Rosés and Diables i Timbalers d'Ítaca, ending with the final displays in the Jardins de Magalí at 9:00 PM."),
+        {loc:L("Recorregut: pl. de Can Rosés, Numància, Taquígraf Garriga, Cabestany, Vallespir, Marquès de Sentmenat i jardins de Magalí","Recorrido: pl. de Can Rosés, Numància, Taquígraf Garriga, Cabestany, Vallespir, Marquès de Sentmenat y jardines de Magalí","Route: Pl. de Can Rosés, Numància, Taquígraf Garriga, Cabestany, Vallespir, Marquès de Sentmenat to the Jardins de Magalí"),
+         tip:L("Vegeu les recomanacions per als correfocs a «Abans d'anar-hi».","Consulte las recomendaciones para los correfocs en «Antes de ir».","See the fire run advice under Before you go.")}),
+      E("21",null,["fin","fire"],"magali",
+        L("Lluïments finals","Exhibiciones finales","Final fire displays"),
+        L("Final del correfoc als jardins de Magalí.","Final del correfoc en los jardines de Magalí.","The end of the fire run in the Jardins de Magalí.")),
+      E("21.30",null,["miss","fin"],"magali",
+        L("Piromusical","Piromusical","Fireworks to music"),
+        L("Focs artificials amb música per tancar la Festa Major.","Fuegos artificiales con música para cerrar la Fiesta Mayor.","Fireworks set to music to close the festival."),
+        {loc:L("Entorn dels jardins de Magalí","Alrededores de los jardines de Magalí","Around the Jardins de Magalí")})
+    ]}
+];
+
+const PLACES = [
+  { k:"plcomas", d:L("Toc d'inici, pregó, correfoc unitari, diada castellera i últim ball dels gegants","Toc d'inici, pregón, correfoc unitari, diada castellera y último baile de los gigantes","The Toc d'inici, opening speech, main fire run, human towers and the giants' last dance") },
+  { k:"concordia", d:L("Seguici popular, revetlla, sardanes i nits de concerts","Seguici popular, verbena, sardanas y noches de conciertos","The Seguici parade, street party, sardanes and concert nights") },
+  { k:"canroses", d:L("Fira d'atraccions, Festa a Can Rosés i inici del correfoc de cloenda","Feria de atracciones, Fiesta en Can Rosés e inicio del correfoc de clausura","The funfair, the Can Rosés party and the start of the closing fire run") },
+  { k:"granvia", d:L("Mercat artesanal i nits de Festa Major de les Corts Sud","Mercado artesanal y noches de Fiesta Mayor de Les Corts Sud","The craft market and the Les Corts Sud festival nights") },
+  { k:"benavent", d:L("Festa a Benavent, de divendres 9 a dilluns 12","Fiesta en Benavent, de viernes 9 a lunes 12","The Benavent street festival, Friday, October 9 to Monday, October 12") },
+  { k:"soldebaix", d:L("Festa major jove de la Plataforma Infantil i Juvenil","Fiesta mayor joven de la Plataforma Infantil i Juvenil","The young people's festival by the Plataforma Infantil i Juvenil") },
+  { k:"magali", d:L("El Circ dels sentits, música electrònica i piromusical de cloenda","El Circ dels sentits, música electrónica y piromusical de clausura","El Circ dels sentits, electronic music and the closing fireworks") },
+  { k:"santramon", d:L("Carretillada de Sant Ramon, cursa solidària i mostra de comerç","Carretillada de Sant Ramon, carrera solidaria y muestra de comercio","The Carretillada de Sant Ramon, the charity run and the shops showcase") },
+  { k:"monestir", d:L("Trobada d'Elisendes i portes obertes, diumenge 4","Encuentro de Elisendes y puertas abiertas, domingo 4","The Elisendes giants and open day, Sunday, October 4") },
+  { k:"seu", d:L("Mostra de cultura popular, del 2 al 12 d'octubre","Muestra de cultura popular, del 2 al 12 de octubre","Popular culture exhibition, October 2 to 12") }
+];
+
+const IDS = ["ess","d2","d3","d4","d5","d6","d7","d8","d9","d10","d11","d12","places","know"];
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+let L_CUR = "en";
+
+function links(v){
+  const q = encodeURIComponent(v.q);
+  const rows = [
+    ["Google Maps",   "https://www.google.com/maps/search/?api=1&query=" + q],
+    ["Apple Maps",    "https://maps.apple.com/?q=" + q],
+    ["OpenStreetMap", "https://www.openstreetmap.org/search?query=" + q]
+  ];
+  /* Citymapper needs coordinates; it ignores a plain address. */
+  if (v.lat) rows.splice(2, 0, ["Citymapper", "https://citymapper.com/directions?endcoord=" + v.lat + "," + v.lng +
+    "&endname=" + encodeURIComponent(v.n) + "&endaddress=" + q]);
+  return rows;
+}
+
+function showSheet(title, sub, rows, copyValue){
+  const t = T[L_CUR];
+  let h = '<h3>' + esc(title) + '</h3><div class="sub">' + esc(sub) + '</div>';
+  rows.forEach(function(p){
+    h += '<a href="' + p[1] + '" target="_blank" rel="noopener">' + esc(p[0]) +
+         '<span class="ar">' + esc(t.go) + '</span></a>';
+  });
+  if (copyValue) {
+    h += '<button class="copy" data-val="' + esc(copyValue) + '"><span class="lab">' + esc(t.copy) + '</span></button>';
+  }
+  h += '<button class="close">' + esc(t.close) + '</button>';
+  const sheet = document.getElementById("sheet");
+  sheet.innerHTML = h;
+  document.getElementById("ovl").classList.add("open");
+  sheet.querySelector(".close").onclick = closeSheet;
+  const cp = sheet.querySelector(".copy");
+  if (cp) cp.onclick = function(){
+    const lab = cp.querySelector(".lab");
+    const done = function(){ lab.textContent = T[L_CUR].copied; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(cp.dataset.val).then(done, done);
+    else done();
+  };
+}
+
+function openSheet(key){
+  const v = V[key];
+  showSheet(v.n, T[L_CUR].openIn, links(v), v.q);
+}
+function closeSheet(){ document.getElementById("ovl").classList.remove("open"); }
+document.getElementById("ovl").addEventListener("click", function(e){ if (e.target.id === "ovl") closeSheet(); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeSheet(); });
+
+/* Add to calendar. The .ics file is built here in the browser; nothing is sent anywhere.
+   first is the festival's first day: lower day numbers fall in the following month. */
+const CAL = {id:"festa-major-les-corts-2026", year:2026, month:10, first:2, tz:"Europe/Madrid",
+  url:"https://lexatarg.github.io/barcelona-fiestas/festa-major-les-corts-2026/"};
+
+/* Barcelona's clock rules: summer time (UTC+2) from the last Sunday of March,
+   winter time (UTC+1) from the last Sunday of October. */
+const VTZ = [
+  "BEGIN:VTIMEZONE", "TZID:Europe/Madrid",
+  "BEGIN:DAYLIGHT", "TZOFFSETFROM:+0100", "TZOFFSETTO:+0200", "TZNAME:CEST",
+  "DTSTART:19700329T020000", "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU", "END:DAYLIGHT",
+  "BEGIN:STANDARD", "TZOFFSETFROM:+0200", "TZOFFSETTO:+0100", "TZNAME:CET",
+  "DTSTART:19701025T030000", "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU", "END:STANDARD",
+  "END:VTIMEZONE"
+];
+
+const pad = n => String(n).padStart(2, "0");
+
+/* The date of day number num, moved forward by extra days. */
+function calDate(num, extra){
+  const day = parseInt(num, 10);
+  return new Date(Date.UTC(CAL.year, CAL.month - 1 + (day < CAL.first ? 1 : 0), day + extra));
+}
+function ymd(dt){ return dt.getUTCFullYear() + pad(dt.getUTCMonth() + 1) + pad(dt.getUTCDate()); }
+
+/* "21.30" on day 2 becomes "20261002T213000". Times before 6 h belong to the
+   night that started the evening before, so they move to the next date. */
+function icsTime(num, s){
+  const p = String(s).split(".");
+  const h = parseInt(p[0], 10), m = parseInt(p[1] || "0", 10);
+  return ymd(calDate(num, h < 6 ? 1 : 0)) + "T" + pad(h) + pad(m) + "00";
+}
+
+/* Start and end of each session. Events with raw times (e.a, e.b) use them;
+   otherwise the times are read from the Catalan label: "11 – 12 h" is one
+   session with an end, "19.30 i 21 h" is two sessions, and a label with no
+   hours ("Vespre") gives none, so the event is added for the whole day. */
+function calSlots(e){
+  if (e.a) return [[e.a, e.b]];
+  const label = e.time.ca, n = label.match(/\d+(\.\d+)?/g) || [];
+  if (label.indexOf("–") > -1 && n.length === 2) return [[n[0], n[1]]];
+  return n.map(function(x){ return [x, null]; });
+}
+
+/* In .ics text, backslashes, semicolons, commas and line breaks need a backslash in front. */
+function icsText(s){
+  return String(s).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+}
+
+/* Each line may be at most 75 bytes; a longer one continues on the next line,
+   which starts with a space. Accented letters take 2 bytes, so count bytes. */
+function icsFold(line){
+  const enc = new TextEncoder();
+  let out = "", cur = "", bytes = 0;
+  for (const ch of line) {
+    const n = enc.encode(ch).length;
+    if (bytes + n > 75) { out += cur + "\r\n "; cur = ""; bytes = 1; }
+    cur += ch; bytes += n;
+  }
+  return out + cur;
+}
+
+/* The place as text, followed by the street address when the place name alone is not one. */
+function icsPlace(e, lang){
+  const loc = e.loc ? e.loc[lang] : "", v = e.v ? V[e.v] : null;
+  if (v && v.q) return v.q.indexOf(loc) === 0 ? v.q : loc + ", " + v.q;
+  if (!loc) return v ? v.n + ", Barcelona" : "";
+  return loc.indexOf("Barcelona") > -1 ? loc : loc + ", Barcelona";
+}
+
+/* Everything is written in the language the reader has chosen (lang). */
+function buildIcs(d, e, i, lang){
+  const t = T[lang], v = e.v ? V[e.v] : null, slots = calSlots(e);
+  const link = CAL.url + "#" + d.id;
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const place = icsPlace(e, lang);
+  const notes = [t.calFest];
+  /* An approximate time ("~20 h") or one without hours is spelt out in the notes. */
+  if (!e.a && (e.time.ca.indexOf("~") > -1 || !slots.length)) notes.push(t.calTime + ": " + e.time[lang]);
+  notes.push("", e.desc[lang]);
+  if (e.tags.length) notes.push("", e.tags.map(function(tag){ return TAG[tag][lang]; }).join(" · "));
+  if (e.tip) notes.push("", t.tipLbl + ": " + e.tip[lang]);
+  if (e.link) notes.push("", t[e.link[0]] + ": " + e.link[1]);
+  notes.push("", t.calGuide + ": " + link, t.calProg + ": " + t.calSrc);
+  const common = ["SUMMARY;LANGUAGE=" + lang + ":" + icsText(e.title[lang])];
+  if (place) common.push("LOCATION;LANGUAGE=" + lang + ":" + icsText(place));
+  /* Coordinates: GEO is the standard field; the Apple one lets iPhone Calendar place a pin. */
+  if (v && v.lat) {
+    const q = function(s){ return String(s).replace(/"/g, "'"); };
+    common.push("GEO:" + v.lat + ";" + v.lng,
+      'X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS="' + q(v.q || v.n + ", Barcelona") +
+      '";X-APPLE-RADIUS=100;X-TITLE="' + q(e.loc ? e.loc[lang] : v.n) + '":geo:' + v.lat + "," + v.lng);
+  }
+  common.push("DESCRIPTION;LANGUAGE=" + lang + ":" + icsText(notes.join("\n")),
+              "URL:" + link, "STATUS:CONFIRMED", "TRANSP:OPAQUE");
+  /* One VEVENT per session; two sessions give two entries in the same file. */
+  const uid = CAL.id + "-" + d.id + "-" + i;
+  const one = function(when, n){
+    return ["BEGIN:VEVENT", "UID:" + uid + (n ? "-" + n : "") + "@lexatarg.github.io", "DTSTAMP:" + stamp]
+      .concat(when, common, ["END:VEVENT"]);
+  };
+  let evs = [];
+  if (!slots.length) {
+    evs = one(["DTSTART;VALUE=DATE:" + ymd(calDate(d.num, 0)), "DTEND;VALUE=DATE:" + ymd(calDate(d.num, 1))], 0);
+  } else slots.forEach(function(s, n){
+    const when = ["DTSTART;TZID=" + CAL.tz + ":" + icsTime(d.num, s[0])];
+    if (s[1]) when.push("DTEND;TZID=" + CAL.tz + ":" + icsTime(d.num, s[1]));
+    evs = evs.concat(one(when, slots.length > 1 ? n + 1 : 0));
+  });
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Lexatarg//Barcelona fiestas//EN",
+                 "CALSCALE:GREGORIAN", "METHOD:PUBLISH"].concat(VTZ, evs, ["END:VCALENDAR"]);
+  return lines.map(icsFold).join("\r\n") + "\r\n";
+}
+
+/* The "Add to calendar" link. At the moment it is tapped, the file is built in
+   the current language and handed to the device. iPhone opens Add to Calendar;
+   Android and computers receive an .ics file that the calendar app opens. */
+function calClick(a){
+  const k = a.dataset.cal.split(":"), i = parseInt(k[1], 10);
+  const d = DAYS.filter(function(x){ return x.id === k[0]; })[0];
+  const ics = buildIcs(d, d.events[i], i, L_CUR);
+  if (a.href.indexOf("blob:") === 0) URL.revokeObjectURL(a.href);
+  a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar;charset=utf-8"}));
+  a.download = CAL.id + "-" + d.id + "-" + (i + 1) + ".ics";
+}
+
+function render(lang){
+  L_CUR = lang;
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.getElementById("k-eyebrow").textContent = t.eyebrow;
+  document.getElementById("k-meta").innerHTML = t.meta.map(function(m){
+    return '<div class="hm"><div class="k">' + esc(m[0]) + '</div><div class="v">' + esc(m[1]) + '</div></div>';
+  }).join("");
+  document.getElementById("k-lede").textContent = t.lede;
+
+  document.getElementById("k-nav").innerHTML = IDS.map(function(id,i){
+    return '<a href="#' + id + '" data-t="' + id + '">' + esc(t.nav[i]) + '</a>';
+  }).join("");
+
+  let h = "";
+  h += '<section class="sec ess" id="ess"><div class="lbl">' + esc(t.essLbl) + '</div><h2>' + esc(t.essTitle) + '</h2><ol>';
+  t.ess.forEach(function(e){
+    h += '<li><div class="t">' + esc(e.t) + '</div><div class="w">' + esc(e.w) + '</div><div class="d">' + esc(e.d) + '</div></li>';
+  });
+  h += '</ol></section>';
+
+  DAYS.forEach(function(d){
+    h += '<section class="day" id="' + d.id + '"><div class="day-head"><div class="day-num">' + d.num + '</div>';
+    h += '<div class="day-txt"><div class="dow">' + esc(d.dow[lang]) + '</div><h2>' + esc(d.title[lang]) + '</h2><div class="note">' + esc(d.note[lang]) + '</div></div></div>';
+    h += '<div class="timeline">';
+    d.events.forEach(function(e, i){
+      h += '<div class="ev"><div class="ev-top"><span class="ev-time">' + esc(e.time[lang]) + '</span><span class="ev-tags">';
+      e.tags.forEach(function(tag){
+        h += '<span class="tg ' + (tag === "free" ? "fr" : "hi") + '">' + esc(TAG[tag][lang]) + '</span>';
+      });
+      h += '</span></div><h3>' + esc(e.title[lang]) + '</h3><div class="loc">' + esc(e.loc[lang]);
+      if (e.v) h += ' <button class="golink" data-go="' + e.v + '">' + esc(t.dirs) + '</button>';
+      h += ' <a class="golink" href="#" data-cal="' + d.id + ':' + i + '">' + esc(t.cal) + '</a>';
+      if (e.link) h += ' <a class="golink" href="' + esc(e.link[1]) + '" target="_blank" rel="noopener">' + esc(t[e.link[0]]) + '</a>';
+      h += '</div><p>' + esc(e.desc[lang]) + '</p>';
+      if (e.tip) h += '<div class="tip"><b>' + esc(t.tipLbl) + '</b> ' + esc(e.tip[lang]) + '</div>';
+      h += '</div>';
+    });
+    h += '</div></section>';
+  });
+
+  h += '<section class="sec" id="places"><div class="lbl">' + esc(t.placesLbl) + '</div><h2>' + esc(t.placesTitle) + '</h2>';
+  h += '<p style="font-size:.86rem;color:var(--sub);margin:0;max-width:34rem">' + esc(t.placesNote) + '</p><div class="grid">';
+  PLACES.forEach(function(row){
+    h += '<div class="gi"><h4>' + esc(V[row.k].n) + '</h4><p>' + esc(row.d[lang]) + '</p>' +
+         '<button class="golink" data-go="' + row.k + '">' + esc(t.dirs) + '</button></div>';
+  });
+  h += '</div><div class="callout"><b>' + esc(t.calloutB) + '</b>' + esc(t.callout) + '</div></section>';
+
+  h += '<section class="sec" id="know"><div class="lbl">' + esc(t.knowLbl) + '</div><h2>' + esc(t.knowTitle) + '</h2><div class="grid" style="margin-top:0">';
+  t.know.forEach(function(k){
+    h += '<div class="gi"><h4>' + esc(k[0]) + '</h4><p>' + esc(k[1]) + '</p></div>';
+  });
+  h += '</div></section>';
+
+  document.getElementById("k-body").innerHTML = h;
+  document.getElementById("k-foot1").innerHTML = t.foot1;
+  document.getElementById("k-foot2").innerHTML = t.foot2;
+  document.getElementById("k-ver").textContent = "v" + VERSION;
+
+  document.getElementById("k-body").querySelectorAll("[data-go]").forEach(function(b){
+    b.addEventListener("click", function(){ openSheet(b.dataset.go); });
+  });
+  document.getElementById("k-body").querySelectorAll("[data-cal]").forEach(function(b){
+    b.addEventListener("click", function(){ calClick(b); });
+  });
+
+  initSpy();
+}
+
+let spyObs = null;
+function initSpy(){
+  if (spyObs) spyObs.disconnect();
+  if (typeof IntersectionObserver === "undefined") return;
+  const nav = document.getElementById("k-nav");
+  const anchors = Array.prototype.slice.call(nav.querySelectorAll("a"));
+  const targets = IDS.map(function(id){ return document.getElementById(id); }).filter(Boolean);
+  let active = null;
+  function setActive(id){
+    if (id === active) return;
+    active = id;
+    anchors.forEach(function(a){ a.classList.toggle("on", a.dataset.t === id); });
+    const cur = anchors.filter(function(a){ return a.dataset.t === id; })[0];
+    if (cur && nav.scrollTo) {
+      nav.scrollTo({left: Math.max(0, cur.offsetLeft - nav.clientWidth/2 + cur.offsetWidth/2), behavior:"smooth"});
+    }
+  }
+  spyObs = new IntersectionObserver(function(entries){
+    const vis = entries.filter(function(e){ return e.isIntersecting; })
+      .sort(function(a,b){ return a.boundingClientRect.top - b.boundingClientRect.top; });
+    if (vis.length) setActive(vis[0].target.id);
+  }, {rootMargin:"-86px 0px -55% 0px", threshold:0});
+  targets.forEach(function(s){ spyObs.observe(s); });
+}
+
+document.querySelectorAll(".langs button[data-lang]").forEach(function(b){
+  b.addEventListener("click", function(){
+    document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.remove("on"); });
+    b.classList.add("on");
+    render(b.dataset.lang);
+    try { localStorage.setItem("bcnf-lang", b.dataset.lang); } catch(e) {}
+  });
+});
+
+let start = "en";
+try {
+  /* "bcnf-lang" is shared by every page. */
+  const saved = localStorage.getItem("bcnf-lang");
+  if (saved && T[saved]) start = saved;
+  else {
+    const nl = (navigator.language || "en").toLowerCase();
+    if (nl.indexOf("ca") === 0) start = "ca";
+    else if (nl.indexOf("es") === 0) start = "es";
+  }
+} catch(e) {}
+document.querySelectorAll(".langs button[data-lang]").forEach(function(x){ x.classList.toggle("on", x.dataset.lang === start); });
+render(start);
+/* Light and dark mode: follows the device until the reader picks one. */
+(function(){
+  var root = document.documentElement, btn = document.getElementById("themeBtn");
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var LBL = {ca:["Canvia al mode fosc","Canvia al mode clar"], es:["Cambiar al modo oscuro","Cambiar al modo claro"], en:["Switch to dark mode","Switch to light mode"]};
+  function current(){ var t = root.getAttribute("data-theme"); return t ? t : (mq && mq.matches ? "dark" : "light"); }
+  function sync(){
+    var dark = current() === "dark", l = LBL[root.lang] || LBL.en;
+    btn.classList.toggle("is-dark", dark);
+    btn.setAttribute("aria-label", dark ? l[1] : l[0]);
+    btn.title = dark ? l[1] : l[0];
+  }
+  btn.addEventListener("click", function(){
+    var next = current() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("bcnf-theme", next); } catch(e) {}
+    sync();
+  });
+  if (mq) { if (mq.addEventListener) mq.addEventListener("change", sync); else if (mq.addListener) mq.addListener(sync); }
+  new MutationObserver(sync).observe(root, {attributes:true, attributeFilter:["lang"]});
+  sync();
+})();
+
+</script>
+
+</body>
+</html>

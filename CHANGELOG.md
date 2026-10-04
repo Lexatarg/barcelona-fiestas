@@ -8,6 +8,11 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.9.0] — 2026-10-04
+
+### Added
+- New guide: Festa Major de les Corts 2026.
+
 ## [1.8.0] — 2026-10-04
 
 ### Added
