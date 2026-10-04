@@ -8,6 +8,12 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.13.1] — 2026-10-04
+
+### Changed
+- Footer links have no underline until they are hovered, focused or tapped,
+  as in the guides.
+
 ## [1.13.0] — 2026-10-04
 
 ### Changed

@@ -7,6 +7,16 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-10-04
+
+### Added
+- The footer's first paragraph ends with a link to the homepage: "Visit our
+  homepage to see all the guides."
+
+### Changed
+- Links have no underline until they are hovered, focused or tapped, the same
+  as Directions.
+
 ## [1.0.2] — 2026-10-04
 
 ### Changed

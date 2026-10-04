@@ -178,6 +178,10 @@
   .theme .sun{display:none;}
   .theme.is-dark .sun{display:block;}
   .theme.is-dark .moon{display:none;}
+  /* Links: no underline until hover, keyboard focus or tap, the same everywhere. */
+  .golink, footer a{text-decoration:none;}
+  .golink:hover, .golink:focus-visible, .golink:active,
+  footer a:hover, footer a:focus-visible, footer a:active{text-decoration:underline;text-underline-offset:3px;}
 </style>
 <script>try{var t=localStorage.getItem("bcnf-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 </head>
@@ -214,7 +218,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.0.1";
+const VERSION = "1.1.0";
 
 /* Venues. q is the search text for the maps apps; addresses come from the programme's map.
    No coordinates yet, so Citymapper is not offered. */
@@ -315,7 +319,7 @@ const T = {
     knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
     calloutB:"Canvis al programa.",
     callout:" El programa actualitzat de l'Ajuntament marca aquests canvis. Anul·lats: el sopar comunitari i el ball amb l'orquestra Aquarium (dv. 2), l'Aperitiu popular solidari, la Matinal de jocs en família i el concert amb Mar i Vent (ds. 3), la 4a Festa (animal) de les Corts i el Correllengua (dg. 4), les portes obertes del Centre de Serveis Socials (dj. 8) i Esports per a tothom (dv. 9). Ajornats: la xocolatada i festival infantil del Mirall de Pedralbes, al 16 d'octubre; la mostra de comerç del Mirall de Pedralbes, al 15 d'octubre; i la mostra del carrer de Joan Güell, sense data. La Festa de la cortsenca es trasllada a Ca la Panarra.",
-    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Festa Major de les Corts. Per al programa complet i per als canvis d\'última hora, consulteu <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Festa Major de les Corts. Per al programa complet i per als canvis d\'última hora, consulteu <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>. Visiteu <a href="../">la nostra pàgina d\'inici</a> per veure totes les guies.',
     foot2:"Això és un projecte personal, fet amb dedicació i estima per ajudar tothom a gaudir al màxim de la festa. No és una publicació oficial. Aquesta pàgina no fa servir galetes ni recull dades personals. Està allotjada a GitHub Pages i subjecta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>.",
     ess:[
       {t:"Toc d'inici",w:"Divendres 2 · 21 h",d:"Pregó satíric, dansa i foc, l'alegre cercavila d'inici i els lluïments de les colles de foc cortsenques a la plaça de Comas."},
@@ -349,7 +353,7 @@ const T = {
     knowLbl:"Práctico",knowTitle:"Antes de ir",
     calloutB:"Cambios en el programa.",
     callout:" El programa actualizado del Ayuntamiento marca estos cambios. Anulados: la cena comunitaria y el baile con la orquesta Aquarium (vie. 2), el Aperitiu popular solidari, la Matinal de juegos en familia y el concierto con Mar i Vent (sáb. 3), la 4.ª Fiesta (animal) de Les Corts y el Correllengua (dom. 4), las puertas abiertas del Centro de Servicios Sociales (jue. 8) y Deportes para todos (vie. 9). Aplazados: la chocolatada y festival infantil del Mirall de Pedralbes, al 16 de octubre; la muestra de comercio del Mirall de Pedralbes, al 15 de octubre; y la muestra de la calle Joan Güell, sin fecha. La Festa de la cortsenca se traslada a Ca la Panarra.",
-    foot1:'La información de esta página procede del programa oficial de la Fiesta Mayor de Les Corts. Para el programa completo y para los cambios de última hora, consulte <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot1:'La información de esta página procede del programa oficial de la Fiesta Mayor de Les Corts. Para el programa completo y para los cambios de última hora, consulte <a href="' + SRC + '" target="_blank" rel="noopener">el programa oficial (PDF)</a>. Visite <a href="../">nuestra página de inicio</a> para ver todas las guías.',
     foot2:"Esto es un proyecto personal, hecho con dedicación y cariño para ayudar a todos a disfrutar al máximo de la fiesta. No es una publicación oficial. Esta página no utiliza cookies ni recoge datos personales. Está alojada en GitHub Pages y sujeta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>.",
     ess:[
       {t:"Toc d'inici",w:"Viernes 2 · 21 h",d:"Pregón satírico, danza y fuego, el alegre pasacalle de inicio y las exhibiciones de las colles de fuego de Les Corts en la plaza de Comas."},
@@ -383,7 +387,7 @@ const T = {
     knowLbl:"Practical",knowTitle:"Before you go",
     calloutB:"Program changes.",
     callout:" The City Council's updated program marks these changes. Canceled: the community dinner and dance with the Aquarium orchestra (Fri, Oct 2), the Aperitiu popular solidari, the family games morning and the Mar i Vent concert (Sat, Oct 3), the 4th Les Corts animal festival and the Correllengua (Sun, Oct 4), the social services center open day (Thu, Oct 8) and Esports per a tothom (Fri, Oct 9). Postponed: the Mirall de Pedralbes hot chocolate and children's festival, to October 16; the Mirall de Pedralbes shops showcase, to October 15; and the Carrer de Joan Güell showcase, with no new date. The Festa de la cortsenca moves to Ca la Panarra.",
-    foot1:'The information on this page comes from the official program of the Festa Major de les Corts. For the full program and any last-minute changes, see <a href="' + SRC + '" target="_blank" rel="noopener">the official program (PDF)</a>.',
+    foot1:'The information on this page comes from the official program of the Festa Major de les Corts. For the full program and any last-minute changes, see <a href="' + SRC + '" target="_blank" rel="noopener">the official program (PDF)</a>. Visit <a href="../">our homepage</a> to see all the guides.',
     foot2:"This is a personal project and a labor of love, made to help everyone make the most of the festival. It is not an official publication. This page does not use cookies or collect any personal data. It is hosted on GitHub Pages and is subject to the <a href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>GitHub Privacy Statement</a>.",
     ess:[
       {t:"Toc d'inici, the opening",w:"Friday, October 2 · 9:00 PM",d:"A satirical opening speech, dance and fire, the lively opening parade and displays by the Les Corts fire groups in Plaça de Comas."},

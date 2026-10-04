@@ -116,6 +116,9 @@
   .theme .sun{display:none;}
   .theme.is-dark .sun{display:block;}
   .theme.is-dark .moon{display:none;}
+  /* Links: no underline until hover, keyboard focus or tap, the same everywhere. */
+  footer a{text-decoration:none;}
+  footer a:hover, footer a:focus-visible, footer a:active{text-decoration:underline;text-underline-offset:3px;}
 </style>
 <script>try{var t=localStorage.getItem("bcnf-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 </head>
@@ -143,7 +146,7 @@
 </div></footer>
 
 <script>
-const VERSION = "1.13.0";
+const VERSION = "1.13.1";
 
 /* Each guide is shown as happening now, coming up or past, using Barcelona time.
    The order on the page comes from the dates, not from the order of this list. */

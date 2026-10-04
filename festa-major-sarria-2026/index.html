@@ -178,6 +178,10 @@
   .theme .sun{display:none;}
   .theme.is-dark .sun{display:block;}
   .theme.is-dark .moon{display:none;}
+  /* Links: no underline until hover, keyboard focus or tap, the same everywhere. */
+  .golink, footer a{text-decoration:none;}
+  .golink:hover, .golink:focus-visible, .golink:active,
+  footer a:hover, footer a:focus-visible, footer a:active{text-decoration:underline;text-underline-offset:3px;}
 </style>
 <script>try{var t=localStorage.getItem("bcnf-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 </head>
@@ -214,7 +218,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.1.6";
+const VERSION = "1.2.0";
 
 /* Venues. q is the search text for the maps apps; lat/lng (from Barcelona's open data) enable Citymapper. */
 const V = {
@@ -288,14 +292,14 @@ const T = {
     essLbl:"Si només feu cinc coses",essTitle:"Els essencials",
     placesLbl:"Els llocs",placesTitle:"On passa tot",
     placesNote:"Toqueu «Com arribar-hi» i trieu l'aplicació de mapes que useu habitualment.",
-    dirs:"Com arribar-hi", cal:"Afegeix al calendari",
+    dirs:"Com arribar-hi", cal:"Afegeix al calendari", more:"Més informació", signup:"Inscripció",
     calFest:"Festa Major de Sarrià 2026", calGuide:"Guia", calProg:"Programa oficial",
     calSrc:"https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf", calTime:"Hora", tipLbl:"Consell", openIn:"Trieu una aplicació de mapes",
     copy:"Copia l'adreça", copied:"Copiat", close:"Tanca", go:"Obre",
     knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
     calloutB:"La XIII Batalla per Sarrià.",
     callout:" Vicençs i Rosers competeixen en proves repartides per tota la festa, des de la presentació del divendres 2 fins a la prova final del dilluns 12. Per participar-hi cal la samarreta oficial, que es pot adquirir a la Merceria Josefa Cortinas, a la Merceria El Trèbol, durant les activitats de la Batalla i a la barra.",
-    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Festa Major de Sarrià. Per al programa complet i per als canvis d\'última hora, consulteu <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Festa Major de Sarrià. Per al programa complet i per als canvis d\'última hora, consulteu <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf" target="_blank" rel="noopener">el programa oficial (PDF)</a>. Visiteu <a href="../">la nostra pàgina d\'inici</a> per veure totes les guies.',
     foot2:"Això és un projecte personal, fet amb dedicació i estima per ajudar tothom a gaudir al màxim de la festa. No és una publicació oficial. Aquesta pàgina no fa servir galetes ni recull dades personals. Està allotjada a GitHub Pages i subjecta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>.",
     ess:[
       {t:"Toc d'inici i pregó",w:"Divendres 2 · 19 h",d:"Les entitats de cultura popular surten de la plaça de Sarrià, davant de l'església, i estrenen recorregut fins a la plaça del Consell de la Vila, on es fa el pregó."},
@@ -323,14 +327,14 @@ const T = {
     essLbl:"Si solo puede hacer cinco cosas",essTitle:"Lo esencial",
     placesLbl:"Los lugares",placesTitle:"Dónde pasa todo",
     placesNote:"Toque «Cómo llegar» y elija la aplicación de mapas que use habitualmente.",
-    dirs:"Cómo llegar", cal:"Añadir al calendario",
+    dirs:"Cómo llegar", cal:"Añadir al calendario", more:"Más información", signup:"Inscripción",
     calFest:"Fiesta Mayor de Sarrià 2026", calGuide:"Guía", calProg:"Programa oficial",
     calSrc:"https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf", calTime:"Hora", tipLbl:"Consejo", openIn:"Elija una aplicación de mapas",
     copy:"Copiar la dirección", copied:"Copiado", close:"Cerrar", go:"Abrir",
     knowLbl:"Práctico",knowTitle:"Antes de ir",
     calloutB:"La XIII Batalla per Sarrià.",
     callout:" Vicençs y Rosers compiten en pruebas repartidas por toda la fiesta, desde la presentación del viernes 2 hasta la prueba final del lunes 12. Para participar hace falta la camiseta oficial, que se puede adquirir en la Merceria Josefa Cortinas, en la Merceria El Trèbol, durante las actividades de la Batalla y en la barra.",
-    foot1:'La información de esta página procede del programa oficial de la Fiesta Mayor de Sarrià. Para el programa completo y para los cambios de última hora, consulte <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf" target="_blank" rel="noopener">el programa oficial (PDF)</a>.',
+    foot1:'La información de esta página procede del programa oficial de la Fiesta Mayor de Sarrià. Para el programa completo y para los cambios de última hora, consulte <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf" target="_blank" rel="noopener">el programa oficial (PDF)</a>. Visite <a href="../">nuestra página de inicio</a> para ver todas las guías.',
     foot2:"Esto es un proyecto personal, hecho con dedicación y cariño para ayudar a todos a disfrutar al máximo de la fiesta. No es una publicación oficial. Esta página no utiliza cookies ni recoge datos personales. Está alojada en GitHub Pages y sujeta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>.",
     ess:[
       {t:"Toc d'inici (toque de inicio) y pregón",w:"Viernes 2 · 19 h",d:"Con el toque de inicio, las entidades de cultura popular salen de la plaza de Sarrià, delante de la iglesia, y estrenan recorrido hasta la plaza del Consell de la Vila, donde se da el pregón."},
@@ -358,14 +362,14 @@ const T = {
     essLbl:"If you only do five things",essTitle:"The essentials",
     placesLbl:"The places",placesTitle:"Where it all happens",
     placesNote:"Tap Directions and pick whichever maps app you normally use.",
-    dirs:"Directions", cal:"Add to calendar",
+    dirs:"Directions", cal:"Add to calendar", more:"More information", signup:"Sign up",
     calFest:"Festa Major de Sarrià 2026", calGuide:"Guide", calProg:"Official program",
     calSrc:"https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf", calTime:"Time", tipLbl:"Tip", openIn:"Choose a maps app",
     copy:"Copy address", copied:"Copied", close:"Close", go:"Open",
     knowLbl:"Practical",knowTitle:"Before you go",
     calloutB:"The 13th Batalla per Sarrià.",
     callout:" Two teams, the Vicençs and the Rosers, compete in challenges spread across the festival, from the presentation on Friday, October 2 to the final challenge on Monday, October 12. To take part you need the official T-shirt, sold at Merceria Josefa Cortinas, Merceria El Trèbol, during the Batalla activities and at the bar.",
-    foot1:'The information on this page comes from the official program of the Festa Major de Sarrià. For the full program and any last-minute changes, see <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf" target="_blank" rel="noopener">the official program (PDF)</a>.',
+    foot1:'The information on this page comes from the official program of the Festa Major de Sarrià. For the full program and any last-minute changes, see <a href="https://pro.gestornoticies.dtibcn.cat/gestornoticies-pro/media/Programa_Festa_Major_de_Sarria_2026.cc5fd7b5.pdf" target="_blank" rel="noopener">the official program (PDF)</a>. Visit <a href="../">our homepage</a> to see all the guides.',
     foot2:"This is a personal project and a labor of love, made to help everyone make the most of the festival. It is not an official publication. This page does not use cookies or collect any personal data. It is hosted on GitHub Pages and is subject to the <a href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>GitHub Privacy Statement</a>.",
     ess:[
       {t:"Toc d'inici (opening call) and speech",w:"Friday, October 2 · 7:00 PM",d:"With the opening call, the neighborhood's popular culture groups set off from Plaça de Sarrià, in front of the church, on a new route to Plaça del Consell de la Vila, where the opening speech is given."},
@@ -454,7 +458,7 @@ const DAYS = [
       E("10","13",["book"],"figuera",
         L("En bici sense edat","En bici sin edad","Cycling without age"),
         L("Passejada en bicicleta d'uns 40–45 minuts per a persones grans amb dificultats de mobilitat.","Paseo en bicicleta de unos 40–45 minutos para personas mayores con dificultades de movilidad.","A 40–45 minute bike ride for older people with limited mobility."),
-        {tip:L("Places limitades. Inscripció a ladrecera@ladrecera-sv.cat o a www.ladrecera-sv.cat.","Plazas limitadas. Inscripción en ladrecera@ladrecera-sv.cat o en www.ladrecera-sv.cat.","Places are limited. Book at ladrecera@ladrecera-sv.cat or www.ladrecera-sv.cat.")}),
+        {tip:L("Places limitades. Inscripció a ladrecera@ladrecera-sv.cat o a www.ladrecera-sv.cat.","Plazas limitadas. Inscripción en ladrecera@ladrecera-sv.cat o en www.ladrecera-sv.cat.","Places are limited. Book at ladrecera@ladrecera-sv.cat or www.ladrecera-sv.cat."), link:["signup","https://www.ladrecera-sv.cat/"]}),
       E("10","14",["kids"],"plsarria",
         L("Sembrant Futur","Sembrant Futur","Sembrant Futur"),
         L("Activitat familiar de jardineria: un petit plat ecològic amb productes de l'hort i una casa en miniatura.","Actividad familiar de jardinería: un pequeño plato ecológico con productos del huerto y una casa en miniatura.","A family gardening activity: a small dish with garden produce and a miniature house.")),
@@ -824,7 +828,7 @@ const DAYS = [
       E("9.15","13",["book"],"plsarria",
         L("Caminada popular urbana","Caminata popular urbana","Urban community walk"),
         L("Caminada pels parcs del districte. Punt de trobada: escales de l'església, a la plaça de Sarrià. Acaba a la placeta d'Els Blaus.","Caminata por los parques del distrito. Punto de encuentro: escaleras de la iglesia, en la plaza de Sarrià. Termina en la placeta de Els Blaus.","A walk through the district's parks. Meet on the church steps in Plaça de Sarrià; it ends at the placeta of Els Blaus."),
-        {tip:L("Informació i inscripcions fins al divendres 9 d'octubre a www.elsblaus.cat.","Información e inscripciones hasta el viernes 9 de octubre en www.elsblaus.cat.","Information and registration until Friday, October 9 at www.elsblaus.cat.")}),
+        {tip:L("Informació i inscripcions fins al divendres 9 d'octubre a www.elsblaus.cat.","Información e inscripciones hasta el viernes 9 de octubre en www.elsblaus.cat.","Information and registration until Friday, October 9 at www.elsblaus.cat."), link:["signup","https://www.elsblaus.cat/"]}),
       E("10","11",[],"consell",
         L("Inauguració de la placa dels Castellers de Sarrià","Inauguración de la placa de los Castellers de Sarrià","Unveiling of the Castellers de Sarrià plaque"),
         L("Placa que recorda la diada de l'any passat, quan la colla va descarregar per primera vegada el 4 de 8 i el 2 de 7 en una mateixa actuació.","Placa que recuerda la diada del año pasado, cuando la colla descargó por primera vez el 4 de 8 y el 2 de 7 en una misma actuación.","A plaque marking last year's diada, when the group completed a 4 de 8 and a 2 de 7 in the same performance for the first time.")),
@@ -1033,6 +1037,7 @@ function buildIcs(d, e, i, lang){
   notes.push("", e.desc[lang]);
   if (e.tags.length) notes.push("", e.tags.map(function(tag){ return TAG[tag][lang]; }).join(" · "));
   if (e.tip) notes.push("", t.tipLbl + ": " + e.tip[lang]);
+  if (e.link) notes.push("", t[e.link[0]] + ": " + e.link[1]);
   notes.push("", t.calGuide + ": " + link, t.calProg + ": " + t.calSrc);
   const common = ["SUMMARY;LANGUAGE=" + lang + ":" + icsText(e.title[lang])];
   if (place) common.push("LOCATION;LANGUAGE=" + lang + ":" + icsText(place));
@@ -1109,6 +1114,7 @@ function render(lang){
       h += '</span></div><h3>' + esc(e.title[lang]) + '</h3><div class="loc">' + esc(e.loc[lang]);
       if (e.v) h += ' <button class="golink" data-go="' + e.v + '">' + esc(t.dirs) + '</button>';
       h += ' <a class="golink" href="#" data-cal="' + d.id + ':' + i + '">' + esc(t.cal) + '</a>';
+      if (e.link) h += ' <a class="golink" href="' + esc(e.link[1]) + '" target="_blank" rel="noopener">' + esc(t[e.link[0]]) + '</a>';
       h += '</div><p>' + esc(e.desc[lang]) + '</p>';
       if (e.tip) h += '<div class="tip"><b>' + esc(t.tipLbl) + '</b> ' + esc(e.tip[lang]) + '</div>';
       h += '</div>';

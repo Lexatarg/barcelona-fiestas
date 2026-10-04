@@ -13,6 +13,18 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.4.0] — 2026-10-04
+
+### Added
+- The footer's first paragraph ends with a link to the homepage: "Visit our
+  homepage to see all the guides."
+- More information link to acib.cat on the bomba route, the website the
+  official program names for it. It also goes into the calendar notes.
+
+### Changed
+- Links have no underline until they are hovered, focused or tapped, the same
+  as Directions.
+
 ## [1.3.5] — 2026-10-04
 
 ### Changed

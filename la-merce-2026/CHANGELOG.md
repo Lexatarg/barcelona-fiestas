@@ -13,6 +13,19 @@ For a content site rather than a library, the versions are read as:
 
 ## [Unreleased]
 
+## [1.6.0] — 2026-10-04
+
+### Added
+- The footer's first paragraph ends with a link to the homepage: "Visit our
+  homepage to see all the guides."
+- More information links to the official website's pages on the correfoc,
+  the drone show, Decostumari, Emergency Exit and the BAM concerts. They also
+  go into the calendar notes.
+
+### Changed
+- Links have no underline until they are hovered, focused or tapped, the same
+  as Directions.
+
 ## [1.5.6] — 2026-10-04
 
 ### Changed

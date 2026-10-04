@@ -7,6 +7,19 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.2.0] — 2026-10-04
+
+### Added
+- The footer's first paragraph ends with a link to the homepage: "Visit our
+  homepage to see all the guides."
+- Sign up links on En bici sense edat (ladrecera-sv.cat) and the urban
+  community walk (elsblaus.cat), the websites the official program names.
+  They also go into the calendar notes.
+
+### Changed
+- Links have no underline until they are hovered, focused or tapped, the same
+  as Directions.
+
 ## [1.1.6] — 2026-10-04
 
 ### Changed

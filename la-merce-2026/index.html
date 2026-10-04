@@ -174,6 +174,10 @@
   .theme .sun{display:none;}
   .theme.is-dark .sun{display:block;}
   .theme.is-dark .moon{display:none;}
+  /* Links: no underline until hover, keyboard focus or tap, the same everywhere. */
+  .golink, footer a{text-decoration:none;}
+  .golink:hover, .golink:focus-visible, .golink:active,
+  footer a:hover, footer a:focus-visible, footer a:active{text-decoration:underline;text-underline-offset:3px;}
 </style>
 <script>try{var t=localStorage.getItem("bcnf-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 </head>
@@ -210,7 +214,7 @@
 <div class="ovl" id="ovl"><div class="sheet" id="sheet"></div></div>
 
 <script>
-const VERSION = "1.5.6";
+const VERSION = "1.6.0";
 
 const V = {
   santjaume : {n:"Plaça de Sant Jaume",            lat:41.382798, lng:2.177246},
@@ -239,7 +243,7 @@ const T = {
     essLbl:"Si només feu cinc coses",essTitle:"Els essencials",
     placesLbl:"Els llocs",placesTitle:"On passa tot",
     placesNote:"Toqueu «Com arribar-hi» i trieu l'aplicació de mapes que useu habitualment.",
-    dirs:"Com arribar-hi", cal:"Afegeix al calendari",
+    dirs:"Com arribar-hi", cal:"Afegeix al calendari", more:"Més informació", signup:"Inscripció",
     calFest:"La Mercè 2026", calGuide:"Guia", calProg:"Web oficial",
     calSrc:"https://www.barcelona.cat/lamerce/ca", calTime:"Hora", tipLbl:"Nota", openIn:"Trieu una aplicació de mapes",
     copy:"Copia les coordenades", copied:"Copiat", close:"Tanca", go:"Obre",
@@ -249,7 +253,7 @@ const T = {
     knowLbl:"Pràctic",knowTitle:"Abans d'anar-hi",
     calloutB:"Sobre la ubicació del Piromusical.",
     callout:" Els materials de l'Ajuntament han fet servir tant «Bogatell» com «Nova Icària». Els focs es disparen des de l'espigó del Bogatell i la zona de públic és la platja de la Nova Icària, al costat. La Nova Icària és el punt que recomana l'Ajuntament.",
-    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Mercè. Per al programa complet i per als canvis d\'última hora, consulteu <a href="https://www.barcelona.cat/lamerce/ca" target="_blank" rel="noopener">el web oficial</a>.',
+    foot1:'La informació d\'aquesta pàgina prové del programa oficial de la Mercè. Per al programa complet i per als canvis d\'última hora, consulteu <a href="https://www.barcelona.cat/lamerce/ca" target="_blank" rel="noopener">el web oficial</a>. Visiteu <a href="../">la nostra pàgina d\'inici</a> per veure totes les guies.',
     foot2:"Això és un projecte personal, fet amb dedicació i estima per ajudar tothom a gaudir al màxim de la festa. No és una publicació oficial. Aquesta pàgina no fa servir galetes ni recull dades personals. Està allotjada a GitHub Pages i subjecta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaració de privadesa de GitHub</a>.",
     ess:[
       {t:"Toc d'Inici",w:"Avui · surt a les 19 h i arriba a la plaça cap a les 20 h",d:"Del Palau de la Virreina a la plaça de Sant Jaume. Els gegants, els dracs i les bèsties surten al carrer per obrir la festa."},
@@ -275,7 +279,7 @@ const T = {
     essLbl:"Si solo puede hacer cinco cosas",essTitle:"Lo esencial",
     placesLbl:"Los lugares",placesTitle:"Dónde pasa todo",
     placesNote:"Toque «Cómo llegar» y elija la aplicación de mapas que use habitualmente.",
-    dirs:"Cómo llegar", cal:"Añadir al calendario",
+    dirs:"Cómo llegar", cal:"Añadir al calendario", more:"Más información", signup:"Inscripción",
     calFest:"La Mercè 2026", calGuide:"Guía", calProg:"Web oficial",
     calSrc:"https://www.barcelona.cat/lamerce/es", calTime:"Hora", tipLbl:"Nota", openIn:"Elija una aplicación de mapas",
     copy:"Copiar las coordenadas", copied:"Copiado", close:"Cerrar", go:"Abrir",
@@ -285,7 +289,7 @@ const T = {
     knowLbl:"Práctico",knowTitle:"Antes de ir",
     calloutB:"Sobre la ubicación del Piromusical.",
     callout:" Los materiales del Ayuntamiento han usado tanto «Bogatell» como «Nova Icària». Los fuegos se lanzan desde el espigón del Bogatell y la zona de público es la playa de la Nova Icària, al lado. La Nova Icària es el punto que recomienda el Ayuntamiento.",
-    foot1:'La información de esta página procede del programa oficial de la Mercè. Para el programa completo y para los cambios de última hora, consulte <a href="https://www.barcelona.cat/lamerce/es" target="_blank" rel="noopener">la web oficial</a>.',
+    foot1:'La información de esta página procede del programa oficial de la Mercè. Para el programa completo y para los cambios de última hora, consulte <a href="https://www.barcelona.cat/lamerce/es" target="_blank" rel="noopener">la web oficial</a>. Visite <a href="../">nuestra página de inicio</a> para ver todas las guías.',
     foot2:"Esto es un proyecto personal, hecho con dedicación y cariño para ayudar a todos a disfrutar al máximo de la fiesta. No es una publicación oficial. Esta página no utiliza cookies ni recoge datos personales. Está alojada en GitHub Pages y sujeta a la <a href='https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>declaración de privacidad de GitHub</a>.",
     ess:[
       {t:"Toc d'Inici",w:"Hoy · sale a las 19 h y llega a la plaza sobre las 20 h",d:"Del Palau de la Virreina a la plaza de Sant Jaume. Los gigantes, los dragones y las bestias salen a la calle para abrir la fiesta."},
@@ -311,7 +315,7 @@ const T = {
     essLbl:"If you only do five things",essTitle:"The essentials",
     placesLbl:"The places",placesTitle:"Where it all happens",
     placesNote:"Tap Directions and pick whichever maps app you normally use.",
-    dirs:"Directions", cal:"Add to calendar",
+    dirs:"Directions", cal:"Add to calendar", more:"More information", signup:"Sign up",
     calFest:"La Mercè 2026", calGuide:"Guide", calProg:"Official website",
     calSrc:"https://www.barcelona.cat/lamerce/en", calTime:"Time", tipLbl:"Note", openIn:"Choose a maps app",
     copy:"Copy coordinates", copied:"Copied", close:"Close", go:"Open",
@@ -321,7 +325,7 @@ const T = {
     knowLbl:"Practical",knowTitle:"Before you go",
     calloutB:"About the Piromusical location.",
     callout:" The city council's materials have used both Bogatell and Nova Icària. The fireworks go up from the Espigó del Bogatell breakwater, and the public viewing area is Platja de la Nova Icària next to it. Nova Icària is the spot the council recommends.",
-    foot1:'The information on this page comes from the official program of La Mercè. For the full program and any last-minute changes, see <a href="https://www.barcelona.cat/lamerce/en" target="_blank" rel="noopener">the official website</a>.',
+    foot1:'The information on this page comes from the official program of La Mercè. For the full program and any last-minute changes, see <a href="https://www.barcelona.cat/lamerce/en" target="_blank" rel="noopener">the official website</a>. Visit <a href="../">our homepage</a> to see all the guides.',
     foot2:"This is a personal project and a labor of love, made to help everyone make the most of the festival. It is not an official publication. This page does not use cookies or collect any personal data. It is hosted on GitHub Pages and is subject to the <a href='https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement' target='_blank' rel='noopener'>GitHub Privacy Statement</a>.",
     ess:[
       {t:"Toc d'Inici",w:"Tonight · leaves at 7:00 PM, reaches the square around 8:00 PM",d:"From the Palau de la Virreina to Plaça de Sant Jaume. The giants, dragons and beasts come out into the street to open the festival."},
@@ -431,19 +435,19 @@ const DAYS = [
               es:"El gran pasacalle de la tarde sale con las linternas de Shanghái y llega a la plaza de Sant Jaume sobre las 19 h.",
               en:"The main afternoon procession leaves with the Shanghai lantern performers and reaches Plaça de Sant Jaume around 7:00 PM."} },
       { time:{ca:"19.30 i 21 h",es:"19.30 y 21 h",en:"7:30 and 9:00 PM"}, tags:["free"], v:"guell",
-        title:{ca:"Decostumari",es:"Decostumari",en:"Decostumari"},
+        link:["more","https://www.barcelona.cat/lamerce/ca/noticies/la-musica-i-la-dansa-tradicionals-catalanes-rellegides-en-clau-contemporania-41231"], title:{ca:"Decostumari",es:"Decostumari",en:"Decostumari"},
         loc:{ca:"Park Güell",es:"Park Güell",en:"Park Güell"},
         desc:{ca:"L'Esbord i l'Orquestra de Músiques d'Arrel de Catalunya presenten un espectacle de dansa tradicional catalana amb set esbarts de la ciutat. Hi ha dues funcions.",
               es:"L'Esbord y la Orquestra de Músiques d'Arrel de Catalunya presentan un espectáculo de danza tradicional catalana con siete esbarts de la ciudad. Hay dos funciones.",
               en:"L'Esbord and the Orquestra de Músiques d'Arrel de Catalunya present traditional Catalan dance with seven of the city's esbarts. There are two performances."} },
       { time:{ca:"21 h i 22 h",es:"21 h y 22 h",en:"9:00 and 10:00 PM"}, tags:["miss","free"], v:"gas",
-        title:{ca:"El fil vermell, 750 drons",es:"El hilo rojo, 750 drones",en:"El fil vermell, 750 drones"},
+        link:["more","https://www.barcelona.cat/lamerce/ca/noticies/la-historia-duna-amistat-escrita-al-cel-41232"], title:{ca:"El fil vermell, 750 drons",es:"El hilo rojo, 750 drones",en:"El fil vermell, 750 drones"},
         loc:{ca:"Espigó del Gas, la Barceloneta",es:"Espigón del Gas, la Barceloneta",en:"Espigó del Gas, Barceloneta"},
         desc:{ca:"Flock Drone Art Studio fa volar 750 drons amb «El fil vermell. De Barcelona a Xangai», una coreografia de llum amb símbols de les dues ciutats. Hi ha dues sessions de vint minuts, separades per una hora.",
               es:"Flock Drone Art Studio hace volar 750 drones con «El hilo rojo. De Barcelona a Shanghái», una coreografía de luz con símbolos de las dos ciudades. Hay dos sesiones de veinte minutos, separadas por una hora.",
               en:"Flock Drone Art Studio flies 750 drones in a piece called The Red Thread: From Barcelona to Shanghai, a choreography of light using symbols of both cities. There are two twenty-minute sessions, an hour apart."} },
       { time:{ca:"22 h",es:"22 h",en:"10:00 PM"}, tags:["free"], v:"fusta",
-        title:{ca:"Emergency Exit, de La Fura dels Baus i Satori",es:"Emergency Exit, de La Fura dels Baus y Satori",en:"Emergency Exit, by La Fura dels Baus and Satori"},
+        link:["more","https://www.barcelona.cat/lamerce/ca/noticies/pau-a-la-terra-i-amb-la-terra-41230"], title:{ca:"Emergency Exit, de La Fura dels Baus i Satori",es:"Emergency Exit, de La Fura dels Baus y Satori",en:"Emergency Exit, by La Fura dels Baus and Satori"},
         loc:{ca:"Moll de la Fusta",es:"Moll de la Fusta",en:"Moll de la Fusta"},
         desc:{ca:"Un espectacle de gran format de La Fura dels Baus, amb visuals d'Eyesberg i música de Satori. La companyia el descriu com un recorregut per un món que s'ensorra.",
               es:"Un espectáculo de gran formato de La Fura dels Baus, con visuales de Eyesberg y música de Satori. La compañía lo describe como un recorrido por un mundo que se derrumba.",
@@ -456,7 +460,7 @@ const DAYS = [
     note:{ca:"Al vespre",es:"Por la noche",en:"Evening"},
     events:[
       { time:{ca:"Vespre",es:"Noche",en:"Evening"}, tags:["free"],
-        title:{ca:"Música Mercè i BAM, per tota la ciutat",es:"Música Mercè y BAM, por toda la ciudad",en:"Música Mercè and BAM, across the city"},
+        link:["more","https://www.barcelona.cat/lamerce/ca/bam-barcelona-accio-musical"], title:{ca:"Música Mercè i BAM, per tota la ciutat",es:"Música Mercè y BAM, por toda la ciudad",en:"Música Mercè and BAM, across the city"},
         loc:{ca:"Catorze espais, setze escenaris",es:"Catorce espacios, dieciséis escenarios",en:"Fourteen venues, sixteen stages"},
         desc:{ca:"Forma part del programa de 109 concerts. Al llarg del cap de setmana hi toquen Nacho Vegas, Els Amics de les Arts, Els Catarres, Svetlana, Maria Jaume, Sexenni, Buhos i La Pegatina, entre altres.",
               es:"Forma parte del programa de 109 conciertos. A lo largo del fin de semana tocan Nacho Vegas, Els Amics de les Arts, Els Catarres, Svetlana, Maria Jaume, Sexenni, Buhos y La Pegatina, entre otros.",
@@ -517,7 +521,7 @@ const DAYS = [
               es:"La Pegatina y Love of Lesbian encabezan el escenario de la playa.",
               en:"La Pegatina and Love of Lesbian headline the beach stage."} },
       { time:{ca:"20.30 h",es:"20.30 h",en:"8:30 PM"}, tags:["miss","free"], v:"gracia",
-        title:{ca:"Ceptrotada i correfoc de la Mercè",es:"Ceptrotada y correfoc de la Mercè",en:"Ceptrotada and the correfoc de la Mercè"},
+        link:["more","https://www.barcelona.cat/lamerce/ca/noticies/el-correfoc-de-la-merce-estrena-porta-de-linfern-40926"], title:{ca:"Ceptrotada i correfoc de la Mercè",es:"Ceptrotada y correfoc de la Mercè",en:"Ceptrotada and the correfoc de la Mercè"},
         loc:{ca:"Pg. de Gràcia amb Provença",es:"P.º de Gracia con Provença",en:"Pg. de Gràcia at Carrer de Provença"},
         desc:{ca:"Comença amb la Ceptrotada, quan totes les colles encenen alhora ceptrots, forques i estendards, amb en Llucifer i la Diablessa al capdavant. Tot seguit s'encén la nova Porta de l'Infern, un arc de catorze metres d'amplada i set d'alçada fet amb prop de mil cossos fragmentats, obra de l'artista Daniel Esteban. D'allà en surten els diables, els dracs i les bèsties de foc.",
               es:"Empieza con la Ceptrotada, cuando todas las colles encienden a la vez ceptrots, horcas y estandartes, con Llucifer y la Diablessa al frente. Acto seguido se enciende la nueva Porta de l'Infern, un arco de catorce metros de ancho y siete de alto hecho con cerca de mil cuerpos fragmentados, obra del artista Daniel Esteban. De allí salen los diables, los dragones y las bestias de fuego.",
@@ -757,6 +761,7 @@ function buildIcs(d, e, i, lang){
   notes.push("", e.desc[lang]);
   if (e.tags.length) notes.push("", e.tags.map(function(tag){ return TAG[tag][lang]; }).join(" · "));
   if (e.tip) notes.push("", t.tipLbl + ": " + e.tip[lang]);
+  if (e.link) notes.push("", t[e.link[0]] + ": " + e.link[1]);
   notes.push("", t.calGuide + ": " + link, t.calProg + ": " + t.calSrc);
   const common = ["SUMMARY;LANGUAGE=" + lang + ":" + icsText(e.title[lang])];
   if (place) common.push("LOCATION;LANGUAGE=" + lang + ":" + icsText(place));
@@ -834,6 +839,7 @@ function render(lang){
       h += '</span></div><h3>' + esc(e.title[lang]) + '</h3><div class="loc">' + esc(e.loc[lang]);
       if (e.v) h += ' <button class="golink" data-go="' + e.v + '">' + esc(t.dirs) + '</button>';
       h += ' <a class="golink" href="#" data-cal="' + d.id + ':' + i + '">' + esc(t.cal) + '</a>';
+      if (e.link) h += ' <a class="golink" href="' + esc(e.link[1]) + '" target="_blank" rel="noopener">' + esc(t[e.link[0]]) + '</a>';
       h += '</div><p>' + esc(e.desc[lang]) + '</p>';
       if (e.tip) h += '<div class="tip"><b>' + esc(t.tipLbl) + '</b> ' + esc(e.tip[lang]) + '</div>';
       h += '</div>';
