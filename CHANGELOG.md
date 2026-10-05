@@ -8,6 +8,13 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [1.13.2] — 2026-10-05
+
+### Fixed
+- A festival listed in Coming up before its guide exists no longer moves to
+  Happening now or Past on its own: once it starts, it stays hidden until its
+  guide is published.
+
 ## [1.13.1] — 2026-10-04
 
 ### Changed

@@ -46,3 +46,4 @@ never collect, store or share any personal data.
 The festival information, names and programs belong to their organizers and
 official sources, and this project claims no ownership of them. The pages
 themselves are free to copy and adapt.
+The pages are released under CC0 1.0 (see [LICENSE](LICENSE)).

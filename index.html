@@ -146,7 +146,7 @@
 </div></footer>
 
 <script>
-const VERSION = "1.13.1";
+const VERSION = "1.13.2";
 
 /* Each guide is shown as happening now, coming up or past, using Barcelona time.
    The order on the page comes from the dates, not from the order of this list. */
@@ -256,9 +256,11 @@ function render(lang){
   }; };
   /* Latest first; Coming up shows the soonest first. */
   const latest = function(a, b){ return a.start < b.start ? 1 : a.start > b.start ? -1 : 0; };
-  const now  = GUIDES.filter(function(g){ return g.start <= today && today <= g.end; }).sort(latest);
+  /* Only guides that exist (with a path) appear in Happening now and Past. A festival
+     without its guide yet stays in Coming up until it starts, then is hidden. */
+  const now  = GUIDES.filter(function(g){ return g.path && g.start <= today && today <= g.end; }).sort(latest);
   const next = GUIDES.filter(function(g){ return g.start > today; }).sort(latest).reverse();
-  const past = GUIDES.filter(function(g){ return g.end < today; }).sort(latest);
+  const past = GUIDES.filter(function(g){ return g.path && g.end < today; }).sort(latest);
   let h = "";
   if (next.length) { h += '<div class="state next">' + esc(t.next) + '</div>' + next.map(card("next")).join(""); }
   if (now.length)  { h += '<div class="state now">' + esc(t.now) + '</div>' + now.map(card("now")).join(""); }
